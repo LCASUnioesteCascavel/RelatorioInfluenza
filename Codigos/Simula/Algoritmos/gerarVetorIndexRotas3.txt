@@ -1,0 +1,30 @@
+\Inicio{
+  \Comentario{Criação dos índices para as rotas} \\
+	indexRotas = lista\_vazia() \\
+	desl = 0 \\
+	adiciona(desl, indexRotas) \\
+	\Para{cada rota $r$ em rotasCrianca} {
+	    desl += tamanho($r$) \\
+	    adiciona(desl, indexRotas) \\
+	}
+	\Para{cada rota $r$ em rotasJovem} {
+	    desl += tamanho($r$) \\
+	    adiciona(desl, indexRotas) \\
+	}
+	\Para{cada rota $r$ em rotasAdulto} {
+	    desl += tamanho($r$) \\
+	    adiciona(desl, indexRotas) \\
+	}
+	\Para{cada rota $r$ em rotasIdoso} {
+	    desl += tamanho($r$) \\
+	    adiciona(desl, indexRotas) \\
+	}
+	
+	nRotas = tamanho(rotasCrianca) + tamanho(rotasJovem) + tamanho(rotasAdulto) + tamanho(rotasIdoso) \\
+	
+	vetorRotas = lista\_vazia() \\
+	adicionarTodos(rotasCrianca, vetorRotas) \\
+	adicionarTodos(rotasJovem, vetorRotas) \\
+	adicionarTodos(rotasAdulto, vetorRotas) \\
+	adicionarTodos(rotasIdoso, vetorRotas) \\
+}

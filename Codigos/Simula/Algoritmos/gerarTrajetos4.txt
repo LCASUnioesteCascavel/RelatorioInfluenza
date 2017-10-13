@@ -1,0 +1,32 @@
+\Inicio{
+    \Comentario{trajetos para idosos} \\
+    num = numero\_aleatorio\_entre(0, 3) \\
+    
+    \Comentario{Primeiro trajeto para idosos} \\
+    \Se{num $==$ 0} {
+          trajeto = lista\_vazia() \\
+          adiciona(novo\_local(casa, 30), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisTrabalho), 35), trajeto) \\
+          adiciona(novo\_local(casa, 35), trajeto) \\
+          adiciona(trajeto, trajetosIdoso) \\
+    }
+    
+    \Comentario{Segundo trajeto para idosos} \\
+    \Se{num $==$ 1} {
+          trajeto = lista\_vazia() \\
+          adiciona(novo\_local(casa, 30), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisLazer), 40), trajeto) \\
+          adiciona(novo\_local(casa, 30), trajeto) \\
+          adiciona(trajeto, trajetosIdoso) \\
+    }
+    
+    \Comentario{Terceiro trajeto para idosos} \\
+    \Se{num $==$ 2} {
+          trajeto = lista\_vazia() \\
+          adiciona(novo\_local(casa, 20), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisTrabalho), 35), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisLazer), 10), trajeto) \\
+          adiciona(novo\_local(casa, 35), trajeto) \\
+          adiciona(trajeto, trajetosIdoso) \\
+    }
+}

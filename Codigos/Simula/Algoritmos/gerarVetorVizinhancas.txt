@@ -1,0 +1,15 @@
+\Inicio{
+	vetorVizinhancas = lista\_vazia() \\
+	\Para{cada quadra $q$} {
+	      \Para{cada lote $l$ de $q$} {
+              \Para{cada vizinhanca $v$ em vizinhancas[$q$, $l$]} {
+              adiciona($v$.origem.x, vetorVizinhancas) \\
+              adiciona($v$.origem.y, vetorVizinhancas) \\
+              adiciona($v$.destino.x, vetorVizinhancas) \\
+              adiciona($v$.destino.y, vetorVizinhancas) \\
+              adiciona(indicesLotes[$q$, $l$], vetorVizinhancas) \\
+              adiciona(indicesQuadras[$q$], vetorVizinhancas) \\
+              }
+	      }
+	}
+}

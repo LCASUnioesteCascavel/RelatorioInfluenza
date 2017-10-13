@@ -1,0 +1,29 @@
+\Inicio{
+	\Comentario{Definição dos humanos que serão inseridos em áreas rurais} \\
+
+	\Comentario{Escolha aleatória dos pontos em que os humanos serão inseridos} \\
+
+  \Comentario{Escrita do arquivo DistribuicaoRuralHumanos.csv} \\
+	arquivo = abreArquivo("DistribuicaoRuralHumanos.csv") \\
+  
+  \Comentario{Escrita da distribuição rural dos humanos} \\
+	\Para{cada humano $h$ que será inserido na zona rural} {
+				escreve(quadra($h$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(lote($h$), arquivo) \\
+	      escreve(";", arquivo) \\	      
+				escreve(x($h$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(y($h$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(sexo($h$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(faixaEtaria($h$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(saudeDengue($h$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(sorotipoAtual($h$), arquivo) \\
+				escreve(novaLinha, arquivo) \\
+	}
+	fechaArquivo(arquivo) \\
+}

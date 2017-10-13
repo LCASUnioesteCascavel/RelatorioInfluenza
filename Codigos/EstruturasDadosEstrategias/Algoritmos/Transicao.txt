@@ -1,0 +1,43 @@
+\Inicio{
+	\Para{cada agente} {
+        
+        \Comentario{Transição de estados dos agentes expostos} \\
+	      \Se{estado do agente é exposto} {
+              \eSe{contador do agente $\geq$ período exposto agente} {
+                    \Comentario{O período de exposição do agente terminou} \\
+                    \Comentario{O agente é passado ao estado infectado} \\
+                    altera estado do agente para infectado \\
+                    zera contador do agente \\
+              } {
+                    \Comentario{O agente ainda está em período de exposição} \\
+                    incrementa contador do agente \\
+              }
+	      }
+        
+        \Comentario{Transição de estados dos agentes infectados} \\
+	      \Se{estado do agente é infectado} {
+              \eSe{contador do agente $\geq$ período infectado agente} {
+                    \Comentario{O período de infectância do agente terminou} \\
+                    \Comentario{O agente é passado ao estado recuperado} \\
+                    altera estado do agente para recuperado \\
+                    zera contador do agente \\
+              } {
+                    \Comentario{O agente ainda está em período de exposição} \\
+                    incrementa contador do agente \\
+              }
+	      }
+        
+        \Comentario{Transição de estados dos agentes recuperados} \\
+	      \Se{estado do agente é recuperado} {
+              \eSe{contador do agente $\geq$ período recuperado agente} {
+                    \Comentario{O período de recuperação do agente terminou} \\
+                    \Comentario{O agente é passado ao estado suscetível} \\
+                    altera estado do agente para suscetível \\
+                    zera contador do agente \\
+              } {
+                    \Comentario{O humao ainda está em período de recuperação} \\
+                    incrementa contador do agente \\
+              }
+	      }
+	}
+}

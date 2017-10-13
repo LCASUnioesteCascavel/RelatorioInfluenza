@@ -1,0 +1,55 @@
+\Inicio{
+  \Comentario{Geração do vetor de períodos para adultos} \\
+	\Para{$i$ de $0$ ate tamanho(trajetosAdulto)} {
+	      periodo = lista\_vazia() \\
+	      localOrigem = trajetosAdulto[$i$, $0$] \\
+	      adiciona(localOrigem.periodo, periodo) \\
+	      
+	      \Para{$j$ de $1$ ate tamanho(trajetosAdulto[$i$])} {
+            localDestino = trajetosAdulto[$i$, $j$] \\
+            adiciona(localDestino.periodo, periodo) \\
+	      }
+	      adiciona(periodo, periodosAdulto) \\
+	}
+	
+  \Comentario{Geração do vetor de períodos para idosos} \\
+	\Para{$i$ de $0$ ate tamanho(trajetosIdoso)} {
+	      periodo = lista\_vazia() \\
+	      localOrigem = trajetosIdoso[$i$, $0$] \\
+	      adiciona(localOrigem.periodo, periodo) \\
+	      
+	      \Para{$j$ de $1$ ate tamanho(trajetosIdoso[$i$])} {
+            localDestino = trajetosIdoso[$i$, $j$] \\
+            adiciona(localDestino.periodo, periodo) \\
+	      }
+	      adiciona(periodo, periodosIdoso) \\
+	}
+	
+  \Comentario{Geração dos índices para os vetores de períodos} \\
+	indexPeriodos = lista\_vazia() \\
+	desl = 0 \\
+	adiciona(desl, indexPeriodos) \\
+	\Para{cada periodo $p$ em periodosCrianca} {
+	      desl += tamanho($p$) \\
+	      adiciona(desl, indexPeriodos) \\
+	}
+	\Para{cada periodo $p$ em periodosJovem} {
+	      desl += tamanho($p$) \\
+	      adiciona(desl, indexPeriodos) \\
+	}
+	\Para{cada periodo $p$ em periodosAdulto} {
+	      desl += tamanho($p$) \\
+	      adiciona(desl, indexPeriodos) \\
+	}
+	\Para{cada periodo $p$ em periodosIdoso} {
+	      desl += tamanho($p$) \\
+	      adiciona(desl, indexPeriodos) \\
+	}
+	
+  \Comentario{Geração do vetor de períodos} \\
+	vetorPeriodos = lista\_vazia() \\
+	adicionaTodos(periodosCrianca, vetorPeriodos) \\
+	adicionaTodos(periodosJovem, vetorPeriodos) \\
+	adicionaTodos(periodosAdulto, vetorPeriodos) \\
+	adicionaTodos(periodosIdoso, vetorPeriodos) \\
+}

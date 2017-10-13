@@ -1,0 +1,79 @@
+\select@language {brazil}
+\contentsline {section}{\numberline {1}MODELAGEM EM OPERADORES AOS AGENTES}{4}{section.1}
+\contentsline {section}{\numberline {2}MODELAGEM \textit {BITSTRING} AOS AGENTES}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Modelagem \textit {bitstring} ao Agente}{6}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Exemplos de Aplica\IeC {\c c}\IeC {\~a}o dos Operadores de Captura}{10}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Exemplos de Aplica\IeC {\c c}\IeC {\~a}o dos Operadores de Atualiza\IeC {\c c}\IeC {\~a}o}{12}{subsubsection.2.1.2}
+\contentsline {section}{\numberline {3}MODELAGEM DOS AMBIENTES DE SIMULA\IeC {\c C}\IeC {\~A}O}{15}{section.3}
+\contentsline {section}{\numberline {4}ESTRUTURAS DE DADOS E ESTRAT\IeC {\'E}GIAS DE IMPLEMENTA\IeC {\c C}\IeC {\~A}O}{17}{section.4}
+\contentsline {subsection}{\numberline {4.1}Opera\IeC {\c c}\IeC {\~o}es aos Agentes}{19}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Movimenta\IeC {\c c}\IeC {\~a}o}{19}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Contato}{21}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Transi\IeC {\c c}\IeC {\~a}o}{23}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}Macros \IeC {\`a} Implementa\IeC {\c c}\IeC {\~a}o das Opera\IeC {\c c}\IeC {\~o}es \textit {bitstring}}{26}{subsubsection.4.1.4}
+\contentsline {section}{\numberline {5}SIMULA}{28}{section.5}
+\contentsline {subsection}{\numberline {5.1}Opera\IeC {\c c}\IeC {\~o}es Executadas no Banco de Dados}{29}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}SQL de Cria\IeC {\c c}\IeC {\~a}o das Tabelas}{29}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}SQL de Remo\IeC {\c c}\IeC {\~a}o das Tabelas}{29}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}SQL de Interpola\IeC {\c c}\IeC {\~a}o de Pontos}{30}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.4}SQL de Cria\IeC {\c c}\IeC {\~a}o da Tabela de Pontos}{30}{subsubsection.5.1.4}
+\contentsline {subsubsection}{\numberline {5.1.5}SQL de Cria\IeC {\c c}\IeC {\~a}o da Tabela de Pontos de Lotes e Ruas}{31}{subsubsection.5.1.5}
+\contentsline {subsubsection}{\numberline {5.1.6}SQL de Cria\IeC {\c c}\IeC {\~a}o da Tabela de Pontos de Esquinas}{31}{subsubsection.5.1.6}
+\contentsline {subsubsection}{\numberline {5.1.7}SQL de Cria\IeC {\c c}\IeC {\~a}o da Tabela de Vizinhan\IeC {\c c}as entre Pol\IeC {\'\i }gonos}{32}{subsubsection.5.1.7}
+\contentsline {subsubsection}{\numberline {5.1.8}SQL de Cria\IeC {\c c}\IeC {\~a}o da Tabela de Vizinhan\IeC {\c c}as de Moore entre Pontos}{33}{subsubsection.5.1.8}
+\contentsline {subsubsection}{\numberline {5.1.9}SQL de Cria\IeC {\c c}\IeC {\~a}o da Tabela de Lotes}{33}{subsubsection.5.1.9}
+\contentsline {subsubsection}{\numberline {5.1.10}SQL de Cria\IeC {\c c}\IeC {\~a}o da Tabela de V\IeC {\'e}rtices (A*)}{34}{subsubsection.5.1.10}
+\contentsline {subsubsection}{\numberline {5.1.11}SQL de Cria\IeC {\c c}\IeC {\~a}o da Tabela de Arestas (A*)}{34}{subsubsection.5.1.11}
+\contentsline {subsubsection}{\numberline {5.1.12}SQL de Cria\IeC {\c c}\IeC {\~a}o da Tabela de Pontos Centr\IeC {\'o}ides das Esquinas}{35}{subsubsection.5.1.12}
+\contentsline {subsubsection}{\numberline {5.1.13}SQL de Cria\IeC {\c c}\IeC {\~a}o da Tabela de Pontos Centr\IeC {\'o}ides dos Lotes}{36}{subsubsection.5.1.13}
+\contentsline {subsection}{\numberline {5.2}M\IeC {\'o}dulo Gerador de Arquivos de Configura\IeC {\c c}\IeC {\~a}o Ambiental}{37}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Fun\IeC {\c c}\IeC {\~a}o Principal}{38}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Fun\IeC {\c c}\IeC {\~a}o getPontosLoteseRuas}{41}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Fun\IeC {\c c}\IeC {\~a}o criarIndexQuadraseLotes}{42}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}Fun\IeC {\c c}\IeC {\~a}o gerarIndexQuadras}{43}{subsubsection.5.2.4}
+\contentsline {subsubsection}{\numberline {5.2.5}Fun\IeC {\c c}\IeC {\~a}o gerarVizinhancas}{44}{subsubsection.5.2.5}
+\contentsline {subsubsection}{\numberline {5.2.6}Fun\IeC {\c c}\IeC {\~a}o getVizinhancasEntrePoligonos}{45}{subsubsection.5.2.6}
+\contentsline {subsubsection}{\numberline {5.2.7}Fun\IeC {\c c}\IeC {\~a}o getVizinhancasMoorePontos}{46}{subsubsection.5.2.7}
+\contentsline {subsubsection}{\numberline {5.2.8}Fun\IeC {\c c}\IeC {\~a}o gerarIndexVizinhancas}{47}{subsubsection.5.2.8}
+\contentsline {subsubsection}{\numberline {5.2.9}Fun\IeC {\c c}\IeC {\~a}o gerarVetorVizinhancas}{48}{subsubsection.5.2.9}
+\contentsline {subsubsection}{\numberline {5.2.10}Fun\IeC {\c c}\IeC {\~a}o gerarVetorPosicoes}{49}{subsubsection.5.2.10}
+\contentsline {subsubsection}{\numberline {5.2.11}Fun\IeC {\c c}\IeC {\~a}o gerarIndexPosicoes}{50}{subsubsection.5.2.11}
+\contentsline {subsubsection}{\numberline {5.2.12}Fun\IeC {\c c}\IeC {\~a}o gerarFronteiras}{51}{subsubsection.5.2.12}
+\contentsline {subsubsection}{\numberline {5.2.13}Fun\IeC {\c c}\IeC {\~a}o gerarIndexFronteiras}{52}{subsubsection.5.2.13}
+\contentsline {subsubsection}{\numberline {5.2.14}Fun\IeC {\c c}\IeC {\~a}o gerarVetorFronteiras}{53}{subsubsection.5.2.14}
+\contentsline {subsubsection}{\numberline {5.2.15}Fun\IeC {\c c}\IeC {\~a}o getPontosEsquinas}{54}{subsubsection.5.2.15}
+\contentsline {subsubsection}{\numberline {5.2.16}Fun\IeC {\c c}\IeC {\~a}o gerarIndexEsquinas}{55}{subsubsection.5.2.16}
+\contentsline {subsubsection}{\numberline {5.2.17}Fun\IeC {\c c}\IeC {\~a}o gerarVetorEsquinas}{56}{subsubsection.5.2.17}
+\contentsline {subsubsection}{\numberline {5.2.18}Fun\IeC {\c c}\IeC {\~a}o gerarIndexCentrosEsquinas}{57}{subsubsection.5.2.18}
+\contentsline {subsubsection}{\numberline {5.2.19}Fun\IeC {\c c}\IeC {\~a}o gerarVetorCentrosEsquinas}{58}{subsubsection.5.2.19}
+\contentsline {subsubsection}{\numberline {5.2.20}Fun\IeC {\c c}\IeC {\~a}o getLotes}{59}{subsubsection.5.2.20}
+\contentsline {subsubsection}{\numberline {5.2.21}Fun\IeC {\c c}\IeC {\~a}o distribuirLocais}{60}{subsubsection.5.2.21}
+\contentsline {subsubsection}{\numberline {5.2.22}Fun\IeC {\c c}\IeC {\~a}o gerarTrajetos}{61}{subsubsection.5.2.22}
+\contentsline {subsubsection}{\numberline {5.2.23}Fun\IeC {\c c}\IeC {\~a}o getArestas}{69}{subsubsection.5.2.23}
+\contentsline {subsubsection}{\numberline {5.2.24}Fun\IeC {\c c}\IeC {\~a}o getCentroidesEsquinas}{70}{subsubsection.5.2.24}
+\contentsline {subsubsection}{\numberline {5.2.25}Fun\IeC {\c c}\IeC {\~a}o getCentroidesLotes}{71}{subsubsection.5.2.25}
+\contentsline {subsubsection}{\numberline {5.2.26}Fun\IeC {\c c}\IeC {\~a}o getVertices}{72}{subsubsection.5.2.26}
+\contentsline {subsubsection}{\numberline {5.2.27}Fun\IeC {\c c}\IeC {\~a}o gerarCaminhos}{73}{subsubsection.5.2.27}
+\contentsline {subsubsection}{\numberline {5.2.28}Fun\IeC {\c c}\IeC {\~a}o aEstrela}{75}{subsubsection.5.2.28}
+\contentsline {subsubsection}{\numberline {5.2.29}Fun\IeC {\c c}\IeC {\~a}o aEstrelaConstruirCaminho}{79}{subsubsection.5.2.29}
+\contentsline {subsubsection}{\numberline {5.2.30}Fun\IeC {\c c}\IeC {\~a}o gerarVetorIndexRotas}{80}{subsubsection.5.2.30}
+\contentsline {subsubsection}{\numberline {5.2.31}Fun\IeC {\c c}\IeC {\~a}o gerarVetorIndexTrajetos}{85}{subsubsection.5.2.31}
+\contentsline {subsubsection}{\numberline {5.2.32}Fun\IeC {\c c}\IeC {\~a}o gerarVetorIndexPeriodos}{87}{subsubsection.5.2.32}
+\contentsline {subsubsection}{\numberline {5.2.33}Fun\IeC {\c c}\IeC {\~a}o gerarIndexTrajetosFaixaEtaria}{91}{subsubsection.5.2.33}
+\contentsline {subsubsection}{\numberline {5.2.34}Fun\IeC {\c c}\IeC {\~a}o escreverArquivoVetores}{92}{subsubsection.5.2.34}
+\contentsline {subsubsection}{\numberline {5.2.35}Fun\IeC {\c c}\IeC {\~a}o getRegiao}{98}{subsubsection.5.2.35}
+\contentsline {subsubsection}{\numberline {5.2.36}Fun\IeC {\c c}\IeC {\~a}o gerarIndexPosicoesRegioes}{99}{subsubsection.5.2.36}
+\contentsline {subsubsection}{\numberline {5.2.37}Fun\IeC {\c c}\IeC {\~a}o criarDistribuicaoMosquitos}{100}{subsubsection.5.2.37}
+\contentsline {subsubsection}{\numberline {5.2.38}Fun\IeC {\c c}\IeC {\~a}o criarDistribuicaoHumanos}{103}{subsubsection.5.2.38}
+\contentsline {subsubsection}{\numberline {5.2.39}Fun\IeC {\c c}\IeC {\~a}o gerarArquivoRegioes}{105}{subsubsection.5.2.39}
+\contentsline {section}{\numberline {6}RESULTADOS DA EXECU\IeC {\c C}\IeC {\~A}O DE EXPERIMENTOS COMPUTACIONAIS}{109}{section.6}
+\contentsline {subsection}{\numberline {6.1}Teste 0001}{109}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Defini\IeC {\c c}\IeC {\~a}o dos Par\IeC {\^a}metros}{110}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{111}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Espalhamento Espacial dos Casos de Influenza ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{112}{subsubsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.4}Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{113}{subsubsection.6.1.4}
+\contentsline {subsection}{\numberline {6.2}Teste 0002}{114}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Defini\IeC {\c c}\IeC {\~a}o dos Par\IeC {\^a}metros}{115}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{116}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Espalhamento Espacial dos Casos de Influenza ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{117}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{118}{subsubsection.6.2.4}

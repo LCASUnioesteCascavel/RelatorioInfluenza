@@ -1,0 +1,55 @@
+\Inicio{
+    \Comentario{trajetos para adultos} \\
+    num = numero\_aleatorio\_entre(0, 5) \\
+    
+    \Comentario{Primeiro trajeto para adultos} \\
+    \Se{num $==$ 0} {
+          trajeto = lista\_vazia() \\
+          adiciona(novo\_local(casa, 10), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisTrabalho), 60), trajeto) \\
+          adiciona(novo\_local(casa, 30), trajeto) \\
+          adiciona(trajeto, trajetosAdulto) \\
+    }
+    
+    \Comentario{Segundo trajeto para adultos} \\
+    \Se{num $==$ 1} {
+          trajeto = lista\_vazia() \\
+          adiciona(novo\_local(casa, 10), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisTrabalho), 50), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisEstudo), 10), trajeto) \\
+          adiciona(novo\_local(casa, 30), trajeto) \\
+          adiciona(trajeto, trajetosAdulto) \\
+    }
+    
+    \Comentario{Terceiro trajeto para adultos} \\
+    \Se{num $==$ 2} {
+          trajeto = lista\_vazia() \\
+          adiciona(novo\_local(casa, 10), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisTrabalho), 45), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisLazer), 15), trajeto) \\
+          adiciona(novo\_local(casa, 30), trajeto) \\
+          adiciona(trajeto, trajetosAdulto) \\
+    }
+    
+    \Comentario{Quarto trajeto para adultos} \\
+    \Se{num $==$ 3} {
+          trajeto = lista\_vazia() \\
+          adiciona(novo\_local(casa, 10), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisTrabalho), 35), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisEstudo), 20), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisLazer), 10), trajeto) \\
+          adiciona(novo\_local(casa, 25), trajeto) \\
+          adiciona(trajeto, trajetosAdulto) \\
+    }
+    
+    \Comentario{Quinto trajeto para adultos} \\
+    \Se{num $==$ 4} {
+          trajeto = lista\_vazia() \\
+          adiciona(novo\_local(casa, 10), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisTrabalho), 35), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisLazer), 10), trajeto) \\
+          adiciona(novo\_local(escolheAleatoriamente(locaisEstudo), 20), trajeto) \\
+          adiciona(novo\_local(casa, 25), trajeto) \\
+          adiciona(trajeto, trajetosAdulto) \\
+    }
+}

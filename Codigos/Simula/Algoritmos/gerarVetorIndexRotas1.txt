@@ -1,0 +1,47 @@
+\Inicio{
+  \Comentario{Criação das rotas para crianças} \\
+	rotasCrianca = lista\_vazia() \\
+	k = 0 \\
+	\Para{$i$ de $0$ ate tamanho(trajetosCrianca)} {
+	      \Para{$j$ de $0$ ate tamanho(trajetosCrianca[$i$]) $-1$} {
+              rota = lista\_vazia() \\
+              localOrigem = trajetosCrianca[$i$, $j$] \\
+              localDestino = trajetosCrianca[$i$, $j+1$] \\
+              quadraOrigem = indicesQuadras[localOrigem.quadra] \\
+              loteOrigem = indicesLotes[localOrigem.quadra, localOrigem.lote] \\
+              quadraDestino = indicesQuadras[localDestino.quadra] \\
+              loteDestino = indicesLotes[localDestino.quadra, localDestino.lote] \\
+              adiciona(loteOrigem, rota) \\
+              adiciona(quadraOrigem, rota) \\
+              \Para{cada rua $r$ em ruasCrianca[k++]} {
+                    adiciona(indicesLotes["0000", r.lote], rota) \\
+              }
+              adiciona(loteDestino, rota) \\
+              adiciona(quadraDestino, rota) \\
+              adiciona(rota, rotasCrianca) \\
+	      }
+	}
+	
+  \Comentario{Criação das rotas para jovens} \\
+	rotasJovem = lista\_vazia() \\
+	k = 0 \\
+	\Para{$i$ de $0$ ate tamanho(trajetosJovem)} {
+	      \Para{$j$ de $0$ ate tamanho(trajetosJovem[$i$]) $-1$} {
+              rota = lista\_vazia() \\
+              localOrigem = trajetosJovem[$i$, $j$] \\
+              localDestino = trajetosJovem[$i$, $j+1$] \\
+              quadraOrigem = indicesQuadras[localOrigem.quadra] \\
+              loteOrigem = indicesLotes[localOrigem.quadra, localOrigem.lote] \\
+              quadraDestino = indicesQuadras[localDestino.quadra] \\
+              loteDestino = indicesLotes[localDestino.quadra, localDestino.lote] \\
+              adiciona(loteOrigem, rota) \\
+              adiciona(quadraOrigem, rota) \\
+              \Para{cada rua $r$ em ruasJovem[k++]} {
+                    adiciona(indicesLotes["0000", r.lote], rota) \\
+              }
+              adiciona(loteDestino, rota) \\
+              adiciona(quadraDestino, rota) \\
+              adiciona(rota, rotasJovem) \\
+	      }
+	}
+}

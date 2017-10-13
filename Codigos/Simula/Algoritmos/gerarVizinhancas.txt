@@ -1,0 +1,5 @@
+\Inicio{
+	vizinhancas = lista\_vazia() \\
+	vizinhancas = ConsultaSQLBancoDeDadosSelecionandoVizinhancasMooreEntrePontos() \\
+	ordenar(vizinhancas) \\
+}

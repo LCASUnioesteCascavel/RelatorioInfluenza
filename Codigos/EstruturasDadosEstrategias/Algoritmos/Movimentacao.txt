@@ -1,0 +1,27 @@
+\Inicio{
+	  \Para{cada humano} {
+				\Comentario{Um percentual dos agentes infectados são movidos para posições aleatórias do ambiente}
+				\Se{percentual aleatório $\leq$ percentual de migração} {
+					move o agente para uma posição aleatória do ambiente
+				}
+        \Comentario{As taxas de mobilidade dos agentes são distintas para cada faixa etária} \\
+        \Se{faixa etária do agente é criança} {
+          taxa $=$ taxa de mobilidade para crianças \\
+        }
+        \Se{faixa etária do agente é jovem} {
+          taxa $=$ taxa de mobilidade para jovens \\
+        }
+        \Se{faixa etária do agente é adulto} {
+          taxa $=$ taxa de mobilidade para adultos \\
+        }
+        \Se{faixa etária do agente é idoso} {
+          taxa $=$ taxa de mobilidade para idosos \\
+        }
+        \Comentario{O agente realiza a movimentação de acordo com a taxa de mobilidade} \\
+        \Se{percentual aleatório $\leq$ taxa} {
+            \Comentario{O agente move-se aleatoriamente no ambiente} \\
+    				escolhe aleatoriamente uma posição vizinha ao agente \\
+    				move o agente para esta posição
+        }
+	}
+}

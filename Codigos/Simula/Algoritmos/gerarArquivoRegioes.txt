@@ -1,0 +1,87 @@
+\Inicio{
+	\Comentario{Definição das quadras que receberão vacinação} \\
+
+	\Comentario{Definição das faixas etárias que receberão vacinação} \\
+
+	\Comentario{Definição do período de vacinação} \\
+	
+	\Comentario{Definição dos ciclos em que ocorrerão as campanhas de vacinação} \\
+
+	\Comentario{Definição das quadras que receberão operações de raio} \\
+
+	\Comentario{Definição das quadras que receberão operações de bloqueio} \\
+
+	\Comentario{Definição das quadras que receberão controle biológico} \\
+
+	\Comentario{Definição das quadras que receberão controle ambiental} \\
+
+	\Comentario{Definição dos lotes que são pontos estratégicos} \\
+
+  \Comentario{Escrita do arquivo 2-CON.csv} \\
+	arquivo = abreArquivo("2-CON.csv") \\
+  
+  \Comentario{Escrita das quadras com vacinação} \\
+	\Para{cada cada quadra $q$ com vacinação} {
+	      escreve($q$, arquivo) \\
+	      escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+
+	\Comentario{Escrita das faixas etárias com vacinação} \\
+	\Para{cada faixa etária $f$ com vacinação} {
+	      escreve($f$, arquivo) \\
+	      escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+
+	\Comentario{Escrita do período de vacinação} \\
+	\Para{cada período $p$ de vacinação} {
+	      escreve($p$, arquivo) \\
+	      escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+
+	\Comentario{Escrita dos ciclos de vacinação} \\
+	\Para{cada ciclo $c$ de vacinação} {
+	      escreve($c$, arquivo) \\
+	      escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+
+	\Comentario{Escrita das quadras com raio} \\
+	\Para{cada quadra $q$ com raio} {
+	      escreve($q$, arquivo) \\
+	      escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+
+	\Comentario{Escrita das quadras com bloqueio} \\
+	\Para{cada quadra $q$ com bloqueio} {
+	      escreve($q$, arquivo) \\
+	      escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+
+	\Comentario{Escrita das quadras com controle biológico} \\
+	\Para{cada quadra $q$ com controle biológico} {
+	      escreve($q$, arquivo) \\
+	      escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+
+	\Comentario{Escrita das quadras com controle ambiental} \\
+	\Para{cada quadra $q$ com controle ambiental} {
+	      escreve($q$, arquivo) \\
+	      escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+
+	\Comentario{Escrita dos lotes que são pontos estratégicos} \\
+	\Para{cada lote $l$ que é ponto estratégico} {
+	      escreve($l$, arquivo) \\
+	      escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+
+	fechaArquivo(arquivo) \\
+}

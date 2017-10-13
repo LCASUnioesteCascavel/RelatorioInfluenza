@@ -1,0 +1,67 @@
+\documentclass[final]{elsarticle}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{a4paper,left=2cm,right=2cm,bottom=2cm,top=2cm}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{caption,subcaption}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{verbatim}
+\usepackage{lmodern}
+\usepackage{anyfontsize}
+\usepackage[export]{adjustbox}
+\usepackage{nomencl}
+\makenomenclature
+\setlength{\nomitemsep}{-\parskip}
+\renewcommand{\baselinestretch}{0.9}
+\usepackage[none]{hyphenat}
+\pretolerance=1000
+\usepackage{pgfplotstable,booktabs}
+\pgfplotsset{compat=1.13}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Código}
+\renewcommand{\lstlistlistingname}{Lista de \lstlistingname s}
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  tabsize = 2,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+\lstset{escapechar=@,style=customc}
+
+\usepackage[portuguese,ruled,linesnumbered]{algorithm2e}
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\newcommand\Comentario[1]{{\small\ttfamily\textcolor{blue}{#1}}}
+\SetCommentSty{Comentario}
+
+\overfullrule=5pt
+
+\newcommand{\etal}{\textit{et al. }}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\magenta}[1]{\textcolor{magenta}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\yellow}[1]{\textcolor{yellow}{#1}}
+
+\usepackage{etoolbox}
+\apptocmd{\sloppy}{\hbadness 10000\relax}{}{}
+
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}

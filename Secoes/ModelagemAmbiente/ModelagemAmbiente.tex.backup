@@ -1,0 +1,65 @@
+\section{MODELAGEM DOS AMBIENTES DE SIMULAÇÃO}
+\label{sec:modelagemAmbiente}
+
+À modelagem do ambiente computacional utilizam-se \textit{shapefiles} como base de consulta às informações essenciais à representação em estruturas de dados dos ambientes georreferenciados escolhidos. São empregados distintos recortes georreferenciados das cidades de Cascavel/PR e Boa Vista da Aparecida/PR.
+
+Foram aplicados algoritmos para obtenção de vizinhanças diretamente sobre os pontos georreferenciados obtidos dos \textit{shapefiles}, resultando em uma descrição em grafos dos ambientes, em que as vizinhanças entre posições são apresentadas como arestas e os pontos georreferenciados os vértices do grafo. A utilização de uma estrutura de dados do tipo grafo possibilitou a flexibilização dos processos de obtenção das vizinhanças entre lotes e entre os pontos internos aos lotes. Os algoritmos desenvolvidos utilizam somente as informações referentes aos refinamentos dos lotes, a geometria dos polígonos que representam os lotes nos \textit{shapefiles} e as distâncias euclidianas entre os pontos georreferenciados. Adicionalmente, os processos de obtenção das vizinhanças entre lotes e ruas são automatizados por meio de consultas SQL ao banco de dados que armazena os \textit{shapefiles}, utilizando funções da extensão PostGIS. Na Seção \ref{sec:SIMULA} são apresentados detalhadamente as operações e consultas realizadas com o auxílio do banco de dados. 
+
+São utilizados como base à especificação dos ambientes computacionais a Localidade 5 da cidade de Cascavel/PR e dois recortes com e sem a área rural da cidade de Boa Vista da Aparecida/PR. A Localidade 5 abrange $79$ quadras e $1.267$ lotes, o recorte da cidade de Boa Vista da Aparecida sem área rural possui $153$ quadras e $2.828$ lotes e com área rural possui $163$ quadras e $4224$ lotes, sendo $10$ quadras rurais e $1396$ lotes rurais. São inseridos polígonos extras à representação das ruas entre quadras, com o objetivo de viabilizar os deslocamentos dos agentes entre as quadras do domínio. A Figura \ref{fig:loc5} ilustra a Localidade 5 e as Figuras \ref{fig:boavista} e \ref{fig:boavista2} apresentam a cidade de Boa Vista da Aparecida. 
+
+\subsection{Cascavel/PR}
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.8\linewidth]{Figuras/ModelagemAmbiente/Loc5Q.png}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.8\linewidth]{Figuras/ModelagemAmbiente/Loc5.png}
+\end{minipage}
+\caption{Representação gráfica da Localidade 5.}
+\label{fig:loc5}
+\end{figure}
+
+%\begin{figure}[H]
+%  \centering
+%  \includegraphics[width=0.95\textwidth]{Figuras/ModelagemAmbiente/Cascavel.png}
+%  \caption{Representação gráfica da cidade de Cascavel/PR.}
+%  \label{fig:cascavel}
+%\end{figure} 
+
+\subsection{Boa Vista da Aparecida/PR}
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{Figuras/ModelagemAmbiente/BoaVistaQ.png}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{Figuras/ModelagemAmbiente/BoaVista.png}
+\end{minipage}
+\caption{Representação gráfica da cidade de Boa Vista da Aparecida/PR.}
+\label{fig:boavista}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{Figuras/ModelagemAmbiente/BoaVistaQ.png}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{Figuras/ModelagemAmbiente/BoaVista.png}
+\end{minipage}
+\caption{Representação gráfica da cidade de Boa Vista da Aparecida/PR.}
+\label{fig:boavista}
+\end{figure}
+
+A Seção \ref{sec:estruturasDadosEstrategiasImplementacao} apresenta detalhadamente as estruturas de dados e estratégicas empregadas na implementação do modelo apresentado. São apresentados ainda os operadores empregados às populações de humanos e mosquitos, que são responsáveis pela evolução espaço-temporal da dinâmica da doença.
+
+\newpage

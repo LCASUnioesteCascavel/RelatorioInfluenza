@@ -1,0 +1,49 @@
+\sloppy
+%\begin{frontmatter}
+\title{UM MODELO MULTIAGENTE \textit{BITSTRING} PARALELO PARA SIMULAR A PROPAGAÇÃO DE HIPOTÉTICAS DOENÇAS BASEADAS EM MODELAGEM COMPARTIMENTAL COM DINÂMICA ACOPLADA ENTRE POPULAÇÕES DE MOSQUITOS E HUMANOS UTILIZANDO AMBIENTES COMPUTACIONAIS BASEADOS EM DISTINTAS ÁREAS GEOGRÁFICAS DAS CIDADES DE CASCAVEL/PR E BOA VISTA DA APARECIDA/PR}
+%\author[unioeste]{Rogério Luis Rizzi\corref{cor1}}
+%\ead{rogeriorizzi@hotmail.com}
+%\author{Rogério Luis Rizzi}
+%\author{Flávio Coelho}
+%\author{Claudia Brandelero Rizzi}
+%\author{Guilherme Galante}
+%\author{Wesley Luciano Kaizer}
+
+\author{
+  Rogério Luis Rizzi $^1$\\
+  \texttt{first1.last1@xxxxx.com}
+  \and
+  Flávio Coelho $^2$\\
+  \texttt{first2.last2@xxxxx.com}
+  \and
+  Claudia Brandelero Rizzi $^1$\\
+  \texttt{first2.last2@xxxxx.com}
+  \and
+  Guilherme Galante $^1$\\
+  \texttt{first2.last2@xxxxx.com}
+  \and
+  Wesley Luciano Kaizer $^1$\\
+  \texttt{first2.last2@xxxxx.com}
+  
+  \\
+  
+}
+  
+
+%\cortext[cor1]{Corresponding author. Tel.:+55 45 99730557.}
+%\address[unioeste]{Centro de Ciências Exatas e Tecnológicas, Universidade Estadual do Oeste do Paraná - Cascavel/PR, Brasil.}
+%\address[fgv]{EMAp - Escola de Matemática Aplicada, Fundação Getúlio Vargas - Rio de Janeiro/RJ, Brasil.}
+
+\maketitle
+
+\begin{abstract}
+Neste relatório técnico é apresentado um modelo computacional para simular a propagação de hipotéticas doenças baseadas em modelos compartimentais. Na abordagem empregada utiliza-se sistemas multiagente baseados em modelos, sendo um agente definido como uma entidade capaz de perceber e interagir no ambiente onde está situado. Especifica-se como ocorre sua movimentação no espaço, o contato com outros agentes e a transição do seu estado num intervalo de tempo, considerando seu atual estado e posição no ambiente. São consideradas nesta modelagem os agentes humanos e mosquitos. São apresentadas as especificações das modelagens \textit{bitstring} empregadas com o objetivo de reduzir o consumo de memória para o armazenamento dos agentes. São apresentados aspectos específicos relativos à implementação do modelo em linguagens de programação. São discutidos aspectos importantes referentes à paralelização do sistema de simulação utilizando a API CUDA. Conclui-se elencando os principais resultados obtidos por meio da execução de simulações, apresentando saídas gráficas das populações ao longo do tempo, erros relativos entre as implementações realizadas, análises dos consumos de memória e tempos de execução e saídas espaciais georreferenciadas nos distintos ambientes computacionais utilizados. 
+\end{abstract}
+
+% \begin{keyword}
+% Modelagem compartimental. Sistema multiagente baseado em modelo. Modelagem \textit{bitstring}. OpenMP. CUDA. GIS.
+% \end{keyword}
+
+%\end{frontmatter}
+
+\newpage

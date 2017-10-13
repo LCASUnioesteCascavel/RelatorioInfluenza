@@ -1,0 +1,5 @@
+\Inicio{
+	pontosEsquinas = lista\_vazia() \\
+	pontosEsquinas = consultaSQLBancoDeDadosSelecionandoOsPontosDeEsquinas() \\
+	\Retorna{pontosEsquinas}
+}

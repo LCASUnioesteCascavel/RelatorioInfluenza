@@ -1,0 +1,54 @@
+\Inicio{
+  \Comentario{Escrita do arquivo 1-MOV.csv} \\
+  arquivo = abreArquivo("1-MOV.csv") \\
+  
+  \Comentario{Escrita dos índices para rotas} \\
+	\Para{cada elemento $e$ em indexRotas} {
+	    escreve($e$, arquivo) \\
+	    escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+  
+  \Comentario{Escrita do vetor de rotas} \\
+	\Para{cada elemento $e$ em vetorRotas} {
+	    escreve($e$, arquivo) \\
+	    escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+  
+  \Comentario{Escrita dos índices para trajetos} \\
+	\Para{cada elemento $e$ em indexTrajetos} {
+	    escreve($e$, arquivo) \\
+	    escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+  
+  \Comentario{Escrita do vetor de trajetos} \\
+	\Para{cada elemento $e$ em vetorTrajetos} {
+	    escreve($e$, arquivo) \\
+	    escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+  
+  \Comentario{Escrita dos índices para períodos} \\
+	\Para{cada elemento $e$ em indexPeriodos} {
+	    escreve($e$, arquivo) \\
+	    escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+  
+  \Comentario{Escrita do vetor de períodos} \\
+	\Para{cada elemento $e$ em vetorPeriodos} {
+	    escreve($e$, arquivo) \\
+	    escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+  
+  \Comentario{Escrita dos índices por faixas etárias para trajetos} \\
+	\Para{cada elemento $e$ em indexTrajetosFaixaEtaria} {
+	    escreve($e$, arquivo) \\
+	    escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\	
+	fechaArquivo(arquivo) \\
+}

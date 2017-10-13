@@ -1,0 +1,15 @@
+\Inicio{
+	indicesQuadras = vetor\_associativo\_vazio() \\
+	indicesLotes = vetor\_associativo\_vazio() \\
+	idQuadra = 0 \\
+  \Comentario{Cada identificador alfa-numérico de quadra e lote é mapeado para uma identificador numérico} \\
+	\Para{cada quadra $q$} {
+	      idLote = 0 \\
+	      \Para{cada lote $l$ de $q$} {
+              adicionarEntrada(nova\_entrada($l$, idLote), indicesLotes[$q$]) \\
+              idLote++ \\
+	      }
+	      adicionarEntrada(nova\_entrada($q$, idQuadra), indicesQuadras) \\
+	      idQuadra++ \\
+	}
+}

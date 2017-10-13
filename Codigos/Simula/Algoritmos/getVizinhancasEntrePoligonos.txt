@@ -1,0 +1,5 @@
+\Inicio{
+	vizinhancasEntrePoligonos = lista\_vazia() \\
+	vizinhancasEntrePoligonos = consultaSQLBancoDeDadosSelecionandoAsVizinhancasEntrePoligonos() \\
+	\Retorna{vizinhancasEntrePoligonos}
+}

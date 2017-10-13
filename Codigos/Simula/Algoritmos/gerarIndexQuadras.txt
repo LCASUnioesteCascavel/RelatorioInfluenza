@@ -1,0 +1,10 @@
+\Inicio{
+      desl = 0 \\
+      indexQuadras = lista\_vazia() \\
+      \Para{cada quadra $q$} {
+            adiciona(desl, indexQuadras) \\
+            desl += tamanho(pontos[$q$]) \\
+            adiciona(desl, indexQuadras) \\
+            desl++ \\
+      }
+}

@@ -1,0 +1,32 @@
+\Inicio{
+	periodosCrianca = lista\_vazia() \\
+  periodosJovem = lista\_vazia() \\
+  periodosAdulto = lista\_vazia() \\
+  periodosIdoso = lista\_vazia() \\
+  
+  \Comentario{Geração do vetor de períodos para crianças} \\
+	\Para{$i$ de $0$ ate tamanho(trajetosCrianca)} {
+	      periodo = lista\_vazia() \\
+	      localOrigem = trajetosCrianca[$i$, $0$] \\
+	      adiciona(localOrigem.periodo, periodo) \\
+	      
+	      \Para{$j$ de $1$ ate tamanho(trajetosCrianca[$i$])} {
+            localDestino = trajetosCrianca[$i$, $j$] \\
+            adiciona(localDestino.periodo, periodo) \\
+	      }
+	      adiciona(periodo, periodosCrianca) \\
+	}
+	
+  \Comentario{Geração do vetor de períodos para jovens} \\
+	\Para{$i$ de $0$ ate tamanho(trajetosJovem)} {
+	      periodo = lista\_vazia() \\
+	      localOrigem = trajetosJovem[$i$, $0$] \\
+	      adiciona(localOrigem.periodo, periodo) \\
+	      
+	      \Para{$j$ de $1$ ate tamanho(trajetosJovem[$i$])} {
+            localDestino = trajetosJovem[$i$, $j$] \\
+            adiciona(localDestino.periodo, periodo) \\
+	      }
+	      adiciona(periodo, periodosJovem) \\
+	}
+}

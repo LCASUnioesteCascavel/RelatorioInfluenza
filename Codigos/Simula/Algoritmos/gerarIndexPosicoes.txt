@@ -1,0 +1,12 @@
+\Inicio{
+	desl = 0 \\
+	indexPosicoes = lista\_vazia() \\
+	\Para{cada quadra $q$} {
+	      adiciona(desl, indexPosicoes) \\
+	      \Para{cada lote $l$ de $q$} {
+            \Comentario{Cada ponto ocupará cinco inteiros, por isso a multiplicação por cinco} \\
+            desl += tamanho(pontos[$q$, $l$]) * 5 \\
+            adiciona(desl, indexPosicoes) \\
+	      }
+	}
+}

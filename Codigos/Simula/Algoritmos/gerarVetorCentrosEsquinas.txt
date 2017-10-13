@@ -1,0 +1,8 @@
+\Inicio{
+	vetorCentrosEsquinas = lista\_vazia() \\
+	\Para{cada centro de esquina $c$ em centrosEsquinas} {
+	      adiciona($c$.x, vetorCentrosEsquinas) \\
+	      adiciona($c$.y, vetorCentrosEsquinas) \\
+	      adiciona(indicesLotes[$c$.quadra, $c$.lote], vetorCentrosEsquinas) \\
+	}
+}

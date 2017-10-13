@@ -1,0 +1,5 @@
+\Inicio{
+	centroidesLotes = lista\_vazia() \\
+	centroidesLotes = consultaSQLBancoDeDadosSelecionandoTodosOsCentroidesDosLotes() \\
+	\Retorna{centroidesLotes}
+}

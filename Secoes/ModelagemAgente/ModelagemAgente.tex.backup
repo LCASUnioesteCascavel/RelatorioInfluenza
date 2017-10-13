@@ -1,0 +1,40 @@
+\section{MODELAGEM EM OPERADORES AOS AGENTES}
+\label{sec:modelagemAgentes}
+
+Nas próximas sub-seções são apresentadas as modelagens realizadas à representação computacional dos agentes humanos, em que são descritos os atributos e valores considerados ao modelo.
+
+\subsection{Modelagem de Atributos ao Agente Humano}
+
+Um agente humano $\chi(t)$ é definido espaço-temporalmente especificando-se como ocorre a transição do seu estado num intervalo de tempo $t$ e seu movimento no espaço, que é o ambiente computacional em que o agente é especificado. O estado do agente é especificado por meio do conjunto de atributos, como apresentado em (\ref{eq:especificacaoAgente}).
+\begin{equation}
+\label{eq:especificacaoAgente}
+ \chi(t) \equiv \big(R, T, F, M, K, S, FE, SD, ST, SC, A, C, CV, X, L, Y, Q \big)
+\end{equation}
+cujos significados dos identificadores dos atributos do estado interno do agente $\chi_h(t)$ são como:
+
+\begin{itemize}
+ \item \textbf{Rota, $R$:} Identificador da rota que o agente $\chi_h(t)$ está percorrendo.
+ \item \textbf{Trajeto, $T$:} Identificador do trajeto que o agente $\chi_h(t)$ adota em sua movimentação.
+ \item \textbf{Flag de movimentação, $F$:} Flag auxiliar utilizada na movimentação do agente $\chi_h(t)$.
+ \item \textbf{Contador de movimentação, $M$:} Contador utilizado na movimentação do agente $\chi_h(t)$.
+ \item \textbf{Tipo de movimentação, $K$:} Identificador do tipo de movimentação adotada pelo agente $\chi_h(t)$, podendo ser local, aleatória, livre ou trajeto.
+ 
+ \item \textbf{Sexo, $S$:} Identificador do sexo do agente $\chi_h(t)$, podendo ser macho ou fêmea.
+ \item \textbf{Faixa etária, $FE$:} Identificador da faixa etária do agente $\chi_h(t)$, podendo ser criança, jovem, adulto ou idoso.
+ \item \textbf{Saúde Dengue, $SD$:} Identificador da saúde do agente $\chi_h(t)$, podendo ser suscetível, exposto, infectante, hemorrágico, imunizado e recuperado.
+ \item \textbf{Sorotipo atual, $ST$:} Identificador do sorotipo atual com o qual o agente $\chi_h(t)$ está infectado, podendo ser $1$, $2$, $3$, $4$ ou $0$, se ausente.
+ \item \textbf{Sorotipos contraídos, $SC$:} Lista dos sorotipos já contraídos anteriormente pelo agente $\chi_h(t)$.
+ \item \textbf{Assintomático, $A$:} Indica se o agente $\chi_h(t)$ é portador sintomático ou assintomático da doença.
+ \item \textbf{Contador de transições de estados, $C$:} Contador utilizado na transição de estados do agente $\chi_h(t)$.
+ \item \textbf{Contador de vacinas, $CV$:} Contador de vacinas do agente $\chi_h(t)$.
+
+ \item \textbf{Latitude, $X$:} Identificador da latitude da posição que o agente $\chi_h(t)$ se encontra atualmente.
+ \item \textbf{Lote, $L$:} Identificador do lote que o agente $\chi_h(t)$ se encontra atualmente.
+
+ \item \textbf{Longitude, $Y$:} Identificador da longitude da posição que o agente $\chi_h(t)$ se encontra atualmente.
+ \item \textbf{Quadra, $Q$:} Identificador da quadra que o agente $\chi_h(t)$ se encontra atualmente.
+\end{itemize}
+
+A Seção \ref{sec:modelagemBitstring} apresenta a modelagem \textit{bitstring} empregada à representação e manipulação dos atributos dos agentes humanos, discutindo detalhes da implementação computacional dos modelos aos agentes.
+
+\newpage

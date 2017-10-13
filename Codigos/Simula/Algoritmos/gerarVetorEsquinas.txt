@@ -1,0 +1,10 @@
+\Inicio{
+	vetorEsquinas = lista\_vazia() \\
+	\Para{cada esquina $e$  em esquinas} {
+	      \Para{cada ponto $p$ em $e$} {
+		    adiciona($p$.x, vetorEsquinas) \\
+		    adiciona($p$.y, vetorEsquinas) \\
+		    adiciona(indicesLotes[$p$.quadra, $p$.lote], vetorEsquinas) \\
+	      }
+	}
+}

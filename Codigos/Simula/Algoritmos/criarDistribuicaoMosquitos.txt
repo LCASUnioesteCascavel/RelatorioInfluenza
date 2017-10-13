@@ -1,0 +1,25 @@
+\Inicio{
+	\Comentario{Definição dos mosquitos que serão inseridos em áreas rurais} \\
+
+  \Comentario{Escrita do arquivo DistribuicaoRuralMosquitos.csv} \\
+	arquivo = abreArquivo("DistribuicaoRuralMosquitos.csv") \\
+  
+  \Comentario{Escrita da distribuição rural dos mosquitos} \\
+	\Para{cada população $p$ que será inserida na zona rural} {
+	      escreve(regiao($p$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(quantidadeTotal($p$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(sexo($p$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(fase($p$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(percentualMinimoInfectados($p$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(percentualMaximoInfectados($p$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(sorotipo($p$), arquivo) \\	
+				escreve(novaLinha, arquivo) \\
+	}
+	fechaArquivo(arquivo) \\
+}

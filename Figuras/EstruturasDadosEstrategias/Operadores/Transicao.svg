@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1220.115mm"
+   height="918.03687mm"
+   viewBox="0 0 4323.2423 3252.8864"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Transicao.svg">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="180.81731 : 269.60234 : 1"
+       inkscape:vp_y="0 : 999.99995 : 0"
+       inkscape:vp_z="1029.9677 : 308.9983 : 1"
+       inkscape:persp3d-origin="657.92038 : 133.60461 : 1"
+       id="perspective4172" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="2778.3318"
+     inkscape:cy="1520.3421"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     fit-margin-left="10"
+     fit-margin-top="10"
+     fit-margin-bottom="10"
+     fit-margin-right="10"
+     showguides="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     showborder="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4449"
+       originx="-778.00002"
+       originy="50.837847" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-329.05427,1595.7436)">
+    <rect
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4136"
+       width="629.1922"
+       height="398.87741"
+       x="366.05884"
+       y="-158.73904"
+       ry="199.43871" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="680.72815"
+       y="23.670853"
+       id="text4138"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="688.68713"
+         y="23.670853"
+         id="tspan4319">Transição </tspan><tspan
+         sodipodi:role="line"
+         x="688.68713"
+         y="86.170853"
+         id="tspan4311">Agentes </tspan></text>
+    <rect
+       ry="199.43871"
+       y="-158.73904"
+       x="1066.0995"
+       height="398.87741"
+       width="629.1922"
+       id="rect4321"
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4323"
+       y="54.493607"
+       x="1379.5725"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="54.493607"
+         x="1379.5725"
+         sodipodi:role="line"
+         id="tspan4335">Para cada agente</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 995.05425,36.305 70.00005,0"
+       id="path4813"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4171"
+       width="629.1922"
+       height="398.87741"
+       x="2506.0996"
+       y="-158.73904"
+       ry="199.43871" />
+    <rect
+       ry="199.43871"
+       y="-1258.739"
+       x="2506.0996"
+       height="398.87741"
+       width="629.1922"
+       id="rect4193"
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4195"
+       y="-1139.2563"
+       x="2818.4253"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="-1139.2563"
+         x="2826.3843"
+         sodipodi:role="line"
+         id="tspan4537">Contador do </tspan><tspan
+         y="-1076.7563"
+         x="2826.3843"
+         sodipodi:role="line"
+         id="tspan4541">agente &gt;= </tspan><tspan
+         y="-1014.2563"
+         x="2826.3843"
+         sodipodi:role="line"
+         id="tspan4543">periodo exposto </tspan><tspan
+         y="-951.75635"
+         x="2818.4253"
+         sodipodi:role="line"
+         id="tspan4545">agente?</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4199"
+       width="629.1922"
+       height="398.87741"
+       x="2506.0996"
+       y="921.26099"
+       ry="199.43871" />
+    <rect
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4237"
+       width="629.1922"
+       height="398.87741"
+       x="3246.0996"
+       y="-1558.739"
+       ry="199.43871" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="3559.3164"
+       y="-1403.1602"
+       id="text4239"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan4245"
+         sodipodi:role="line"
+         x="3567.2754"
+         y="-1403.1602">Altera estado </tspan><tspan
+         sodipodi:role="line"
+         x="3567.2754"
+         y="-1340.6602"
+         id="tspan4711">do agente para </tspan><tspan
+         sodipodi:role="line"
+         x="3559.3164"
+         y="-1278.1602"
+         id="tspan4713">infectado</tspan></text>
+    <rect
+       ry="199.43871"
+       y="-958.73901"
+       x="3246.0996"
+       height="398.87741"
+       width="629.1922"
+       id="rect4247"
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4249"
+       y="-777.52539"
+       x="3560.647"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="-777.52539"
+         x="3568.606"
+         sodipodi:role="line"
+         id="tspan4255">Incrementa </tspan><tspan
+         y="-715.02539"
+         x="3560.647"
+         sodipodi:role="line"
+         id="tspan4586">contador do agente</tspan></text>
+    <rect
+       ry="199.43871"
+       y="-458.73901"
+       x="3246.0996"
+       height="398.87741"
+       width="629.1922"
+       id="rect4257"
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4267"
+       width="629.1922"
+       height="398.87741"
+       x="3246.0996"
+       y="141.26099"
+       ry="199.43871" />
+    <rect
+       ry="199.43871"
+       y="621.26099"
+       x="3246.0996"
+       height="398.87741"
+       width="629.1922"
+       id="rect4297"
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4307"
+       width="629.1922"
+       height="398.87741"
+       x="3246.0996"
+       y="1221.261"
+       ry="199.43871" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.963952px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 3093.3128,-937.89782 154.2203,202.44573"
+       id="path4325"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.97964829px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 3108.5472,-1159.7629 139.4838,-231.183"
+       id="path4327"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4329"
+       d="m 3093.3128,164.1022 154.2203,202.44573"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.963952px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4331"
+       d="M 3108.5472,-57.762896 3248.031,-288.9459"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.97964829px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4337"
+       d="m 3093.3128,1244.1022 154.2203,202.4457"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.963952px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4339"
+       d="M 3108.5472,1022.2371 3248.031,791.0541"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.97964829px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4375"
+       width="629.1922"
+       height="398.87741"
+       x="1766.0995"
+       y="-1258.739"
+       ry="199.43871" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2079.3162"
+       y="-1108.0063"
+       id="text4377"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan4379"
+         sodipodi:role="line"
+         x="2087.2751"
+         y="-1108.0063">Se estado </tspan><tspan
+         id="tspan4381"
+         sodipodi:role="line"
+         x="2087.2751"
+         y="-1045.5063">do agente é </tspan><tspan
+         id="tspan4383"
+         sodipodi:role="line"
+         x="2079.3162"
+         y="-983.00635">exposto</tspan></text>
+    <rect
+       ry="199.43871"
+       y="-158.73904"
+       x="1766.0995"
+       height="398.87741"
+       width="629.1922"
+       id="rect4429"
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4431"
+       y="-3.160202"
+       x="2079.3162"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="-3.160202"
+         x="2079.3162"
+         sodipodi:role="line"
+         id="tspan4433">Se estado</tspan><tspan
+         y="59.339798"
+         x="2087.2751"
+         sodipodi:role="line"
+         id="tspan4435">do agente é </tspan><tspan
+         y="121.8398"
+         x="2079.3162"
+         sodipodi:role="line"
+         id="tspan4437">infectado</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 2395.0543,36.3047 110,0"
+       id="path4439"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4441"
+       d="m 2395.0543,-1063.6953 110,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       ry="199.43871"
+       y="921.26099"
+       x="1766.0995"
+       height="398.87741"
+       width="629.1922"
+       id="rect4455"
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4457"
+       y="1071.9937"
+       x="2079.3162"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="1071.9937"
+         x="2087.2751"
+         sodipodi:role="line"
+         id="tspan4459">Se estado </tspan><tspan
+         y="1134.4937"
+         x="2087.2751"
+         sodipodi:role="line"
+         id="tspan4461">do agente é </tspan><tspan
+         y="1196.9937"
+         x="2079.3162"
+         sodipodi:role="line"
+         id="tspan4463">recuperado</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 2395.0543,1116.3047 110,0"
+       id="path4499"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="3157.0542"
+       y="-1277.6952"
+       id="text4501"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4503"
+         x="3157.0542"
+         y="-1277.6952">S</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4505"
+       y="-797.69519"
+       x="3151.0542"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="-797.69519"
+         x="3151.0542"
+         id="tspan4507"
+         sodipodi:role="line">N</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4509"
+       y="-167.69519"
+       x="3157.0542"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="-167.69519"
+         x="3157.0542"
+         id="tspan4511"
+         sodipodi:role="line">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="3151.0542"
+       y="312.30481"
+       id="text4513"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4515"
+         x="3151.0542"
+         y="312.30481">N</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4525"
+       y="910.30469"
+       x="3157.0542"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="910.30469"
+         x="3157.0542"
+         id="tspan4527"
+         sodipodi:role="line">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="3151.0542"
+       y="1390.3047"
+       id="text4529"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4531"
+         x="3151.0542"
+         y="1390.3047">N</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2818.4253"
+       y="-39.256393"
+       id="text4547"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan4549"
+         sodipodi:role="line"
+         x="2826.3843"
+         y="-39.256393">Contador do </tspan><tspan
+         id="tspan4551"
+         sodipodi:role="line"
+         x="2826.3843"
+         y="23.243607">agente &gt;= </tspan><tspan
+         sodipodi:role="line"
+         x="2826.3843"
+         y="85.743607"
+         id="tspan4577">periodo infectado </tspan><tspan
+         id="tspan4555"
+         sodipodi:role="line"
+         x="2818.4253"
+         y="148.24361">agente?</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4567"
+       y="1040.7437"
+       x="2818.4253"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="1040.7437"
+         x="2826.3843"
+         sodipodi:role="line"
+         id="tspan4569">Contador do </tspan><tspan
+         y="1103.2437"
+         x="2826.3843"
+         sodipodi:role="line"
+         id="tspan4571">agente &gt;= </tspan><tspan
+         y="1165.7437"
+         x="2826.3843"
+         sodipodi:role="line"
+         id="tspan4573">periodo recuperado </tspan><tspan
+         y="1228.2437"
+         x="2818.4253"
+         sodipodi:role="line"
+         id="tspan4575">agente?</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="3560.647"
+       y="322.47458"
+       id="text4588"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan4590"
+         sodipodi:role="line"
+         x="3568.606"
+         y="322.47458">Incrementa </tspan><tspan
+         id="tspan4592"
+         sodipodi:role="line"
+         x="3560.647"
+         y="384.97458">contador do agente</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="3560.647"
+       y="1402.4746"
+       id="text4600"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan4602"
+         sodipodi:role="line"
+         x="3568.606"
+         y="1402.4746">Incrementa </tspan><tspan
+         id="tspan4604"
+         sodipodi:role="line"
+         x="3560.647"
+         y="1464.9746">contador do agente</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4606"
+       width="629.1922"
+       height="398.87741"
+       x="3986.0996"
+       y="-1558.739"
+       ry="199.43871" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="4299.5728"
+       y="-1376.7563"
+       id="text4608"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan4616"
+         sodipodi:role="line"
+         x="4307.5317"
+         y="-1376.7563">Zera contador </tspan><tspan
+         sodipodi:role="line"
+         x="4299.5728"
+         y="-1314.2563"
+         id="tspan4671">do agente</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 3875.0543,-1363.6953 110,0"
+       id="path4618"
+       inkscape:connector-curvature="0" />
+    <rect
+       ry="199.43871"
+       y="-458.73901"
+       x="3986.0996"
+       height="398.87741"
+       width="629.1922"
+       id="rect4620"
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4622"
+       y="-276.75638"
+       x="4299.5728"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="-276.75638"
+         x="4307.5317"
+         sodipodi:role="line"
+         id="tspan4630">Zera contador </tspan><tspan
+         y="-214.25638"
+         x="4299.5728"
+         sodipodi:role="line"
+         id="tspan4682">do agente</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4632"
+       d="m 3875.0543,-263.6953 110,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       ry="199.43871"
+       y="621.26099"
+       x="3986.0996"
+       height="398.87741"
+       width="629.1922"
+       id="rect4648"
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4650"
+       y="803.24365"
+       x="4299.5728"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="803.24365"
+         x="4307.5317"
+         sodipodi:role="line"
+         id="tspan4658">Zera contador </tspan><tspan
+         y="865.74365"
+         x="4299.5728"
+         sodipodi:role="line"
+         id="tspan4704">do agente</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4660"
+       d="m 3875.0543,816.3047 110,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4715"
+       y="-308.00638"
+       x="3559.3164"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="-308.00638"
+         x="3559.3164"
+         sodipodi:role="line"
+         id="tspan4717">Altera estado</tspan><tspan
+         id="tspan4719"
+         y="-245.50638"
+         x="3567.2754"
+         sodipodi:role="line">do agente para </tspan><tspan
+         id="tspan4721"
+         y="-183.00638"
+         x="3559.3164"
+         sodipodi:role="line">recuperado</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4731"
+       y="776.83984"
+       x="3559.3164"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="776.83984"
+         x="3567.2754"
+         sodipodi:role="line"
+         id="tspan4733">Altera estado </tspan><tspan
+         id="tspan4735"
+         y="839.33984"
+         x="3567.2754"
+         sodipodi:role="line">do agente para </tspan><tspan
+         id="tspan4737"
+         y="901.83984"
+         x="3559.3164"
+         sodipodi:role="line">suscetível</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.985919px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1591.0447,-133.6925 175.7335,-935.8979"
+       id="path4303"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1696.0543,36.305 70,0"
+       id="path4305"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.0264796px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1594.2053,214.79446 171.3439,905.18974"
+       id="path4307"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

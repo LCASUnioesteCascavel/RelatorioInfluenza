@@ -1,0 +1,36 @@
+\Inicio{
+	ler parâmetros \\
+	alocar saídas populações \\
+	
+	\Para{cada simulação $s$} {
+	
+        \Comentario{Inicialização de variáveis} \\
+	      inicializar ambiente \\
+	      inicializar agentes \\
+	      alocar saídas espaciais \\
+	      
+        \Comentario{Para cada ciclo da simulação} \\
+	      \Para{cada ciclo $c$ de $s$} {
+	      
+            \Comentario{Inserção de agentes infectados} \\
+            inserção de agentes infectados \\
+        
+            \Comentario{Movimentação dos agentes} \\
+            movimentação agentes \\
+                    
+            \Comentario{Contatos entre agentes} \\
+            contato entre agentes \\
+                    
+            \Comentario{Transições de estados} \\
+            transição estados agentes \\
+            
+            \Comentario{Geração de saídas} \\
+            gerar saídas populações \\
+            gerar saídas espaciais \\
+	      }
+	      
+	      salvar saídas espaciais \\
+	}
+	
+	salvar saídas populações \\
+} 

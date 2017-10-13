@@ -1,0 +1,78 @@
+\BOOKMARK [1][-]{section.1}{MODELAGEM EM OPERADORES AOS AGENTES}{}% 1
+\BOOKMARK [1][-]{section.2}{MODELAGEM BITSTRING AOS AGENTES}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Modelagem bitstring ao Agente}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Exemplos de Aplica\347\343o dos Operadores de Captura}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Exemplos de Aplica\347\343o dos Operadores de Atualiza\347\343o}{subsection.2.1}% 5
+\BOOKMARK [1][-]{section.3}{MODELAGEM DOS AMBIENTES DE SIMULA\307\303O}{}% 6
+\BOOKMARK [1][-]{section.4}{ESTRUTURAS DE DADOS E ESTRAT\311GIAS DE IMPLEMENTA\307\303O}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Opera\347\365es aos Agentes}{section.4}% 8
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Movimenta\347\343o}{subsection.4.1}% 9
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Contato}{subsection.4.1}% 10
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Transi\347\343o}{subsection.4.1}% 11
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Macros \340 Implementa\347\343o das Opera\347\365es bitstring}{subsection.4.1}% 12
+\BOOKMARK [1][-]{section.5}{SIMULA}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Opera\347\365es Executadas no Banco de Dados}{section.5}% 14
+\BOOKMARK [3][-]{subsubsection.5.1.1}{SQL de Cria\347\343o das Tabelas}{subsection.5.1}% 15
+\BOOKMARK [3][-]{subsubsection.5.1.2}{SQL de Remo\347\343o das Tabelas}{subsection.5.1}% 16
+\BOOKMARK [3][-]{subsubsection.5.1.3}{SQL de Interpola\347\343o de Pontos}{subsection.5.1}% 17
+\BOOKMARK [3][-]{subsubsection.5.1.4}{SQL de Cria\347\343o da Tabela de Pontos}{subsection.5.1}% 18
+\BOOKMARK [3][-]{subsubsection.5.1.5}{SQL de Cria\347\343o da Tabela de Pontos de Lotes e Ruas}{subsection.5.1}% 19
+\BOOKMARK [3][-]{subsubsection.5.1.6}{SQL de Cria\347\343o da Tabela de Pontos de Esquinas}{subsection.5.1}% 20
+\BOOKMARK [3][-]{subsubsection.5.1.7}{SQL de Cria\347\343o da Tabela de Vizinhan\347as entre Pol\355gonos}{subsection.5.1}% 21
+\BOOKMARK [3][-]{subsubsection.5.1.8}{SQL de Cria\347\343o da Tabela de Vizinhan\347as de Moore entre Pontos}{subsection.5.1}% 22
+\BOOKMARK [3][-]{subsubsection.5.1.9}{SQL de Cria\347\343o da Tabela de Lotes}{subsection.5.1}% 23
+\BOOKMARK [3][-]{subsubsection.5.1.10}{SQL de Cria\347\343o da Tabela de V\351rtices \(A*\)}{subsection.5.1}% 24
+\BOOKMARK [3][-]{subsubsection.5.1.11}{SQL de Cria\347\343o da Tabela de Arestas \(A*\)}{subsection.5.1}% 25
+\BOOKMARK [3][-]{subsubsection.5.1.12}{SQL de Cria\347\343o da Tabela de Pontos Centr\363ides das Esquinas}{subsection.5.1}% 26
+\BOOKMARK [3][-]{subsubsection.5.1.13}{SQL de Cria\347\343o da Tabela de Pontos Centr\363ides dos Lotes}{subsection.5.1}% 27
+\BOOKMARK [2][-]{subsection.5.2}{M\363dulo Gerador de Arquivos de Configura\347\343o Ambiental}{section.5}% 28
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Fun\347\343o Principal}{subsection.5.2}% 29
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Fun\347\343o getPontosLoteseRuas}{subsection.5.2}% 30
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Fun\347\343o criarIndexQuadraseLotes}{subsection.5.2}% 31
+\BOOKMARK [3][-]{subsubsection.5.2.4}{Fun\347\343o gerarIndexQuadras}{subsection.5.2}% 32
+\BOOKMARK [3][-]{subsubsection.5.2.5}{Fun\347\343o gerarVizinhancas}{subsection.5.2}% 33
+\BOOKMARK [3][-]{subsubsection.5.2.6}{Fun\347\343o getVizinhancasEntrePoligonos}{subsection.5.2}% 34
+\BOOKMARK [3][-]{subsubsection.5.2.7}{Fun\347\343o getVizinhancasMoorePontos}{subsection.5.2}% 35
+\BOOKMARK [3][-]{subsubsection.5.2.8}{Fun\347\343o gerarIndexVizinhancas}{subsection.5.2}% 36
+\BOOKMARK [3][-]{subsubsection.5.2.9}{Fun\347\343o gerarVetorVizinhancas}{subsection.5.2}% 37
+\BOOKMARK [3][-]{subsubsection.5.2.10}{Fun\347\343o gerarVetorPosicoes}{subsection.5.2}% 38
+\BOOKMARK [3][-]{subsubsection.5.2.11}{Fun\347\343o gerarIndexPosicoes}{subsection.5.2}% 39
+\BOOKMARK [3][-]{subsubsection.5.2.12}{Fun\347\343o gerarFronteiras}{subsection.5.2}% 40
+\BOOKMARK [3][-]{subsubsection.5.2.13}{Fun\347\343o gerarIndexFronteiras}{subsection.5.2}% 41
+\BOOKMARK [3][-]{subsubsection.5.2.14}{Fun\347\343o gerarVetorFronteiras}{subsection.5.2}% 42
+\BOOKMARK [3][-]{subsubsection.5.2.15}{Fun\347\343o getPontosEsquinas}{subsection.5.2}% 43
+\BOOKMARK [3][-]{subsubsection.5.2.16}{Fun\347\343o gerarIndexEsquinas}{subsection.5.2}% 44
+\BOOKMARK [3][-]{subsubsection.5.2.17}{Fun\347\343o gerarVetorEsquinas}{subsection.5.2}% 45
+\BOOKMARK [3][-]{subsubsection.5.2.18}{Fun\347\343o gerarIndexCentrosEsquinas}{subsection.5.2}% 46
+\BOOKMARK [3][-]{subsubsection.5.2.19}{Fun\347\343o gerarVetorCentrosEsquinas}{subsection.5.2}% 47
+\BOOKMARK [3][-]{subsubsection.5.2.20}{Fun\347\343o getLotes}{subsection.5.2}% 48
+\BOOKMARK [3][-]{subsubsection.5.2.21}{Fun\347\343o distribuirLocais}{subsection.5.2}% 49
+\BOOKMARK [3][-]{subsubsection.5.2.22}{Fun\347\343o gerarTrajetos}{subsection.5.2}% 50
+\BOOKMARK [3][-]{subsubsection.5.2.23}{Fun\347\343o getArestas}{subsection.5.2}% 51
+\BOOKMARK [3][-]{subsubsection.5.2.24}{Fun\347\343o getCentroidesEsquinas}{subsection.5.2}% 52
+\BOOKMARK [3][-]{subsubsection.5.2.25}{Fun\347\343o getCentroidesLotes}{subsection.5.2}% 53
+\BOOKMARK [3][-]{subsubsection.5.2.26}{Fun\347\343o getVertices}{subsection.5.2}% 54
+\BOOKMARK [3][-]{subsubsection.5.2.27}{Fun\347\343o gerarCaminhos}{subsection.5.2}% 55
+\BOOKMARK [3][-]{subsubsection.5.2.28}{Fun\347\343o aEstrela}{subsection.5.2}% 56
+\BOOKMARK [3][-]{subsubsection.5.2.29}{Fun\347\343o aEstrelaConstruirCaminho}{subsection.5.2}% 57
+\BOOKMARK [3][-]{subsubsection.5.2.30}{Fun\347\343o gerarVetorIndexRotas}{subsection.5.2}% 58
+\BOOKMARK [3][-]{subsubsection.5.2.31}{Fun\347\343o gerarVetorIndexTrajetos}{subsection.5.2}% 59
+\BOOKMARK [3][-]{subsubsection.5.2.32}{Fun\347\343o gerarVetorIndexPeriodos}{subsection.5.2}% 60
+\BOOKMARK [3][-]{subsubsection.5.2.33}{Fun\347\343o gerarIndexTrajetosFaixaEtaria}{subsection.5.2}% 61
+\BOOKMARK [3][-]{subsubsection.5.2.34}{Fun\347\343o escreverArquivoVetores}{subsection.5.2}% 62
+\BOOKMARK [3][-]{subsubsection.5.2.35}{Fun\347\343o getRegiao}{subsection.5.2}% 63
+\BOOKMARK [3][-]{subsubsection.5.2.36}{Fun\347\343o gerarIndexPosicoesRegioes}{subsection.5.2}% 64
+\BOOKMARK [3][-]{subsubsection.5.2.37}{Fun\347\343o criarDistribuicaoMosquitos}{subsection.5.2}% 65
+\BOOKMARK [3][-]{subsubsection.5.2.38}{Fun\347\343o criarDistribuicaoHumanos}{subsection.5.2}% 66
+\BOOKMARK [3][-]{subsubsection.5.2.39}{Fun\347\343o gerarArquivoRegioes}{subsection.5.2}% 67
+\BOOKMARK [1][-]{section.6}{RESULTADOS DA EXECU\307\303O DE EXPERIMENTOS COMPUTACIONAIS}{}% 68
+\BOOKMARK [2][-]{subsection.6.1}{Teste 0001}{section.6}% 69
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Defini\347\343o dos Par\342metros}{subsection.6.1}% 70
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\347\343o}{subsection.6.1}% 71
+\BOOKMARK [3][-]{subsubsection.6.1.3}{Espalhamento Espacial dos Casos de Influenza ao Longo do Tempo de Simula\347\343o}{subsection.6.1}% 72
+\BOOKMARK [3][-]{subsubsection.6.1.4}{Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\347\343o}{subsection.6.1}% 73
+\BOOKMARK [2][-]{subsection.6.2}{Teste 0002}{section.6}% 74
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Defini\347\343o dos Par\342metros}{subsection.6.2}% 75
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\347\343o}{subsection.6.2}% 76
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Espalhamento Espacial dos Casos de Influenza ao Longo do Tempo de Simula\347\343o}{subsection.6.2}% 77
+\BOOKMARK [3][-]{subsubsection.6.2.4}{Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\347\343o}{subsection.6.2}% 78

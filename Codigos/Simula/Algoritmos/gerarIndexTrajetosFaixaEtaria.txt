@@ -1,0 +1,13 @@
+\Inicio{
+	indexTrajetosFaixaEtaria = lista\_vazia() \\
+	desl = 0 \\
+	adiciona(desl, indexTrajetosFaixaEtaria) \\
+	desl += tamanho(trajetosCrianca) \\
+	adiciona(desl, indexTrajetosFaixaEtaria) \\
+	desl += tamanho(trajetosJovem) \\
+	adiciona(desl, indexTrajetosFaixaEtaria) \\
+	desl += tamanho(trajetosAdulto) \\
+	adiciona(desl, indexTrajetosFaixaEtaria) \\
+	desl += tamanho(trajetosIdoso) \\
+	adiciona(desl, indexTrajetosFaixaEtaria) \\
+}

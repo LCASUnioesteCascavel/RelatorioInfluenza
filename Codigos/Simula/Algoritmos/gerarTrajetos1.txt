@@ -1,0 +1,49 @@
+\Inicio{
+	trajetosCrianca = lista\_vazia() \\
+	trajetosJovem = lista\_vazia() \\
+	trajetosAdulto = lista\_vazia() \\
+	trajetosIdoso = lista\_vazia() \\
+  
+	\Para{cada casa $c$ em locaisCasa} {
+	      \Comentario{trajetos para crianças} \\
+	      num = numero\_aleatorio\_entre(0, 4) \\
+        
+        \Comentario{Primeiro trajeto para crianças} \\
+	      \Se{num $==$ 0} {
+              trajeto = lista\_vazia() \\
+              adiciona(novo\_local(casa, 40), trajeto) \\
+              adiciona(novo\_local(escolheAleatoriamente(locaisLazer), 20), trajeto) \\
+              adiciona(novo\_local(casa, 40), trajeto) \\
+              adiciona(trajeto, trajetosCrianca) \\
+	      }
+        
+        \Comentario{Segundo trajeto para crianças} \\
+	      \Se{num $==$ 1} {
+              trajeto = lista\_vazia() \\
+              adiciona(novo\_local(casa, 30), trajeto) \\
+              adiciona(novo\_local(escolheAleatoriamente(locaisEstudo), 40), trajeto) \\
+              adiciona(novo\_local(casa, 30), trajeto) \\
+              adiciona(trajeto, trajetosCrianca) \\
+	      }
+        
+        \Comentario{Terceiro trajeto para crianças} \\
+	      \Se{num $==$ 2} {
+		    trajeto = lista\_vazia() \\
+              adiciona(novo\_local(casa, 10), trajeto) \\
+              adiciona(novo\_local(escolheAleatoriamente(locaisEstudo), 35), trajeto) \\
+              adiciona(novo\_local(escolheAleatoriamente(locaisLazer), 20), trajeto) \\
+              adiciona(novo\_local(casa, 35), trajeto) \\
+              adiciona(trajeto, trajetosCrianca) \\
+	      }
+        
+        \Comentario{Quarto trajeto para crianças} \\
+	      \Se{num $==$ 3} {
+		    trajeto = lista\_vazia() \\
+              adiciona(novo\_local(casa, 10), trajeto) \\
+              adiciona(novo\_local(escolheAleatoriamente(locaisLazer), 20), trajeto) \\
+              adiciona(novo\_local(escolheAleatoriamente(locaisEstudo), 35), trajeto) \\
+              adiciona(novo\_local(casa, 35), trajeto) \\
+              adiciona(trajeto, trajetosCrianca) \\
+	      }
+	}
+}

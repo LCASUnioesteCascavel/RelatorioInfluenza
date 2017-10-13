@@ -1,0 +1,18 @@
+\Inicio{
+	vetorPosicoes = lista\_vazia() \\
+	idQuadra = 0 \\
+	\Para{cada quadra $q$} {
+	      idLote = 0 \\
+	      \Para{cada lote $l$ de $q$} {
+              \Para{cada ponto $p$ em pontos[$q$, $l$]} {
+                    adiciona($p$.x, vetorPosicoes) \\
+                    adiciona($p$.y, vetorPosicoes) \\
+                    adiciona(idLote, vetorPosicoes) \\
+                    adiciona(idQuadra, vetorPosicoes) \\
+                    adiciona(getRegiao(primeiraLetra($q$)), vetorPosicoes) \\
+              }
+              idLote++ \\
+	      }
+	      idQuadra++ \\
+	}
+}

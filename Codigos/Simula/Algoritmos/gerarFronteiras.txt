@@ -1,0 +1,9 @@
+\Inicio{
+	fronteiras = lista\_vazia() \\
+	\Para{cada vizinhanca $v$ em vizinhancas} {
+        \Comentario{As vizinhanças de fronteiras possuem vértice de origem em um lote e vértice de destino em uma rua} \\
+        \Se{$v$.origem.quadra $!=$ "rua"\ e $v$.destino.quadra $==$ "rua"} {
+              adiciona($v$, fronteiras) \\
+	      }
+	}
+}

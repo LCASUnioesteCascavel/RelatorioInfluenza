@@ -1,0 +1,12 @@
+\Inicio{
+	indexVizinhancas = lista\_vazia() \\
+	desl = 0 \\
+	\Para{cada quadra $q$} {
+	      adiciona(desl, indexVizinhancas) \\
+	      \Para{cada lote $l$ de $q$} {
+            \Comentario{Cada elemento de vizinhança ocupará seis inteiros, por isso a multiplicação por seis} \\
+            desl += tamanho(vizinhancas[$q$, $l$]) * 6 \\
+            adiciona(desl, indexVizinhancas) \\
+	      }
+	}
+}

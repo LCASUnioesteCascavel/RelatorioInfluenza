@@ -1,0 +1,5 @@
+\Inicio{
+	pontos = lista\_vazia() \\
+	pontos = consultaSQLBancoDeDadosSelecionandoTodosOsPontos() \\
+	\Retorna{pontos}
+}
