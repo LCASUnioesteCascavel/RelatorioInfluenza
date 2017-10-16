@@ -9,12 +9,6 @@ public static void main(String[] args) {
   GeradorVetores ger = new GeradorVetores(nCasa, nTrabalho, nLazer, nEstudo);
 
   ger.pontos = con.getPontosLotesERuas();
-  ger.esquinas = con.getPontosEsquinas();
-  ger.centroidesLotes = con.getCentroidesLotes();
-  ger.arestas = con.getArestas();
-  ger.centroidesEsquinas = con.getCentroidesEsquinas();
-  ger.lotes = con.getLotes();
-  ger.vertices = con.getVertices();
 
   ger.criarIndexQuadraseLotes();
 
@@ -28,31 +22,7 @@ public static void main(String[] args) {
   ger.gerarIndexPosicoes();
   ger.gerarIndexPosicoesRegioes();
 
-  ger.escreverArquivoVetoresReduzido();
-
-  ger.gerarFronteiras();
-  ger.gerarIndexFronteiras();
-  ger.gerarVetorFronteiras();
-
-  ger.gerarIndexEsquinas();
-  ger.gerarVetorEsquinas();
-
-  ger.gerarIndexCentrosEsquinas();
-  ger.gerarVetorCentrosEsquinas();
-
-  ger.distribuirLocais();
-
-  ger.gerarTrajetos();
-
-  ger.gerarCaminhos();
-
-  ger.gerarVetorIndexRotas();
-  ger.gerarVetorIndexTrajetos();
-  ger.gerarVetorIndexPeriodos();
-  ger.gerarIndexTrajetosFaixaEtaria();
-
   ger.escreverArquivoVetores();
-  ger.criarDistribuicaoMosquitos();
-  ger.criarDistribuicaoHumanos("Sazonalidade_3.csv");
-  ger.gerarArquivoRegioes();
+
+  ger.criarDistribuicaoAgentes();
 }

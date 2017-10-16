@@ -10,8 +10,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="585.99719mm"
-   height="459.63492mm"
-   viewBox="0 0 2076.368 1628.6277"
+   height="143.54601mm"
+   viewBox="0 0 2076.368 508.62759"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -47,54 +47,6 @@
          d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
          transform="matrix(-0.8,0,0,-0.8,-10,0)" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker9728"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend"
-       inkscape:collect="always">
-      <path
-         transform="matrix(-0.8,0,0,-0.8,-10,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         id="path9730"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="marker9332"
-       style="overflow:visible"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         inkscape:connector-curvature="0"
-         id="path9334"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker8696"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend"
-       inkscape:collect="always">
-      <path
-         transform="matrix(-0.8,0,0,-0.8,-10,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         id="path8698"
-         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Lend"
@@ -147,38 +99,6 @@
        orient="auto"
        refY="0"
        refX="0"
-       id="marker6812"
-       style="overflow:visible"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         inkscape:connector-curvature="0"
-         id="path6814"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker6520"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend"
-       inkscape:collect="always">
-      <path
-         transform="matrix(-0.8,0,0,-0.8,-10,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         id="path6522"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0"
-       refX="0"
        id="marker6225"
        style="overflow:visible"
        inkscape:isstock="true"
@@ -216,38 +136,6 @@
       <path
          inkscape:connector-curvature="0"
          id="path5493"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker5055"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend"
-       inkscape:collect="always">
-      <path
-         transform="matrix(-0.8,0,0,-0.8,-10,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         id="path5057"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="marker4845"
-       style="overflow:visible"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         inkscape:connector-curvature="0"
-         id="path4847"
          d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
          transform="matrix(-0.8,0,0,-0.8,-10,0)" />
@@ -744,8 +632,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.44004864"
-     inkscape:cx="1625.0918"
-     inkscape:cy="888.77962"
+     inkscape:cx="1589.8684"
+     inkscape:cy="-231.22044"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -761,8 +649,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid5041"
-       originx="35.435013"
-       originy="-441.67018" />
+       originx="35.435009"
+       originy="-1561.6703" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -845,7 +733,7 @@
          y="-835.81946"
          x="606.80725"
          sodipodi:role="line"
-         id="tspan4473">&quot;0-AMB.csv&quot; </tspan></text>
+         id="tspan4473">&quot;Vetores.csv&quot; </tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot4283"
@@ -950,7 +838,7 @@
            height="360"
            x="-33.941933"
            y="-119.70228" /></flowRegion><flowPara
-         id="flowPara4471"></flowPara></flowRoot>    <rect
+         id="flowPara4471" /></flowRoot>    <rect
        style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4737"
        width="260.11429"
@@ -1073,196 +961,6 @@
          y="-560.4386"
          x="1860.6768"
          sodipodi:role="line">posições</tspan></text>
-    <rect
-       ry="80.307129"
-       y="-413.38425"
-       x="892.0918"
-       height="175.26146"
-       width="260.11429"
-       id="rect4823"
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text4825"
-       y="-352.53085"
-       x="1021.5996"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="-352.53085"
-         x="1026.375"
-         sodipodi:role="line"
-         id="tspan4827">Escreve o </tspan><tspan
-         id="tspan4829"
-         y="-315.03085"
-         x="1026.375"
-         sodipodi:role="line">índice de </tspan><tspan
-         id="tspan4831"
-         y="-277.53085"
-         x="1021.5996"
-         sodipodi:role="line">fronteiras</tspan></text>
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4833"
-       width="260.11429"
-       height="175.26146"
-       x="1312.0918"
-       y="-413.38425"
-       ry="80.307129" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4835"
-       d="m 1153.3438,-324.7697 157.9797,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99366647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4845)" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1441.5996"
-       y="-352.53085"
-       id="text4837"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan4839"
-         sodipodi:role="line"
-         x="1446.375"
-         y="-352.53085">Escreve o </tspan><tspan
-         sodipodi:role="line"
-         x="1446.375"
-         y="-315.03085"
-         id="tspan4841">vetor de </tspan><tspan
-         sodipodi:role="line"
-         x="1441.5996"
-         y="-277.53085"
-         id="tspan4843">fronteiras</tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99366647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5055)"
-       d="m 1573.3438,-324.7697 157.9797,0"
-       id="path5053"
-       inkscape:connector-curvature="0" />
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect5419"
-       width="260.11429"
-       height="175.26146"
-       x="1732.0918"
-       y="-413.38425"
-       ry="80.307129" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1860.6768"
-       y="-355.4386"
-       id="text5421"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan5423"
-         sodipodi:role="line"
-         x="1865.4521"
-         y="-355.4386">Escreve o </tspan><tspan
-         sodipodi:role="line"
-         x="1865.4521"
-         y="-317.9386"
-         id="tspan5425">índice de </tspan><tspan
-         sodipodi:role="line"
-         x="1860.6768"
-         y="-280.4386"
-         id="tspan5427">esquinas</tspan></text>
-    <rect
-       ry="80.307129"
-       y="-133.38425"
-       x="892.0918"
-       height="175.26146"
-       width="260.11429"
-       id="rect5429"
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text5433"
-       y="-75.438576"
-       x="1020.6768"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="-75.438576"
-         x="1025.4521"
-         sodipodi:role="line"
-         id="tspan5435">Escreve o </tspan><tspan
-         id="tspan5437"
-         y="-37.938576"
-         x="1025.4521"
-         sodipodi:role="line">vetor de </tspan><tspan
-         id="tspan5439"
-         y="-0.43857574"
-         x="1020.6768"
-         sodipodi:role="line">esquinas</tspan></text>
-    <path
-       inkscape:connector-curvature="0"
-       id="path5441"
-       d="m 1153.3438,-44.7697 157.9797,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99366647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5055)" />
-    <rect
-       ry="80.307129"
-       y="-133.38425"
-       x="1312.0918"
-       height="175.26146"
-       width="260.11429"
-       id="rect5443"
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text5445"
-       y="-94.188576"
-       x="1441.3213"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="-94.188576"
-         x="1446.0967"
-         sodipodi:role="line"
-         id="tspan5447">Escreve o </tspan><tspan
-         id="tspan5449"
-         y="-56.688576"
-         x="1446.0967"
-         sodipodi:role="line">índice de </tspan><tspan
-         id="tspan5451"
-         y="-19.188576"
-         x="1446.0967"
-         sodipodi:role="line">centros de </tspan><tspan
-         y="18.311424"
-         x="1441.3213"
-         sodipodi:role="line"
-         id="tspan5717">esquinas</tspan></text>
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect5453"
-       width="260.11429"
-       height="175.26146"
-       x="1732.0918"
-       y="-133.38425"
-       ry="80.307129" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path5455"
-       d="m 1573.3438,-44.7697 157.9797,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99366647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4845)" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1861.3213"
-       y="-94.188576"
-       id="text5457"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan5459"
-         sodipodi:role="line"
-         x="1866.0967"
-         y="-94.188576">Escreve o </tspan><tspan
-         sodipodi:role="line"
-         x="1866.0967"
-         y="-56.688576"
-         id="tspan5461">vetor de </tspan><tspan
-         sodipodi:role="line"
-         x="1866.0967"
-         y="-19.188576"
-         id="tspan5463">centros de </tspan><tspan
-         sodipodi:role="line"
-         x="1861.3213"
-         y="18.311424"
-         id="tspan5719">esquinas</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot5721"
@@ -1274,276 +972,10 @@
            height="320"
            x="2506.0581"
            y="290.29773" /></flowRegion><flowPara
-         id="flowPara5727"></flowPara></flowRoot>    <rect
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect6463"
-       width="260.11429"
-       height="175.26146"
-       x="472.09189"
-       y="146.61575"
-       ry="80.307129" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="602.03186"
-       y="226.68057"
-       id="text6465"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan6467"
-         sodipodi:role="line"
-         x="606.80725"
-         y="226.68057">Abre o arquivo </tspan><tspan
-         id="tspan6469"
-         sodipodi:role="line"
-         x="606.80725"
-         y="264.18057">&quot;1-MOV.csv&quot; </tspan></text>
-    <rect
-       ry="80.307129"
-       y="146.61575"
-       x="892.09192"
-       height="175.26146"
-       width="260.11429"
-       id="rect6471"
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text6473"
-       y="207.46915"
-       x="1020.6769"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="207.46915"
-         x="1025.4523"
-         sodipodi:role="line"
-         id="tspan6512">Escreve o </tspan><tspan
-         y="244.96915"
-         x="1025.4523"
-         sodipodi:role="line"
-         id="tspan6516">índice de </tspan><tspan
-         y="282.46915"
-         x="1020.6769"
-         sodipodi:role="line"
-         id="tspan6518">rotas</tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99366647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4404)"
-       d="m 733.34378,235.2303 157.97969,0"
-       id="path6483"
-       inkscape:connector-curvature="0" />
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect6485"
-       width="260.11429"
-       height="175.26146"
-       x="1312.0919"
-       y="146.61575"
-       ry="80.307129" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path6487"
-       d="m 1153.3438,235.2303 157.9797,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99366647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4606)" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1440.6769"
-       y="207.46915"
-       id="text6489"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan6491"
-         sodipodi:role="line"
-         x="1445.4523"
-         y="207.46915">Escreve o </tspan><tspan
-         id="tspan6493"
-         sodipodi:role="line"
-         x="1445.4523"
-         y="244.96915">vetor de </tspan><tspan
-         id="tspan6495"
-         sodipodi:role="line"
-         x="1440.6769"
-         y="282.46915">rotas</tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99366647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker6520)"
-       d="m 1573.3438,235.2303 157.9797,0"
-       id="path6497"
-       inkscape:connector-curvature="0" />
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect6764"
-       width="260.11429"
-       height="175.26146"
-       x="1732.0919"
-       y="146.61575"
-       ry="80.307129" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1860.6769"
-       y="204.56143"
-       id="text6766"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan6768"
-         sodipodi:role="line"
-         x="1865.4523"
-         y="204.56143">Escreve o </tspan><tspan
-         id="tspan6770"
-         sodipodi:role="line"
-         x="1865.4523"
-         y="242.06143">índice de </tspan><tspan
-         id="tspan6772"
-         sodipodi:role="line"
-         x="1860.6769"
-         y="279.56143">trajetos</tspan></text>
-    <rect
-       ry="80.307129"
-       y="426.61575"
-       x="472.0918"
-       height="175.26146"
-       width="260.11429"
-       id="rect6774"
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text6778"
-       y="484.56143"
-       x="600.67682"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="484.56143"
-         x="605.45221"
-         sodipodi:role="line"
-         id="tspan6780">Escreve o </tspan><tspan
-         y="522.0614"
-         x="605.45221"
-         sodipodi:role="line"
-         id="tspan6782">vetor de </tspan><tspan
-         y="559.56146"
-         x="600.67682"
-         sodipodi:role="line"
-         id="tspan6784">trajetos</tspan></text>
-    <path
-       inkscape:connector-curvature="0"
-       id="path6786"
-       d="m 733.3438,515.2303 157.9797,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99366647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker6520)" />
-    <rect
-       ry="80.307129"
-       y="426.61575"
-       x="892.0918"
-       height="175.26146"
-       width="260.11429"
-       id="rect6788"
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text6790"
-       y="484.56143"
-       x="1020.6768"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="484.56143"
-         x="1025.4521"
-         sodipodi:role="line"
-         id="tspan6792">Escreve o </tspan><tspan
-         y="522.0614"
-         x="1025.4521"
-         sodipodi:role="line"
-         id="tspan6794">índice de </tspan><tspan
-         y="559.56146"
-         x="1020.6768"
-         sodipodi:role="line"
-         id="tspan6796">períodos</tspan></text>
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect6798"
-       width="260.11429"
-       height="175.26146"
-       x="1312.0918"
-       y="426.61575"
-       ry="80.307129" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path6800"
-       d="m 1153.3438,515.2303 157.9797,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99366647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4606)" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1440.6768"
-       y="484.56143"
-       id="text6802"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan6804"
-         sodipodi:role="line"
-         x="1445.4521"
-         y="484.56143">Escreve o </tspan><tspan
-         id="tspan6806"
-         sodipodi:role="line"
-         x="1445.4521"
-         y="522.0614">vetor de </tspan><tspan
-         id="tspan6808"
-         sodipodi:role="line"
-         x="1440.6768"
-         y="559.56146">períodos</tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99366647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker6812)"
-       d="m 1573.3438,515.2303 157.9797,0"
-       id="path6810"
-       inkscape:connector-curvature="0" />
-    <rect
-       ry="80.307129"
-       y="426.61575"
-       x="1732.0918"
-       height="175.26146"
-       width="260.11429"
-       id="rect7062"
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text7064"
-       y="465.81143"
-       x="1861.0942"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="465.81143"
-         x="1865.8696"
-         sodipodi:role="line"
-         id="tspan7066">Escreve o </tspan><tspan
-         y="503.31143"
-         x="1865.8696"
-         sodipodi:role="line"
-         id="tspan7068">índice por faixas </tspan><tspan
-         y="540.8114"
-         x="1865.8696"
-         sodipodi:role="line"
-         id="tspan7070">etárias para </tspan><tspan
-         y="578.31146"
-         x="1861.0942"
-         sodipodi:role="line"
-         id="tspan7334">trajetos</tspan></text>
-    <path
+         id="flowPara5727" /></flowRoot>    <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker8072)"
        d="m 1991.3438,-864.76955 65,0 0,125 -1205.00002,0 0,135 40,0"
        id="path8064"
        inkscape:connector-curvature="0" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path8694"
-       d="m 1991.087,-604.77447 65.2202,0 0,132.99843 -1209.08186,0 0,143.63829 40.13549,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.0332433px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker8696)" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.0332433px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker9332)"
-       d="m 1991.087,-324.77447 65.2202,0 0,132.99843 -1209.08186,0 0,143.63829 40.13549,0"
-       id="path9330"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker9728)"
-       d="m 1991.3438,-44.76955 60,0 0,125 -1640.00002,0 0,160 60,0"
-       id="path9720"
-       inkscape:connector-curvature="0" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path10312"
-       d="m 1991.3438,235.23045 60,0 0,125 -1640.00002,0 0,160 60,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker10314)" />
   </g>
 </svg>

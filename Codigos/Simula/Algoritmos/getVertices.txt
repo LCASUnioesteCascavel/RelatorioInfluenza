@@ -1,5 +1,0 @@
-\Inicio{
-	vertices = lista\_vazia() \\
-	vertices = consultaSQLBancoDeDadosSelecionandoTodosOsPoligonos() \\
-	\Retorna{vertices}
-}

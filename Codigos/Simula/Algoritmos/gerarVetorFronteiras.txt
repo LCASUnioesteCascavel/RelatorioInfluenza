@@ -1,8 +1,0 @@
-\Inicio{
-	vetorFronteiras = lista\_vazia() \\
-	\Para{cada fronteira $f$ em fronteiras} {
-	      adiciona($f$.destino.x, vetorFronteiras) \\
-	      adiciona($f$.destino.y, vetorFronteiras) \\
-	      adiciona(indicesLotes[$f$.destino.quadra, $f$.destino.lote], vetorFronteiras) \\
-	}
-}

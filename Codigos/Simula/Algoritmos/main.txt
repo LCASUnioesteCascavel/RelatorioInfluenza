@@ -1,13 +1,6 @@
 \Inicio{
   \Comentario{Obtenção dos dados por meio de consultas ao banco} \\
-	getPontosLotesERuas() \\
-  getPontosEsquinas() \\
-  getCentroidesLotes() \\
-  getArestas() \\
-  getCentroidesEsquinas() \\
-  getLotes() \\
-  getVertices() \\
-  getPontosRuraisAleatorios() \\
+	getPontos() \\
   
   \Comentario{Criação de índices auxiliares} \\
 	criarIndexQuadraseLotes() \\
@@ -23,34 +16,6 @@
   \Comentario{Criação das estruturas relacionadas às posições} \\
 	gerarVetorPosicoes() \\ 
 	gerarIndexPosicoes() \\
-	
-  \Comentario{Criação das estruturas relacionadas às fronteiras} \\
-	gerarFronteiras() \\
-	gerarIndexFronteiras() \\
-	gerarVetorFronteiras() \\
-	
-  \Comentario{Criação das estruturas relacionadas às esquinas} \\
-	gerarIndexEsquinas() \\
-	gerarVetorEsquinas() \\
-	
-  \Comentario{Criação das estruturas relacionadas aos pontos centros das esquinas} \\
-	gerarIndexCentrosEsquinas() \\
-	gerarVetorCentrosEsquinas() \\
-	
-  \Comentario{Distribuição dos locais aos tipos casa, trabalho, estudo e lazer} \\
-	distribuirLocais() \\
-	
-  \Comentario{Criação dos trajetos} \\
-	gerarTrajetos() \\
-	
-  \Comentario{Criação dos caminhos para as rotas} \\
-	gerarCaminhos() \\
-	
-  \Comentario{Criação das estruturas relacionadas às rotas, trajetos e períodos} \\
-	gerarVetorIndexRotas() \\
-	gerarVetorIndexTrajetos() \\
-	gerarVetorIndexPeriodos() \\
-	gerarIndexTrajetosFaixaEtaria() \\
 	
   \Comentario{Escrita dos arquivos ambientais} \\
 	escreverArquivoVetores() \\

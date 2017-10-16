@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.17)  13 OCT 2017 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.17)  16 OCT 2017 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1336,7 +1336,8 @@ Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 (./Secoes/ModelagemBitstring/ModelagemBitstring.aux)
 (./Secoes/ModelagemAmbiente/ModelagemAmbiente.aux)
 (./Secoes/EstruturasDadosEstrategias/EstruturasDadosEstrategias.aux)
-(./Secoes/Simula/Simula.aux) (./Secoes/Resultados/Resultados.aux))
+(./Secoes/Simula/Simula.aux) (./Secoes/TratamentosDados/TratamentosDados.aux)
+(./Secoes/Resultados/Resultados.aux))
 \openout1 = `RelatorioInfluenza.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -1354,8 +1355,7 @@ LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 3.
-
-(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -1483,13 +1483,7 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./RelatorioInfluenza.toc
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 65.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 65.
- [2
-
-])
+)
 \tf@toc=\write7
 \openout7 = `RelatorioInfluenza.toc'.
 
@@ -1497,7 +1491,9 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
- [3]
+ [2
+
+]
 \openout2 = `Secoes/ModelagemAgente/ModelagemAgente.aux'.
 
 
@@ -1515,7 +1511,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
- [4
+ [3
 
 ])
 \openout2 = `Secoes/ModelagemBitstring/ModelagemBitstring.aux'.
@@ -1528,7 +1524,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 14.
- [5
+ [4
 
 
 ]
@@ -1546,7 +1542,7 @@ ted-to.pdf>
 (epstopdf)             \includegraphics on input line 40.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/ModelagemBitstring/Tira-eps-converted-to.pdf, id=447, 1950.28625pt x 4
+<Figuras/ModelagemBitstring/Tira-eps-converted-to.pdf, id=267, 1950.28625pt x 4
 61.725pt>
 File: Figuras/ModelagemBitstring/Tira-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1558,34 +1554,34 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 91.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 91.
- [6 <./Figuras/ModelagemBitstring/Tira-eps-converted-to.pdf>]
+ [5 <./Figuras/ModelagemBitstring/Tira-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 179.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 179.
+ [6]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 252.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 252.
  [7]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 252.
+(babel)             in language  on input line 288.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 252.
+(babel)             in language  on input line 288.
  [8]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 288.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 288.
- [9]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 290.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 379.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 379.
+ [9]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 407.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 407.
  [10]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 407.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 407.
- [11]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 409.
 Package babel Info: Redefining portuges shorthand "|
@@ -1593,24 +1589,24 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 489.
 
-[12]
+[11]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 536.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 536.
- [13]
+ [12]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 540.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 540.
- [14])
+ [13])
 \openout2 = `Secoes/ModelagemAmbiente/ModelagemAmbiente.aux'.
 
  (./Secoes/ModelagemAmbiente/ModelagemAmbiente.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 
-<Figuras/ModelagemAmbiente/Cascavel1.png, id=610, 783.67781pt x 653.44125pt>
+<Figuras/ModelagemAmbiente/Cascavel1.png, id=430, 783.67781pt x 653.44125pt>
 File: Figuras/ModelagemAmbiente/Cascavel1.png Graphic file (type png)
 
 <use Figuras/ModelagemAmbiente/Cascavel1.png>
@@ -1618,7 +1614,7 @@ Package pdftex.def Info: Figuras/ModelagemAmbiente/Cascavel1.png used on input
 line 12.
 (pdftex.def)             Requested size: 386.95897pt x 322.65178pt.
 
-<Figuras/ModelagemAmbiente/Cascavel2.png, id=612, 1099.85907pt x 691.08188pt>
+<Figuras/ModelagemAmbiente/Cascavel2.png, id=432, 1099.85907pt x 691.08188pt>
 File: Figuras/ModelagemAmbiente/Cascavel2.png Graphic file (type png)
 
 <use Figuras/ModelagemAmbiente/Cascavel2.png>
@@ -1629,7 +1625,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 23.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 23.
- [15
+ [14
 
 
  <./Figuras/ModelagemAmbiente/Cascavel1.png>]
@@ -1637,7 +1633,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
- [16 <./Figuras/ModelagemAmbiente/Cascavel2.png>])
+ [15 <./Figuras/ModelagemAmbiente/Cascavel2.png>])
 \openout2 = `Secoes/EstruturasDadosEstrategias/EstruturasDadosEstrategias.aux'.
 
 
@@ -1658,7 +1654,7 @@ s>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/EstruturasDadosEstrategias/grafo-eps-converted-to.pdf, id=628, 378.413
+<Figuras/EstruturasDadosEstrategias/grafo-eps-converted-to.pdf, id=447, 378.413
 76pt x 339.2675pt>
 File: Figuras/EstruturasDadosEstrategias/grafo-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1671,7 +1667,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 23.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 23.
- [17
+ [16
 
 
  <./Figuras/EstruturasDadosEstrategias/grafo-eps-converted-to.pdf>]
@@ -1692,7 +1688,7 @@ rategias/main-eps-converted-to.pdf Figuras/EstruturasDadosEstrategias/main.eps>
 (epstopdf)             \includegraphics on input line 34.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/EstruturasDadosEstrategias/main-eps-converted-to.pdf, id=641, 1995.455
+<Figuras/EstruturasDadosEstrategias/main-eps-converted-to.pdf, id=461, 1995.455
 pt x 1015.795pt>
 File: Figuras/EstruturasDadosEstrategias/main-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -1705,7 +1701,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 41.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 41.
- [18 <./Figuras/EstruturasDadosEstrategias/main-eps-converted-to.pdf>]
+ [17 <./Figuras/EstruturasDadosEstrategias/main-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 43.
 Package babel Info: Redefining portuges shorthand "|
@@ -1737,7 +1733,7 @@ trategias/Operadores/Movimentacao.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Figuras/EstruturasDadosEstrategias/Operadores/Movimentacao-eps-converted-to.pd
-f, id=685, 4812.98125pt x 1992.44376pt>
+f, id=505, 4812.98125pt x 1992.44376pt>
 File: Figuras/EstruturasDadosEstrategias/Operadores/Movimentacao-eps-converted-
 to.pdf Graphic file (type pdf)
 
@@ -1750,12 +1746,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 63.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 63.
- [19]
+ [18]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 65.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 65.
- [20 <./Figuras/EstruturasDadosEstrategias/Operadores/Movimentacao-eps-converte
+ [19 <./Figuras/EstruturasDadosEstrategias/Operadores/Movimentacao-eps-converte
 d-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 67.
@@ -1776,7 +1772,7 @@ gias/Operadores/Contato.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Figuras/EstruturasDadosEstrategias/Operadores/Contato-eps-converted-to.pdf, id
-=807, 4812.98125pt x 1515.6625pt>
+=628, 4812.98125pt x 1515.6625pt>
 File: Figuras/EstruturasDadosEstrategias/Operadores/Contato-eps-converted-to.pd
 f Graphic file (type pdf)
 
@@ -1789,12 +1785,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 85.
- [21]
+ [20]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 87.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 87.
- [22 <./Figuras/EstruturasDadosEstrategias/Operadores/Contato-eps-converted-to.
+ [21 <./Figuras/EstruturasDadosEstrategias/Operadores/Contato-eps-converted-to.
 pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 89.
@@ -1803,7 +1799,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 79.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 79.
- [23])
+ [22])
 (./Codigos/EstruturasDadosEstrategias/Algoritmos/Transicao.txt)
 Package epstopdf Info: Source file: <Figuras/EstruturasDadosEstrategias/Operado
 res/Transicao.eps>
@@ -1820,7 +1816,7 @@ tegias/Operadores/Transicao.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Figuras/EstruturasDadosEstrategias/Operadores/Transicao-eps-converted-to.pdf, 
-id=989, 3415.76125pt x 2556.55125pt>
+id=810, 3415.76125pt x 2556.55125pt>
 File: Figuras/EstruturasDadosEstrategias/Operadores/Transicao-eps-converted-to.
 pdf Graphic file (type pdf)
 
@@ -1833,12 +1829,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 108.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 108.
- [24]
+ [23]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 109.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 109.
- [25 <./Figuras/EstruturasDadosEstrategias/Operadores/Transicao-eps-converted-t
+ [24 <./Figuras/EstruturasDadosEstrategias/Operadores/Transicao-eps-converted-t
 o.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 111.
@@ -1847,12 +1843,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 78.
+ [25])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 119.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 119.
  [26])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 119.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 119.
- [27])
 \openout2 = `Secoes/Simula/Simula.aux'.
 
 
@@ -1863,7 +1859,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
- [28
+ [27
 
 
 ]
@@ -1883,14 +1879,14 @@ Package babel Info: Redefining portuges shorthand "|
 
 (./Codigos/Simula/Consultas/removerTabelas.sql)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 28.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 28.
- [29]
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 30.
 
 (./Codigos/Simula/Consultas/interpolarPontos.sql)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 34.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 34.
+ [28]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 36.
 
@@ -1898,186 +1894,91 @@ Package babel Info: Redefining portuges shorthand "|
 PGFPlots: reading {Figuras/Simula/Tabelas/cascavel_pontos.csv}
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 54.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 57.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 57.
- [30]
-(./Codigos/Simula/Consultas/getPontosLotesERuas.sql)
-PGFPlots: reading {Figuras/Simula/Tabelas/cascavel_pontosloteseruas.csv}
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 72.
 
-(./Codigos/Simula/Consultas/getPontosEsquinas.sql)
-PGFPlots: reading {Figuras/Simula/Tabelas/cascavel_pontosesquinas.csv}
+(./Codigos/Simula/Consultas/getVizinhancasEntrePoligonos.sql
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 89.
+(babel)             in language  on input line 16.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 89.
- [31]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 90.
-
-(./Codigos/Simula/Consultas/getVizinhancasEntrePoligonos.sql)
+(babel)             in language  on input line 16.
+ [29])
 PGFPlots: reading {Figuras/Simula/Tabelas/cascavel_vizinhancasentrepoligonos.cs
 v}
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 72.
+
+(./Codigos/Simula/Consultas/getVizinhancasMoorePontos.sql
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 111.
- [32]
-(./Codigos/Simula/Consultas/getVizinhancasMoorePontos.sql)
+(babel)             in language  on input line 23.
+ [30])
 PGFPlots: reading {Figuras/Simula/Tabelas/cascavel_vizinhancasmoorepontos.csv}
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
-
-(./Codigos/Simula/Consultas/getLotes.sql
+(babel)             in language  on input line 90.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 12.
+(babel)             in language  on input line 90.
+ [31]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 12.
- [33])
-PGFPlots: reading {Figuras/Simula/Tabelas/cascavel_lotes.csv}
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 144.
-
-(./Codigos/Simula/Consultas/getVertices.sql)
-PGFPlots: reading {Figuras/Simula/Tabelas/cascavel_vertices.csv}
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 162.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 166.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 166.
- [34]
-(./Codigos/Simula/Consultas/getArestas.sql)
-PGFPlots: reading {Figuras/Simula/Tabelas/cascavel_arestas.csv}
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 180.
-
-(./Codigos/Simula/Consultas/getCentroidesEsquinas.sql)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 184.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 184.
- [35]
-PGFPlots: reading {Figuras/Simula/Tabelas/cascavel_centroidesesquinas.csv}
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 198.
-
-(./Codigos/Simula/Consultas/getCentroidesLotes.sql)
-PGFPlots: reading {Figuras/Simula/Tabelas/cascavel_centroideslotes.csv}
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 216.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 216.
- [36]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 218.
+(babel)             in language  on input line 92.
 Package epstopdf Info: Source file: <Figuras/Simula/inicializacaoAmbiente.eps>
-(epstopdf)                    date: 2017-08-07 08:47:25
-(epstopdf)                    size: 1248898 bytes
+(epstopdf)                    date: 2017-10-16 15:15:31
+(epstopdf)                    size: 431412 bytes
 (epstopdf)             Output file: <Figuras/Simula/inicializacaoAmbiente-eps-c
 onverted-to.pdf>
-(epstopdf)                    date: 2017-08-07 08:47:30
-(epstopdf)                    size: 372535 bytes
+(epstopdf)                    date: 2017-10-16 15:15:33
+(epstopdf)                    size: 139715 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/inicializac
 aoAmbiente-eps-converted-to.pdf Figuras/Simula/inicializacaoAmbiente.eps>
-(epstopdf)             \includegraphics on input line 224.
+(epstopdf)             \includegraphics on input line 98.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/inicializacaoAmbiente-eps-converted-to.pdf, id=1527, 2536.47626
-pt x 1666.225pt>
+<Figuras/Simula/inicializacaoAmbiente-eps-converted-to.pdf, id=1138, 1656.1875p
+t x 1088.065pt>
 File: Figuras/Simula/inicializacaoAmbiente-eps-converted-to.pdf Graphic file (t
 ype pdf)
 
 <use Figuras/Simula/inicializacaoAmbiente-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/Simula/inicializacaoAmbiente-eps-converted-to.
-pdf used on input line 224.
-(pdftex.def)             Requested size: 483.69687pt x 317.73015pt.
+pdf used on input line 98.
+(pdftex.def)             Requested size: 338.58632pt x 222.44048pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 229.
- [37 <./Figuras/Simula/inicializacaoAmbiente-eps-converted-to.pdf>]
+(babel)             in language  on input line 103.
+ [32 <./Figuras/Simula/inicializacaoAmbiente-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 233.
+(babel)             in language  on input line 107.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (./Codigos/Simula/Fontes/main.java) (./Codigos/Simula/Algoritmos/main.txt)
 Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/Main.eps>
-(epstopdf)                    date: 2017-08-10 15:34:36
-(epstopdf)                    size: 780933 bytes
+(epstopdf)                    date: 2017-10-16 15:22:42
+(epstopdf)                    size: 271427 bytes
 (epstopdf)             Output file: <Figuras/Simula/Fluxos/Main-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2017-08-10 15:34:42
-(epstopdf)                    size: 241849 bytes
+(epstopdf)                    date: 2017-10-16 15:22:47
+(epstopdf)                    size: 88488 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/Main
 -eps-converted-to.pdf Figuras/Simula/Fluxos/Main.eps>
-(epstopdf)             \includegraphics on input line 246.
+(epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/Main-eps-converted-to.pdf, id=1540, 1680.2775pt x 1204.5
-pt>
+<Figuras/Simula/Fluxos/Main-eps-converted-to.pdf, id=1150, 1680.2775pt x 359.34
+25pt>
 File: Figuras/Simula/Fluxos/Main-eps-converted-to.pdf Graphic file (type pdf)
  <use Figuras/Simula/Fluxos/Main-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/Simula/Fluxos/Main-eps-converted-to.pdf used o
-n input line 246.
-(pdftex.def)             Requested size: 483.69687pt x 346.72298pt.
+n input line 120.
+(pdftex.def)             Requested size: 483.69687pt x 103.43901pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 249.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 249.
- [38]
+(babel)             in language  on input line 125.
+ [33 <./Figuras/Simula/Fluxos/Main-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 250.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 250.
- [39]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 251.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 251.
- [40 <./Figuras/Simula/Fluxos/Main-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 253.
-
-(./Codigos/Simula/Fontes/getPontosLoteseRuas.java)
-(./Codigos/Simula/Algoritmos/getPontosLoteseRuas.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/getPontosLoteseRuas.
-eps>
-(epstopdf)                    date: 2017-08-10 15:35:51
-(epstopdf)                    size: 68359 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/getPontosLoteseRuas-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-10 15:35:56
-(epstopdf)                    size: 24053 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/getP
-ontosLoteseRuas-eps-converted-to.pdf Figuras/Simula/Fluxos/getPontosLoteseRuas.
-eps>
-(epstopdf)             \includegraphics on input line 268.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/getPontosLoteseRuas-eps-converted-to.pdf, id=1669, 886.3
-1125pt x 144.54pt>
-File: Figuras/Simula/Fluxos/getPontosLoteseRuas-eps-converted-to.pdf Graphic fi
-le (type pdf)
-
-<use Figuras/Simula/Fluxos/getPontosLoteseRuas-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/getPontosLoteseRuas-eps-converte
-d-to.pdf used on input line 268.
-(pdftex.def)             Requested size: 338.58632pt x 55.21689pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 273.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 273.
- [41 <./Figuras/Simula/Fluxos/getPontosLoteseRuas-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 275.
+(babel)             in language  on input line 127.
 
 (./Codigos/Simula/Fontes/criarIndexQuadraseLotes.java)
 (./Codigos/Simula/Algoritmos/criarIndexQuadraseLotes.txt)
@@ -2092,26 +1993,26 @@ tes-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/cria
 rIndexQuadraseLotes-eps-converted-to.pdf Figuras/Simula/Fluxos/criarIndexQuadra
 seLotes.eps>
-(epstopdf)             \includegraphics on input line 290.
+(epstopdf)             \includegraphics on input line 142.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/criarIndexQuadraseLotes-eps-converted-to.pdf, id=1717, 2
+<Figuras/Simula/Fluxos/criarIndexQuadraseLotes-eps-converted-to.pdf, id=1210, 2
 236.355pt x 405.515pt>
 File: Figuras/Simula/Fluxos/criarIndexQuadraseLotes-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use Figuras/Simula/Fluxos/criarIndexQuadraseLotes-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/Simula/Fluxos/criarIndexQuadraseLotes-eps-conv
-erted-to.pdf used on input line 290.
+erted-to.pdf used on input line 142.
 (pdftex.def)             Requested size: 483.69687pt x 87.70378pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 295.
+(babel)             in language  on input line 147.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 295.
+(babel)             in language  on input line 147.
 
-[42 <./Figuras/Simula/Fluxos/criarIndexQuadraseLotes-eps-converted-to.pdf>]
+[34 <./Figuras/Simula/Fluxos/criarIndexQuadraseLotes-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 297.
+(babel)             in language  on input line 149.
 
 (./Codigos/Simula/Fontes/gerarIndexQuadras.java)
 (./Codigos/Simula/Algoritmos/gerarIndexQuadras.txt)
@@ -2126,25 +2027,25 @@ s-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
 rIndexQuadras-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarIndexQuadras.eps>
 
-(epstopdf)             \includegraphics on input line 312.
+(epstopdf)             \includegraphics on input line 164.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/gerarIndexQuadras-eps-converted-to.pdf, id=1765, 2236.35
+<Figuras/Simula/Fluxos/gerarIndexQuadras-eps-converted-to.pdf, id=1257, 2236.35
 5pt x 144.54pt>
 File: Figuras/Simula/Fluxos/gerarIndexQuadras-eps-converted-to.pdf Graphic file
  (type pdf)
 
 <use Figuras/Simula/Fluxos/gerarIndexQuadras-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/Simula/Fluxos/gerarIndexQuadras-eps-converted-
-to.pdf used on input line 312.
+to.pdf used on input line 164.
 (pdftex.def)             Requested size: 483.69687pt x 31.26074pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 317.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 317.
- [43 <./Figuras/Simula/Fluxos/gerarIndexQuadras-eps-converted-to.pdf>]
+(babel)             in language  on input line 169.
+ [35 <./Figuras/Simula/Fluxos/gerarIndexQuadras-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 319.
+(babel)             in language  on input line 171.
 
 (./Codigos/Simula/Fontes/gerarVizinhancas.java)
 (./Codigos/Simula/Algoritmos/gerarVizinhancas.txt)
@@ -2158,60 +2059,60 @@ Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarVizinhancas.eps
 (epstopdf)                    size: 26317 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
 rVizinhancas-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarVizinhancas.eps>
-(epstopdf)             \includegraphics on input line 334.
+(epstopdf)             \includegraphics on input line 186.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/gerarVizinhancas-eps-converted-to.pdf, id=1803, 886.3112
+<Figuras/Simula/Fluxos/gerarVizinhancas-eps-converted-to.pdf, id=1295, 886.3112
 5pt x 144.54pt>
 File: Figuras/Simula/Fluxos/gerarVizinhancas-eps-converted-to.pdf Graphic file 
 (type pdf)
 
 <use Figuras/Simula/Fluxos/gerarVizinhancas-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/Simula/Fluxos/gerarVizinhancas-eps-converted-t
-o.pdf used on input line 334.
+o.pdf used on input line 186.
 (pdftex.def)             Requested size: 338.58632pt x 55.21689pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 339.
+(babel)             in language  on input line 191.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 339.
- [44 <./Figuras/Simula/Fluxos/gerarVizinhancas-eps-converted-to.pdf>]
+(babel)             in language  on input line 191.
+ [36 <./Figuras/Simula/Fluxos/gerarVizinhancas-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 341.
+(babel)             in language  on input line 193.
 
 (./Codigos/Simula/Fontes/getVizinhancasEntrePoligonos.java)
 (./Codigos/Simula/Algoritmos/getVizinhancasEntrePoligonos.txt)
 Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/getVizinhancasEntreP
 oligonos.eps>
-(epstopdf)                    date: 2017-08-10 15:38:22
+(epstopdf)                    date: 2017-10-16 15:05:53
 (epstopdf)                    size: 74438 bytes
 (epstopdf)             Output file: <Figuras/Simula/Fluxos/getVizinhancasEntreP
 oligonos-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-10 15:38:27
+(epstopdf)                    date: 2017-10-16 15:07:41
 (epstopdf)                    size: 25939 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/getV
 izinhancasEntrePoligonos-eps-converted-to.pdf Figuras/Simula/Fluxos/getVizinhan
 casEntrePoligonos.eps>
-(epstopdf)             \includegraphics on input line 356.
+(epstopdf)             \includegraphics on input line 208.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/getVizinhancasEntrePoligonos-eps-converted-to.pdf, id=18
-39, 886.31125pt x 144.54pt>
+<Figuras/Simula/Fluxos/getVizinhancasEntrePoligonos-eps-converted-to.pdf, id=13
+31, 886.31125pt x 144.54pt>
 File: Figuras/Simula/Fluxos/getVizinhancasEntrePoligonos-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use Figuras/Simula/Fluxos/getVizinhancasEntrePoligonos-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/Simula/Fluxos/getVizinhancasEntrePoligonos-eps
--converted-to.pdf used on input line 356.
+-converted-to.pdf used on input line 208.
 (pdftex.def)             Requested size: 338.58632pt x 55.21689pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 361.
+(babel)             in language  on input line 213.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 361.
+(babel)             in language  on input line 213.
 
-[45 <./Figuras/Simula/Fluxos/getVizinhancasEntrePoligonos-eps-converted-to.pdf>
+[37 <./Figuras/Simula/Fluxos/getVizinhancasEntrePoligonos-eps-converted-to.pdf>
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 363.
+(babel)             in language  on input line 215.
  (./Codigos/Simula/Fontes/getVizinhancasMoorePontos.java)
 (./Codigos/Simula/Algoritmos/getVizinhancasMoorePontos.txt)
 Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/getVizinhancasMooreP
@@ -2225,26 +2126,26 @@ ontos-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/getV
 izinhancasMoorePontos-eps-converted-to.pdf Figuras/Simula/Fluxos/getVizinhancas
 MoorePontos.eps>
-(epstopdf)             \includegraphics on input line 378.
+(epstopdf)             \includegraphics on input line 230.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/getVizinhancasMoorePontos-eps-converted-to.pdf, id=1886,
+<Figuras/Simula/Fluxos/getVizinhancasMoorePontos-eps-converted-to.pdf, id=1378,
  886.31125pt x 144.54pt>
 File: Figuras/Simula/Fluxos/getVizinhancasMoorePontos-eps-converted-to.pdf Grap
 hic file (type pdf)
 
 <use Figuras/Simula/Fluxos/getVizinhancasMoorePontos-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/Simula/Fluxos/getVizinhancasMoorePontos-eps-co
-nverted-to.pdf used on input line 378.
+nverted-to.pdf used on input line 230.
 (pdftex.def)             Requested size: 338.58632pt x 55.21689pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 383.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 383.
+(babel)             in language  on input line 235.
 
-[46 <./Figuras/Simula/Fluxos/getVizinhancasMoorePontos-eps-converted-to.pdf>]
+[38 <./Figuras/Simula/Fluxos/getVizinhancasMoorePontos-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 237.
 
 (./Codigos/Simula/Fontes/gerarIndexVizinhancas.java)
 (./Codigos/Simula/Algoritmos/gerarIndexVizinhancas.txt)
@@ -2259,25 +2160,25 @@ s-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
 rIndexVizinhancas-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarIndexVizinhan
 cas.eps>
-(epstopdf)             \includegraphics on input line 400.
+(epstopdf)             \includegraphics on input line 252.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/gerarIndexVizinhancas-eps-converted-to.pdf, id=1940, 223
+<Figuras/Simula/Fluxos/gerarIndexVizinhancas-eps-converted-to.pdf, id=1433, 223
 6.355pt x 144.54pt>
 File: Figuras/Simula/Fluxos/gerarIndexVizinhancas-eps-converted-to.pdf Graphic 
 file (type pdf)
 
 <use Figuras/Simula/Fluxos/gerarIndexVizinhancas-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/Simula/Fluxos/gerarIndexVizinhancas-eps-conver
-ted-to.pdf used on input line 400.
+ted-to.pdf used on input line 252.
 (pdftex.def)             Requested size: 483.69687pt x 31.26074pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 257.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 405.
- [47 <./Figuras/Simula/Fluxos/gerarIndexVizinhancas-eps-converted-to.pdf>]
+(babel)             in language  on input line 257.
+ [39 <./Figuras/Simula/Fluxos/gerarIndexVizinhancas-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 407.
+(babel)             in language  on input line 259.
 
 (./Codigos/Simula/Fontes/gerarVetorVizinhancas.java)
 (./Codigos/Simula/Algoritmos/gerarVetorVizinhancas.txt)
@@ -2292,25 +2193,25 @@ s-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
 rVetorVizinhancas-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarVetorVizinhan
 cas.eps>
-(epstopdf)             \includegraphics on input line 422.
+(epstopdf)             \includegraphics on input line 274.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/gerarVetorVizinhancas-eps-converted-to.pdf, id=1979, 128
+<Figuras/Simula/Fluxos/gerarVetorVizinhancas-eps-converted-to.pdf, id=1471, 128
 6.8075pt x 594.22pt>
 File: Figuras/Simula/Fluxos/gerarVetorVizinhancas-eps-converted-to.pdf Graphic 
 file (type pdf)
 
 <use Figuras/Simula/Fluxos/gerarVetorVizinhancas-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/Simula/Fluxos/gerarVetorVizinhancas-eps-conver
-ted-to.pdf used on input line 422.
+ted-to.pdf used on input line 274.
 (pdftex.def)             Requested size: 386.95897pt x 178.68445pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 427.
+(babel)             in language  on input line 279.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 427.
- [48 <./Figuras/Simula/Fluxos/gerarVetorVizinhancas-eps-converted-to.pdf>]
+(babel)             in language  on input line 279.
+ [40 <./Figuras/Simula/Fluxos/gerarVetorVizinhancas-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 429.
+(babel)             in language  on input line 281.
 
 (./Codigos/Simula/Fontes/gerarVetorPosicoes.java)
 (./Codigos/Simula/Algoritmos/gerarVetorPosicoes.txt)
@@ -2325,25 +2226,25 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
 rVetorPosicoes-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarVetorPosicoes.ep
 s>
-(epstopdf)             \includegraphics on input line 444.
+(epstopdf)             \includegraphics on input line 296.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/gerarVetorPosicoes-eps-converted-to.pdf, id=2024, 934.49
+<Figuras/Simula/Fluxos/gerarVetorPosicoes-eps-converted-to.pdf, id=1517, 934.49
 126pt x 594.22pt>
 File: Figuras/Simula/Fluxos/gerarVetorPosicoes-eps-converted-to.pdf Graphic fil
 e (type pdf)
 
 <use Figuras/Simula/Fluxos/gerarVetorPosicoes-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/Simula/Fluxos/gerarVetorPosicoes-eps-converted
--to.pdf used on input line 444.
+-to.pdf used on input line 296.
 (pdftex.def)             Requested size: 290.22107pt x 184.54178pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 449.
+(babel)             in language  on input line 301.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 449.
- [49 <./Figuras/Simula/Fluxos/gerarVetorPosicoes-eps-converted-to.pdf>]
+(babel)             in language  on input line 301.
+ [41 <./Figuras/Simula/Fluxos/gerarVetorPosicoes-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 451.
+(babel)             in language  on input line 303.
 
 (./Codigos/Simula/Fontes/gerarIndexPosicoes.java)
 (./Codigos/Simula/Algoritmos/gerarIndexPosicoes.txt)
@@ -2358,1510 +2259,642 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
 rIndexPosicoes-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarIndexPosicoes.ep
 s>
-(epstopdf)             \includegraphics on input line 466.
+(epstopdf)             \includegraphics on input line 318.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/gerarIndexPosicoes-eps-converted-to.pdf, id=2077, 1269.7
+<Figuras/Simula/Fluxos/gerarIndexPosicoes-eps-converted-to.pdf, id=1568, 1269.7
 4374pt x 369.38pt>
 File: Figuras/Simula/Fluxos/gerarIndexPosicoes-eps-converted-to.pdf Graphic fil
 e (type pdf)
 
 <use Figuras/Simula/Fluxos/gerarIndexPosicoes-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/Simula/Fluxos/gerarIndexPosicoes-eps-converted
--to.pdf used on input line 466.
+-to.pdf used on input line 318.
 (pdftex.def)             Requested size: 386.95897pt x 112.56773pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 471.
+(babel)             in language  on input line 323.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 471.
- [50 <./Figuras/Simula/Fluxos/gerarIndexPosicoes-eps-converted-to.pdf>]
+(babel)             in language  on input line 323.
+ [42 <./Figuras/Simula/Fluxos/gerarIndexPosicoes-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 473.
+(babel)             in language  on input line 325.
 
-(./Codigos/Simula/Fontes/gerarFronteiras.java)
-(./Codigos/Simula/Algoritmos/gerarFronteiras.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarFronteiras.eps>
-
-(epstopdf)                    date: 2017-08-10 15:44:33
-(epstopdf)                    size: 81048 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarFronteiras-eps-
-converted-to.pdf>
-(epstopdf)                    date: 2017-08-10 15:44:41
-(epstopdf)                    size: 29093 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rFronteiras-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarFronteiras.eps>
-(epstopdf)             \includegraphics on input line 488.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/gerarFronteiras-eps-converted-to.pdf, id=2115, 1560.8312
-5pt x 144.54pt>
-File: Figuras/Simula/Fluxos/gerarFronteiras-eps-converted-to.pdf Graphic file (
-type pdf)
-
-<use Figuras/Simula/Fluxos/gerarFronteiras-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarFronteiras-eps-converted-to
-.pdf used on input line 488.
-(pdftex.def)             Requested size: 483.69687pt x 44.79149pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 493.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 493.
- [51 <./Figuras/Simula/Fluxos/gerarFronteiras-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 495.
-
-(./Codigos/Simula/Fontes/gerarIndexFronteiras.java)
-(./Codigos/Simula/Algoritmos/gerarIndexFronteiras.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarIndexFronteiras
-.eps>
-(epstopdf)                    date: 2017-08-10 15:45:35
-(epstopdf)                    size: 171739 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarIndexFronteiras
--eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-10 15:45:44
-(epstopdf)                    size: 53690 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rIndexFronteiras-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarIndexFronteira
-s.eps>
-(epstopdf)             \includegraphics on input line 510.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/gerarIndexFronteiras-eps-converted-to.pdf, id=2153, 2236
-.355pt x 369.38pt>
-File: Figuras/Simula/Fluxos/gerarIndexFronteiras-eps-converted-to.pdf Graphic f
-ile (type pdf)
-
-<use Figuras/Simula/Fluxos/gerarIndexFronteiras-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarIndexFronteiras-eps-convert
-ed-to.pdf used on input line 510.
-(pdftex.def)             Requested size: 483.69687pt x 79.8886pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 515.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 515.
- [52 <./Figuras/Simula/Fluxos/gerarIndexFronteiras-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 517.
-
-(./Codigos/Simula/Fontes/gerarVetorFronteiras.java)
-(./Codigos/Simula/Algoritmos/gerarVetorFronteiras.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarVetorFronteiras
-.eps>
-(epstopdf)                    date: 2017-08-10 15:46:43
-(epstopdf)                    size: 118208 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarVetorFronteiras
--eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-10 15:46:48
-(epstopdf)                    size: 40072 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rVetorFronteiras-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarVetorFronteira
-s.eps>
-(epstopdf)             \includegraphics on input line 532.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/gerarVetorFronteiras-eps-converted-to.pdf, id=2197, 1560
-.83125pt x 144.54pt>
-File: Figuras/Simula/Fluxos/gerarVetorFronteiras-eps-converted-to.pdf Graphic f
-ile (type pdf)
-
-<use Figuras/Simula/Fluxos/gerarVetorFronteiras-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarVetorFronteiras-eps-convert
-ed-to.pdf used on input line 532.
-(pdftex.def)             Requested size: 483.69687pt x 44.79149pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 537.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 537.
- [53 <./Figuras/Simula/Fluxos/gerarVetorFronteiras-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 539.
-
-(./Codigos/Simula/Fontes/getPontosEsquinas.java)
-(./Codigos/Simula/Algoritmos/getPontosEsquinas.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/getPontosEsquinas.ep
-s>
-(epstopdf)                    date: 2017-08-10 14:51:32
-(epstopdf)                    size: 74992 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/getPontosEsquinas-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2017-08-10 14:51:58
-(epstopdf)                    size: 26072 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/getP
-ontosEsquinas-eps-converted-to.pdf Figuras/Simula/Fluxos/getPontosEsquinas.eps>
-
-(epstopdf)             \includegraphics on input line 554.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/getPontosEsquinas-eps-converted-to.pdf, id=2236, 886.311
-25pt x 144.54pt>
-File: Figuras/Simula/Fluxos/getPontosEsquinas-eps-converted-to.pdf Graphic file
- (type pdf)
-
-<use Figuras/Simula/Fluxos/getPontosEsquinas-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/getPontosEsquinas-eps-converted-
-to.pdf used on input line 554.
-(pdftex.def)             Requested size: 338.58632pt x 55.21689pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 559.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 559.
- [54 <./Figuras/Simula/Fluxos/getPontosEsquinas-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 561.
-
-(./Codigos/Simula/Fontes/gerarIndexEsquinas.java)
-(./Codigos/Simula/Algoritmos/gerarIndexEsquinas.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarIndexEsquinas.e
-ps>
-(epstopdf)                    date: 2017-08-10 15:47:49
-(epstopdf)                    size: 140468 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarIndexEsquinas-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-10 15:47:55
-(epstopdf)                    size: 46751 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rIndexEsquinas-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarIndexEsquinas.ep
-s>
-(epstopdf)             \includegraphics on input line 576.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/gerarIndexEsquinas-eps-converted-to.pdf, id=2284, 1899.0
-95pt x 144.54pt>
-File: Figuras/Simula/Fluxos/gerarIndexEsquinas-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use Figuras/Simula/Fluxos/gerarIndexEsquinas-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarIndexEsquinas-eps-converted
--to.pdf used on input line 576.
-(pdftex.def)             Requested size: 483.69687pt x 36.8142pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 581.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 581.
- [55 <./Figuras/Simula/Fluxos/gerarIndexEsquinas-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 583.
-
-(./Codigos/Simula/Fontes/gerarVetorEsquinas.java)
-(./Codigos/Simula/Algoritmos/gerarVetorEsquinas.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarVetorEsquinas.e
-ps>
-(epstopdf)                    date: 2017-08-10 15:48:46
-(epstopdf)                    size: 117865 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarVetorEsquinas-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-10 15:48:54
-(epstopdf)                    size: 38506 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rVetorEsquinas-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarVetorEsquinas.ep
-s>
-(epstopdf)             \includegraphics on input line 598.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/gerarVetorEsquinas-eps-converted-to.pdf, id=2320, 1898.0
-9125pt x 144.54pt>
-File: Figuras/Simula/Fluxos/gerarVetorEsquinas-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use Figuras/Simula/Fluxos/gerarVetorEsquinas-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarVetorEsquinas-eps-converted
--to.pdf used on input line 598.
-(pdftex.def)             Requested size: 483.69687pt x 36.83405pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 603.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 603.
- [56 <./Figuras/Simula/Fluxos/gerarVetorEsquinas-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 605.
-
-(./Codigos/Simula/Fontes/gerarIndexCentrosEsquinas.java)
-(./Codigos/Simula/Algoritmos/gerarIndexCentrosEsquinas.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarIndexCentrosEsq
-uinas.eps>
-(epstopdf)                    date: 2017-08-10 15:49:41
-(epstopdf)                    size: 157871 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarIndexCentrosEsq
-uinas-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-10 15:49:47
-(epstopdf)                    size: 53053 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rIndexCentrosEsquinas-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarIndexCent
-rosEsquinas.eps>
-(epstopdf)             \includegraphics on input line 620.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/gerarIndexCentrosEsquinas-eps-converted-to.pdf, id=2351,
- 1899.095pt x 144.54pt>
-File: Figuras/Simula/Fluxos/gerarIndexCentrosEsquinas-eps-converted-to.pdf Grap
-hic file (type pdf)
-
-<use Figuras/Simula/Fluxos/gerarIndexCentrosEsquinas-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarIndexCentrosEsquinas-eps-co
-nverted-to.pdf used on input line 620.
-(pdftex.def)             Requested size: 483.69687pt x 36.8142pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 625.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 625.
-
-[57 <./Figuras/Simula/Fluxos/gerarIndexCentrosEsquinas-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 627.
-
-(./Codigos/Simula/Fontes/gerarVetorCentrosEsquinas.java)
-(./Codigos/Simula/Algoritmos/gerarVetorCentrosEsquinas.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarVetorCentrosEsq
-uinas.eps>
-(epstopdf)                    date: 2017-08-10 15:50:56
-(epstopdf)                    size: 132103 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarVetorCentrosEsq
-uinas-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-10 15:51:01
-(epstopdf)                    size: 45373 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rVetorCentrosEsquinas-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarVetorCent
-rosEsquinas.eps>
-(epstopdf)             \includegraphics on input line 642.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/gerarVetorCentrosEsquinas-eps-converted-to.pdf, id=2388,
- 1560.83125pt x 144.54pt>
-File: Figuras/Simula/Fluxos/gerarVetorCentrosEsquinas-eps-converted-to.pdf Grap
-hic file (type pdf)
-
-<use Figuras/Simula/Fluxos/gerarVetorCentrosEsquinas-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarVetorCentrosEsquinas-eps-co
-nverted-to.pdf used on input line 642.
-(pdftex.def)             Requested size: 483.69687pt x 44.79149pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 647.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 647.
-
-[58 <./Figuras/Simula/Fluxos/gerarVetorCentrosEsquinas-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 649.
-
-(./Codigos/Simula/Fontes/getLotes.java)
-(./Codigos/Simula/Algoritmos/getLotes.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/getLotes.eps>
-(epstopdf)                    date: 2017-08-10 15:51:49
-(epstopdf)                    size: 57896 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/getLotes-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2017-08-10 15:51:55
-(epstopdf)                    size: 20628 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/getL
-otes-eps-converted-to.pdf Figuras/Simula/Fluxos/getLotes.eps>
-(epstopdf)             \includegraphics on input line 664.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/getLotes-eps-converted-to.pdf, id=2420, 886.31125pt x 14
-4.54pt>
-File: Figuras/Simula/Fluxos/getLotes-eps-converted-to.pdf Graphic file (type pd
-f)
- <use Figuras/Simula/Fluxos/getLotes-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/getLotes-eps-converted-to.pdf us
-ed on input line 664.
-(pdftex.def)             Requested size: 338.58632pt x 55.21689pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 669.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 669.
- [59 <./Figuras/Simula/Fluxos/getLotes-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 671.
-
-(./Codigos/Simula/Fontes/distribuirLocais.java)
-(./Codigos/Simula/Algoritmos/distribuirLocais.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/distribuirLocais.eps
->
-(epstopdf)                    date: 2017-08-10 16:03:26
-(epstopdf)                    size: 317140 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/distribuirLocais-eps
--converted-to.pdf>
-(epstopdf)                    date: 2017-08-10 16:03:55
-(epstopdf)                    size: 97633 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/dist
-ribuirLocais-eps-converted-to.pdf Figuras/Simula/Fluxos/distribuirLocais.eps>
-(epstopdf)             \includegraphics on input line 686.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/distribuirLocais-eps-converted-to.pdf, id=2459, 1368.111
-25pt x 594.22pt>
-File: Figuras/Simula/Fluxos/distribuirLocais-eps-converted-to.pdf Graphic file 
-(type pdf)
-
-<use Figuras/Simula/Fluxos/distribuirLocais-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/distribuirLocais-eps-converted-t
-o.pdf used on input line 686.
-(pdftex.def)             Requested size: 386.95897pt x 168.06694pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 691.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 691.
- [60 <./Figuras/Simula/Fluxos/distribuirLocais-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 693.
-
-(./Codigos/Simula/Fontes/gerarTrajetos.java
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 76.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 76.
- [61]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 161.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 161.
- [62]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 246.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 246.
- [63])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 699.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 699.
- [64]
-(./Codigos/Simula/Algoritmos/gerarTrajetos1.txt)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 708.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 708.
- [65]
-(./Codigos/Simula/Algoritmos/gerarTrajetos2.txt)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 717.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 717.
- [66]
-(./Codigos/Simula/Algoritmos/gerarTrajetos3.txt)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 726.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 726.
- [67]
-(./Codigos/Simula/Algoritmos/gerarTrajetos4.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarTrajetos.eps>
-(epstopdf)                    date: 2017-08-10 16:18:56
-(epstopdf)                    size: 494580 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarTrajetos-eps-co
-nverted-to.pdf>
-(epstopdf)                    date: 2017-08-10 16:19:34
-(epstopdf)                    size: 156224 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rTrajetos-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarTrajetos.eps>
-(epstopdf)             \includegraphics on input line 737.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/gerarTrajetos-eps-converted-to.pdf, id=2989, 1657.19125p
-t x 594.22pt>
-File: Figuras/Simula/Fluxos/gerarTrajetos-eps-converted-to.pdf Graphic file (ty
-pe pdf)
- <use Figuras/Simula/Fluxos/gerarTrajetos-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarTrajetos-eps-converted-to.p
-df used on input line 737.
-(pdftex.def)             Requested size: 435.32422pt x 156.08936pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 742.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 742.
-
-[68 <./Figuras/Simula/Fluxos/gerarTrajetos-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 744.
-
-(./Codigos/Simula/Fontes/getArestas.java)
-(./Codigos/Simula/Algoritmos/getArestas.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/getArestas.eps>
-(epstopdf)                    date: 2017-08-10 16:23:07
-(epstopdf)                    size: 63722 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/getArestas-eps-conve
-rted-to.pdf>
-(epstopdf)                    date: 2017-08-10 16:23:26
-(epstopdf)                    size: 22687 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/getA
-restas-eps-converted-to.pdf Figuras/Simula/Fluxos/getArestas.eps>
-(epstopdf)             \includegraphics on input line 759.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/getArestas-eps-converted-to.pdf, id=3032, 886.31125pt x 
-144.54pt>
-File: Figuras/Simula/Fluxos/getArestas-eps-converted-to.pdf Graphic file (type 
-pdf)
- <use Figuras/Simula/Fluxos/getArestas-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/getArestas-eps-converted-to.pdf 
-used on input line 759.
-(pdftex.def)             Requested size: 338.58632pt x 55.21689pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 764.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 764.
- [69 <./Figuras/Simula/Fluxos/getArestas-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 766.
-
-(./Codigos/Simula/Fontes/getCentroidesEsquinas.java)
-(./Codigos/Simula/Algoritmos/getCentroidesEsquinas.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/getCentroidesEsquina
-s.eps>
-(epstopdf)                    date: 2017-08-10 16:27:44
-(epstopdf)                    size: 78444 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/getCentroidesEsquina
-s-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-10 16:27:49
-(epstopdf)                    size: 27364 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/getC
-entroidesEsquinas-eps-converted-to.pdf Figuras/Simula/Fluxos/getCentroidesEsqui
-nas.eps>
-(epstopdf)             \includegraphics on input line 781.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/getCentroidesEsquinas-eps-converted-to.pdf, id=3080, 886
-.31125pt x 144.54pt>
-File: Figuras/Simula/Fluxos/getCentroidesEsquinas-eps-converted-to.pdf Graphic 
-file (type pdf)
-
-<use Figuras/Simula/Fluxos/getCentroidesEsquinas-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/getCentroidesEsquinas-eps-conver
-ted-to.pdf used on input line 781.
-(pdftex.def)             Requested size: 338.58632pt x 55.21689pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 786.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 786.
- [70 <./Figuras/Simula/Fluxos/getCentroidesEsquinas-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 788.
-
-(./Codigos/Simula/Fontes/getCentroidesLotes.java)
-(./Codigos/Simula/Algoritmos/getCentroidesLotes.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/getCentroidesLotes.e
-ps>
-(epstopdf)                    date: 2017-08-10 16:29:01
-(epstopdf)                    size: 72796 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/getCentroidesLotes-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-10 16:29:30
-(epstopdf)                    size: 25456 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/getC
-entroidesLotes-eps-converted-to.pdf Figuras/Simula/Fluxos/getCentroidesLotes.ep
-s>
-(epstopdf)             \includegraphics on input line 803.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/getCentroidesLotes-eps-converted-to.pdf, id=3128, 886.31
-125pt x 144.54pt>
-File: Figuras/Simula/Fluxos/getCentroidesLotes-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use Figuras/Simula/Fluxos/getCentroidesLotes-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/getCentroidesLotes-eps-converted
--to.pdf used on input line 803.
-(pdftex.def)             Requested size: 338.58632pt x 55.21689pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 808.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 808.
- [71 <./Figuras/Simula/Fluxos/getCentroidesLotes-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 810.
-
-(./Codigos/Simula/Fontes/getVertices.java)
-(./Codigos/Simula/Algoritmos/getVertices.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/getVertices.eps>
-(epstopdf)                    date: 2017-08-10 16:30:45
-(epstopdf)                    size: 61286 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/getVertices-eps-conv
-erted-to.pdf>
-(epstopdf)                    date: 2017-08-10 16:31:42
-(epstopdf)                    size: 21740 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/getV
-ertices-eps-converted-to.pdf Figuras/Simula/Fluxos/getVertices.eps>
-(epstopdf)             \includegraphics on input line 825.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/getVertices-eps-converted-to.pdf, id=3175, 886.31125pt x
- 144.54pt>
-File: Figuras/Simula/Fluxos/getVertices-eps-converted-to.pdf Graphic file (type
- pdf)
- <use Figuras/Simula/Fluxos/getVertices-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/getVertices-eps-converted-to.pdf
- used on input line 825.
-(pdftex.def)             Requested size: 338.58632pt x 55.21689pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 830.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 830.
-
-[72 <./Figuras/Simula/Fluxos/getVertices-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 832.
-
-(./Codigos/Simula/Fontes/gerarCaminhos.java)
-(./Codigos/Simula/Algoritmos/gerarCaminhos.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarCaminhos.eps>
-(epstopdf)                    date: 2017-08-10 16:36:27
-(epstopdf)                    size: 349857 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarCaminhos-eps-co
-nverted-to.pdf>
-(epstopdf)                    date: 2017-08-10 16:37:10
-(epstopdf)                    size: 105702 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rCaminhos-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarCaminhos.eps>
-(epstopdf)             \includegraphics on input line 847.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/gerarCaminhos-eps-converted-to.pdf, id=3217, 1368.11125p
-t x 819.06pt>
-File: Figuras/Simula/Fluxos/gerarCaminhos-eps-converted-to.pdf Graphic file (ty
-pe pdf)
- <use Figuras/Simula/Fluxos/gerarCaminhos-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarCaminhos-eps-converted-to.p
-df used on input line 847.
-(pdftex.def)             Requested size: 386.95897pt x 231.65984pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 851.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 851.
-
-[73]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 852.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 852.
- [74 <./Figuras/Simula/Fluxos/gerarCaminhos-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 854.
-
-(./Codigos/Simula/Fontes/aEstrela.java
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 75.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 75.
- [75])
-(./Codigos/Simula/Algoritmos/aEstrela.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/aEstrela.eps>
-(epstopdf)                    date: 2017-08-14 10:17:28
-(epstopdf)                    size: 1314034 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/aEstrela-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2017-08-14 10:17:35
-(epstopdf)                    size: 384613 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/aEst
-rela-eps-converted-to.pdf Figuras/Simula/Fluxos/aEstrela.eps>
-(epstopdf)             \includegraphics on input line 869.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/aEstrela-eps-converted-to.pdf, id=3382, 1944.26375pt x 2
-168.1pt>
-File: Figuras/Simula/Fluxos/aEstrela-eps-converted-to.pdf Graphic file (type pd
-f)
- <use Figuras/Simula/Fluxos/aEstrela-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/aEstrela-eps-converted-to.pdf us
-ed on input line 869.
-(pdftex.def)             Requested size: 483.69687pt x 539.37708pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 872.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 872.
- [76]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 873.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 873.
-
-[77]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 874.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 874.
- [78 <./Figuras/Simula/Fluxos/aEstrela-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 876.
-
-(./Codigos/Simula/Fontes/aEstrelaConstruirCaminho.java)
-(./Codigos/Simula/Algoritmos/aEstrelaConstruirCaminho.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/aEstrelaConstruirCam
-inho.eps>
-(epstopdf)                    date: 2017-08-10 16:43:29
-(epstopdf)                    size: 167953 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/aEstrelaConstruirCam
-inho-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-10 16:43:55
-(epstopdf)                    size: 53309 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/aEst
-relaConstruirCaminho-eps-converted-to.pdf Figuras/Simula/Fluxos/aEstrelaConstru
-irCaminho.eps>
-(epstopdf)             \includegraphics on input line 891.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/aEstrelaConstruirCaminho-eps-converted-to.pdf, id=3489, 
-1286.8075pt x 369.38pt>
-File: Figuras/Simula/Fluxos/aEstrelaConstruirCaminho-eps-converted-to.pdf Graph
-ic file (type pdf)
-
-<use Figuras/Simula/Fluxos/aEstrelaConstruirCaminho-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/aEstrelaConstruirCaminho-eps-con
-verted-to.pdf used on input line 891.
-(pdftex.def)             Requested size: 435.32422pt x 124.9619pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 896.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 896.
-
-[79 <./Figuras/Simula/Fluxos/aEstrelaConstruirCaminho-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 898.
-
-(./Codigos/Simula/Fontes/gerarVetorIndexRotas.java
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 79.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 79.
- [80])
-(./Codigos/Simula/Algoritmos/gerarVetorIndexRotas1.txt)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 911.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 911.
- [81]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 911.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 911.
- [82]
-(./Codigos/Simula/Algoritmos/gerarVetorIndexRotas2.txt)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 920.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 920.
- [83]
-(./Codigos/Simula/Algoritmos/gerarVetorIndexRotas3.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarVetorIndexRotas
-.eps>
-(epstopdf)                    date: 2017-08-11 08:30:23
-(epstopdf)                    size: 1045117 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarVetorIndexRotas
--eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-11 08:30:55
-(epstopdf)                    size: 315579 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rVetorIndexRotas-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarVetorIndexRota
-s.eps>
-(epstopdf)             \includegraphics on input line 931.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/gerarVetorIndexRotas-eps-converted-to.pdf, id=3804, 2235
-.35126pt x 1493.58pt>
-File: Figuras/Simula/Fluxos/gerarVetorIndexRotas-eps-converted-to.pdf Graphic f
-ile (type pdf)
-
-<use Figuras/Simula/Fluxos/gerarVetorIndexRotas-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarVetorIndexRotas-eps-convert
-ed-to.pdf used on input line 931.
-(pdftex.def)             Requested size: 483.69687pt x 323.18735pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 936.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 936.
- [84 <./Figuras/Simula/Fluxos/gerarVetorIndexRotas-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 938.
-
-(./Codigos/Simula/Fontes/gerarVetorIndexTrajetos.java)
-(./Codigos/Simula/Algoritmos/gerarVetorIndexTrajetos.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarVetorIndexTraje
-tos.eps>
-(epstopdf)                    date: 2017-08-11 09:08:36
-(epstopdf)                    size: 413353 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarVetorIndexTraje
-tos-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-11 09:08:43
-(epstopdf)                    size: 126655 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rVetorIndexTrajetos-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarVetorIndexT
-rajetos.eps>
-(epstopdf)             \includegraphics on input line 953.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/gerarVetorIndexTrajetos-eps-converted-to.pdf, id=3844, 1
-368.11125pt x 819.06pt>
-File: Figuras/Simula/Fluxos/gerarVetorIndexTrajetos-eps-converted-to.pdf Graphi
-c file (type pdf)
-
-<use Figuras/Simula/Fluxos/gerarVetorIndexTrajetos-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarVetorIndexTrajetos-eps-conv
-erted-to.pdf used on input line 953.
-(pdftex.def)             Requested size: 435.32422pt x 260.61731pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 957.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 957.
-
-[85]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 958.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 958.
- [86 <./Figuras/Simula/Fluxos/gerarVetorIndexTrajetos-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 960.
- (./Codigos/Simula/Fontes/gerarVetorIndexPeriodos.java
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 75.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 75.
- [87])
-(./Codigos/Simula/Algoritmos/gerarVetorIndexPeriodos1.txt)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 973.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 973.
- [88]
-(./Codigos/Simula/Algoritmos/gerarVetorIndexPeriodos2.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarVetorIndexPerio
-dos.eps>
-(epstopdf)                    date: 2017-08-11 11:29:06
-(epstopdf)                    size: 622082 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarVetorIndexPerio
-dos-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-11 11:29:12
-(epstopdf)                    size: 189134 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rVetorIndexPeriodos-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarVetorIndexP
-eriodos.eps>
-(epstopdf)             \includegraphics on input line 984.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/gerarVetorIndexPeriodos-eps-converted-to.pdf, id=4053, 1
-190.4475pt x 1718.42pt>
-File: Figuras/Simula/Fluxos/gerarVetorIndexPeriodos-eps-converted-to.pdf Graphi
-c file (type pdf)
-
-<use Figuras/Simula/Fluxos/gerarVetorIndexPeriodos-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarVetorIndexPeriodos-eps-conv
-erted-to.pdf used on input line 984.
-(pdftex.def)             Requested size: 338.58632pt x 488.73218pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 988.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 988.
-
-[89]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 989.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 989.
- [90 <./Figuras/Simula/Fluxos/gerarVetorIndexPeriodos-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 991.
- (./Codigos/Simula/Fontes/gerarIndexTrajetosFaixaEtaria.java)
-(./Codigos/Simula/Algoritmos/gerarIndexTrajetosFaixaEtaria.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarIndexTrajetosFa
-ixaEtaria.eps>
-(epstopdf)                    date: 2017-08-11 11:38:36
-(epstopdf)                    size: 298707 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarIndexTrajetosFa
-ixaEtaria-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-11 11:39:07
-(epstopdf)                    size: 93097 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rIndexTrajetosFaixaEtaria-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarIndex
-TrajetosFaixaEtaria.eps>
-(epstopdf)             \includegraphics on input line 1006.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/gerarIndexTrajetosFaixaEtaria-eps-converted-to.pdf, id=4
-118, 1126.2075pt x 594.22pt>
-File: Figuras/Simula/Fluxos/gerarIndexTrajetosFaixaEtaria-eps-converted-to.pdf 
-Graphic file (type pdf)
-
-<use Figuras/Simula/Fluxos/gerarIndexTrajetosFaixaEtaria-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarIndexTrajetosFaixaEtaria-ep
-s-converted-to.pdf used on input line 1006.
-(pdftex.def)             Requested size: 386.95897pt x 204.17195pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1011.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1011.
-
-[91 <./Figuras/Simula/Fluxos/gerarIndexTrajetosFaixaEtaria-eps-converted-to.pdf
->]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1013.
- (./Codigos/Simula/Fontes/escreverArquivoVetores.java
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 81.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 81.
- [92])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1019.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1019.
- [93]
-(./Codigos/Simula/Algoritmos/escreverArquivoVetores1.txt)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1028.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1028.
- [94]
-(./Codigos/Simula/Algoritmos/escreverArquivoVetores2.txt)
+(./Codigos/Simula/Fontes/escreverArquivoVetores.java)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1037.
+(babel)             in language  on input line 331.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1037.
- [95]
-(./Codigos/Simula/Algoritmos/escreverArquivoVetores3.txt)
+(babel)             in language  on input line 331.
+ [43]
+(./Codigos/Simula/Algoritmos/escreverArquivoVetores.txt)
 Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/escreverArquivoVetor
 es.eps>
-(epstopdf)                    date: 2017-08-11 14:05:25
-(epstopdf)                    size: 461371 bytes
+(epstopdf)                    date: 2017-10-16 15:29:41
+(epstopdf)                    size: 170893 bytes
 (epstopdf)             Output file: <Figuras/Simula/Fluxos/escreverArquivoVetor
 es-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-11 14:06:14
-(epstopdf)                    size: 139927 bytes
+(epstopdf)                    date: 2017-10-16 15:29:45
+(epstopdf)                    size: 56116 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/escr
 everArquivoVetores-eps-converted-to.pdf Figuras/Simula/Fluxos/escreverArquivoVe
 tores.eps>
-(epstopdf)             \includegraphics on input line 1048.
+(epstopdf)             \includegraphics on input line 342.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/escreverArquivoVetores-eps-converted-to.pdf, id=4400, 16
-11.01875pt x 1252.68pt>
+<Figuras/Simula/Fluxos/escreverArquivoVetores-eps-converted-to.pdf, id=1663, 16
+11.01875pt x 353.32pt>
 File: Figuras/Simula/Fluxos/escreverArquivoVetores-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use Figuras/Simula/Fluxos/escreverArquivoVetores-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/Simula/Fluxos/escreverArquivoVetores-eps-conve
-rted-to.pdf used on input line 1048.
-(pdftex.def)             Requested size: 483.69687pt x 376.09361pt.
+rted-to.pdf used on input line 342.
+(pdftex.def)             Requested size: 483.69687pt x 106.07768pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1052.
+(babel)             in language  on input line 347.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1052.
+(babel)             in language  on input line 347.
 
-[96]
+[44 <./Figuras/Simula/Fluxos/escreverArquivoVetores-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1053.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1053.
- [97 <./Figuras/Simula/Fluxos/escreverArquivoVetores-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1055.
-(./Codigos/Simula/Fontes/getRegiao.java)
-(./Codigos/Simula/Algoritmos/getRegiao.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/getRegiao.eps>
-(epstopdf)                    date: 2017-09-18 16:51:27
-(epstopdf)                    size: 116898 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/getRegiao-eps-conver
-ted-to.pdf>
-(epstopdf)                    date: 2017-09-18 16:51:35
-(epstopdf)                    size: 38757 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/getR
-egiao-eps-converted-to.pdf Figuras/Simula/Fluxos/getRegiao.eps>
-(epstopdf)             \includegraphics on input line 1070.
-Package epstopdf Info: Output file is already uptodate.
+(babel)             in language  on input line 349.
 
-<Figuras/Simula/Fluxos/getRegiao-eps-converted-to.pdf, id=4464, 1560.83125pt x 
-369.38pt>
-File: Figuras/Simula/Fluxos/getRegiao-eps-converted-to.pdf Graphic file (type p
-df)
- <use Figuras/Simula/Fluxos/getRegiao-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/getRegiao-eps-converted-to.pdf u
-sed on input line 1070.
-(pdftex.def)             Requested size: 483.69687pt x 114.46715pt.
+(./Codigos/Simula/Fontes/criarDistribuicaoAgentes.java
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1075.
+(babel)             in language  on input line 80.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1075.
- [98 <./Figuras/Simula/Fluxos/getRegiao-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1077.
-
-(./Codigos/Simula/Fontes/gerarIndexPosicoesRegioes.java)
-(./Codigos/Simula/Algoritmos/gerarIndexPosicoesRegioes.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarIndexPosicoesRe
-gioes.eps>
-(epstopdf)                    date: 2017-09-19 08:17:47
-(epstopdf)                    size: 302624 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarIndexPosicoesRe
-gioes-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-09-19 08:20:08
-(epstopdf)                    size: 98767 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rIndexPosicoesRegioes-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarIndexPosi
-coesRegioes.eps>
-(epstopdf)             \includegraphics on input line 1092.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/gerarIndexPosicoesRegioes-eps-converted-to.pdf, id=4508,
- 2237.35875pt x 594.22pt>
-File: Figuras/Simula/Fluxos/gerarIndexPosicoesRegioes-eps-converted-to.pdf Grap
-hic file (type pdf)
-
-<use Figuras/Simula/Fluxos/gerarIndexPosicoesRegioes-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarIndexPosicoesRegioes-eps-co
-nverted-to.pdf used on input line 1092.
-(pdftex.def)             Requested size: 483.69687pt x 128.46204pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1097.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1097.
-
-[99 <./Figuras/Simula/Fluxos/gerarIndexPosicoesRegioes-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1099.
-
-(./Codigos/Simula/Fontes/criarDistribuicaoMosquitos.java
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 81.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 81.
- [100])
-(./Codigos/Simula/Algoritmos/criarDistribuicaoMosquitos.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/criarDistribuicaoMos
-quitos.eps>
-(epstopdf)                    date: 2017-09-19 08:17:15
-(epstopdf)                    size: 290202 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/criarDistribuicaoMos
-quitos-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-09-19 08:20:09
-(epstopdf)                    size: 91714 bytes
+(babel)             in language  on input line 80.
+ [45])
+(./Codigos/Simula/Algoritmos/criarDistribuicaoAgentes.txt)
+Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/criarDistribuicaoAge
+ntes.eps>
+(epstopdf)                    date: 2017-10-16 16:08:33
+(epstopdf)                    size: 422293 bytes
+(epstopdf)             Output file: <Figuras/Simula/Fluxos/criarDistribuicaoAge
+ntes-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-10-16 16:14:20
+(epstopdf)                    size: 129481 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/cria
-rDistribuicaoMosquitos-eps-converted-to.pdf Figuras/Simula/Fluxos/criarDistribu
-icaoMosquitos.eps>
-(epstopdf)             \includegraphics on input line 1114.
+rDistribuicaoAgentes-eps-converted-to.pdf Figuras/Simula/Fluxos/criarDistribuic
+aoAgentes.eps>
+(epstopdf)             \includegraphics on input line 364.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/criarDistribuicaoMosquitos-eps-converted-to.pdf, id=4651
-, 972.63374pt x 786.94pt>
-File: Figuras/Simula/Fluxos/criarDistribuicaoMosquitos-eps-converted-to.pdf Gra
-phic file (type pdf)
-
-<use Figuras/Simula/Fluxos/criarDistribuicaoMosquitos-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/criarDistribuicaoMosquitos-eps-c
-onverted-to.pdf used on input line 1114.
-(pdftex.def)             Requested size: 290.22107pt x 234.811pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1118.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1118.
-
-[101]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1119.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1119.
- [102 <./Figuras/Simula/Fluxos/criarDistribuicaoMosquitos-eps-converted-to.pdf>
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1121.
- (./Codigos/Simula/Fontes/criarDistribuicaoHumanos.java
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 81.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 81.
- [103])
-(./Codigos/Simula/Algoritmos/criarDistribuicaoHumanos.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/criarDistribuicaoHum
-anos.eps>
-(epstopdf)                    date: 2017-09-19 08:43:39
-(epstopdf)                    size: 308153 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/criarDistribuicaoHum
-anos-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-09-19 08:45:41
-(epstopdf)                    size: 95185 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/cria
-rDistribuicaoHumanos-eps-converted-to.pdf Figuras/Simula/Fluxos/criarDistribuic
-aoHumanos.eps>
-(epstopdf)             \includegraphics on input line 1136.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figuras/Simula/Fluxos/criarDistribuicaoHumanos-eps-converted-to.pdf, id=4811, 
-1339.0025pt x 768.8725pt>
-File: Figuras/Simula/Fluxos/criarDistribuicaoHumanos-eps-converted-to.pdf Graph
+<Figuras/Simula/Fluxos/criarDistribuicaoAgentes-eps-converted-to.pdf, id=1800, 
+1339.0025pt x 979.66pt>
+File: Figuras/Simula/Fluxos/criarDistribuicaoAgentes-eps-converted-to.pdf Graph
 ic file (type pdf)
 
-<use Figuras/Simula/Fluxos/criarDistribuicaoHumanos-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/criarDistribuicaoHumanos-eps-con
-verted-to.pdf used on input line 1136.
-(pdftex.def)             Requested size: 386.95897pt x 222.193pt.
+<use Figuras/Simula/Fluxos/criarDistribuicaoAgentes-eps-converted-to.pdf>
+Package pdftex.def Info: Figuras/Simula/Fluxos/criarDistribuicaoAgentes-eps-con
+verted-to.pdf used on input line 364.
+(pdftex.def)             Requested size: 386.95897pt x 283.10753pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1141.
+(babel)             in language  on input line 369.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1141.
+(babel)             in language  on input line 369.
 
-[104 <./Figuras/Simula/Fluxos/criarDistribuicaoHumanos-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1143.
+[46 <./Figuras/Simula/Fluxos/criarDistribuicaoAgentes-eps-converted-to.pdf>])
+\openout2 = `Secoes/TratamentosDados/TratamentosDados.aux'.
 
-(./Codigos/Simula/Fontes/gerarArquivoRegioes.java
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 79.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 79.
- [105])
-(./Codigos/Simula/Algoritmos/gerarArquivoRegioes.txt)
-Package epstopdf Info: Source file: <Figuras/Simula/Fluxos/gerarArquivoRegioes.
-eps>
-(epstopdf)                    date: 2017-09-19 09:00:38
-(epstopdf)                    size: 545999 bytes
-(epstopdf)             Output file: <Figuras/Simula/Fluxos/gerarArquivoRegioes-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-09-19 09:03:25
-(epstopdf)                    size: 175793 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figuras/Simula/Fluxos/gera
-rArquivoRegioes-eps-converted-to.pdf Figuras/Simula/Fluxos/gerarArquivoRegioes.
-eps>
-(epstopdf)             \includegraphics on input line 1158.
-Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/gerarArquivoRegioes-eps-converted-to.pdf, id=4935, 1710.
-39pt x 770.88pt>
-File: Figuras/Simula/Fluxos/gerarArquivoRegioes-eps-converted-to.pdf Graphic fi
-le (type pdf)
+(./Secoes/TratamentosDados/TratamentosDados.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
 
-<use Figuras/Simula/Fluxos/gerarArquivoRegioes-eps-converted-to.pdf>
-Package pdftex.def Info: Figuras/Simula/Fluxos/gerarArquivoRegioes-eps-converte
-d-to.pdf used on input line 1158.
-(pdftex.def)             Requested size: 483.69687pt x 217.9975pt.
+<Figuras/TratamentosDados/Sazonalidade.png, id=1846, 1862.45813pt x 555.57562pt
+>
+File: Figuras/TratamentosDados/Sazonalidade.png Graphic file (type png)
+ <use Figuras/TratamentosDados/Sazonalidade.png>
+Package pdftex.def Info: Figuras/TratamentosDados/Sazonalidade.png used on inpu
+t line 10.
+(pdftex.def)             Requested size: 483.69687pt x 144.28517pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1161.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1161.
- [106]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1162.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1162.
+(babel)             in language  on input line 19.
+ [47
 
-[107]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1163.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1163.
- [108 <./Figuras/Simula/Fluxos/gerarArquivoRegioes-eps-converted-to.pdf>])
+
+ <./Figuras/TratamentosDados/Sazonalidade.png (PNG copy)>])
 \openout2 = `Secoes/Resultados/Resultados.aux'.
 
-(./Secoes/Resultados/Resultados.tex
+ (./Secoes/Resultados/Resultados.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 4.
+PGFPlots: reading {Figuras/Resultados/0001/Entradas/MonteCarlo_0/Geral.csv}
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 8.
- [109
+(babel)             in language  on input line 20.
+ [48
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 10.
-PGFPlots: reading {Figuras/Resultados/0001/Entradas/MonteCarlo_0/Geral.csv}
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 23.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 23.
- [110]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 22.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Quantidades_Novo_Total_Acu
-mulado_Total.png, id=5041, 578.16pt x 433.62pt>
+mulado_Total.png, id=1861, 831.105pt x 433.62pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Quantidades_Novo_Tota
 l_Acumulado_Total.png Graphic file (type png)
 
 <use Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Quantidades_Novo_Total
 _Acumulado_Total.png>
 Package pdftex.def Info: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Qu
-antidades_Novo_Total_Acumulado_Total.png used on input line 31.
-(pdftex.def)             Requested size: 483.69687pt x 362.76945pt.
+antidades_Novo_Total_Acumulado_Total.png used on input line 28.
+(pdftex.def)             Requested size: 483.69687pt x 252.35992pt.
+
+<Figuras/Resultados/Casos_Observados_Acumulados.png, id=1863, 889.07156pt x 557
+.08125pt>
+File: Figuras/Resultados/Casos_Observados_Acumulados.png Graphic file (type png
+)
+ <use Figuras/Resultados/Casos_Observados_Acumulados.png>
+Package pdftex.def Info: Figuras/Resultados/Casos_Observados_Acumulados.png use
+d on input line 37.
+(pdftex.def)             Requested size: 483.69687pt x 303.08049pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 36.
- [111 <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Quantidades_Novo_T
-otal_Acumulado_Total.png>]
+(babel)             in language  on input line 42.
+ [49 <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Quantidades_Novo_To
+tal_Acumulado_Total.png> <./Figuras/Resultados/Casos_Observados_Acumulados.png 
+(PNG copy)>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 38.
+(babel)             in language  on input line 44.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00000.pn
-g, id=5049, 1111.15125pt x 902.37125pt>
+g, id=1873, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/000
 00.png Graphic file (type png)
 
 <use Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/0000
 0.png>
 Package pdftex.def Info: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Casos/00000.png used on input line 46.
+mulacao_0/Casos/00000.png used on input line 52.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00040.pn
-g, id=5050, 1111.15125pt x 902.37125pt>
+g, id=1874, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/000
 40.png Graphic file (type png)
 
 <use Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/0004
 0.png>
 Package pdftex.def Info: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Casos/00040.png used on input line 52.
+mulacao_0/Casos/00040.png used on input line 58.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00080.pn
-g, id=5051, 1111.15125pt x 902.37125pt>
+g, id=1875, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/000
 80.png Graphic file (type png)
 
 <use Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/0008
 0.png>
 Package pdftex.def Info: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Casos/00080.png used on input line 58.
+mulacao_0/Casos/00080.png used on input line 64.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00120.pn
-g, id=5052, 1111.15125pt x 902.37125pt>
+g, id=1876, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/001
 20.png Graphic file (type png)
 
 <use Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/0012
 0.png>
 Package pdftex.def Info: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Casos/00120.png used on input line 65.
+mulacao_0/Casos/00120.png used on input line 71.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00160.pn
-g, id=5053, 1111.15125pt x 902.37125pt>
+g, id=1877, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/001
 60.png Graphic file (type png)
 
 <use Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/0016
 0.png>
 Package pdftex.def Info: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Casos/00160.png used on input line 71.
+mulacao_0/Casos/00160.png used on input line 77.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00200.pn
-g, id=5054, 1111.15125pt x 902.37125pt>
+g, id=1878, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/002
 00.png Graphic file (type png)
 
 <use Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/0020
 0.png>
 Package pdftex.def Info: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Casos/00200.png used on input line 77.
+mulacao_0/Casos/00200.png used on input line 83.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 91.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00000
-.png, id=5056, 1111.15125pt x 902.37125pt>
+.png, id=1880, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00000.png Graphic file (type png)
 
 <use Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/0
 0000.png>
 Package pdftex.def Info: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Espacial/00000.png used on input line 93.
+mulacao_0/Espacial/00000.png used on input line 99.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00040
-.png, id=5057, 1111.15125pt x 902.37125pt>
+.png, id=1881, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00040.png Graphic file (type png)
 
 <use Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/0
 0040.png>
 Package pdftex.def Info: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Espacial/00040.png used on input line 99.
+mulacao_0/Espacial/00040.png used on input line 105.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00080
-.png, id=5058, 1111.15125pt x 902.37125pt>
+.png, id=1882, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00080.png Graphic file (type png)
 
 <use Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/0
 0080.png>
 Package pdftex.def Info: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Espacial/00080.png used on input line 105.
+mulacao_0/Espacial/00080.png used on input line 111.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00120
-.png, id=5059, 1111.15125pt x 902.37125pt>
+.png, id=1883, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00120.png Graphic file (type png)
 
 <use Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/0
 0120.png>
 Package pdftex.def Info: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Espacial/00120.png used on input line 112.
+mulacao_0/Espacial/00120.png used on input line 118.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00160
-.png, id=5060, 1111.15125pt x 902.37125pt>
+.png, id=1884, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00160.png Graphic file (type png)
 
 <use Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/0
 0160.png>
 Package pdftex.def Info: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Espacial/00160.png used on input line 118.
+mulacao_0/Espacial/00160.png used on input line 124.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00200
-.png, id=5061, 1111.15125pt x 902.37125pt>
+.png, id=1885, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00200.png Graphic file (type png)
 
 <use Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/0
 0200.png>
 Package pdftex.def Info: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Espacial/00200.png used on input line 124.
+mulacao_0/Espacial/00200.png used on input line 130.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 130.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 130.
- [112 <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/
-00000.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/C
-asos/00040.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulaca
-o_0/Casos/00080.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Sim
-ulacao_0/Casos/00120.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_
-0/Simulacao_0/Casos/00160.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteC
-arlo_0/Simulacao_0/Casos/00200.png>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 132.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 135.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 135.
- [113 <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espaci
-al/00000.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_
-0/Espacial/00040.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Espacial/00080.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCa
-rlo_0/Simulacao_0/Espacial/00120.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT
-/MonteCarlo_0/Simulacao_0/Espacial/00160.png> <./Figuras/Resultados/0001/Saidas
-_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00200.png>]
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 136.
- [114]
+ [50 <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/0
+0000.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Ca
+sos/00040.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao
+_0/Casos/00080.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simu
+lacao_0/Casos/00120.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0
+/Simulacao_0/Casos/00160.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCa
+rlo_0/Simulacao_0/Casos/00200.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 139.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 139.
+ [51 <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacia
+l/00000.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0
+/Espacial/00040.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Sim
+ulacao_0/Espacial/00080.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCar
+lo_0/Simulacao_0/Espacial/00120.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/
+MonteCarlo_0/Simulacao_0/Espacial/00160.png> <./Figuras/Resultados/0001/Saidas_
+GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00200.png>]
+<Figuras/Resultados/01-07-2009.png, id=1907, 997.7275pt x 944.52875pt>
+File: Figuras/Resultados/01-07-2009.png Graphic file (type png)
+
+<use Figuras/Resultados/01-07-2009.png>
+Package pdftex.def Info: Figuras/Resultados/01-07-2009.png used on input line 1
+44.
+(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+
+<Figuras/Resultados/01-08-2009.png, id=1908, 997.7275pt x 944.52875pt>
+File: Figuras/Resultados/01-08-2009.png Graphic file (type png)
+
+<use Figuras/Resultados/01-08-2009.png>
+Package pdftex.def Info: Figuras/Resultados/01-08-2009.png used on input line 1
+50.
+(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+
+<Figuras/Resultados/01-09-2009.png, id=1909, 997.7275pt x 944.52875pt>
+File: Figuras/Resultados/01-09-2009.png Graphic file (type png)
+
+<use Figuras/Resultados/01-09-2009.png>
+Package pdftex.def Info: Figuras/Resultados/01-09-2009.png used on input line 1
+56.
+(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+
+<Figuras/Resultados/01-10-2009.png, id=1910, 997.7275pt x 944.52875pt>
+File: Figuras/Resultados/01-10-2009.png Graphic file (type png)
+
+<use Figuras/Resultados/01-10-2009.png>
+Package pdftex.def Info: Figuras/Resultados/01-10-2009.png used on input line 1
+63.
+(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+
+<Figuras/Resultados/01-11-2009.png, id=1911, 997.7275pt x 944.52875pt>
+File: Figuras/Resultados/01-11-2009.png Graphic file (type png)
+
+<use Figuras/Resultados/01-11-2009.png>
+Package pdftex.def Info: Figuras/Resultados/01-11-2009.png used on input line 1
+69.
+(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+
+<Figuras/Resultados/01-12-2009.png, id=1912, 997.7275pt x 944.52875pt>
+File: Figuras/Resultados/01-12-2009.png Graphic file (type png)
+
+<use Figuras/Resultados/01-12-2009.png>
+Package pdftex.def Info: Figuras/Resultados/01-12-2009.png used on input line 1
+75.
+(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 183.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 186.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 186.
+ [52 <./Figuras/Resultados/01-07-2009.png> <./Figuras/Resultados/01-08-2009.png
+> <./Figuras/Resultados/01-09-2009.png> <./Figuras/Resultados/01-10-2009.png> <
+./Figuras/Resultados/01-11-2009.png> <./Figuras/Resultados/01-12-2009.png>]
 PGFPlots: reading {Figuras/Resultados/0002/Entradas/MonteCarlo_0/Geral.csv}
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 151.
+(babel)             in language  on input line 199.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 151.
- [115]
+(babel)             in language  on input line 199.
+ [53]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 201.
 
 <Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Quantidades_Novo_Total_Acu
-mulado_Total.png, id=5092, 578.16pt x 433.62pt>
+mulado_Total.png, id=1929, 578.16pt x 433.62pt>
 File: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Quantidades_Novo_Tota
 l_Acumulado_Total.png Graphic file (type png)
 
 <use Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Quantidades_Novo_Total
 _Acumulado_Total.png>
 Package pdftex.def Info: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Qu
-antidades_Novo_Total_Acumulado_Total.png used on input line 159.
+antidades_Novo_Total_Acumulado_Total.png used on input line 207.
 (pdftex.def)             Requested size: 483.69687pt x 362.76945pt.
+File: Figuras/Resultados/Casos_Observados_Acumulados.png Graphic file (type png
+)
+ <use Figuras/Resultados/Casos_Observados_Acumulados.png>
+Package pdftex.def Info: Figuras/Resultados/Casos_Observados_Acumulados.png use
+d on input line 216.
+(pdftex.def)             Requested size: 483.69687pt x 303.08049pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 220.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 164.
- [116 <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Quantidades_Novo_T
-otal_Acumulado_Total.png>]
+(babel)             in language  on input line 220.
+
+[54 <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Quantidades_Novo_Tot
+al_Acumulado_Total.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 221.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 221.
+ [55]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 223.
 
 <Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00000.pn
-g, id=5101, 1111.15125pt x 902.37125pt>
+g, id=1944, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/000
 00.png Graphic file (type png)
 
 <use Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/0000
 0.png>
 Package pdftex.def Info: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Casos/00000.png used on input line 174.
+mulacao_0/Casos/00000.png used on input line 231.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00040.pn
-g, id=5102, 1111.15125pt x 902.37125pt>
+g, id=1945, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/000
 40.png Graphic file (type png)
 
 <use Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/0004
 0.png>
 Package pdftex.def Info: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Casos/00040.png used on input line 180.
+mulacao_0/Casos/00040.png used on input line 237.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00080.pn
-g, id=5103, 1111.15125pt x 902.37125pt>
+g, id=1946, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/000
 80.png Graphic file (type png)
 
 <use Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/0008
 0.png>
 Package pdftex.def Info: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Casos/00080.png used on input line 186.
+mulacao_0/Casos/00080.png used on input line 243.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00120.pn
-g, id=5104, 1111.15125pt x 902.37125pt>
+g, id=1947, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/001
 20.png Graphic file (type png)
 
 <use Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/0012
 0.png>
 Package pdftex.def Info: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Casos/00120.png used on input line 193.
+mulacao_0/Casos/00120.png used on input line 250.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00160.pn
-g, id=5105, 1111.15125pt x 902.37125pt>
+g, id=1948, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/001
 60.png Graphic file (type png)
 
 <use Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/0016
 0.png>
 Package pdftex.def Info: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Casos/00160.png used on input line 199.
+mulacao_0/Casos/00160.png used on input line 256.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00200.pn
-g, id=5106, 1111.15125pt x 902.37125pt>
+g, id=1949, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/002
 00.png Graphic file (type png)
 
 <use Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/0020
 0.png>
 Package pdftex.def Info: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Casos/00200.png used on input line 205.
+mulacao_0/Casos/00200.png used on input line 262.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 213.
+(babel)             in language  on input line 270.
 
 <Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00000
-.png, id=5108, 1111.15125pt x 902.37125pt>
+.png, id=1951, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00000.png Graphic file (type png)
 
 <use Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/0
 0000.png>
 Package pdftex.def Info: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Espacial/00000.png used on input line 221.
+mulacao_0/Espacial/00000.png used on input line 278.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00040
-.png, id=5109, 1111.15125pt x 902.37125pt>
+.png, id=1952, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00040.png Graphic file (type png)
 
 <use Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/0
 0040.png>
 Package pdftex.def Info: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Espacial/00040.png used on input line 227.
+mulacao_0/Espacial/00040.png used on input line 284.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00080
-.png, id=5110, 1111.15125pt x 902.37125pt>
+.png, id=1953, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00080.png Graphic file (type png)
 
 <use Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/0
 0080.png>
 Package pdftex.def Info: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Espacial/00080.png used on input line 233.
+mulacao_0/Espacial/00080.png used on input line 290.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00120
-.png, id=5111, 1111.15125pt x 902.37125pt>
+.png, id=1954, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00120.png Graphic file (type png)
 
 <use Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/0
 0120.png>
 Package pdftex.def Info: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Espacial/00120.png used on input line 240.
+mulacao_0/Espacial/00120.png used on input line 297.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00160
-.png, id=5112, 1111.15125pt x 902.37125pt>
+.png, id=1955, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00160.png Graphic file (type png)
 
 <use Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/0
 0160.png>
 Package pdftex.def Info: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Espacial/00160.png used on input line 246.
+mulacao_0/Espacial/00160.png used on input line 303.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 
 <Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00200
-.png, id=5113, 1111.15125pt x 902.37125pt>
+.png, id=1956, 1111.15125pt x 902.37125pt>
 File: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00200.png Graphic file (type png)
 
 <use Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/0
 0200.png>
 Package pdftex.def Info: Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Espacial/00200.png used on input line 252.
+mulacao_0/Espacial/00200.png used on input line 309.
 (pdftex.def)             Requested size: 241.84843pt x 196.40186pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 315.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 258.
- [117 <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/
-00000.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/C
-asos/00040.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulaca
-o_0/Casos/00080.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Sim
-ulacao_0/Casos/00120.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_
-0/Simulacao_0/Casos/00160.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteC
-arlo_0/Simulacao_0/Casos/00200.png>]
+(babel)             in language  on input line 315.
+ [56 <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/0
+0000.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Ca
+sos/00040.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao
+_0/Casos/00080.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simu
+lacao_0/Casos/00120.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0
+/Simulacao_0/Casos/00160.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCa
+rlo_0/Simulacao_0/Casos/00200.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 260.
+(babel)             in language  on input line 318.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 260.
- [118 <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espaci
-al/00000.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_
-0/Espacial/00040.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Si
-mulacao_0/Espacial/00080.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCa
-rlo_0/Simulacao_0/Espacial/00120.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT
-/MonteCarlo_0/Simulacao_0/Espacial/00160.png> <./Figuras/Resultados/0002/Saidas
-_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00200.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 20.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 20.
- (./RelatorioInfluenza.aux (./capa.aux)
-(./Secoes/ModelagemAgente/ModelagemAgente.aux)
+(babel)             in language  on input line 318.
+ [57 <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacia
+l/00000.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0
+/Espacial/00040.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Sim
+ulacao_0/Espacial/00080.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCar
+lo_0/Simulacao_0/Espacial/00120.png> <./Figuras/Resultados/0002/Saidas_GPU_BIT/
+MonteCarlo_0/Simulacao_0/Espacial/00160.png> <./Figuras/Resultados/0002/Saidas_
+GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00200.png>]
+File: Figuras/Resultados/01-07-2009.png Graphic file (type png)
+ <use Figuras/Resultados/01-07-2009.png>
+Package pdftex.def Info: Figuras/Resultados/01-07-2009.png used on input line 3
+23.
+(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+File: Figuras/Resultados/01-08-2009.png Graphic file (type png)
+
+<use Figuras/Resultados/01-08-2009.png>
+Package pdftex.def Info: Figuras/Resultados/01-08-2009.png used on input line 3
+29.
+(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+File: Figuras/Resultados/01-09-2009.png Graphic file (type png)
+
+<use Figuras/Resultados/01-09-2009.png>
+Package pdftex.def Info: Figuras/Resultados/01-09-2009.png used on input line 3
+35.
+(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+File: Figuras/Resultados/01-10-2009.png Graphic file (type png)
+
+<use Figuras/Resultados/01-10-2009.png>
+Package pdftex.def Info: Figuras/Resultados/01-10-2009.png used on input line 3
+42.
+(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+File: Figuras/Resultados/01-11-2009.png Graphic file (type png)
+
+<use Figuras/Resultados/01-11-2009.png>
+Package pdftex.def Info: Figuras/Resultados/01-11-2009.png used on input line 3
+48.
+(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+File: Figuras/Resultados/01-12-2009.png Graphic file (type png)
+
+<use Figuras/Resultados/01-12-2009.png>
+Package pdftex.def Info: Figuras/Resultados/01-12-2009.png used on input line 3
+54.
+(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 362.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 362.
+ [58])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
+ (./RelatorioInfluenza.aux
+(./capa.aux) (./Secoes/ModelagemAgente/ModelagemAgente.aux)
 (./Secoes/ModelagemBitstring/ModelagemBitstring.aux)
 (./Secoes/ModelagemAmbiente/ModelagemAmbiente.aux)
 (./Secoes/EstruturasDadosEstrategias/EstruturasDadosEstrategias.aux)
-(./Secoes/Simula/Simula.aux) (./Secoes/Resultados/Resultados.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 20.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 20.
+(./Secoes/Simula/Simula.aux) (./Secoes/TratamentosDados/TratamentosDados.aux)
+(./Secoes/Resultados/Resultados.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
 Package rerunfilecheck Info: File `RelatorioInfluenza.out' has not changed.
-(rerunfilecheck)             Checksum: A8B5FEEF6734A61A7F4EF6F1024EEBD8;7599.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 20.
+(rerunfilecheck)             Checksum: E6461DD18A1C6A23331E34CBACC72ABE;4167.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 39020 strings out of 493029
- 853214 string characters out of 6136234
- 1494409 words of memory out of 5000000
- 37645 multiletter control sequences out of 15000+600000
+ 35713 strings out of 493029
+ 794131 string characters out of 6136234
+ 1284081 words of memory out of 5000000
+ 37113 multiletter control sequences out of 15000+600000
  97606 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,24n,97p,1748b,1937s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
+ 73i,24n,97p,1840b,1989s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmbx6.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9
@@ -3871,21 +2904,21 @@ b></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
-8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmri7.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk1
-0.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmtt9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
-
-Output written on RelatorioInfluenza.pdf (118 pages, 10856075 bytes).
+exmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
+7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmri7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmtt8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
+Output written on RelatorioInfluenza.pdf (58 pages, 8679071 bytes).
 PDF statistics:
- 6021 PDF objects out of 6186 (max. 8388607)
- 5700 compressed objects within 57 object streams
- 3869 named destinations out of 4296 (max. 500000)
- 1007 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2347 PDF objects out of 2487 (max. 8388607)
+ 2133 compressed objects within 22 object streams
+ 1268 named destinations out of 1440 (max. 500000)
+ 632 words of extra memory for PDF output out of 10000 (max. 10000000)
 

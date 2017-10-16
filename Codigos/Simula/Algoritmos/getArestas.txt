@@ -1,5 +1,0 @@
-\Inicio{
-	arestas = lista\_vazia() \\
-	arestas = consultaSQLBancoDeDadosSelecionandoTodasAsVizinhancasEntrePoligonos() \\
-	\Retorna{arestas}
-}

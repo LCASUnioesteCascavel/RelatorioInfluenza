@@ -1,5 +1,0 @@
-\Inicio{
-	lotes = lista\_vazia() \\
-	lotes = consultaSQLBancoDeDadosSelecionandoTodosOsLotes() \\
-	\Retorna{lotes}
-}

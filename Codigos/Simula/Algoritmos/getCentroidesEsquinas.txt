@@ -1,5 +1,0 @@
-\Inicio{
-	centroidesEsquinas = lista\_vazia() \\
-	centroidesEsquinas = consultaSQLBancoDeDadosSelecionandoTodosOsCentroidesDasEsquinas() \\
-	\Retorna{centroidesEsquinas}
-}

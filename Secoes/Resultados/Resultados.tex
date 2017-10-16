@@ -3,16 +3,13 @@
 
 \subsection{Teste 0001}
 
-Em sequência são apresentados os parâmetros utilizados e resultados obtidos com a execução do teste denominado \textit{0001}. Utilizou-se o ambiente de Cascavel/PR com $286.205$ agentes. O consumo de memória da simulação permaneceu em torno de $3,278$MB e o tempo de execução foi de $87,47$s.
-
-\newpage
-
-\subsubsection{Definição dos Parâmetros}
+Em sequência são apresentados os parâmetros utilizados e resultados obtidos com a execução do teste denominado \textit{0001}. Utilizou-se o ambiente de Cascavel/PR com $286.205$ agentes. A população de agentes foi definida com base nos dados populacionais de 2010 disponibilizados pelo IBGE, que estratifica a população por faixas etárias e sexo. O consumo de memória da simulação permaneceu em torno de $3,278$MB e o tempo de execução foi de $87,47$s. \\
 
 \textbf{Arquivo Geral.csv:} 
 
 \begin{center}
 \pgfplotstabletypeset[
+font=\small, 
 col sep = semicolon,
 every head row/.style={before row=\toprule,after row=\midrule},
 every last row/.style={after row=\bottomrule},
@@ -31,6 +28,15 @@ A Figura \ref{fig:Quantidades_Agentes_Infectados_Acumulado_0001} ilustra as quan
   \includegraphics[width=1.0\textwidth]{Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Quantidades_Novo_Total_Acumulado_Total.png}
   \caption{Quantidades de agentes infectados acumulados.}
   \label{fig:Quantidades_Agentes_Infectados_Acumulado_0001}
+\end{figure}
+
+A Figura \ref{fig:Casos_Observados_Acumulados_0001} ilustra as quantidades de casos observados acumulados.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Casos_Observados_Acumulados.png}
+  \caption{Quantidades de casos observados acumulados.}
+  \label{fig:Casos_Observados_Acumulados_0001}
 \end{figure}
 
 \newpage
@@ -129,18 +135,60 @@ A Figura \ref{fig:espacial_0001} ilustra o espalhamento espacial acumulado dos a
   \label{fig:espacial_0001}
 \end{figure}
 
+A Figura \ref{fig:espacial_observado_0001} ilustra o espalhamento espacial acumulado dos casos observados de Influenza nos meses de Julho a Dezembro de 2009.
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-07-2009.png}
+    \captionsetup{labelformat=empty}
+    \captionof{figure}{Dia 1 de Julho de 2009}
+  \end{minipage}%
+  \begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-08-2009.png}
+    \captionsetup{labelformat=empty}
+    \captionof{figure}{Dia 1 de Agosto de 2009}
+  \end{minipage}
+  \begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-09-2009.png}
+    \captionsetup{labelformat=empty}
+    \captionof{figure}{Dia 1 de Setembro de 2009}
+  \end{minipage}%
+  \centering
+  \begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-10-2009.png}
+    \captionsetup{labelformat=empty}
+    \captionof{figure}{Dia 1 de Outubro de 2009}
+  \end{minipage}
+  \begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-11-2009.png}
+    \captionsetup{labelformat=empty}
+    \captionof{figure}{Dia 1 de Novembro de 2009}
+  \end{minipage}%
+  \begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-12-2009.png}
+    \captionsetup{labelformat=empty}
+    \captionof{figure}{Dia 1 de Dezembro de 2009}
+  \end{minipage}
+  \caption{Espalhamento espacial observados dos casos de Influenza.}
+  \label{fig:espacial_observado_0001}
+\end{figure}
+
 \subsection{Teste 0002}
 
-Em sequência são apresentados os parâmetros utilizados e resultados obtidos com a execução do teste denominado \textit{0002}. Utilizou-se o ambiente de Cascavel/PR com $286.205$ agentes. O consumo de memória da simulação permaneceu em torno de $3,278$MB e o tempo de execução foi de $87,47$s.
-
-\newpage
-
-\subsubsection{Definição dos Parâmetros}
+Em sequência são apresentados os parâmetros utilizados e resultados obtidos com a execução do teste denominado \textit{0002}. Utilizou-se o ambiente de Cascavel/PR com $286.205$ agentes. A população de agentes foi definida com base nos dados populacionais de 2010 disponibilizados pelo IBGE, que estratifica a população por faixas etárias e sexo. O consumo de memória da simulação permaneceu em torno de $3,278$MB e o tempo de execução foi de $87,47$s. \\
 
 \textbf{Arquivo Geral.csv:} 
 
 \begin{center}
 \pgfplotstabletypeset[
+font=\small, 
 col sep = semicolon,
 every head row/.style={before row=\toprule,after row=\midrule},
 every last row/.style={after row=\bottomrule},
@@ -159,6 +207,15 @@ A Figura \ref{fig:Quantidades_Agentes_Infectados_Acumulado_0002} ilustra as quan
   \includegraphics[width=1.0\textwidth]{Figuras/Resultados/0002/Saidas_GPU_BIT/MonteCarlo_0/Quantidades_Novo_Total_Acumulado_Total.png}
   \caption{Quantidades de agentes infectados acumulados.}
   \label{fig:Quantidades_Agentes_Infectados_Acumulado_0002}
+\end{figure}
+
+A Figura \ref{fig:Casos_Observados_Acumulados_0002} ilustra as quantidades de casos observados acumulados.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Casos_Observados_Acumulados.png}
+  \caption{Quantidades de casos observados acumulados.}
+  \label{fig:Casos_Observados_Acumulados_0002}
 \end{figure}
 
 \newpage
@@ -255,6 +312,51 @@ A Figura \ref{fig:espacial_0002} ilustra o espalhamento espacial acumulado dos a
   \end{minipage}
   \caption{Espalhamento espacial dos agentes para o teste 0002.}
   \label{fig:espacial_0002}
+\end{figure}
+
+A Figura \ref{fig:espacial_observado_0002} ilustra o espalhamento espacial acumulado dos casos observados de Influenza nos meses de Julho a Dezembro de 2009.
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-07-2009.png}
+    \captionsetup{labelformat=empty}
+    \captionof{figure}{Dia 1 de Julho de 2009}
+  \end{minipage}%
+  \begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-08-2009.png}
+    \captionsetup{labelformat=empty}
+    \captionof{figure}{Dia 1 de Agosto de 2009}
+  \end{minipage}
+  \begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-09-2009.png}
+    \captionsetup{labelformat=empty}
+    \captionof{figure}{Dia 1 de Setembro de 2009}
+  \end{minipage}%
+  \centering
+  \begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-10-2009.png}
+    \captionsetup{labelformat=empty}
+    \captionof{figure}{Dia 1 de Outubro de 2009}
+  \end{minipage}
+  \begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-11-2009.png}
+    \captionsetup{labelformat=empty}
+    \captionof{figure}{Dia 1 de Novembro de 2009}
+  \end{minipage}%
+  \begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-12-2009.png}
+    \captionsetup{labelformat=empty}
+    \captionof{figure}{Dia 1 de Dezembro de 2009}
+  \end{minipage}
+  \caption{Espalhamento espacial observados dos casos de Influenza.}
+  \label{fig:espacial_observado_0002}
 \end{figure}
 
 \newpage

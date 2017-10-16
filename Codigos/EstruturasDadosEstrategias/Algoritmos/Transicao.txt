@@ -35,7 +35,7 @@
                     altera estado do agente para suscetível \\
                     zera contador do agente \\
               } {
-                    \Comentario{O humao ainda está em período de recuperação} \\
+                    \Comentario{O agente ainda está em período de recuperação} \\
                     incrementa contador do agente \\
               }
 	      }

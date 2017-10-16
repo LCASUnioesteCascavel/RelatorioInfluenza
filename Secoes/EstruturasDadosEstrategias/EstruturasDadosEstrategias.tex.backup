@@ -44,7 +44,7 @@ Nas próximas sub-seções são apresentados os códigos, algoritmos e fluxogram
 
 \subsubsection{Movimentação}
 
-Nesta operação os agentes são movimentados no ambiente computacional para qualquer vértice vizinho, sendo assim uma movimentação aleatória. A rotina de movimentação dos agentes é ilustrada no Código \ref{cod:movimentacao}, Algoritmo \ref{alg:movimentacao} e Figura \ref{fig:movimentacao}.  
+Nesta operação os agentes são movimentados no ambiente computacional para posições vizinhas escolhidas aleatoriamente. Adicionalmente, uma fração dos agentes infectantes são movimentados para posições aleatórias do ambiente, que não necessariamente pertençam à sua vizinhança, com o objetivo de mimetizar redes de mundo pequeno. A rotina de movimentação dos agentes é ilustrada no Código \ref{cod:movimentacao}, Algoritmo \ref{alg:movimentacao} e Figura \ref{fig:movimentacao}.  
 
 \lstinputlisting[caption=Função Movimentação, label=cod:movimentacao, captionpos=b, language=C++]{Codigos/EstruturasDadosEstrategias/Fontes/Movimentacao.cpp}
 
@@ -84,26 +84,39 @@ Nesta operação são realizados os contatos entre agentes, em que ocorrem a tra
   \label{fig:contato}
 \end{figure} 
 
+A percentual de infecção dos agentes suscetíveis em contato com infectados é calculado utilizando-se três distintos parâmetros: os percentuais de infecção adotados às faixas etárias, o percentual de sazonalidade do ciclo em que ocorre o contato e uma constante de sazonalidade. Todos esses percentuais são definidos em arquivos de configuração da simulação que são gerados ou manualmente ou por meio do \textit{software} SIMULA. Os percentuais de infecção por faixa etária e a constante de sazonalidade foram definidos de forma empírica por meio de execução de testes. Os percentuais de sazonalidade por ciclo foram definidos com base na distribuição temporal dos casos de Influenza durante o ano de 2009. A Figura \ref{fig:percentuais_sazonalidade} ilustra a curva dos percentuais de sazonalidade.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Figuras/EstruturasDadosEstrategias/Sazonalidade.png}
+  \caption{Distribuição temporal dos percentuais de sazonalidade}
+  \label{fig:percentuais_sazonalidade}
+\end{figure} 
+
+À obtenção dos percentuais de sazonalidade ciclo a ciclo foram realizadas diversas atividades de pré-processamento sobre os dados originais que totalizavam $5.089$ casos de Influenza. Inicialmente foram removidos os casos não georreferenciados ou que se localizavam em regiões não-urbanas da cidade de Cascavel/PR, como zonas rurais e distritos. Em sequência foram removidos os casos com datas de ocorrência anteriores a 17 de Junho de 2009 e posteriores a 31 de Dezembro de 2009. 
+
+os casos foram agrupados por dia da ocorrência dos primeiros sintomas e as quantidades totais foram normalizadas à obtenção dos percentuais. 
+
 \newpage
 
 \subsubsection{Transição}
 
-Nesta operação são realizadas as transições de estados e vacinação dos agentes humanos. Na transição de estados os contadores dos agentes são comparados com os parâmetros que definem seus tempos máximos de permanência nos distintos compartimentos considerados à doença. Quando verificado que o período de permanência do agente no atual compartimento encerrou-se, ele é passado para o próximo compartimento. O fluxo da transição entre compartimentos para os agentes humanos é ilustrado na Figura \ref{fig:fluxoModeloHumanos}. Nesta rotina ocorrem também a evolução da doença ao estágio hemorrágico para os agentes infectados e a morte por Dengue hemorrágica. As taxas de evolução e morte por Dengue hemorrágica são parametrizadas no início da simulação. Na vacinação, os agentes humanos que ocupam determinadas quadras do ambiente podem ser vacinados, considerando uma probabilidade definida. São definidos em arquivos de configuração os períodos de tempo de simulação e as quadras que receberão as campanhas de vacinação. Uma campanha de vacinação permanece ativa por um tempo determinado, vacinando uma quantidade de humanos proporcional à este tempo. Quando o humano é vacinado três vezes, ele pode ser transferido ao compartimento imunizado de acordo com a taxa de eficácia da vacina, que é parametrizada. A rotina de transição de estados dos agentes humanos é ilustrada no Código \ref{cod:transicaoEstadosHumanos}, Algoritmo \ref{alg:transicaoEstadosHumanos} e Figura \ref{fig:transicaoEstadosHumanos}. A rotina de vacinação de agentes humanos é ilustrada no Código \ref{cod:vacinacao}, Algoritmo \ref{alg:vacinacao} e Figura \ref{fig:vacinacao}. 
+Nesta operação são realizadas as transições de estados dos agentes. Na transição de estados os contadores dos agentes são comparados com os parâmetros que definem seus tempos máximos de permanência nos distintos compartimentos considerados à doença. Quando verificado que o período de permanência do agente no atual compartimento encerrou-se, ele é passado para o próximo compartimento. A rotina de transição de estados dos agentes é ilustrada no Código \ref{cod:transicao}, Algoritmo \ref{alg:transicao} e Figura \ref{fig:transicao}. 
 
-\lstinputlisting[caption=Função Transição Estados Humanos, label=cod:transicaoEstadosHumanos, captionpos=b, language=C++]{Codigos/EstruturasDadosEstrategias/Fontes/Humanos/Transicao/TransicaoEstadosHumanos.cpp}
+\lstinputlisting[caption=Função Transição, label=cod:transicao, captionpos=b, language=C++]{Codigos/EstruturasDadosEstrategias/Fontes/Transicao.cpp}
 
 \begin{algorithm}[H]
  \SetAlgoLined  
- \input{Codigos/EstruturasDadosEstrategias/Algoritmos/Humanos/Transicao/TransicaoEstadosHumanos.txt}
- \caption{\textsc{Função Transição Estados Humanos}} 
- \label{alg:transicaoEstadosHumanos}
+ \input{Codigos/EstruturasDadosEstrategias/Algoritmos/Transicao.txt}
+ \caption{\textsc{Função Transição}} 
+ \label{alg:transicao}
 \end{algorithm}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1\textwidth]{Figuras/EstruturasDadosEstrategias/Operadores/Humanos/Transicao/TransicaoEstadosHumanos.eps}
-  \caption{Função Transição Estados Humanos}
-  \label{fig:transicaoEstadosHumanos}
+  \includegraphics[width=1\textwidth]{Figuras/EstruturasDadosEstrategias/Operadores/Transicao.eps}
+  \caption{Função Transição}
+  \label{fig:transicao}
 \end{figure} 
 
 \newpage
