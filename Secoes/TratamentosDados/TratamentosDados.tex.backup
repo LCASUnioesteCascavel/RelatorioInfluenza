@@ -14,6 +14,27 @@ O percentual de infecção dos agentes suscetíveis em contato com infectados é
 
 À obtenção dos percentuais de sazonalidade por ciclo foram realizadas diversas atividades de pré-processamento sobre os dados originais que totalizavam $5.089$ casos de Influenza. Inicialmente foram removidos os casos não georreferenciados ou localizados em regiões não-urbanas da cidade de Cascavel/PR, como zonas rurais e distritos. Em sequência foram mantidos somente os casos com datas de ocorrência entre 17 de Junho e 31 de Dezembro de 2009, pois considerou-se estes casos mais significativos à propósitos de simulação. Após estas operações restaram $4.658$ casos. Estes casos foram então agrupados por dia de ocorrência dos primeiros sintomas e as quantidades foram normalizadas dentro do intervalo $[0.0, 1.0]$, que correspondem aos percentuais de sazonalidade empregados na simulação.
 
-O arquivo de distribuição de agentes infectados ao longo da simulação é gerado pela função \textit{criarDistribuicaoHumanos}, que é ilustrada no Código \ref{cod:criarDistribuicaoHumanos}, Algoritmo \ref{alg:criarDistribuicaoHumanos} e Figura \ref{fig:criarDistribuicaoHumanos}. Na função são definidos manualmente percentuais de casos utilizados e frações de machos e fêmeas para cada faixa etária. Atualmente, $3\%$ da quantidade total de casos são inseridos durante a execução da simulação. Para as crianças, $51\%$ são masculinos e $49\%$ são femininos. Para os jovens, $50\%$ são masculinos e $50\%$ são femininos. Para os adultos, $48\%$ são masculinos e $52\%$ são femininos. Por fim, para os idosos, $45\%$ são masculinos e $55\%$ são femininos. 
+O arquivo de distribuição de agentes infectados ao longo da simulação é gerado pela função \textit{criarDistribuicaoAgentes}, que é ilustrada no Código \ref{cod:criarDistribuicaoAgentes}, Algoritmo \ref{alg:criarDistribuicaoAgentes} e Figura \ref{fig:criarDistribuicaoAgentes}. Na função são definidos manualmente percentuais de casos utilizados e frações de machos e fêmeas para cada faixa etária. Foram utilizadas as faixas etárias definidas pelo IBGE, que classificam os indivíduos com idade entre 0 e 14 anos como crianças, com idade entre 15 e 24 como jovens, com idade entre 25 e 29 anos como adultos e com idade maior que 59 como idosos. 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c}
+ \textbf{Idade} 				& \textbf{Faixa Etária}	\\ \hline
+ Quadra, $Q$ 					& $254$			\\
+ Sexo, $S$ 					& $1$			\\
+ 
+ Faixa etária, $I$ 				& $3.221.225.472$	\\
+ Lote, $L$ 					& $1.073.217.536$	\\
+ Latitude, $X$		 			& $524.287$		\\
+ 
+ Longitude, $Y$ 				& $4.294.967.040$	\\
+ Contador de transições de estados, $C$ 	& $252$			\\
+ Estado, $E$					& $3$			\\
+\end{tabular}
+\caption{Tabela das faixas etárias definidas pelo IBGE.}
+\label{tab:faixasEtariasIBGE}
+\end{table}
+
+Atualmente, $3\%$ da quantidade total de casos são inseridos durante a execução da simulação. Para as crianças, $51\%$ são masculinos e $49\%$ são femininos. Para os jovens, $50\%$ são masculinos e $50\%$ são femininos. Para os adultos, $48\%$ são masculinos e $52\%$ são femininos. Por fim, para os idosos, $45\%$ são masculinos e $55\%$ são femininos. Na escolha dos casos que serão utilizados inicialmente o conjunto de todos os casos é agrupado por dia de ocorrência. Em seguida, para cada dia são mantidos $3\%$ dos casos. Os casos são então agrupados por faixa etária e os percentuais apresentados anteriormente são utilizados à atribuição aleatória dos sexos. O passo final do algoritmo consiste em atribuir uma posição para a inserção do agente no ambiente, já que os pontos originais dos casos georreferenciados podem não estar presentes no conjunto de pontos interpolados no ambiente. Neste caso, o ponto do ambiente que é mais próximo aquele do caso original é escolhido, considerando-se a distância euclidiana entre eles. 
 
 \newpage
