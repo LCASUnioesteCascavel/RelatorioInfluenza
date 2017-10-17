@@ -3,31 +3,50 @@
 
 \subsection{Teste 0001}
 
-Em sequência são apresentados os parâmetros utilizados e resultados obtidos com a execução do teste denominado \textit{0001}. Utilizou-se o ambiente de Cascavel/PR com $286.205$ agentes. A população de agentes foi definida com base nos dados populacionais de 2010 disponibilizados pelo IBGE, que estratifica a população por faixas etárias e sexo, como ilustrado na tabela \ref{tab:populacoes_0001}. O consumo de memória da simulação permaneceu em torno de $3,278$MB e o tempo de execução foi de $87,47$s. \\
+Em sequência são apresentados os parâmetros utilizados e resultados obtidos com a execução do teste denominado \textit{0001}. Utilizou-se o ambiente de Cascavel/PR com $286.205$ agentes. A população de agentes foi definida com base nos dados populacionais de 2010 disponibilizados pelo IBGE, que estratifica a população por faixas etárias e sexo, como ilustrado na Tabela \ref{tab:populacoes_0001}. O consumo de memória da simulação permaneceu em torno de $3,278$MB e o tempo de execução foi de $87,47$s. \\
 
 \begin{table}[H]
 \centering
 \begin{tabular}{c|c|c}
- \textbf{Faixa Etária} 	& \textbf{Sexo}		& \textbf{Quantidade}	\\ \hline
-  Criança		& Masculino		& $33.029$		\\
-  Criança		& Feminino		& $32.029$		\\
-  Jovem			& Masculino		& $27.508$		\\
-  Jovem			& Feminino		& $27.144$		\\
-  Adulto		& Masculino		& $67.768$		\\
-  Adulto		& Feminino		& $73.023$		\\
-  Idoso			& Masculino		& $11.466$		\\
-  Idoso			& Feminino		& $14.238$		\\ \hline
-			&			& $286.205$		\\
+ \textbf{Faixa Etária} 		& \textbf{Sexo}		& \textbf{Quantidade}	\\ \hline
+  \multirow{2}{*}{Criança}	& Masculino		& $33.029$		\\
+				& Feminino		& $32.029$		\\
+  \multirow{2}{*}{Jovem}	& Masculino		& $27.508$		\\
+				& Feminino		& $27.144$		\\
+  \multirow{2}{*}{Adulto}	& Masculino		& $67.768$		\\
+				& Feminino		& $73.023$		\\
+  \multirow{2}{*}{Idoso}	& Masculino		& $11.466$		\\
+				& Feminino		& $14.238$		\\ \hline
+  \multicolumn{2}{c|}{}					& $286.205$		\\
 \end{tabular}
 \caption{Tabela das populações de agentes por faixas etárias e sexos, baseada nos dados disponibilizados pelo IBGE.}
 \label{tab:populacoes_0001}
 \end{table}
 
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c}
+ \textbf{Faixa Etária} 		& \textbf{Sexo Masculino}	& \textbf{Sexo Feminino}	\\ \hline
+  \multirow{2}{*}{Criança}	& Masculino			& $33.029$			\\
+				& Feminino			& $32.029$			\\
+  \multirow{2}{*}{Jovem}	& Masculino			& $27.508$			\\
+				& Feminino			& $27.144$			\\
+  \multirow{2}{*}{Adulto}	& Masculino			& $67.768$			\\
+				& Feminino			& $73.023$			\\
+  \multirow{2}{*}{Idoso}	& Masculino			& $11.466$			\\
+				& Feminino			& $14.238$			\\ \hline
+  \multicolumn{2}{c|}{}						& $286.205$			\\
+\end{tabular}
+\caption{Tabela das populações de agentes por faixas etárias e sexos, baseada nos dados disponibilizados pelo IBGE.}
+\label{tab:populacoes_0001}
+\end{table}
+
+\newpage
+
 \textbf{Arquivo Geral.csv:} 
 
 \begin{center}
 \pgfplotstabletypeset[
-font=\small, 
 col sep = semicolon,
 every head row/.style={before row=\toprule,after row=\midrule},
 every last row/.style={after row=\bottomrule},
@@ -52,7 +71,7 @@ A Figura \ref{fig:Casos_Observados_Acumulados_0001} ilustra as quantidades de ca
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Casos_Observados_Acumulados.png}
+  \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Observado/Casos_Observados_Acumulados.png}
   \caption{Quantidades de casos observados acumulados.}
   \label{fig:Casos_Observados_Acumulados_0001}
 \end{figure}
@@ -159,38 +178,38 @@ A Figura \ref{fig:espacial_observado_0001} ilustra o espalhamento espacial acumu
   \centering
   \begin{minipage}{.45\textwidth}
     \centering
-    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-07-2009.png}
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Observado/01-07-2009.png}
     \captionsetup{labelformat=empty}
     \captionof{figure}{Dia 1 de Julho de 2009}
   \end{minipage}%
   \begin{minipage}{.45\textwidth}
     \centering
-    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-08-2009.png}
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Observado/01-08-2009.png}
     \captionsetup{labelformat=empty}
     \captionof{figure}{Dia 1 de Agosto de 2009}
   \end{minipage}
   \begin{minipage}{.45\textwidth}
     \centering
-    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-09-2009.png}
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Observado/01-09-2009.png}
     \captionsetup{labelformat=empty}
     \captionof{figure}{Dia 1 de Setembro de 2009}
   \end{minipage}%
   \centering
   \begin{minipage}{.45\textwidth}
     \centering
-    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-10-2009.png}
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Observado/01-10-2009.png}
     \captionsetup{labelformat=empty}
     \captionof{figure}{Dia 1 de Outubro de 2009}
   \end{minipage}
   \begin{minipage}{.45\textwidth}
     \centering
-    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-11-2009.png}
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Observado/01-11-2009.png}
     \captionsetup{labelformat=empty}
     \captionof{figure}{Dia 1 de Novembro de 2009}
   \end{minipage}%
   \begin{minipage}{.45\textwidth}
     \centering
-    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-12-2009.png}
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Observado/01-12-2009.png}
     \captionsetup{labelformat=empty}
     \captionof{figure}{Dia 1 de Dezembro de 2009}
   \end{minipage}
@@ -200,13 +219,32 @@ A Figura \ref{fig:espacial_observado_0001} ilustra o espalhamento espacial acumu
 
 \subsection{Teste 0002}
 
-Em sequência são apresentados os parâmetros utilizados e resultados obtidos com a execução do teste denominado \textit{0002}. Utilizou-se o ambiente de Cascavel/PR com $286.205$ agentes. A população de agentes foi definida com base nos dados populacionais de 2010 disponibilizados pelo IBGE, que estratifica a população por faixas etárias e sexo. O consumo de memória da simulação permaneceu em torno de $3,278$MB e o tempo de execução foi de $87,47$s. \\
+Em sequência são apresentados os parâmetros utilizados e resultados obtidos com a execução do teste denominado \textit{0002}. Utilizou-se o ambiente de Cascavel/PR com $286.205$ agentes. A população de agentes foi definida com base nos dados populacionais de 2010 disponibilizados pelo IBGE, que estratifica a população por faixas etárias e sexo, como ilustrado na Tabela \ref{tab:populacoes_0002}. O consumo de memória da simulação permaneceu em torno de $3,278$MB e o tempo de execução foi de $87,47$s. \\
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c}
+ \textbf{Faixa Etária} 		& \textbf{Sexo}		& \textbf{Quantidade}	\\ \hline
+  \multirow{2}{*}{Criança}	& Masculino		& $33.029$		\\
+				& Feminino		& $32.029$		\\
+  \multirow{2}{*}{Jovem}	& Masculino		& $27.508$		\\
+				& Feminino		& $27.144$		\\
+  \multirow{2}{*}{Adulto}	& Masculino		& $67.768$		\\
+				& Feminino		& $73.023$		\\
+  \multirow{2}{*}{Idoso}	& Masculino		& $11.466$		\\
+				& Feminino		& $14.238$		\\ \hline
+  \multicolumn{2}{c|}{}					& $286.205$		\\
+\end{tabular}
+\caption{Tabela das populações de agentes por faixas etárias e sexos, baseada nos dados disponibilizados pelo IBGE.}
+\label{tab:populacoes_0002}
+\end{table}
+
+\newpage
 
 \textbf{Arquivo Geral.csv:} 
 
 \begin{center}
 \pgfplotstabletypeset[
-font=\small, 
 col sep = semicolon,
 every head row/.style={before row=\toprule,after row=\midrule},
 every last row/.style={after row=\bottomrule},
@@ -231,7 +269,7 @@ A Figura \ref{fig:Casos_Observados_Acumulados_0002} ilustra as quantidades de ca
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Casos_Observados_Acumulados.png}
+  \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Observado/Casos_Observados_Acumulados.png}
   \caption{Quantidades de casos observados acumulados.}
   \label{fig:Casos_Observados_Acumulados_0002}
 \end{figure}
@@ -338,38 +376,38 @@ A Figura \ref{fig:espacial_observado_0002} ilustra o espalhamento espacial acumu
   \centering
   \begin{minipage}{.45\textwidth}
     \centering
-    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-07-2009.png}
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Observado/01-07-2009.png}
     \captionsetup{labelformat=empty}
     \captionof{figure}{Dia 1 de Julho de 2009}
   \end{minipage}%
   \begin{minipage}{.45\textwidth}
     \centering
-    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-08-2009.png}
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Observado/01-08-2009.png}
     \captionsetup{labelformat=empty}
     \captionof{figure}{Dia 1 de Agosto de 2009}
   \end{minipage}
   \begin{minipage}{.45\textwidth}
     \centering
-    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-09-2009.png}
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Observado/01-09-2009.png}
     \captionsetup{labelformat=empty}
     \captionof{figure}{Dia 1 de Setembro de 2009}
   \end{minipage}%
   \centering
   \begin{minipage}{.45\textwidth}
     \centering
-    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-10-2009.png}
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Observado/01-10-2009.png}
     \captionsetup{labelformat=empty}
     \captionof{figure}{Dia 1 de Outubro de 2009}
   \end{minipage}
   \begin{minipage}{.45\textwidth}
     \centering
-    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-11-2009.png}
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Observado/01-11-2009.png}
     \captionsetup{labelformat=empty}
     \captionof{figure}{Dia 1 de Novembro de 2009}
   \end{minipage}%
   \begin{minipage}{.45\textwidth}
     \centering
-    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/01-12-2009.png}
+    \includegraphics[width=1.0\textwidth]{Figuras/Resultados/Observado/01-12-2009.png}
     \captionsetup{labelformat=empty}
     \captionof{figure}{Dia 1 de Dezembro de 2009}
   \end{minipage}
