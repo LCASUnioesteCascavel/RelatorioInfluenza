@@ -3,7 +3,25 @@
 
 Nesta seção são apresentados resumidamente os tratamentos e pré-processamentos realizados sobre os dados da distribuição espaço-temporal dos casos de Influenza no ano de 2009 na cidade de Cascavel/PR, à obtenção de arquivos de entrada utilizados em simulações computacionais. Especificamente, os casos de Influenza são utilizados à obtenção dos arquivos de sazonalidade e distribuição de agentes infectados durante a simulação. As informações obtidas do arquivo de sazonalidade são utilizadas durante a operação de contato entre agentes suscetíveis e infectantes ao controle da taxa de infecção, de acordo com os casos reais observados. O arquivo de distribuição é utilizado à inserção de agentes infectados no ambiente durante a execução de simulações, sendo esses agentes responsáveis pelo início do processo infeccioso da doença. As posições nas quais estes agentes são inseridos correspondem às posições de casos reais de Influenza que foram georreferenciados. 
 
-O percentual de infecção dos agentes suscetíveis em contato com infectados é calculado utilizando-se três distintos parâmetros: os percentuais de infecção adotados às faixas etárias, o percentual de sazonalidade do ciclo em que ocorre o contato e uma constante de sazonalidade. Todos esses percentuais são definidos em arquivos de configuração da simulação que são gerados ou manualmente ou por meio do \textit{software} SIMULA. Os percentuais de infecção por faixa etária e a constante de sazonalidade foram definidos de forma empírica por meio de execução de testes. Os percentuais de sazonalidade por ciclo foram definidos com base na distribuição temporal dos casos de Influenza durante o ano de 2009. A Figura \ref{fig:percentuais_sazonalidade} ilustra o gráfico gerado a partir dos percentuais de sazonalidade.
+Aos dados dos $5.089$ casos de Influenza foram realizadas diversas atividades de pré-processamento. Inicialmente foram removidos os casos não georreferenciados ou localizados em regiões não-urbanas da cidade de Cascavel/PR, como zonas rurais e distritos. Em sequência foram mantidos somente os casos com datas de ocorrência entre 17 de Junho e 31 de Dezembro de 2009, pois considerou-se estes casos mais significativos aos propósitos de simulação. Após estas operações restaram $4.658$ casos. Estes casos foram então agrupados por dia de ocorrência dos primeiros sintomas e são empregados à distribuição de agentes infectados durante a execução de simulações e ao cálculos das frações de sazonalidade. A Figura \ref{fig:casos} ilustra a distribuição espacial dos casos de Influenza durante o ano de 2009.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Figuras/TratamentosDados/Casos.png}
+  \caption{Distribuição temporal dos casos de Influenza}
+  \label{fig:casos}
+\end{figure} 
+
+O percentual de infecção dos agentes suscetíveis em contato com infectados é calculado utilizando-se três distintos parâmetros: os percentuais de infecção adotados às faixas etárias, a fração de sazonalidade do ciclo em que ocorre o contato e uma constante de sazonalidade. Todos esses percentuais são definidos em arquivos de configuração da simulação que são gerados ou manualmente ou por meio do \textit{software} SIMULA. Os percentuais de infecção por faixa etária e a constante de sazonalidade foram definidos de forma empírica por meio de execução de testes. As frações de sazonalidade por ciclo foram definidos com base na distribuição temporal acumulada dos casos de Influenza durante o ano de 2009. A Figura \ref{fig:curva_teorica} ilustra o ajuste realizado aos casos de Influenza utilizando uma função tipo logística acumulada, em que os pontos em azul representam a quantidade normalizada de casos e em vermelho é ilustrada a curva da equação ajustada. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Figuras/TratamentosDados/Teorico.png}
+  \caption{Ajuste aos casos de Influenza utilizando uma função logística acumulada}
+  \label{fig:curva_teorica}
+\end{figure} 
+
+À definição das frações de sazonalidade foram tomados os complementos das frações apresentadas na Figura \ref{fig:curva_teorica}. Na Figura \ref{fig:percentuais_sazonalidade} é apresentada a curva resultante dos cálculos dos complementos, que são utilizados como frações de sazonalidade durante a simulação à obtenção do percentual de infecção de agentes suscetíveis em contato com infetados. 
 
 \begin{figure}[H]
   \centering
@@ -12,24 +30,16 @@ O percentual de infecção dos agentes suscetíveis em contato com infectados é
   \label{fig:percentuais_sazonalidade}
 \end{figure} 
 
-À obtenção dos percentuais de sazonalidade por ciclo foram realizadas diversas atividades de pré-processamento sobre os dados originais que totalizavam $5.089$ casos de Influenza. Inicialmente foram removidos os casos não georreferenciados ou localizados em regiões não-urbanas da cidade de Cascavel/PR, como zonas rurais e distritos. Em sequência foram mantidos somente os casos com datas de ocorrência entre 17 de Junho e 31 de Dezembro de 2009, pois considerou-se estes casos mais significativos à propósitos de simulação. Após estas operações restaram $4.658$ casos. Estes casos foram então agrupados por dia de ocorrência dos primeiros sintomas e as quantidades foram normalizadas dentro do intervalo $[0.0, 1.0]$, que correspondem aos percentuais de sazonalidade empregados na simulação.
-
-O arquivo de distribuição de agentes infectados ao longo da simulação é gerado pela função \textit{criarDistribuicaoAgentes}, que é ilustrada no Código \ref{cod:criarDistribuicaoAgentes}, Algoritmo \ref{alg:criarDistribuicaoAgentes} e Figura \ref{fig:criarDistribuicaoAgentes}. Na função são definidos manualmente percentuais de casos utilizados e frações de machos e fêmeas para cada faixa etária. Foram utilizadas as faixas etárias definidas pelo IBGE, que classificam os indivíduos com idade entre 0 e 14 anos como crianças, com idade entre 15 e 24 como jovens, com idade entre 25 e 29 anos como adultos e com idade maior que 59 como idosos. 
+O arquivo de distribuição de agentes infectados ao longo da simulação é gerado pela função \textit{criarDistribuicaoAgentes}, que é ilustrada no Código \ref{cod:criarDistribuicaoAgentes}, Algoritmo \ref{alg:criarDistribuicaoAgentes} e Figura \ref{fig:criarDistribuicaoAgentes}. Na função são definidos manualmente percentuais de casos utilizados e frações de machos e fêmeas para cada faixa etária. Foram utilizadas como base as faixas etárias definidas pelo IBGE, que classificam os indivíduos de acordo com sua idade, como apresentado na Tabela \ref{tab:faixasEtariasIBGE}.  
 
 \begin{table}[H]
 \centering
 \begin{tabular}{c|c}
- \textbf{Idade} 				& \textbf{Faixa Etária}	\\ \hline
- Quadra, $Q$ 					& $254$			\\
- Sexo, $S$ 					& $1$			\\
- 
- Faixa etária, $I$ 				& $3.221.225.472$	\\
- Lote, $L$ 					& $1.073.217.536$	\\
- Latitude, $X$		 			& $524.287$		\\
- 
- Longitude, $Y$ 				& $4.294.967.040$	\\
- Contador de transições de estados, $C$ 	& $252$			\\
- Estado, $E$					& $3$			\\
+ \textbf{Idade} 	& \textbf{Faixa Etária}	\\ \hline
+ Menor que 15 anos 	& Criança		\\
+ Entre 15 e 24 anos 	& Jovem			\\
+ Entre 25 e 59 anos 	& Adulto		\\
+ Maior que 59 anos 	& Idosos		\\
 \end{tabular}
 \caption{Tabela das faixas etárias definidas pelo IBGE.}
 \label{tab:faixasEtariasIBGE}

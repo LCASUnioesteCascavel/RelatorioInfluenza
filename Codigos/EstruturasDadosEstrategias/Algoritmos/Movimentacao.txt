@@ -1,7 +1,7 @@
 \Inicio{
 	  \Para{cada agente} {
 				\Comentario{Um percentual dos agentes infectados são movidos para posições aleatórias do ambiente} \\
-				\Se{percentual aleatório $\leq$ percentual de migração} {
+				\Se{agente é infectado e percentual aleatório $\leq$ percentual de migração} {
 					move o agente para uma posição aleatória do ambiente
 				}
         \Comentario{As taxas de mobilidade dos agentes são distintas para cada faixa etária} \\
