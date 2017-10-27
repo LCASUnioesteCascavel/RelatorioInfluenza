@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.17)  20 OCT 2017 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.17)  27 OCT 2017 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2400,12 +2400,19 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 56.
  [47 <./Figuras/TratamentosDados/Teorico.png (PNG copy)> <./Figuras/Tratamentos
-Dados/Sazonalidade.png (PNG copy)>]
+Dados/Sazonalidade.png (PNG copy)>] <Figuras/TratamentosDados/Logistica.png, id
+=1848, 749.4399pt x 531.1845pt>
+File: Figuras/TratamentosDados/Logistica.png Graphic file (type png)
+
+<use Figuras/TratamentosDados/Logistica.png>
+Package pdftex.def Info: Figuras/TratamentosDados/Logistica.png used on input l
+ine 61.
+(pdftex.def)             Requested size: 338.58632pt x 239.97911pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 66.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 57.
- [48])
+(babel)             in language  on input line 66.
+ [48 <./Figuras/TratamentosDados/Logistica.png>])
 \openout2 = `Secoes/Resultados/Resultados.aux'.
 
  (./Secoes/Resultados/Resultados.tex
@@ -2431,7 +2438,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 37.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Quantidades_Novo_Total_Acu
-mulado_Total.png, id=1863, 462.528pt x 346.896pt>
+mulado_Total.png, id=1867, 462.528pt x 346.896pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Quantidades_Novo_Tota
 l_Acumulado_Total.png Graphic file (type png)
 
@@ -2441,7 +2448,7 @@ Package pdftex.def Info: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Qu
 antidades_Novo_Total_Acumulado_Total.png used on input line 43.
 (pdftex.def)             Requested size: 483.69687pt x 362.79062pt.
 
-<Figuras/Resultados/Observado/Casos_Observados_Acumulados.png, id=1865, 875.520
+<Figuras/Resultados/Observado/Casos_Observados_Acumulados.png, id=1869, 875.520
 94pt x 557.08125pt>
 File: Figuras/Resultados/Observado/Casos_Observados_Acumulados.png Graphic file
  (type png)
@@ -2466,7 +2473,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 59.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00000.pn
-g, id=1878, 1084.05pt x 902.37125pt>
+g, id=1882, 1084.05pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/000
 00.png Graphic file (type png)
 
@@ -2477,7 +2484,7 @@ mulacao_0/Casos/00000.png used on input line 67.
 (pdftex.def)             Requested size: 241.84843pt x 201.30363pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00040.pn
-g, id=1879, 1084.05pt x 902.37125pt>
+g, id=1883, 1084.05pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/000
 40.png Graphic file (type png)
 
@@ -2488,7 +2495,7 @@ mulacao_0/Casos/00040.png used on input line 73.
 (pdftex.def)             Requested size: 241.84843pt x 201.30363pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00080.pn
-g, id=1880, 1084.05pt x 902.37125pt>
+g, id=1884, 1084.05pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/000
 80.png Graphic file (type png)
 
@@ -2499,7 +2506,7 @@ mulacao_0/Casos/00080.png used on input line 79.
 (pdftex.def)             Requested size: 241.84843pt x 201.30363pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00120.pn
-g, id=1881, 1084.05pt x 902.37125pt>
+g, id=1885, 1084.05pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/001
 20.png Graphic file (type png)
 
@@ -2510,7 +2517,7 @@ mulacao_0/Casos/00120.png used on input line 86.
 (pdftex.def)             Requested size: 241.84843pt x 201.30363pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00160.pn
-g, id=1882, 1084.05pt x 902.37125pt>
+g, id=1886, 1084.05pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/001
 60.png Graphic file (type png)
 
@@ -2521,7 +2528,7 @@ mulacao_0/Casos/00160.png used on input line 92.
 (pdftex.def)             Requested size: 241.84843pt x 201.30363pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/00200.pn
-g, id=1883, 1084.05pt x 902.37125pt>
+g, id=1887, 1084.05pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Casos/002
 00.png Graphic file (type png)
 
@@ -2534,7 +2541,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 106.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00000
-.png, id=1885, 1084.05pt x 902.37125pt>
+.png, id=1889, 1084.05pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00000.png Graphic file (type png)
 
@@ -2545,7 +2552,7 @@ mulacao_0/Espacial/00000.png used on input line 114.
 (pdftex.def)             Requested size: 241.84843pt x 201.30363pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00040
-.png, id=1886, 1084.05pt x 902.37125pt>
+.png, id=1890, 1084.05pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00040.png Graphic file (type png)
 
@@ -2556,7 +2563,7 @@ mulacao_0/Espacial/00040.png used on input line 120.
 (pdftex.def)             Requested size: 241.84843pt x 201.30363pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00080
-.png, id=1887, 1084.05pt x 902.37125pt>
+.png, id=1891, 1084.05pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00080.png Graphic file (type png)
 
@@ -2567,7 +2574,7 @@ mulacao_0/Espacial/00080.png used on input line 126.
 (pdftex.def)             Requested size: 241.84843pt x 201.30363pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00120
-.png, id=1888, 1084.05pt x 902.37125pt>
+.png, id=1892, 1084.05pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00120.png Graphic file (type png)
 
@@ -2578,7 +2585,7 @@ mulacao_0/Espacial/00120.png used on input line 133.
 (pdftex.def)             Requested size: 241.84843pt x 201.30363pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00160
-.png, id=1889, 1084.05pt x 902.37125pt>
+.png, id=1893, 1084.05pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00160.png Graphic file (type png)
 
@@ -2589,7 +2596,7 @@ mulacao_0/Espacial/00160.png used on input line 139.
 (pdftex.def)             Requested size: 241.84843pt x 201.30363pt.
 
 <Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00200
-.png, id=1890, 1084.05pt x 902.37125pt>
+.png, id=1894, 1084.05pt x 902.37125pt>
 File: Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/
 00200.png Graphic file (type png)
 
@@ -2620,53 +2627,53 @@ ulacao_0/Espacial/00080.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/MonteCar
 lo_0/Simulacao_0/Espacial/00120.png> <./Figuras/Resultados/0001/Saidas_GPU_BIT/
 MonteCarlo_0/Simulacao_0/Espacial/00160.png> <./Figuras/Resultados/0001/Saidas_
 GPU_BIT/MonteCarlo_0/Simulacao_0/Espacial/00200.png>]
-<Figuras/Resultados/Observado/01-07-2009.png, id=1912, 997.7275pt x 944.52875pt
+<Figuras/Resultados/Observado/01-07-2009.png, id=1916, 985.6825pt x 719.68875pt
 >
 File: Figuras/Resultados/Observado/01-07-2009.png Graphic file (type png)
  <use Figuras/Resultados/Observado/01-07-2009.png>
 Package pdftex.def Info: Figuras/Resultados/Observado/01-07-2009.png used on in
 put line 159.
-(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+(pdftex.def)             Requested size: 217.66211pt x 158.92502pt.
 
-<Figuras/Resultados/Observado/01-08-2009.png, id=1913, 997.7275pt x 944.52875pt
+<Figuras/Resultados/Observado/01-08-2009.png, id=1917, 985.6825pt x 719.68875pt
 >
 File: Figuras/Resultados/Observado/01-08-2009.png Graphic file (type png)
  <use Figuras/Resultados/Observado/01-08-2009.png>
 Package pdftex.def Info: Figuras/Resultados/Observado/01-08-2009.png used on in
 put line 165.
-(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+(pdftex.def)             Requested size: 217.66211pt x 158.92502pt.
 
-<Figuras/Resultados/Observado/01-09-2009.png, id=1914, 997.7275pt x 944.52875pt
+<Figuras/Resultados/Observado/01-09-2009.png, id=1918, 985.6825pt x 719.68875pt
 >
 File: Figuras/Resultados/Observado/01-09-2009.png Graphic file (type png)
  <use Figuras/Resultados/Observado/01-09-2009.png>
 Package pdftex.def Info: Figuras/Resultados/Observado/01-09-2009.png used on in
 put line 171.
-(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+(pdftex.def)             Requested size: 217.66211pt x 158.92502pt.
 
-<Figuras/Resultados/Observado/01-10-2009.png, id=1915, 997.7275pt x 944.52875pt
+<Figuras/Resultados/Observado/01-10-2009.png, id=1919, 985.6825pt x 727.71875pt
 >
 File: Figuras/Resultados/Observado/01-10-2009.png Graphic file (type png)
  <use Figuras/Resultados/Observado/01-10-2009.png>
 Package pdftex.def Info: Figuras/Resultados/Observado/01-10-2009.png used on in
 put line 178.
-(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+(pdftex.def)             Requested size: 217.66211pt x 160.69823pt.
 
-<Figuras/Resultados/Observado/01-11-2009.png, id=1916, 997.7275pt x 944.52875pt
+<Figuras/Resultados/Observado/01-11-2009.png, id=1920, 985.6825pt x 727.71875pt
 >
 File: Figuras/Resultados/Observado/01-11-2009.png Graphic file (type png)
  <use Figuras/Resultados/Observado/01-11-2009.png>
 Package pdftex.def Info: Figuras/Resultados/Observado/01-11-2009.png used on in
 put line 184.
-(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+(pdftex.def)             Requested size: 217.66211pt x 160.69823pt.
 
-<Figuras/Resultados/Observado/01-12-2009.png, id=1917, 997.7275pt x 944.52875pt
+<Figuras/Resultados/Observado/01-12-2009.png, id=1921, 985.6825pt x 727.71875pt
 >
 File: Figuras/Resultados/Observado/01-12-2009.png Graphic file (type png)
  <use Figuras/Resultados/Observado/01-12-2009.png>
 Package pdftex.def Info: Figuras/Resultados/Observado/01-12-2009.png used on in
 put line 190.
-(pdftex.def)             Requested size: 217.66211pt x 206.05307pt.
+(pdftex.def)             Requested size: 217.66211pt x 160.69823pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 198.
 Package babel Info: Redefining portuges shorthand "|
@@ -2691,10 +2698,10 @@ Package rerunfilecheck Info: File `RelatorioInfluenza.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  ) 
 Here is how much of TeX's memory you used:
- 35660 strings out of 493029
- 789896 string characters out of 6136234
- 1284167 words of memory out of 5000000
- 37068 multiletter control sequences out of 15000+600000
+ 35667 strings out of 493029
+ 790120 string characters out of 6136234
+ 1284288 words of memory out of 5000000
+ 37073 multiletter control sequences out of 15000+600000
  97606 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,24n,97p,1748b,1989s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2720,10 +2727,10 @@ f/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk1
 0.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmtt9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
 
-Output written on RelatorioInfluenza.pdf (55 pages, 7796950 bytes).
+Output written on RelatorioInfluenza.pdf (55 pages, 7758903 bytes).
 PDF statistics:
- 2290 PDF objects out of 2487 (max. 8388607)
- 2101 compressed objects within 22 object streams
- 1261 named destinations out of 1440 (max. 500000)
- 550 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2294 PDF objects out of 2487 (max. 8388607)
+ 2103 compressed objects within 22 object streams
+ 1262 named destinations out of 1440 (max. 500000)
+ 555 words of extra memory for PDF output out of 10000 (max. 10000000)
 

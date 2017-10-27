@@ -54,4 +54,13 @@ O arquivo de distribuição de agentes infectados ao longo da simulação é ger
 
 Atualmente, $3\%$ da quantidade total de casos são inseridos durante a execução da simulação. Para as crianças, $51\%$ são masculinos e $49\%$ são femininos. Para os jovens, $50\%$ são masculinos e $50\%$ são femininos. Para os adultos, $48\%$ são masculinos e $52\%$ são femininos. Por fim, para os idosos, $45\%$ são masculinos e $55\%$ são femininos. Na escolha dos casos que serão utilizados inicialmente o conjunto de todos os casos é agrupado por dia de ocorrência. Em seguida, para cada dia são mantidos $3\%$ dos casos. Os casos são então agrupados por faixa etária e os percentuais apresentados anteriormente são utilizados à atribuição aleatória dos sexos. O passo final do algoritmo consiste em atribuir uma posição para a inserção do agente no ambiente, já que os pontos originais dos casos georreferenciados podem não estar presentes no conjunto de pontos interpolados no ambiente. Neste caso, o ponto do ambiente que é mais próximo aquele do caso original é escolhido, considerando-se a distância euclidiana entre eles. 
 
+A Figura \ref{fig:funcoes_logistica} ilustra as curvas obtidas por meio de ajustes realizados aos dados. As quantidades de casos de infecção reais por dia foram normalizados no intervalo $[0.0, 1.0]$ e são ilustrados na cor verde. À esses dados foi ajustada uma equação tipo Logística Acumulada, que é ilustrada na cor vermelha. Na cor azul é ilustrada a equação ajustada aos resultados obtidos por meio de simulação computacional. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figuras/TratamentosDados/Logistica.png}
+  \caption{Curvas das equações tipo Logística Acumulada ajustadas aos dados reais e simulados. }
+  \label{fig:funcoes_logistica}
+\end{figure} 
+
 \newpage
