@@ -27,6 +27,32 @@
               }
 	      }
         
+        \Comentario{Transição de estados dos agentes em quarentena} \\
+	      \Se{agente está em quarentena} {
+              \eSe{contador do agente $\geq$ período quarentena agente} {
+                    \Comentario{O período de quarentena do agente terminou} \\
+                    \Comentario{O agente é passado ao estado recuperado} \\
+                    altera estado do agente para recuperado \\
+                    zera contador do agente \\
+              } {
+                    \Comentario{O agente ainda está em período de quarentena} \\
+                    incrementa contador do agente \\
+              }
+	      }
+        
+        \Comentario{Transição de estados dos agentes imunizados} \\
+	      \Se{estado do agente é imunizado} {
+              \eSe{contador do agente $\geq$ período imunizado agente} {
+                    \Comentario{O período de imunização do agente terminou} \\
+                    \Comentario{O agente é passado ao estado suscetível} \\
+                    altera estado do agente para suscetível \\
+                    zera contador do agente \\
+              } {
+                    \Comentario{O agente ainda está em período de imunização} \\
+                    incrementa contador do agente \\
+              }
+	      }
+        
         \Comentario{Transição de estados dos agentes recuperados} \\
 	      \Se{estado do agente é recuperado} {
               \eSe{contador do agente $\geq$ período recuperado agente} {

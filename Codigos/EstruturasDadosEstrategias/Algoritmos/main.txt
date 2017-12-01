@@ -17,6 +17,9 @@
         
             \Comentario{Movimentação dos agentes} \\
             movimentação agentes \\
+
+						\Comentario{Vacinação dos agentes} \\
+						vacinação agentes \\
                     
             \Comentario{Contatos entre agentes} \\
             contato entre agentes \\
@@ -24,6 +27,9 @@
             \Comentario{Transições de estados} \\
             transição estados agentes \\
             
+						\Comentario{Quarentena} \\
+						quarentena \\
+
             \Comentario{Geração de saídas} \\
             gerar saídas populações \\
             gerar saídas espaciais \\

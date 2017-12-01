@@ -19,9 +19,16 @@
         }
         \Comentario{O agente realiza a movimentação de acordo com a taxa de mobilidade} \\
         \Se{percentual aleatório $\leq$ taxa} {
-            \Comentario{O agente move-se aleatoriamente no ambiente} \\
-    				escolhe aleatoriamente uma posição vizinha ao agente \\
-    				move o agente para esta posição
+            \Comentario{Agentes em quarentena têm movimentação restrita localmente} \\
+            \Se{agente está em quarentena} {
+                \Comentario{O agente move-se localmente} \\
+                escolhe aleatoriamente uma posição vizinha ao agente que pertença ao mesmo lote \\
+                move o agente para esta posição \\
+            } {
+                \Comentario{O agente move-se aleatoriamente no ambiente} \\
+                escolhe aleatoriamente uma posição vizinha ao agente \\
+                move o agente para esta posição
+            }
         }
 	}
 }

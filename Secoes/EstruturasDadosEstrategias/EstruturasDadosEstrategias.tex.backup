@@ -36,7 +36,7 @@ No Algoritmo \ref{alg:rotina_principal} e Fluxograma \ref{fig:rotina_principal} 
   \label{fig:rotina_principal}
 \end{figure} 
 
-Nas próximas sub-seções são apresentados os códigos, algoritmos e fluxogramas para todos os operadores aplicados sobre a população de agentes, que são movimentação, contato e transição. 
+Nas próximas sub-seções são apresentados os códigos, algoritmos e fluxogramas para todos os operadores aplicados sobre a população de agentes, que são a movimentação, contato e transição. 
 
 \newpage
 
@@ -44,9 +44,9 @@ Nas próximas sub-seções são apresentados os códigos, algoritmos e fluxogram
 
 \subsubsection{Movimentação}
 
-Nesta operação os agentes são movimentados no ambiente computacional para posições vizinhas escolhidas aleatoriamente. Adicionalmente, uma fração dos agentes infectantes são movimentados para posições aleatórias do ambiente, que não necessariamente pertençam à sua vizinhança, com o objetivo de mimetizar redes de mundo pequeno. A rotina de movimentação dos agentes é ilustrada no Código \ref{cod:movimentacao}, Algoritmo \ref{alg:movimentacao} e Figura \ref{fig:movimentacao}.  
+Nesta operação os agentes são movimentados no ambiente computacional para posições vizinhas escolhidas aleatoriamente, exceto aquelas agentes em quarentena, que são movidos localmente em seu lote atual. Adicionalmente, uma fração dos agentes infectantes são movimentados (migração) para posições aleatórias do ambiente, que não necessariamente pertençam à sua vizinhança, com o objetivo de mimetizar redes de mundo pequeno. A rotina de movimentação dos agentes é ilustrada no Código \ref{cod:movimentacao}, Algoritmo \ref{alg:movimentacao} e Figura \ref{fig:movimentacao}.  
 
-\lstinputlisting[caption=Função Movimentação, label=cod:movimentacao, captionpos=b, language=C++]{Codigos/EstruturasDadosEstrategias/Fontes/Movimentacao.cpp}
+\lstinputlisting[caption=Função Movimentação, label=cod:movimentacao, captionpos=b, language=C++]{Codigos/EstruturasDadosEstrategias/Fontes/Movimentacao.cu}
 
 \begin{algorithm}[H]
   \SetAlgoLined   
@@ -68,7 +68,7 @@ Nesta operação os agentes são movimentados no ambiente computacional para pos
 
 Nesta operação são realizados os contatos entre agentes, em que ocorrem a transmissão da doença. A rotina de contato é ilustrada no Código \ref{cod:contato}, Algoritmo \ref{alg:contato} e Figura \ref{fig:contato}. 
 
-\lstinputlisting[caption=Função Contato, label=cod:contato, captionpos=b, language=C++]{Codigos/EstruturasDadosEstrategias/Fontes/Contato.cpp}
+\lstinputlisting[caption=Função Contato, label=cod:contato, captionpos=b, language=C++]{Codigos/EstruturasDadosEstrategias/Fontes/Contato.cu}
 
 \begin{algorithm}[H]
  \SetAlgoLined  
@@ -84,26 +84,15 @@ Nesta operação são realizados os contatos entre agentes, em que ocorrem a tra
   \label{fig:contato}
 \end{figure} 
 
-A percentual de infecção dos agentes suscetíveis em contato com infectados é calculado utilizando-se três distintos parâmetros: os percentuais de infecção adotados às faixas etárias, o percentual de sazonalidade do ciclo em que ocorre o contato e uma constante de sazonalidade. Todos esses percentuais são definidos em arquivos de configuração da simulação que são gerados ou manualmente ou por meio do \textit{software} SIMULA. Os percentuais de infecção por faixa etária e a constante de sazonalidade foram definidos de forma empírica por meio de execução de testes. Os percentuais de sazonalidade por ciclo foram definidos com base na distribuição temporal dos casos de Influenza durante o ano de 2009. A Figura \ref{fig:percentuais_sazonalidade} ilustra a curva dos percentuais de sazonalidade.
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1\textwidth]{Figuras/EstruturasDadosEstrategias/Sazonalidade.png}
-  \caption{Distribuição temporal dos percentuais de sazonalidade}
-  \label{fig:percentuais_sazonalidade}
-\end{figure} 
-
-À obtenção dos percentuais de sazonalidade ciclo a ciclo foram realizadas diversas atividades de pré-processamento sobre os dados originais que totalizavam $5.089$ casos de Influenza. Inicialmente foram removidos os casos não georreferenciados ou que se localizavam em regiões não-urbanas da cidade de Cascavel/PR, como zonas rurais e distritos. Em sequência foram removidos os casos com datas de ocorrência anteriores a 17 de Junho de 2009 e posteriores a 31 de Dezembro de 2009. 
-
-os casos foram agrupados por dia da ocorrência dos primeiros sintomas e as quantidades totais foram normalizadas à obtenção dos percentuais. 
-
 \newpage
 
 \subsubsection{Transição}
 
-Nesta operação são realizadas as transições de estados dos agentes. Na transição de estados os contadores dos agentes são comparados com os parâmetros que definem seus tempos máximos de permanência nos distintos compartimentos considerados à doença. Quando verificado que o período de permanência do agente no atual compartimento encerrou-se, ele é passado para o próximo compartimento. A rotina de transição de estados dos agentes é ilustrada no Código \ref{cod:transicao}, Algoritmo \ref{alg:transicao} e Figura \ref{fig:transicao}. 
+\subsubsubsection{Transição de Estados}
 
-\lstinputlisting[caption=Função Transição, label=cod:transicao, captionpos=b, language=C++]{Codigos/EstruturasDadosEstrategias/Fontes/Transicao.cpp}
+Nesta operação são realizadas as transições de estados, vacinação e quarentena dos agentes. Na transição de estados os contadores dos agentes são comparados com os parâmetros que definem seus tempos máximos de permanência nos distintos compartimentos considerados à doença. Quando verificado que o período de permanência do agente no atual compartimento encerrou-se, ele é passado para o próximo compartimento. A rotina de transição de estados dos agentes é ilustrada no Código \ref{cod:transicao}, Algoritmo \ref{alg:transicao} e Figura \ref{fig:transicao}. 
+
+\lstinputlisting[caption=Função Transição, label=cod:transicao, captionpos=b, language=C++]{Codigos/EstruturasDadosEstrategias/Fontes/Transicao.cu}
 
 \begin{algorithm}[H]
  \SetAlgoLined  
@@ -119,13 +108,53 @@ Nesta operação são realizadas as transições de estados dos agentes. Na tran
   \label{fig:transicao}
 \end{figure} 
 
+\subsubsubsection{Vacinação}
+
+Nesta operação são realizadas as vacinações dos agentes. Somente os agentes humanos localizados em quadras com vacinação são vacinados. Além disso, as campanhas de vacinação iniciam-se e permanecem ativas em ciclos de tempos determinados. A fração de agentes vacinados decresce a cada dia da campanha. Os agentes que recebem a vacina podem ser passados ao estado imunizado de acordo com a taxa de eficácia de vacina, que é definida nos parâmetros de simulação. A rotina de vacinação dos agentes é ilustrada no Código \ref{cod:vacinacao}, Algoritmo \ref{alg:vacinacao} e Figura \ref{fig:vacinacao}. 
+
+\lstinputlisting[caption=Função Vacinação, label=cod:vacinacao, captionpos=b, language=C++]{Codigos/EstruturasDadosEstrategias/Fontes/Vacinacao.cu}
+
+\begin{algorithm}[H]
+ \SetAlgoLined  
+ \input{Codigos/EstruturasDadosEstrategias/Algoritmos/Vacinacao.txt}
+ \caption{\textsc{Função Vacinação}} 
+ \label{alg:vacinacao}
+\end{algorithm}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Figuras/EstruturasDadosEstrategias/Operadores/Vacinacao.eps}
+  \caption{Função Vacinação}
+  \label{fig:vacinacao}
+\end{figure} 
+
+\subsubsubsection{Quarentena}
+
+Nesta operação são realizadas a passagem dos agentes infectantes ao estado de quarentena, de acordo com a probabilidade de transição definida pelo vetor quarentena. A rotina de transição à quarentena dos agentes é ilustrada no Código \ref{cod:quarentena}, Algoritmo \ref{alg:quarentena} e Figura \ref{fig:quarentena}. 
+
+\lstinputlisting[caption=Função Quarentena, label=cod:quarentena, captionpos=b, language=C++]{Codigos/EstruturasDadosEstrategias/Fontes/Quarentena.cu}
+
+\begin{algorithm}[H]
+ \SetAlgoLined  
+ \input{Codigos/EstruturasDadosEstrategias/Algoritmos/Quarentena.txt}
+ \caption{\textsc{Função Quarentena}} 
+ \label{alg:quarentena}
+\end{algorithm}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Figuras/EstruturasDadosEstrategias/Operadores/Quarentena.eps}
+  \caption{Função Quarentena}
+  \label{fig:quarentena}
+\end{figure} 
+
 \newpage
 
-\subsubsection{Macros à Implementação das Operações \textit{bitstring}}
+\subsection{Macros à Implementação das Operações \textit{bitstring}}
 
-Abaixo são ilustradas as macros utilizadas à implementação das operações \textit{bitstring} de captura e atualização de atributos nos agentes, que são definidas em \ref{eq:operadoresGet} e \ref{eq:operadoresSet}. As variáveis com nome iniciando em "T"\ armazenam os tamanhos em \textit{bits} dos campos dos agentes. As variáveis iniciando com "A"\ armazenam a quantidade de \textit{bits} anteriores à determinado campo do agente. As variáveis iniciando com "MA"\ e "NM"\ armazenam as máscaras positivas e negativas para os campos dos agentes, respectivamente. São apresentadas ainda as funções de captura, \textit{get}, e atualização, \textit{set}, dos atributos dos agentes. 
+Abaixo são ilustradas as macros utilizadas à implementação das operações \textit{bitstring} de captura e atualização de atributos nos agentes, que são definidas em \ref{eq:operadoresGet} e \ref{eq:operadoresSet}. As variáveis com nome iniciando em "TH"\ armazenam os tamanhos em \textit{bits} dos campos dos agentes. As variáveis iniciando com "AH"\ armazenam a quantidade de \textit{bits} anteriores à determinado campo do agente. As variáveis iniciando com "MAH"\ e "NMH"\ armazenam as máscaras positivas e negativas para os campos dos agentes, respectivamente. São apresentadas ainda as funções de captura, \textit{get}, e atualização, \textit{set}, dos atributos dos agentes. 
 
-\lstinputlisting[title=Macros para captura e configuração de atributos do agente, captionpos=b, language=C++]{Codigos/EstruturasDadosEstrategias/Macros.cpp}
+\lstinputlisting[title=Macros para captura e configuração de atributos do agente, captionpos=b, language=C++]{Codigos/EstruturasDadosEstrategias/Macros.cu}
 
 A Seção \ref{sec:SIMULA} apresenta o \textit{software} utilizado como apoio às operações de manipulação de dados georreferenciados, que são empregados à geração de arquivos de entrada e visualizações às simulações.
 

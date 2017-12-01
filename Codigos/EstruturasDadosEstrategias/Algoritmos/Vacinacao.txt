@@ -1,0 +1,19 @@
+\Inicio{
+  \Comentario{Somente as quadras definidas pela campanha de vacinação executam a rotina} \\
+	\Para{cada quadra que pertença à uma campanha de vacinação} {
+        \Comentario{Os períodos de vacinação são definidos pela campanha de vacinação} \\
+	      \Se{quadra está em período de vacinação} {
+              conta quantidade de humanos suscetíveis que estejam em uma das faixas etárias definidas pela campanha e que estão nesta quadra \\
+              \Comentario{O percentual de vacinação é reduzido à cada dia da campanha} \\
+              percentual de vacinação $=$ $1/$dia da campanha de vacinação \\
+              \Comentario{São vacinados uma fração dos agentes humanos suscetíveis} \\
+              vacina percentual de vacinação $\cdot$ quantidade de humanos suscetíveis \\
+              \Comentario{Se o humano recebeu a vacina ele pode ser passado probabilísticamente ao estado imunizado} \\
+              \Se{humano recebeu vacina} {
+                    \Se{percentual aleatório $\leq$ taxa de eficácia da vacina} {
+                          altera saúde do humano para imunizado \\
+                    }
+              }
+	      }
+	}
+}

@@ -1,0 +1,9 @@
+\Inicio{
+	\Para{cada agente} {
+        \Comentario{Passagem probabilística dos agentes humanos infectantes ao estado de quarentena} \\
+	      \Se{estado do agente é infectante e percentual aleatório $\leq$ quarentena[ciclo]} {
+              \Comentario{O agente é passado ao estado de quarentena} \\
+              altera estado do agente para quarentena \\
+	      }
+	}
+}

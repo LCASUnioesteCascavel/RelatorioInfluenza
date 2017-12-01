@@ -9,21 +9,64 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1711.1702mm"
-   height="719.72003mm"
-   viewBox="0 0 6063.2016 2550.1889"
+   width="1502.3258mm"
+   height="1134.0223mm"
+   viewBox="0 0 5323.2018 4018.1891"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="MovimentacaoHumanos.svg">
+   sodipodi:docname="Movimentacao.svg">
   <defs
      id="defs4">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker4636"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path4638" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4328"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path4331"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="180.81731 : 269.60229 : 1"
-       inkscape:vp_y="0 : 999.99981 : 0"
-       inkscape:vp_z="1029.9679 : 308.99824 : 1"
-       inkscape:persp3d-origin="657.92046 : 133.60457 : 1"
+       inkscape:vp_x="180.8173 : 269.6023 : 1"
+       inkscape:vp_y="0 : 999.99984 : 0"
+       inkscape:vp_z="1029.9679 : 308.99826 : 1"
+       inkscape:persp3d-origin="657.92043 : 133.60457 : 1"
        id="perspective4172" />
   </defs>
   <sodipodi:namedview
@@ -33,9 +76,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="2823.7254"
-     inkscape:cy="1086.5425"
+     inkscape:zoom="0.49497474"
+     inkscape:cx="1580.8713"
+     inkscape:cy="927.8584"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -53,7 +96,7 @@
        type="xygrid"
        id="grid4449"
        originx="-1548.4723"
-       originy="650.83746" />
+       originy="2118.8376" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -71,7 +114,7 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-1099.5264,293.04634)">
+     transform="translate(-1099.5264,293.04628)">
     <rect
        ry="199.43871"
        y="461.2608"
@@ -426,29 +469,6 @@
          x="4604.4634"
          y="1481.1824">idosos </tspan></text>
     <rect
-       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4247"
-       width="629.1922"
-       height="398.87741"
-       x="6496.5312"
-       y="461.2608"
-       ry="199.43871" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="6811.8203"
-       y="642.47443"
-       id="text4249"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan4251"
-         sodipodi:role="line"
-         x="6819.7793"
-         y="642.47443">Move o agente </tspan><tspan
-         sodipodi:role="line"
-         x="6811.8203"
-         y="704.97443"
-         id="tspan4271">para esta posição</tspan></text>
-    <rect
        ry="199.43871"
        y="461.2608"
        x="5756.5312"
@@ -459,31 +479,14 @@
     <text
        sodipodi:linespacing="125%"
        id="text4255"
-       y="580.74347"
-       x="6069.0034"
+       y="676.37335"
+       x="6071.1396"
        style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         id="tspan4259"
-         y="580.74347"
-         x="6076.9624"
-         sodipodi:role="line">Escolhe </tspan><tspan
-         y="643.24347"
-         x="6076.9624"
+         y="676.37335"
+         x="6071.1396"
          sodipodi:role="line"
-         id="tspan4273">aleatoriamente </tspan><tspan
-         y="705.74347"
-         x="6076.9624"
-         sodipodi:role="line"
-         id="tspan4267">uma posição vizinha </tspan><tspan
-         y="768.24347"
-         x="6069.0034"
-         sodipodi:role="line"
-         id="tspan4269">ao agente</tspan></text>
-    <path
-       inkscape:connector-curvature="0"
-       id="path4261"
-       d="m 6384.8043,656.30527 110.8929,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.9613049px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         id="tspan4269">(2)</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.9613049px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 5644.8043,656.30527 110.8929,0"
@@ -612,5 +615,206 @@
        d="m 1764.8043,2016.3053 110.8929,0"
        id="path4315"
        inkscape:connector-curvature="0" />
+    <rect
+       ry="199.43871"
+       y="2489.261"
+       x="3436.5312"
+       height="398.87741"
+       width="629.1922"
+       id="rect4237"
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4239"
+       y="2670.4746"
+       x="3751.8203"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="2670.4746"
+         x="3759.7793"
+         sodipodi:role="line"
+         id="tspan4241">Move o agente </tspan><tspan
+         id="tspan4243"
+         y="2732.9746"
+         x="3751.8203"
+         sodipodi:role="line">para esta posição</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4245"
+       width="629.1922"
+       height="398.87741"
+       x="2696.5312"
+       y="2489.261"
+       ry="199.43871" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="3009.626"
+       y="2582.3398"
+       id="text4247"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="3017.585"
+         y="2582.3398"
+         id="tspan4249">Escolhe </tspan><tspan
+         id="tspan4252"
+         sodipodi:role="line"
+         x="3017.585"
+         y="2644.8398">aleatoriamente </tspan><tspan
+         id="tspan4254"
+         sodipodi:role="line"
+         x="3017.585"
+         y="2707.3398">uma posição vizinha </tspan><tspan
+         id="tspan4256"
+         sodipodi:role="line"
+         x="3017.585"
+         y="2769.8398">ao agente pertencente </tspan><tspan
+         sodipodi:role="line"
+         x="3009.626"
+         y="2832.3398"
+         id="tspan4318">ao mesmo lote</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.9613049px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 3324.8043,2684.3053 110.8929,0"
+       id="path4258"
+       inkscape:connector-curvature="0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4262"
+       y="3096.3733"
+       x="1451.1393"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="3096.3733"
+         x="1451.1393"
+         sodipodi:role="line"
+         id="tspan4264">(2)</tspan></text>
+    <rect
+       ry="199.43871"
+       y="2881.2607"
+       x="1136.531"
+       height="398.87741"
+       width="629.1922"
+       id="rect4266"
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4279"
+       width="629.1922"
+       height="398.87741"
+       x="3436.5312"
+       y="3289.261"
+       ry="199.43871" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="3751.8203"
+       y="3470.4746"
+       id="text4281"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan4283"
+         sodipodi:role="line"
+         x="3759.7793"
+         y="3470.4746">Move o agente </tspan><tspan
+         sodipodi:role="line"
+         x="3751.8203"
+         y="3532.9746"
+         id="tspan4285">para esta posição</tspan></text>
+    <rect
+       ry="199.43871"
+       y="3289.261"
+       x="2696.5312"
+       height="398.87741"
+       width="629.1922"
+       id="rect4287"
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4289"
+       y="3408.7437"
+       x="3009.0034"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4291"
+         y="3408.7437"
+         x="3016.9624"
+         sodipodi:role="line">Escolhe </tspan><tspan
+         y="3471.2437"
+         x="3016.9624"
+         sodipodi:role="line"
+         id="tspan4293">aleatoriamente </tspan><tspan
+         y="3533.7437"
+         x="3016.9624"
+         sodipodi:role="line"
+         id="tspan4296">uma posição vizinha </tspan><tspan
+         y="3596.2437"
+         x="3009.0034"
+         sodipodi:role="line"
+         id="tspan4298">ao agente</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4300"
+       d="m 3324.8043,3484.3053 110.8929,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.9613049px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2191.6521"
+       y="3064.2444"
+       id="text4308"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan4310"
+         sodipodi:role="line"
+         x="2199.6111"
+         y="3064.2444">Se agente está </tspan><tspan
+         sodipodi:role="line"
+         x="2191.6521"
+         y="3126.7444"
+         id="tspan4314">em quarentena</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4312"
+       width="629.1922"
+       height="398.87741"
+       x="1876.531"
+       y="2881.2607"
+       ry="199.43871" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4316"
+       d="m 1764.8043,3076.3053 110.8929,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.961;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.0011605px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 2471.0483,2966.2975 223.5354,-276.2116"
+       id="path4320"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99617893px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4636)"
+       d="m 2473.0498,3190.3076 220.638,296.851"
+       id="path4322"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2557.0542"
+       y="2808.3054"
+       id="text4808"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4810"
+         x="2557.0542"
+         y="2808.3054">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2543.0542"
+       y="3362.3054"
+       id="text4812"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4814"
+         x="2543.0542"
+         y="3362.3054">N</tspan></text>
   </g>
 </svg>
