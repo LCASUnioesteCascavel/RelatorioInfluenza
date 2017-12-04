@@ -11,7 +11,7 @@ Na próxima sub-seção são apresentadas as funções SQL utilizadas para obten
 
 \subsection{Operações Executadas no Banco de Dados}
 
-O Código \ref{cod:sql_consultasPrincipais} ilustra as principais operações realizadas no banco, que incluem a remoção de tabelas, criação de tabelas e alteração do refinamento relacionados ao ambiente. A função de remoção de tabelas exclui as tabelas auxiliares relacionadas ao ambiente, sendo executada quando necessário atualizar as tabelas auxiliares devido à alguma mudança nos dados. A função de criação de tabelas cria as tabelas auxiliares no banco de dados. Por fim a consulta de alteração de refinamentos altera o refinamento de um determinado ambiente. O nome do ambiente alvo das funções é passado como argumento.
+O Código \ref{cod:sql_consultasPrincipais} ilustra as principais operações realizadas no banco, que incluem a remoção e criação de tabelas e alteração do refinamento relacionado ao ambiente. A função de remoção de tabelas exclui as tabelas auxiliares relacionadas ao ambiente, sendo executada quando necessário atualizar as tabelas auxiliares devido à alguma mudança nos dados. A função de criação de tabelas cria as tabelas auxiliares no banco de dados. Por fim a consulta de alteração de refinamentos altera o refinamento de um determinado ambiente. O nome do ambiente alvo das funções é passado como argumento.
 
 \lstinputlisting[caption=Consultas principais realizadas no banco de dados, label=cod:sql_consultasPrincipais, captionpos=b, language=SQL]{Codigos/Simula/Consultas/consultasPrincipais.sql}
 
@@ -276,7 +276,7 @@ O Código \ref{cod:gerarIndexQuadras}, Algoritmo \ref{alg:gerarIndexQuadras} e F
 
 \subsubsection{Função gerarVizinhancas}
 
-O Código \ref{cod:gerarVizinhancas}, Algoritmo \ref{alg:gerarVizinhancas} e Figura \ref{fig:gerarVizinhancas} ilustram a rotina responsável pelo tratamento das vizinhanças de Moore entre os vértices obtida pela rotina apresentada no Código \ref{cod:getVizinhancasMoorePontos} e Algoritmo \ref{alg:getVizinhancasMoorePontos}. É realizada uma operação de ordenação sobre o conjunto final de dados com o objetivo de organizar todas as vizinhanças em posições contíguas na estrutura. Deste modo, índices podem ser gerados e empregados à redução dos espaços de busca pela vizinhança de um vértice específico. 
+O Código \ref{cod:gerarVizinhancas}, Algoritmo \ref{alg:gerarVizinhancas} e Figura \ref{fig:gerarVizinhancas} ilustram a rotina responsável pelo tratamento das vizinhanças de Moore entre os vértices obtidas pela rotina apresentada no Código \ref{cod:getVizinhancasMoorePontos} e Algoritmo \ref{alg:getVizinhancasMoorePontos}. É realizada uma operação de ordenação sobre o conjunto final de dados com o objetivo de organizar todas as vizinhanças em posições contíguas na estrutura. Deste modo, índices podem ser gerados e empregados à redução dos espaços de busca pela vizinhança de um vértice específico. 
 
 \lstinputlisting[caption=Função gerarVizinhancas, label=cod:gerarVizinhancas, captionpos=b, language=Java]{Codigos/Simula/Fontes/gerarVizinhancas.java}
 
@@ -542,7 +542,7 @@ O Código \ref{cod:salvarArquivoControles}, Algoritmo \ref{alg:salvarArquivoCont
 
 \subsubsection{Função salvarArquivoDistribuicaoHumanos}
 
-O Código \ref{cod:salvarArquivoDistribuicaoHumanos}, Algoritmo \ref{alg:salvarArquivoDistribuicaoHumanos} e Figura \ref{fig:salvarArquivoDistribuicaoHumanos} ilustram a rotina responsável pela geração do arquivo de distribuição dos agentes infectados. Este arquivo é utilizado no processo de inserção de agentes infectados durante o processo de simulação. 
+O Código \ref{cod:salvarArquivoDistribuicaoHumanos}, Algoritmo \ref{alg:salvarArquivoDistribuicaoHumanos} e Figura \ref{fig:salvarArquivoDistribuicaoHumanos} ilustram a rotina responsável pela geração do arquivo de distribuição dos agentes humanos infectados. Este arquivo é utilizado no processo de inserção de agentes infectados durante o processo de simulação. 
 
 \lstinputlisting[caption=Função salvarArquivoDistribuicaoHumanos, label=cod:salvarArquivoDistribuicaoHumanos, captionpos=b, language=Java]{Codigos/Simula/Fontes/salvarArquivoDistribuicaoHumanos.java}
 

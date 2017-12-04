@@ -48,7 +48,7 @@
 \contentsline {subsubsection}{\numberline {5.3.17}Fun\IeC {\c c}\IeC {\~a}o salvarArquivoDistribuicaoHumanos}{56}{subsubsection.5.3.17}
 \contentsline {section}{\numberline {6}TRATAMENTOS AOS DADOS}{59}{section.6}
 \contentsline {section}{\numberline {7}RESULTADOS DA EXECU\IeC {\c C}\IeC {\~A}O DE EXPERIMENTOS COMPUTACIONAIS}{62}{section.7}
-\contentsline {subsection}{\numberline {7.1}Teste 0001}{62}{subsection.7.1}
-\contentsline {subsubsection}{\numberline {7.1.1}Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{64}{subsubsection.7.1.1}
-\contentsline {subsubsection}{\numberline {7.1.2}Espalhamento Espacial dos Casos de Influenza ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{66}{subsubsection.7.1.2}
-\contentsline {subsubsection}{\numberline {7.1.3}Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{67}{subsubsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1}Teste 0002}{62}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{65}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Espalhamento Espacial dos Agentes Humanos ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{67}{subsubsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.3}Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{68}{subsubsection.7.1.3}

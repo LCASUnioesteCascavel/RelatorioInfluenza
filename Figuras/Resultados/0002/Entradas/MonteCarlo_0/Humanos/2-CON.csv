@@ -1,0 +1,6 @@
+Codigo;Min;Max;Descricao
+CON001;0.30;0.40;Taxa de Infeccao Humano Suscetivel Crianca
+CON002;0.30;0.40;Taxa de Infeccao Humano Suscetivel Jovem
+CON003;0.30;0.40;Taxa de Infeccao Humano Suscetivel Adulto
+CON004;0.30;0.40;Taxa de Infeccao Humano Suscetivel Idoso
+CON005;0.655;0.655;Constante Sazonalidade
