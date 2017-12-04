@@ -1,0 +1,5 @@
+\Inicio{
+	parametros = lista\_vazia() \\
+	parametros = consultaSQLBancoDeDadosSelecionandoTodosOsParametros() \\
+	\Retorna{parametros}
+}

@@ -5,7 +5,7 @@ private void gerarIndexVizinhancas() {
   for (String quadra : indicesQuadras.keySet()) {
     indexVizinhancas.add(desl);
     for (String lote : indicesLotes.get(quadra).keySet()) {
-      desl += vizinhancas.get(quadra).get(lote).size() * 6;
+      desl += vizinhancas.get(quadra).get(lote).size();
       indexVizinhancas.add(desl);
     }
   }

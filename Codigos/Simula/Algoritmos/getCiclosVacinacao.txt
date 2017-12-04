@@ -1,0 +1,5 @@
+\Inicio{
+	ciclosVacinacao = lista\_vazia() \\
+	ciclosVacinacao = consultaSQLBancoDeDadosSelecionandoTodosOsCiclosDeVacinacao() \\
+	\Retorna{ciclosVacinacao}
+}

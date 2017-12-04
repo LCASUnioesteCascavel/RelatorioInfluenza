@@ -5,6 +5,13 @@
   \Comentario{Criação de índices auxiliares} \\
 	criarIndexQuadraseLotes() \\
 
+  \Comentario{Obtenção da distribuição de humanos durante a simulação} \\
+  getDistribuicaoHumanos() \\
+  
+  \Comentario{Obtenção das faixas etárias e ciclos de vacinação} \\
+  getFaixasEtariasVacinacao() \\
+  getCiclosVacinacao() \\
+
   \Comentario{Criação do índice de quadras} \\
 	gerarIndexQuadras() \\
 	
@@ -18,5 +25,7 @@
 	gerarIndexPosicoes() \\
 	
   \Comentario{Escrita dos arquivos ambientais} \\
-	escreverArquivoVetores() \\
+	salvarArquivoVetores() \\
+  salvarArquivoDistribuicaoHumanos() \\
+  salvarArquivoControles() \\
 } 

@@ -5,13 +5,8 @@ $$
 BEGIN
 	EXECUTE format('SELECT criarTabelaPontos(''%s'')', ambiente);
 	EXECUTE format('CREATE TABLE %s_vizinhancasentrepoligonos AS 
-		SELECT * FROM getVizinhancasEntrePoligonos(''%s_poligonos'')', 
-		ambiente, ambiente);
-	EXECUTE format('CREATE TABLE %s_vizinhancasmoorepontos AS SELECT * 
-		FROM getVizinhancasMoorePontos(''%s_pontos'', 
-		''%s_vizinhancasentrepoligonos'', ''%s_poligonos'')', 
-		ambiente, ambiente, ambiente, ambiente);
-END
+  SELECT * FROM getVizinhancasEntrePoligonos(''%s'')', ambiente, ambiente);
+	EXECUTE format('CREATE TABLE %s_vizinhancasmoorepontos AS 
+  SELECT * FROM getVizinhancasMoorePontos(''%s'')', ambiente, ambiente);
 $$
 LANGUAGE plpgsql;
-

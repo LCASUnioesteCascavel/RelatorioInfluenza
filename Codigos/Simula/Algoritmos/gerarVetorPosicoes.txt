@@ -9,7 +9,6 @@
                     adiciona($p$.y, vetorPosicoes) \\
                     adiciona(idLote, vetorPosicoes) \\
                     adiciona(idQuadra, vetorPosicoes) \\
-                    adiciona(getRegiao(primeiraLetra($q$)), vetorPosicoes) \\
               }
               idLote++ \\
 	      }

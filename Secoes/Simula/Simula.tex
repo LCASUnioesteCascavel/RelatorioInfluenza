@@ -11,7 +11,7 @@ Na próxima sub-seção são apresentadas as funções SQL utilizadas para obten
 
 \subsection{Operações Executadas no Banco de Dados}
 
-O Código \ref{cod:sql_consultasPrincipais} ilustra as principais operações realizadas no banco, que incluem a remoção de tabelas, criação de tabelas e alteração do refinamento relacionados aos diferentes ambientes. A função de remoção de tabelas exclui as tabelas auxiliares relacionadas ao ambiente, sendo executada quando necessário atualizar as tabelas auxiliares devido à alguma mudança nos dados. A função de criação de tabelas cria as tabelas auxiliares no banco de dados. Por fim a consulta de alteração de refinamentos altera o refinamento de um determinado ambiente. O nome do ambiente alvo das funções é passado como argumento.
+O Código \ref{cod:sql_consultasPrincipais} ilustra as principais operações realizadas no banco, que incluem a remoção de tabelas, criação de tabelas e alteração do refinamento relacionados ao ambiente. A função de remoção de tabelas exclui as tabelas auxiliares relacionadas ao ambiente, sendo executada quando necessário atualizar as tabelas auxiliares devido à alguma mudança nos dados. A função de criação de tabelas cria as tabelas auxiliares no banco de dados. Por fim a consulta de alteração de refinamentos altera o refinamento de um determinado ambiente. O nome do ambiente alvo das funções é passado como argumento.
 
 \lstinputlisting[caption=Consultas principais realizadas no banco de dados, label=cod:sql_consultasPrincipais, captionpos=b, language=SQL]{Codigos/Simula/Consultas/consultasPrincipais.sql}
 
@@ -35,7 +35,7 @@ O Código \ref{cod:sql_interpolarPontos} ilustra a função de interpolação de
 
 \subsubsection{SQL de Criação da Tabela de Pontos}
 
-O Código \ref{cod:sql_criarTabelaPontos} ilustra a função de criação da tabela de pontos que utiliza a função apresentada no Código \ref{cod:sql_interpolarPontos}. A interpolação dos pontos é realizada independentemente para cada lote pertencente ao ambiente passado como argumento à função. A execução desta função resulta na criação de uma tabela com o nome do ambiente e o sufixo \textit{"\_pontos"}. A Tabela \ref{tab:cascavel_pontos} ilustra as dez primeiras linhas dos dados gerados por esta função para o ambiente de Cascavel/PR.
+O Código \ref{cod:sql_criarTabelaPontos} ilustra a função de criação da tabela de pontos que utiliza a função apresentada no Código \ref{cod:sql_interpolarPontos}. A interpolação dos pontos é realizada independentemente para cada lote pertencente ao ambiente passado como argumento à função. A execução desta função resulta na criação de uma tabela com o nome do ambiente e o sufixo \textit{"\_pontos"}. A Tabela \ref{tab:cascavel_pontos} ilustra as dez primeiras linhas dos dados gerados por esta função para o ambiente de Cascavel/PR. A coluna de geometria foi omitida por conter informações não interpretáveis.
 
 \lstinputlisting[caption=Função criarTabelaPontos, label=cod:sql_criarTabelaPontos, captionpos=b, language=SQL]{Codigos/Simula/Consultas/criarTabelaPontos.sql}
 
@@ -89,9 +89,93 @@ string type
 
 \newpage
 
+\subsection{Tabelas Empregadas à Parametrização da Doença}
+
+\subsubsection{Tabela config}
+
+A Tabela \ref{tab:config} ilustra as dez primeiras linhas da tabela que armazena os parâmetros à geração dos arquivos de entrada à simulação. Esta tabela é consultada pela função \textit{"getConfig"} apresentada no Código \ref{cod:getConfig}. 
+
+\begin{table}[H]
+\centering
+\pgfplotstabletypeset[
+col sep = semicolon,
+every head row/.style={before row=\toprule,after row=\midrule},
+every last row/.style={after row=\bottomrule},
+string type
+]{Figuras/Simula/Tabelas/config.csv}
+\caption{Tabela config.}
+\label{tab:config}
+\end{table}
+
+\subsubsection{Tabela cascavel\_poligonos}
+
+A Tabela \ref{tab:cascavel_poligonos} ilustra as dez primeiras linhas da tabela \textit{"cascavel\_poligonos"} que armazena todos os polígonos do ambiente computacional utilizado nas simulações. A coluna de geometria foi omitida por conter informações não interpretáveis. 
+
+\begin{table}[H]
+\centering
+\pgfplotstabletypeset[
+col sep = semicolon,
+every head row/.style={before row=\toprule,after row=\midrule},
+every last row/.style={after row=\bottomrule},
+string type
+]{Figuras/Simula/Tabelas/cascavel_poligonos.csv}
+\caption{Tabela cascavel\_poligonos.}
+\label{tab:cascavel_poligonos}
+\end{table}
+
+\subsubsection{Tabela cascavel\_influenza\_distribuicaohumanos}
+
+A Tabela \ref{tab:cascavel_influenza_distribuicaohumanos} ilustra as dez primeiras linhas da tabela \textit{"cascavel\_influenza\_distribuicaohumanos"} que armazena os casos de infecção reais ocorridos durante o período de tempo considerado como base às simulações. Esta tabela é consultada pela função \textit{"getDistribuicaoHumanos"} apresentada no Código \ref{cod:getDistribuicaoHumanos}. 
+
+\begin{table}[H]
+\centering
+\pgfplotstabletypeset[
+col sep = semicolon,
+every head row/.style={before row=\toprule,after row=\midrule},
+every last row/.style={after row=\bottomrule},
+string type
+]{Figuras/Simula/Tabelas/cascavel_influenza_distribuicaohumanos.csv}
+\caption{Tabela cascavel\_influenza\_distribuicaohumanos.}
+\label{tab:cascavel_influenza_distribuicaohumanos}
+\end{table}
+
+\subsubsection{Tabela cascavel\_influenza\_faixasetariasvacinacao}
+
+A Tabela \ref{tab:cascavel_influenza_faixasetariasvacinacao} ilustra as dez primeiras linhas da tabela \textit{"cascavel\_influenza\_faixasetariasvacinacao"} que armazena as faixas etárias de humanos que serão vacinadas. Esta tabela é consultada pela função \textit{"getFaixasEtariasVacinacao"} apresentada no Código \ref{cod:getFaixasEtariasVacinacao}. 
+
+\begin{table}[H]
+\centering
+\pgfplotstabletypeset[
+col sep = semicolon,
+every head row/.style={before row=\toprule,after row=\midrule},
+every last row/.style={after row=\bottomrule},
+string type
+]{Figuras/Simula/Tabelas/cascavel_influenza_faixasetariasvacinacao.csv}
+\caption{Tabela cascavel\_influenza\_faixasetariasvacinacao.}
+\label{tab:cascavel_influenza_faixasetariasvacinacao}
+\end{table}
+
+\subsubsection{Tabela cascavel\_influenza\_ciclosvacinacao}
+
+A Tabela \ref{tab:cascavel_influenza_ciclosvacinacao} ilustra as dez primeiras linhas da tabela \textit{"cascavel\_influenza\_ciclosvacinacao"} que armazena os ciclos de ocorrência das campanhas de vacinação dos humanos. Esta tabela é consultada pela função \textit{"getCiclosVacinacao"} apresentada no Código \ref{cod:getCiclosVacinacao}. 
+
+\begin{table}[H]
+\centering
+\pgfplotstabletypeset[
+col sep = semicolon,
+every head row/.style={before row=\toprule,after row=\midrule},
+every last row/.style={after row=\bottomrule},
+string type
+]{Figuras/Simula/Tabelas/cascavel_influenza_ciclosvacinacao.csv}
+\caption{Tabela cascavel\_influenza\_ciclosvacinacao.}
+\label{tab:cascavel_influenza_ciclosvacinacao}
+\end{table}
+
+\newpage
+
 \subsection{Módulo Gerador de Arquivos de Configuração Ambiental}
 
-A Figura \ref{fig:inicializacaoAmbiente} ilustra o fluxograma das operações realizadas para a inicialização de um ambiente de simulação, considerando a existência de um \textit{shapefile} que represente o domínio desejado e possua identificadores de quadra e lote apropriados para cada polígono descrito no arquivo. Todas as operações de computação são realizadas diretamente no banco de dados por meio da utilização de funções disponibilizadas pela biblioteca PostGIS, como apresentado na sub-seção anterior. Os processamentos realizados localmente são aqueles relacionados à consultas no banco de dados, vetorização de estruturas e escrita de arquivos. O produto final desta operação é um arquivo de inicialização contendo todas as informações ambientais necessárias à execução de simulações. Este arquivo é lido pelo sistema de simulação e suas informações são armazenadas em estruturas de dados adequadas à computação em GPU, conforme discutido na Seção \ref{sec:estruturasDadosEstrategiasImplementacao}.
+A Figura \ref{fig:inicializacaoAmbiente} ilustra o fluxograma das operações realizadas para a inicialização de um ambiente de simulação, considerando a existência de um \textit{shapefile} que represente o domínio desejado e possua identificadores de quadra e lote apropriados para cada polígono descrito no arquivo. Todas as operações de computação são realizadas diretamente no banco de dados por meio da utilização de funções disponibilizadas pela biblioteca PostGIS, como apresentado na sub-seção anterior. Os processamentos realizados localmente são aqueles relacionados à consultas no banco de dados, vetorização de estruturas e escrita de arquivos. O produto final desta operação são arquivos de inicialização contendo todas as informações ambientais necessárias à execução de simulações. Estes arquivos são lidos pelo sistema de simulação e suas informações são armazenadas em estruturas de dados adequadas à computação em GPU, conforme discutido na Seção \ref{sec:estruturasDadosEstrategiasImplementacao}.
 
 \begin{figure}[H]
   \centering
@@ -102,7 +186,7 @@ A Figura \ref{fig:inicializacaoAmbiente} ilustra o fluxograma das operações re
 
 \newpage
 
-Abaixo são ilustrados os códigos fonte e algoritmos das rotinas responsáveis pela geração do arquivo de inicialização dos ambientes computacionais. Nos algoritmos os detalhes computacionais de implementação foram abstraídos para sintetizar de forma concisa os passos necessários à conclusão da rotina e transmitir de modo geral a ideia aplicada. No Código \ref{cod:mainAmb}, Algoritmo \ref{alg:mainAmb} e Figura \ref{fig:mainAmb} é apresentado o algoritmo principal que controla a geração do arquivo de inicialização de um ambiente. Este código é responsável pela execução da maioria das operações ilustradas na Figura \ref{fig:inicializacaoAmbiente}. Neste código são definidas as variáveis \textit{nCasa}, \textit{nTrabalho}, \textit{nLazer} e \textit{nEstudos}, que armazenam as quantidades de lotes que serão definidos como casa, trabalho, lazer e estudo nas rotinas de geração de trajetos. 
+Abaixo são ilustrados os códigos fonte e algoritmos das rotinas responsáveis pela geração do arquivo de inicialização dos ambientes computacionais. Nos algoritmos os detalhes computacionais de implementação foram abstraídos para sintetizar de forma concisa os passos necessários à conclusão da rotina e transmitir de modo geral a ideia aplicada. No Código \ref{cod:mainAmb}, Algoritmo \ref{alg:mainAmb} e Figura \ref{fig:mainAmb} é apresentado o algoritmo principal que controla a geração do arquivo de inicialização de um ambiente. Este código é responsável pela execução da maioria das operações ilustradas na Figura \ref{fig:inicializacaoAmbiente}. 
 
 \subsubsection{Função Principal}
 
@@ -120,6 +204,28 @@ Abaixo são ilustrados os códigos fonte e algoritmos das rotinas responsáveis 
   \includegraphics[width=1\textwidth]{Figuras/Simula/Fluxos/Main.eps}
   \caption{Função Principal à Inicialização do Ambiente.}
   \label{fig:mainAmb}
+\end{figure} 
+
+\newpage
+
+\subsubsection{Função getConfig}
+
+O Código \ref{cod:getConfig}, Algoritmo \ref{alg:getConfig} e Figura \ref{fig:getConfig} ilustram a rotina responsável pela obtenção dos parâmetros utilizados durante a geração de arquivos de entrada à simulação. Esta rotina realiza uma consulta ao banco de dados para obter as informações armazenadas na tabela denominada \textit{"config"}. Um exemplo é ilustrado na Tabela \ref{tab:config}. 
+
+\lstinputlisting[caption=Função getConfig, label=cod:getConfig, captionpos=b, language=Java]{Codigos/Simula/Fontes/getConfig.java}
+
+\begin{algorithm}[H]
+   \SetAlgoLined   
+   \input{Codigos/Simula/Algoritmos/getConfig.txt}
+   \caption{\textsc{Função getConfig.}}
+   \label{alg:getConfig}
+\end{algorithm}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figuras/Simula/Fluxos/getConfig.eps}
+  \caption{Função getConfig.}
+  \label{fig:getConfig}
 \end{figure} 
 
 \newpage
@@ -190,24 +296,90 @@ O Código \ref{cod:gerarVizinhancas}, Algoritmo \ref{alg:gerarVizinhancas} e Fig
 
 \newpage
 
-\subsubsection{Função getVizinhancasEntrePoligonos}
+\subsubsection{Função getPontos}
 
-O Código \ref{cod:getVizinhancasEntrePoligonos}, Algoritmo \ref{alg:getVizinhancasEntrePoligonos} e Figura \ref{fig:getVizinhancasEntrePoligonos} ilustram a rotina responsável pela obtenção das vizinhanças entre polígonos. Esta rotina realiza uma consulta ao banco de dados para obter as informações armazenadas na tabela com sufixo \textit{"\_vizinhancasentrepoligonos"}. A função de criação e um exemplo da tabela são ilustrados no Código \ref{cod:sql_getVizinhancasEntrePoligonos} e Tabela \ref{tab:cascavel_vizinhancasentrepoligonos}. 
+O Código \ref{cod:getPontos}, Algoritmo \ref{alg:getPontos} e Figura \ref{fig:getPontos} ilustram a rotina responsável pela obtenção dos pontos do ambiente. Esta rotina realiza uma consulta ao banco de dados para obter as informações armazenadas na tabela com sufixo \textit{"\_pontos"}.   
 
-\lstinputlisting[caption=Função getVizinhancasEntrePoligonos, label=cod:getVizinhancasEntrePoligonos, captionpos=b, language=Java]{Codigos/Simula/Fontes/getVizinhancasEntrePoligonos.java}
+\lstinputlisting[caption=Função getPontos, label=cod:getPontos, captionpos=b, language=Java]{Codigos/Simula/Fontes/getPontos.java}
 
 \begin{algorithm}[H]
    \SetAlgoLined   
-   \input{Codigos/Simula/Algoritmos/getVizinhancasEntrePoligonos.txt}
-   \caption{\textsc{Função getVizinhancasEntrePoligonos.}}
-   \label{alg:getVizinhancasEntrePoligonos}
+   \input{Codigos/Simula/Algoritmos/getPontos.txt}
+   \caption{\textsc{Função getPontos.}}
+   \label{alg:getPontos}
 \end{algorithm}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.7\textwidth]{Figuras/Simula/Fluxos/getVizinhancasEntrePoligonos.eps}
-  \caption{Função getVizinhancasEntrePoligonos.}
-  \label{fig:getVizinhancasEntrePoligonos}
+  \includegraphics[width=0.7\textwidth]{Figuras/Simula/Fluxos/getPontos.eps}
+  \caption{Função getPontos.}
+  \label{fig:getPontos}
+\end{figure} 
+
+\newpage
+
+\subsubsection{Função getFaixasEtariasVacinacao}
+
+O Código \ref{cod:getFaixasEtariasVacinacao}, Algoritmo \ref{alg:getFaixasEtariasVacinacao} e Figura \ref{fig:getFaixasEtariasVacinacao} ilustram a rotina responsável pela obtenção das faixas etárias que serão utilizadas na rotina de vacinação dos agentes humanos. Esta rotina realiza uma consulta ao banco de dados para obter as informações armazenadas na tabela com sufixo \textit{"\_influenza\_faixasetariasvacinacao"}. Um exemplo é ilustrado na Tabela \ref{tab:cascavel_influenza_faixasetariasvacinacao}.
+
+\lstinputlisting[caption=Função getFaixasEtariasVacinacao, label=cod:getFaixasEtariasVacinacao, captionpos=b, language=Java]{Codigos/Simula/Fontes/getFaixasEtariasVacinacao.java}
+
+\begin{algorithm}[H]
+   \SetAlgoLined   
+   \input{Codigos/Simula/Algoritmos/getFaixasEtariasVacinacao.txt}
+   \caption{\textsc{Função getFaixasEtariasVacinacao.}}
+   \label{alg:getFaixasEtariasVacinacao}
+\end{algorithm}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figuras/Simula/Fluxos/getFaixasEtariasVacinacao.eps}
+  \caption{Função getFaixasEtariasVacinacao.}
+  \label{fig:getFaixasEtariasVacinacao}
+\end{figure} 
+
+\newpage
+
+\subsubsection{Função getCiclosVacinacao}
+
+O Código \ref{cod:getCiclosVacinacao}, Algoritmo \ref{alg:getCiclosVacinacao} e Figura \ref{fig:getCiclosVacinacao} ilustram a rotina responsável pela obtenção dos ciclos de ocorrência das campanhas de vacinação dos agentes humanos. Esta rotina realiza uma consulta ao banco de dados para obter as informações armazenadas na tabela com sufixo \textit{"\_influenza\_ciclosvacinacao"}. Um exemplo é ilustrado na Tabela \ref{tab:cascavel_influenza_ciclosvacinacao}.
+
+\lstinputlisting[caption=Função getCiclosVacinacao, label=cod:getCiclosVacinacao, captionpos=b, language=Java]{Codigos/Simula/Fontes/getCiclosVacinacao.java}
+
+\begin{algorithm}[H]
+   \SetAlgoLined   
+   \input{Codigos/Simula/Algoritmos/getCiclosVacinacao.txt}
+   \caption{\textsc{Função getCiclosVacinacao.}}
+   \label{alg:getCiclosVacinacao}
+\end{algorithm}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figuras/Simula/Fluxos/getCiclosVacinacao.eps}
+  \caption{Função getCiclosVacinacao.}
+  \label{fig:getCiclosVacinacao}
+\end{figure} 
+
+\newpage
+
+\subsubsection{Função getDistribuicaoHumanos}
+
+O Código \ref{cod:getDistribuicaoHumanos}, Algoritmo \ref{alg:getDistribuicaoHumanos} e Figura \ref{fig:getDistribuicaoHumanos} ilustram a rotina responsável pela obtenção da distribuição de agentes humanos durante a execução de simulações. Esta rotina realiza uma consulta ao banco de dados para obter as informações armazenadas na tabela com sufixo \textit{"\_influenza\_distribuicaohumanos"}. Um exemplo é ilustrado na Tabela \ref{tab:cascavel_influenza_distribuicaohumanos}.
+
+\lstinputlisting[caption=Função getDistribuicaoHumanos, label=cod:getDistribuicaoHumanos, captionpos=b, language=Java]{Codigos/Simula/Fontes/getDistribuicaoHumanos.java}
+
+\begin{algorithm}[H]
+   \SetAlgoLined   
+   \input{Codigos/Simula/Algoritmos/getDistribuicaoHumanos.txt}
+   \caption{\textsc{Função getDistribuicaoHumanos.}}
+   \label{alg:getDistribuicaoHumanos}
+\end{algorithm}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figuras/Simula/Fluxos/getDistribuicaoHumanos.eps}
+  \caption{Função getDistribuicaoHumanos.}
+  \label{fig:getDistribuicaoHumanos}
 \end{figure} 
 
 \newpage
@@ -293,7 +465,7 @@ O Código \ref{cod:gerarVetorPosicoes}, Algoritmo \ref{alg:gerarVetorPosicoes} e
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\textwidth]{Figuras/Simula/Fluxos/gerarVetorPosicoes.eps}
+  \includegraphics[width=0.8\textwidth]{Figuras/Simula/Fluxos/gerarVetorPosicoes.eps}
   \caption{Função gerarVetorPosicoes.}
   \label{fig:gerarVetorPosicoes}
 \end{figure} 
@@ -322,48 +494,70 @@ O Código \ref{cod:gerarIndexPosicoes}, Algoritmo \ref{alg:gerarIndexPosicoes} e
 
 \newpage
 
-\subsubsection{Função escreverArquivoVetores}
+\subsubsection{Função salvarArquivoVetores}
 
-O Código \ref{cod:escreverArquivoVetores}, Algoritmo \ref{alg:escreverArquivoVetores} e Figura \ref{fig:escreverArquivoVetores} ilustram a rotina responsável pela escrita dos arquivos finais contendo todas as informações relacionadas ao ambiente. As informações ambientais são escritas no arquivo denominado \textit{"Vetores.csv"}.
+O Código \ref{cod:salvarArquivoVetores}, Algoritmo \ref{alg:salvarArquivoVetores} e Figura \ref{fig:salvarArquivoVetores} ilustram a rotina responsável pela escrita do arquivo contendo todas as informações relacionadas ao ambiente. As informações ambientais são escritas no arquivo denominado \textit{"Vetores.csv"}.
 
-\lstinputlisting[caption=Função escreverArquivoVetores, label=cod:escreverArquivoVetores, captionpos=b, language=Java]{Codigos/Simula/Fontes/escreverArquivoVetores.java}
+\lstinputlisting[caption=Função salvarArquivoVetores, label=cod:salvarArquivoVetores, captionpos=b, language=Java]{Codigos/Simula/Fontes/salvarArquivoVetores.java}
 
 \newpage
 
 \begin{algorithm}[H]
    \SetAlgoLined   
-   \input{Codigos/Simula/Algoritmos/escreverArquivoVetores.txt}
-   \caption{\textsc{Função escreverArquivoVetores.}}
-   \label{alg:escreverArquivoVetores}
+   \input{Codigos/Simula/Algoritmos/salvarArquivoVetores.txt}
+   \caption{\textsc{Função salvarArquivoVetores.}}
+   \label{alg:salvarArquivoVetores}
 \end{algorithm}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1\textwidth]{Figuras/Simula/Fluxos/escreverArquivoVetores.eps}
-  \caption{Função escreverArquivoVetores.}
-  \label{fig:escreverArquivoVetores}
+  \includegraphics[width=1\textwidth]{Figuras/Simula/Fluxos/salvarArquivoVetores.eps}
+  \caption{Função salvarArquivoVetores.}
+  \label{fig:salvarArquivoVetores}
 \end{figure} 
 
 \newpage
 
-\subsubsection{Função criarDistribuicaoAgentes}
+\subsubsection{Função salvarArquivoControles}
 
-O Código \ref{cod:criarDistribuicaoAgentes}, Algoritmo \ref{alg:criarDistribuicaoAgentes} e Figura \ref{fig:criarDistribuicaoAgentes} ilustram a rotina responsável pela geração do arquivo de distribuição dos agentes infectados. Este arquivo é utilizado no processo de inserção de agentes infectados durante o processo de simulação. A definição dos percentuais de casos que serão utilizados e as frações para cada sexo e faixa etária são definidas manualmente no código-fonte. 
+O Código \ref{cod:salvarArquivoControles}, Algoritmo \ref{alg:salvarArquivoControles} e Figura \ref{fig:salvarArquivoControles} ilustram a rotina responsável pela escrita do arquivo contendo informações sobre os controles aplicados à população de agentes humanos e percentuais de sazonalidade e quarentena. As informações de controle são escritas no arquivo denominado \textit{"1-CON.csv"}. 
 
-\lstinputlisting[caption=Função criarDistribuicaoAgentes, label=cod:criarDistribuicaoAgentes, captionpos=b, language=Java]{Codigos/Simula/Fontes/criarDistribuicaoAgentes.java}
+\lstinputlisting[caption=Função salvarArquivoControles, label=cod:salvarArquivoControles, captionpos=b, language=Java]{Codigos/Simula/Fontes/salvarArquivoControles.java}
 
 \begin{algorithm}[H]
    \SetAlgoLined   
-   \input{Codigos/Simula/Algoritmos/criarDistribuicaoAgentes.txt}
-   \caption{\textsc{Função criarDistribuicaoAgentes.}}
-   \label{alg:criarDistribuicaoAgentes}
+   \input{Codigos/Simula/Algoritmos/salvarArquivoControles.txt}
+   \caption{\textsc{Função salvarArquivoControles.}}
+   \label{alg:salvarArquivoControles}
 \end{algorithm}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth]{Figuras/Simula/Fluxos/criarDistribuicaoAgentes.eps}
-  \caption{Função criarDistribuicaoAgentes.}
-  \label{fig:criarDistribuicaoAgentes}
+  \includegraphics[width=1\textwidth]{Figuras/Simula/Fluxos/salvarArquivoControles.eps}
+  \caption{Função salvarArquivoControles.}
+  \label{fig:salvarArquivoControles}
+\end{figure} 
+
+\newpage
+
+\subsubsection{Função salvarArquivoDistribuicaoHumanos}
+
+O Código \ref{cod:salvarArquivoDistribuicaoHumanos}, Algoritmo \ref{alg:salvarArquivoDistribuicaoHumanos} e Figura \ref{fig:salvarArquivoDistribuicaoHumanos} ilustram a rotina responsável pela geração do arquivo de distribuição dos agentes infectados. Este arquivo é utilizado no processo de inserção de agentes infectados durante o processo de simulação. 
+
+\lstinputlisting[caption=Função salvarArquivoDistribuicaoHumanos, label=cod:salvarArquivoDistribuicaoHumanos, captionpos=b, language=Java]{Codigos/Simula/Fontes/salvarArquivoDistribuicaoHumanos.java}
+
+\begin{algorithm}[H]
+   \SetAlgoLined   
+   \input{Codigos/Simula/Algoritmos/salvarArquivoDistribuicaoHumanos.txt}
+   \caption{\textsc{Função salvarArquivoDistribuicaoHumanos.}}
+   \label{alg:salvarArquivoDistribuicaoHumanos}
+\end{algorithm}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Figuras/Simula/Fluxos/salvarArquivoDistribuicaoHumanos.eps}
+  \caption{Função salvarArquivoDistribuicaoHumanos.}
+  \label{fig:salvarArquivoDistribuicaoHumanos}
 \end{figure} 
 
 \newpage

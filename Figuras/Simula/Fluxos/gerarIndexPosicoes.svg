@@ -526,7 +526,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.62232275"
-     inkscape:cx="625.69897"
+     inkscape:cx="600.79228"
      inkscape:cy="293.64923"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -554,7 +554,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -766,25 +766,21 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="1020.5596"
-       y="-92.584557"
+       y="-74.97715"
        id="text5149"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          x="1025.335"
-         y="-92.584557"
+         y="-74.97715"
          id="tspan5157">deslocamento </tspan><tspan
          sodipodi:role="line"
          x="1025.335"
-         y="-55.084557"
+         y="-37.47715"
          id="tspan4466">+= quantidade </tspan><tspan
          sodipodi:role="line"
-         x="1025.335"
-         y="-17.584557"
-         id="tspan4468">pontos </tspan><tspan
-         sodipodi:role="line"
          x="1020.5596"
-         y="19.915443"
-         id="tspan4470">(Q, L) * 5</tspan></text>
+         y="0.022850037"
+         id="tspan4470">pontos (Q, L)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"

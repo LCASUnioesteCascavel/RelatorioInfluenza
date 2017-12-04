@@ -1,0 +1,72 @@
+\Inicio{
+  \Comentario{Cálculo do vetor de sazonalidade} \\
+  
+  \Comentario{Agrupa os casos por dia} \\
+  casosPorDia = agruparPorDia(distribuicaoHumanos) \\
+  
+  \Comentario{Obtém a duração do ano em ciclos} \\
+  duracaoAno = parametros["DuracaoAno"] \\
+  
+  \Comentario{Adiciona zeros para os dias que não contém casos} \\
+  \Para{$i$ de 0 até duracaoAno} {
+      \Se{casosPorDia não contém $i$} {
+          adiciona($i$, nova\_lista(), casosPorDia) \\
+      }
+  }
+  
+  \Comentario{Cálculo da quantidade de casos acumulados, dia a dia, ao longo do ano} \\
+  casosAcumulados = novo\_vetor\_associativo() \\
+  
+  soma = tamanho(casosPorDia[0]) \\
+  adiciona(0, soma, casosAcumulados) \\
+
+  \Para{$i$ de 1 até tamanho(casosPorDia)} {
+      soma += tamanho(casosPorDia[$i$]) \\
+      adiciona($i$, soma, casosAcumulados) \\
+  }
+  
+  \Comentario{Normaliza os casos acumulados no intervalo (0.0, 1.0)} \\
+  max = maiorValor(casosAcumulados) \\
+  
+  sazonalidade = novo\_vetor\_associativo() \\
+  \Para{cada dia $d$ em casosAcumulados} {
+      v = (max - tamanho(casosAcumulados[$d$])) / max \\
+      adiciona($d$, v, sazonalidade) \\
+  }
+
+  \Comentario{Escrita do arquivo 1-CON.csv} \\
+	arquivo = abreArquivo("1-CON.csv") \\
+
+	\Comentario{Escrita das faixas etárias com vacinação} \\
+	\Para{cada faixa etária $f$ com vacinação} {
+	      escreve($f$, arquivo) \\
+	      escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+
+	\Comentario{Escrita dos ciclos de vacinação} \\
+	\Para{cada ciclo $c$ de vacinação} {
+	      escreve($c$, arquivo) \\
+	      escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+  
+  \Comentario{Escrita do vetor de sazonalidade} \\
+	\Para{cada percentual $p$ em sazonalidade} {
+	      escreve($p$, arquivo) \\
+	      escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+  
+  \Comentario{Os percentuais de quarentena são gerados aleatoriamente} \\
+  quarentena = vetor\_com\_elementos\_aleatorios() \\
+  
+  \Comentario{Escrita do vetor de quarentena} \\
+	\Para{cada percentual $p$ em quarentena} {
+	      escreve($p$, arquivo) \\
+	      escreve(";", arquivo) \\
+	}
+	escreve(novaLinha, arquivo) \\
+
+	fechaArquivo(arquivo) \\
+}

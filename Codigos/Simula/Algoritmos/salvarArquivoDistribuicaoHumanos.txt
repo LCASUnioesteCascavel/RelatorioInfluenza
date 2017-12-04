@@ -1,0 +1,74 @@
+\Inicio{
+  \Comentario{Obtém os parâmetros gerais da distribuição dos humanos} \\
+  percInsInfec = parametros["PorcentagemCasos"] \\
+  
+  percPop = novo\_vetor\_associativo() \\
+  adiciona("C", parametros["FracaoCriancasMasculinas"], percPop) \\
+  adiciona("J", parametros["FracaoJovensMasculinos"], percPop) \\
+  adiciona("A", parametros["FracaoAdultosMasculinos"], percPop) \\
+  adiciona("I", parametros["FracaoIdososMasculinos"], percPop) \\
+
+  \Comentario{Agrupa os casos por dia de infecção} \\
+  dados = agrupaPorDiaDeInfeccao(distribuicaoHumanos) \\
+  
+  \Comentario{Escolhe aleatoriamente uma fração dos casos para inserção na simulação de acordo com o parâmetro percInsInfec} \\
+  \Para{cada dia de infecção $d$ em dados} {
+      casos = getCasos($d$, dados) \\
+      
+      embaralha(casos) \\
+      
+      index = tamanho(casos) $\cdot$ (1.0 - percInsInfec) \\
+      removePrimeirosElementos(index, casos) \\
+  }
+  
+  \Comentario{Agrupa os casos por faixa etária} \\  
+  dados2 = agrupaPorFaixaEtaria(dados) \\
+  
+  \Comentario{Atribui aleatoriamente as frações de casos masculinos e femininos de acordo com os parâmetros em percPop} \\
+  \Para{cada faixa etária $fe$ em dados2} {
+      casos = getCasos($fe$, dados2) \\
+      
+      quantMasculino = tamanho(casos) $\cdot$ percPop[$fe$] \\
+      embaralha(casos) \\
+      alteraSexo(casos, "Feminino") \\
+      alteraSexoPrimeirosCasos(quantMasculino, "Masculino") \\
+  }
+  
+  \Comentario{Ordena os casos por dia de infecção} \\
+  dados3 = ordenaCasosPorDiaDeInfeccao(dados2) \\
+  
+  \Comentario{Encontra os pontos no ambiente que sejam mais próximos aos pontos reais da ocorrência do caso} \\
+  \Para{cada caso $c$ em dados3} {
+      ponto = pontoMaisProximo(getPonto($c$)) \\
+      setX($c$, getX(ponto)) \\
+      setY($c$, getY(ponto)) \\
+      setQ($c$, getQ(ponto)) \\
+      setL($c$, getL(ponto)) \\
+  }
+
+  \Comentario{Escrita do arquivo DistribuicaoHumanos.csv} \\
+	arquivo = abreArquivo("DistribuicaoHumanos.csv") \\
+  
+  \Comentario{Escrita da distribuição dos humanos} \\
+	\Para{cada caso $c$ em dados3} {
+				escreve(quadra($c$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(lote($c$), arquivo) \\
+	      escreve(";", arquivo) \\	      
+				escreve(x($c$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(y($c$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(sexo($c$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(faixaEtaria($c$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(saudeDengue($c$), arquivo) \\
+	      escreve(";", arquivo) \\
+				escreve(sorotipoAtual($c$), arquivo) \\
+        escreve(";", arquivo) \\
+				escreve(cicloEntrada($c$), arquivo) \\
+				escreve(novaLinha, arquivo) \\
+	}
+	fechaArquivo(arquivo) \\
+}

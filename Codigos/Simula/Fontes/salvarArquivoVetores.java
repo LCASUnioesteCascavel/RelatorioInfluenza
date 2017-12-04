@@ -1,6 +1,7 @@
-private void escreverArquivoVetores() {
+private void salvarArquivoVetores() {
   try {
-    BufferedWriter esc = new BufferedWriter(new FileWriter("Vetores.csv"));
+    BufferedWriter esc = new BufferedWriter(
+        new FileWriter(nomrArquivoAmbiental));
 
     esc.write("quantQuadras, quantLotes e indexQuadras\n");
     esc.write(pontos.keySet().size() + "\n");
@@ -11,7 +12,6 @@ private void escreverArquivoVetores() {
         .collect(Collectors.joining(";")) + "\n\n");
 
     esc.write("indexVizinhancas e vetorVizinhancas\n");
-
     for (int i = 0; i < indexVizinhancas.size(); ++i) {
       esc.write(Integer.toString(indexVizinhancas.get(i)));
       if (i < indexVizinhancas.size() - 1) {
@@ -28,10 +28,9 @@ private void escreverArquivoVetores() {
     }
     esc.write("\n\n");
 
-    esc.write("indexPosicoes e vetorPosicoes\n");
+    esc.write("indexPosicoes, vetorPosicoes, indexPosicoesRegioes\n");
     esc.write(indexPosicoes.stream().map(i -> i.toString())
         .collect(Collectors.joining(";")) + "\n");
-
     for (int i = 0; i < vetorPosicoes.size(); ++i) {
       esc.write(Integer.toString(vetorPosicoes.get(i)));
       if (i < vetorPosicoes.size() - 1) {
@@ -39,7 +38,7 @@ private void escreverArquivoVetores() {
       }
     }
     esc.write("\n");
-    
+
     esc.close();
 
   } catch (Exception ex) {

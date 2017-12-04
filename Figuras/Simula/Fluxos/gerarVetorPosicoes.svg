@@ -9,15 +9,46 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="348.13647mm"
-   height="228.21268mm"
-   viewBox="0 0 1233.5544 808.6276"
+   width="469.54443mm"
+   height="149.19046mm"
+   viewBox="0 0 1663.7401 528.62762"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="gerarVetorPosicoes.svg">
   <defs
      id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5167"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5169"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4789"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path4791"
+         inkscape:connector-curvature="0" />
+    </marker>
     <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
@@ -93,22 +124,6 @@
          d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
          transform="matrix(-0.8,0,0,-0.8,-10,0)" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker5032"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend"
-       inkscape:collect="always">
-      <path
-         transform="matrix(-0.8,0,0,-0.8,-10,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         id="path5034"
-         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Lend"
@@ -571,8 +586,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.62232275"
-     inkscape:cx="549.45376"
-     inkscape:cy="627.00491"
+     inkscape:cx="834.76738"
+     inkscape:cy="256.10654"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -588,8 +603,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid5041"
-       originx="59.890094"
-       originy="-721.6701" />
+       originx="67.807753"
+       originy="-1001.6701" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -607,7 +622,7 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(8.5463152,450.06732)">
+     transform="translate(16.463973,450.06732)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -818,8 +833,8 @@
          y="18.999901">posições</tspan></text>
     <rect
        ry="80.307129"
-       y="146.61575"
-       x="52.091919"
+       y="-413.38425"
+       x="1312.0919"
        height="175.26146"
        width="260.11429"
        id="rect4962"
@@ -827,121 +842,76 @@
     <text
        sodipodi:linespacing="125%"
        id="text4966"
-       y="186.49991"
-       x="182.44202"
+       y="-373.50009"
+       x="1442.442"
        style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         y="186.49991"
-         x="187.21741"
+         y="-373.50009"
+         x="1447.2174"
          sodipodi:role="line"
          id="tspan4968">Adiciona </tspan><tspan
-         y="223.99991"
-         x="187.21741"
+         y="-336.00009"
+         x="1447.2174"
          sodipodi:role="line"
          id="tspan4970">índice(L) </tspan><tspan
-         y="261.49991"
-         x="187.21741"
+         y="-298.50009"
+         x="1447.2174"
          sodipodi:role="line"
          id="tspan4972">no vetor de </tspan><tspan
-         y="298.99991"
-         x="182.44202"
+         y="-261.00009"
+         x="1442.442"
          sodipodi:role="line"
          id="tspan4974">posições</tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99742675;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5032)"
-       d="m 1152.7736,-327.98674 36.3027,0 0,130.19765 -1161.690831,0 0,150.228075 21.781705,0"
-       id="path5016"
-       inkscape:connector-curvature="0" />
     <rect
        style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4478"
        width="260.11429"
        height="175.26146"
-       x="472.09192"
-       y="146.61575"
+       x="1312.0919"
+       y="-133.38425"
        ry="80.307129" />
     <path
        inkscape:connector-curvature="0"
        id="path4480"
-       d="m 313.3438,235.2303 157.9797,0"
+       d="m 1153.3438,-44.7697 157.9797,0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99366647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker7903)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="602.44202"
-       y="186.49991"
+       x="1442.442"
+       y="-93.500092"
        id="text4482"
        sodipodi:linespacing="125%"><tspan
          id="tspan4484"
          sodipodi:role="line"
-         x="607.21741"
-         y="186.49991">Adiciona </tspan><tspan
+         x="1447.2174"
+         y="-93.500092">Adiciona </tspan><tspan
          id="tspan4486"
          sodipodi:role="line"
-         x="607.21741"
-         y="223.99991">índice(Q) </tspan><tspan
+         x="1447.2174"
+         y="-56.000092">índice(Q) </tspan><tspan
          id="tspan4488"
          sodipodi:role="line"
-         x="607.21741"
-         y="261.49991">no vetor de </tspan><tspan
+         x="1447.2174"
+         y="-18.500092">no vetor de </tspan><tspan
          id="tspan4490"
          sodipodi:role="line"
-         x="602.44202"
-         y="298.99991">posições</tspan></text>
-    <rect
-       ry="80.307129"
-       y="146.61575"
-       x="892.09192"
-       height="175.26146"
-       width="260.11429"
-       id="rect4457"
-       style="fill:none;fill-opacity:1;stroke:#1b1918;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99366647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker7903)"
-       d="m 733.3438,235.2303 157.9797,0"
-       id="path4459"
-       inkscape:connector-curvature="0" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text4461"
-       y="178.64346"
-       x="1021.4471"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="178.64346"
-         x="1025.4265"
-         sodipodi:role="line"
-         id="tspan4463"
-         style="font-size:25px">Adiciona </tspan><tspan
-         y="209.89346"
-         x="1021.4471"
-         sodipodi:role="line"
-         id="tspan4465"
-         style="font-size:25px">getRegiao(</tspan><tspan
-         y="241.14346"
-         x="1021.4471"
-         sodipodi:role="line"
-         id="tspan4471"
-         style="font-size:25px">primeiraLetra(</tspan><tspan
-         y="272.39346"
-         x="1025.4265"
-         sodipodi:role="line"
-         id="tspan4467"
-         style="font-size:25px">Q)) no vetor de </tspan><tspan
-         y="303.64346"
-         x="1021.4471"
-         sodipodi:role="line"
-         id="tspan4469"
-         style="font-size:25px">posições</tspan></text>
+         x="1442.442"
+         y="18.999908">posições</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99366647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5051)"
        d="m 313.34378,-44.7697 157.97969,0"
        id="path5049"
        inkscape:connector-curvature="0" />
     <path
-       inkscape:connector-curvature="0"
-       id="path5941"
-       d="m 1152.7736,-47.98674 36.3027,0 0,130.19765 -1161.690831,0 0,150.22808 21.781705,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99742675;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5943)" />
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99366647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4789)"
+       d="m 1153.3438,-324.7697 157.9797,0"
+       id="path4787"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99902391px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5167)"
+       d="m 1571.422,-324.77075 39.9216,0 0,140.00113 -1591.87499,0 0,140.001135 29.941223,0"
+       id="path5159"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

@@ -21,22 +21,33 @@
 \BOOKMARK [3][-]{subsubsection.5.1.4}{SQL de Cria\347\343o da Tabela de Pontos}{subsection.5.1}% 21
 \BOOKMARK [3][-]{subsubsection.5.1.5}{SQL de Cria\347\343o da Tabela de Vizinhan\347as entre Pol\355gonos}{subsection.5.1}% 22
 \BOOKMARK [3][-]{subsubsection.5.1.6}{SQL de Cria\347\343o da Tabela de Vizinhan\347as de Moore entre Pontos}{subsection.5.1}% 23
-\BOOKMARK [2][-]{subsection.5.2}{M\363dulo Gerador de Arquivos de Configura\347\343o Ambiental}{section.5}% 24
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Fun\347\343o Principal}{subsection.5.2}% 25
-\BOOKMARK [3][-]{subsubsection.5.2.2}{Fun\347\343o criarIndexQuadraseLotes}{subsection.5.2}% 26
-\BOOKMARK [3][-]{subsubsection.5.2.3}{Fun\347\343o gerarIndexQuadras}{subsection.5.2}% 27
-\BOOKMARK [3][-]{subsubsection.5.2.4}{Fun\347\343o gerarVizinhancas}{subsection.5.2}% 28
-\BOOKMARK [3][-]{subsubsection.5.2.5}{Fun\347\343o getVizinhancasEntrePoligonos}{subsection.5.2}% 29
-\BOOKMARK [3][-]{subsubsection.5.2.6}{Fun\347\343o getVizinhancasMoorePontos}{subsection.5.2}% 30
-\BOOKMARK [3][-]{subsubsection.5.2.7}{Fun\347\343o gerarIndexVizinhancas}{subsection.5.2}% 31
-\BOOKMARK [3][-]{subsubsection.5.2.8}{Fun\347\343o gerarVetorVizinhancas}{subsection.5.2}% 32
-\BOOKMARK [3][-]{subsubsection.5.2.9}{Fun\347\343o gerarVetorPosicoes}{subsection.5.2}% 33
-\BOOKMARK [3][-]{subsubsection.5.2.10}{Fun\347\343o gerarIndexPosicoes}{subsection.5.2}% 34
-\BOOKMARK [3][-]{subsubsection.5.2.11}{Fun\347\343o escreverArquivoVetores}{subsection.5.2}% 35
-\BOOKMARK [3][-]{subsubsection.5.2.12}{Fun\347\343o criarDistribuicaoAgentes}{subsection.5.2}% 36
-\BOOKMARK [1][-]{section.6}{TRATAMENTOS AOS DADOS}{}% 37
-\BOOKMARK [1][-]{section.7}{RESULTADOS DA EXECU\307\303O DE EXPERIMENTOS COMPUTACIONAIS}{}% 38
-\BOOKMARK [2][-]{subsection.7.1}{Teste 0001}{section.7}% 39
-\BOOKMARK [3][-]{subsubsection.7.1.1}{Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\347\343o}{subsection.7.1}% 40
-\BOOKMARK [3][-]{subsubsection.7.1.2}{Espalhamento Espacial dos Casos de Influenza ao Longo do Tempo de Simula\347\343o}{subsection.7.1}% 41
-\BOOKMARK [3][-]{subsubsection.7.1.3}{Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\347\343o}{subsection.7.1}% 42
+\BOOKMARK [2][-]{subsection.5.2}{Tabelas Empregadas \340 Parametriza\347\343o da Doen\347a}{section.5}% 24
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Tabela config}{subsection.5.2}% 25
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Tabela cascavel\137poligonos}{subsection.5.2}% 26
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Tabela cascavel\137influenza\137distribuicaohumanos}{subsection.5.2}% 27
+\BOOKMARK [3][-]{subsubsection.5.2.4}{Tabela cascavel\137influenza\137faixasetariasvacinacao}{subsection.5.2}% 28
+\BOOKMARK [3][-]{subsubsection.5.2.5}{Tabela cascavel\137influenza\137ciclosvacinacao}{subsection.5.2}% 29
+\BOOKMARK [2][-]{subsection.5.3}{M\363dulo Gerador de Arquivos de Configura\347\343o Ambiental}{section.5}% 30
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Fun\347\343o Principal}{subsection.5.3}% 31
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Fun\347\343o getConfig}{subsection.5.3}% 32
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Fun\347\343o criarIndexQuadraseLotes}{subsection.5.3}% 33
+\BOOKMARK [3][-]{subsubsection.5.3.4}{Fun\347\343o gerarIndexQuadras}{subsection.5.3}% 34
+\BOOKMARK [3][-]{subsubsection.5.3.5}{Fun\347\343o gerarVizinhancas}{subsection.5.3}% 35
+\BOOKMARK [3][-]{subsubsection.5.3.6}{Fun\347\343o getPontos}{subsection.5.3}% 36
+\BOOKMARK [3][-]{subsubsection.5.3.7}{Fun\347\343o getFaixasEtariasVacinacao}{subsection.5.3}% 37
+\BOOKMARK [3][-]{subsubsection.5.3.8}{Fun\347\343o getCiclosVacinacao}{subsection.5.3}% 38
+\BOOKMARK [3][-]{subsubsection.5.3.9}{Fun\347\343o getDistribuicaoHumanos}{subsection.5.3}% 39
+\BOOKMARK [3][-]{subsubsection.5.3.10}{Fun\347\343o getVizinhancasMoorePontos}{subsection.5.3}% 40
+\BOOKMARK [3][-]{subsubsection.5.3.11}{Fun\347\343o gerarIndexVizinhancas}{subsection.5.3}% 41
+\BOOKMARK [3][-]{subsubsection.5.3.12}{Fun\347\343o gerarVetorVizinhancas}{subsection.5.3}% 42
+\BOOKMARK [3][-]{subsubsection.5.3.13}{Fun\347\343o gerarVetorPosicoes}{subsection.5.3}% 43
+\BOOKMARK [3][-]{subsubsection.5.3.14}{Fun\347\343o gerarIndexPosicoes}{subsection.5.3}% 44
+\BOOKMARK [3][-]{subsubsection.5.3.15}{Fun\347\343o salvarArquivoVetores}{subsection.5.3}% 45
+\BOOKMARK [3][-]{subsubsection.5.3.16}{Fun\347\343o salvarArquivoControles}{subsection.5.3}% 46
+\BOOKMARK [3][-]{subsubsection.5.3.17}{Fun\347\343o salvarArquivoDistribuicaoHumanos}{subsection.5.3}% 47
+\BOOKMARK [1][-]{section.6}{TRATAMENTOS AOS DADOS}{}% 48
+\BOOKMARK [1][-]{section.7}{RESULTADOS DA EXECU\307\303O DE EXPERIMENTOS COMPUTACIONAIS}{}% 49
+\BOOKMARK [2][-]{subsection.7.1}{Teste 0001}{section.7}% 50
+\BOOKMARK [3][-]{subsubsection.7.1.1}{Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\347\343o}{subsection.7.1}% 51
+\BOOKMARK [3][-]{subsubsection.7.1.2}{Espalhamento Espacial dos Casos de Influenza ao Longo do Tempo de Simula\347\343o}{subsection.7.1}% 52
+\BOOKMARK [3][-]{subsubsection.7.1.3}{Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\347\343o}{subsection.7.1}% 53

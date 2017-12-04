@@ -1,0 +1,5 @@
+\Inicio{
+	distribuicaoHumanos = lista\_vazia() \\
+	distribuicaoHumanos = consultaSQLBancoDeDadosSelecionandoTodosOsCasosDeInfeccaoDeHumanos() \\
+	\Retorna{distribuicaoHumanos}
+}

@@ -1,13 +1,12 @@
 private void gerarVizinhancas() {
-  ConsultasBanco con = ConsultasBanco.getInstance();
-  ArrayList<Pair<Ponto, Ponto>> ret = con.getVizinhancasMoorePontos();
-  ret.sort(new Pair.ComparatorPairPonto());
+  ArrayList<Vizinhanca> ret = con.getVizinhancasMoorePontos();
+  ret.sort(null);
 
   vizinhancas = new HashMap<>();
-  for (Pair<Ponto, Ponto> i : ret) {
-    vizinhancas.putIfAbsent(i.first.quadra, new HashMap<>());
-    vizinhancas.get(i.first.quadra).putIfAbsent(i.first.lote,
+  for (Vizinhanca i : ret) {
+    vizinhancas.putIfAbsent(i.getFirst().quadra, new HashMap<>());
+    vizinhancas.get(i.getFirst().quadra).putIfAbsent(i.getFirst().lote,
         new ArrayList<>());
-    vizinhancas.get(i.first.quadra).get(i.first.lote).add(i);
+    vizinhancas.get(i.getFirst().quadra).get(i.getFirst().lote).add(i);
   }
 }

@@ -1,28 +1,35 @@
 public static void main(String[] args) {
-  ConsultasBanco.build(ConsultasBanco.CASCAVEL);
-  ConsultasBanco con = ConsultasBanco.getInstance();
+  this.params = params;
 
-  int nCasa = 1642;
-  int nTrabalho = 410;
-  int nLazer = 28;
-  int nEstudo = 16;
-  GeradorVetores ger = new GeradorVetores(nCasa, nTrabalho, nLazer, nEstudo);
+  this.pastaSaida = "Saidas" + File.separator + params.get("Ambiente") + "_"
+      + params.get("Doenca") + File.separator;
+  if (!new File(pastaSaida).exists()) {
+    new File(pastaSaida).mkdir();
+  }
 
-  ger.pontos = con.getPontosLotesERuas();
+  nomrArquivoAmbiental = pastaSaida + "0-AMB.csv";
+  nomeArquivoControles = pastaSaida + "1-CON.csv";
+  nomeArquivoDistribuicaoHumanos = pastaSaida + "DistribuicaoHumanos.csv";
 
-  ger.criarIndexQuadraseLotes();
+  con = new ConsultasBanco(params.get("Ambiente"), params.get("Doenca"));
+  pontos = con.getPontos();
+  criarIndexQuadraseLotes();
+  distribuicaoHumanos = con.getDistribuicaoHumanos();
+  fEVac = con.getFaixasEtariasVacinacao();
+  cicVac = con.getCiclosVacinacao();
+  gerarIndexQuadras();
 
-  ger.gerarIndexQuadras();
+  System.out.println("Processando vizinhancas...");
+  gerarVizinhancas();
+  gerarIndexVizinhancas();
+  gerarVetorVizinhancas();
 
-  ger.gerarVizinhancas();
-  ger.gerarIndexVizinhancas();
-  ger.gerarVetorVizinhancas();
+  System.out.println("Processando posicoes...");
+  gerarVetorPosicoes();
+  gerarIndexPosicoes();
 
-  ger.gerarVetorPosicoes();
-  ger.gerarIndexPosicoes();
-  ger.gerarIndexPosicoesRegioes();
-
-  ger.escreverArquivoVetores();
-
-  ger.criarDistribuicaoAgentes();
+  System.out.println("Salvando arquivos...");
+  salvarArquivoVetores();
+  salvarArquivoDistribuicaoHumanos();
+  salvarArquivoControles();
 }

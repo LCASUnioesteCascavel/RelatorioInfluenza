@@ -1,0 +1,5 @@
+\Inicio{
+	faixasEtariasVacinacao = lista\_vazia() \\
+	faixasEtariasVacinacao = consultaSQLBancoDeDadosSelecionandoAsFaixasEtariasDeVacinacao() \\
+	\Retorna{faixasEtariasVacinacao}
+}

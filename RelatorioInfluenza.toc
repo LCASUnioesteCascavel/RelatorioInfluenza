@@ -22,22 +22,33 @@
 \contentsline {subsubsection}{\numberline {5.1.4}SQL de Cria\IeC {\c c}\IeC {\~a}o da Tabela de Pontos}{30}{subsubsection.5.1.4}
 \contentsline {subsubsection}{\numberline {5.1.5}SQL de Cria\IeC {\c c}\IeC {\~a}o da Tabela de Vizinhan\IeC {\c c}as entre Pol\IeC {\'\i }gonos}{30}{subsubsection.5.1.5}
 \contentsline {subsubsection}{\numberline {5.1.6}SQL de Cria\IeC {\c c}\IeC {\~a}o da Tabela de Vizinhan\IeC {\c c}as de Moore entre Pontos}{31}{subsubsection.5.1.6}
-\contentsline {subsection}{\numberline {5.2}M\IeC {\'o}dulo Gerador de Arquivos de Configura\IeC {\c c}\IeC {\~a}o Ambiental}{33}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Fun\IeC {\c c}\IeC {\~a}o Principal}{34}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Fun\IeC {\c c}\IeC {\~a}o criarIndexQuadraseLotes}{35}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Fun\IeC {\c c}\IeC {\~a}o gerarIndexQuadras}{36}{subsubsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.4}Fun\IeC {\c c}\IeC {\~a}o gerarVizinhancas}{37}{subsubsection.5.2.4}
-\contentsline {subsubsection}{\numberline {5.2.5}Fun\IeC {\c c}\IeC {\~a}o getVizinhancasEntrePoligonos}{38}{subsubsection.5.2.5}
-\contentsline {subsubsection}{\numberline {5.2.6}Fun\IeC {\c c}\IeC {\~a}o getVizinhancasMoorePontos}{39}{subsubsection.5.2.6}
-\contentsline {subsubsection}{\numberline {5.2.7}Fun\IeC {\c c}\IeC {\~a}o gerarIndexVizinhancas}{40}{subsubsection.5.2.7}
-\contentsline {subsubsection}{\numberline {5.2.8}Fun\IeC {\c c}\IeC {\~a}o gerarVetorVizinhancas}{41}{subsubsection.5.2.8}
-\contentsline {subsubsection}{\numberline {5.2.9}Fun\IeC {\c c}\IeC {\~a}o gerarVetorPosicoes}{42}{subsubsection.5.2.9}
-\contentsline {subsubsection}{\numberline {5.2.10}Fun\IeC {\c c}\IeC {\~a}o gerarIndexPosicoes}{43}{subsubsection.5.2.10}
-\contentsline {subsubsection}{\numberline {5.2.11}Fun\IeC {\c c}\IeC {\~a}o escreverArquivoVetores}{44}{subsubsection.5.2.11}
-\contentsline {subsubsection}{\numberline {5.2.12}Fun\IeC {\c c}\IeC {\~a}o criarDistribuicaoAgentes}{46}{subsubsection.5.2.12}
-\contentsline {section}{\numberline {6}TRATAMENTOS AOS DADOS}{48}{section.6}
-\contentsline {section}{\numberline {7}RESULTADOS DA EXECU\IeC {\c C}\IeC {\~A}O DE EXPERIMENTOS COMPUTACIONAIS}{51}{section.7}
-\contentsline {subsection}{\numberline {7.1}Teste 0001}{51}{subsection.7.1}
-\contentsline {subsubsection}{\numberline {7.1.1}Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{53}{subsubsection.7.1.1}
-\contentsline {subsubsection}{\numberline {7.1.2}Espalhamento Espacial dos Casos de Influenza ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{55}{subsubsection.7.1.2}
-\contentsline {subsubsection}{\numberline {7.1.3}Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{56}{subsubsection.7.1.3}
+\contentsline {subsection}{\numberline {5.2}Tabelas Empregadas \IeC {\`a} Parametriza\IeC {\c c}\IeC {\~a}o da Doen\IeC {\c c}a}{33}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Tabela config}{33}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Tabela cascavel\_poligonos}{33}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Tabela cascavel\_influenza\_distribuicaohumanos}{33}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}Tabela cascavel\_influenza\_faixasetariasvacinacao}{33}{subsubsection.5.2.4}
+\contentsline {subsubsection}{\numberline {5.2.5}Tabela cascavel\_influenza\_ciclosvacinacao}{34}{subsubsection.5.2.5}
+\contentsline {subsection}{\numberline {5.3}M\IeC {\'o}dulo Gerador de Arquivos de Configura\IeC {\c c}\IeC {\~a}o Ambiental}{35}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Fun\IeC {\c c}\IeC {\~a}o Principal}{36}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Fun\IeC {\c c}\IeC {\~a}o getConfig}{38}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Fun\IeC {\c c}\IeC {\~a}o criarIndexQuadraseLotes}{39}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}Fun\IeC {\c c}\IeC {\~a}o gerarIndexQuadras}{40}{subsubsection.5.3.4}
+\contentsline {subsubsection}{\numberline {5.3.5}Fun\IeC {\c c}\IeC {\~a}o gerarVizinhancas}{41}{subsubsection.5.3.5}
+\contentsline {subsubsection}{\numberline {5.3.6}Fun\IeC {\c c}\IeC {\~a}o getPontos}{42}{subsubsection.5.3.6}
+\contentsline {subsubsection}{\numberline {5.3.7}Fun\IeC {\c c}\IeC {\~a}o getFaixasEtariasVacinacao}{43}{subsubsection.5.3.7}
+\contentsline {subsubsection}{\numberline {5.3.8}Fun\IeC {\c c}\IeC {\~a}o getCiclosVacinacao}{44}{subsubsection.5.3.8}
+\contentsline {subsubsection}{\numberline {5.3.9}Fun\IeC {\c c}\IeC {\~a}o getDistribuicaoHumanos}{45}{subsubsection.5.3.9}
+\contentsline {subsubsection}{\numberline {5.3.10}Fun\IeC {\c c}\IeC {\~a}o getVizinhancasMoorePontos}{46}{subsubsection.5.3.10}
+\contentsline {subsubsection}{\numberline {5.3.11}Fun\IeC {\c c}\IeC {\~a}o gerarIndexVizinhancas}{47}{subsubsection.5.3.11}
+\contentsline {subsubsection}{\numberline {5.3.12}Fun\IeC {\c c}\IeC {\~a}o gerarVetorVizinhancas}{48}{subsubsection.5.3.12}
+\contentsline {subsubsection}{\numberline {5.3.13}Fun\IeC {\c c}\IeC {\~a}o gerarVetorPosicoes}{49}{subsubsection.5.3.13}
+\contentsline {subsubsection}{\numberline {5.3.14}Fun\IeC {\c c}\IeC {\~a}o gerarIndexPosicoes}{50}{subsubsection.5.3.14}
+\contentsline {subsubsection}{\numberline {5.3.15}Fun\IeC {\c c}\IeC {\~a}o salvarArquivoVetores}{51}{subsubsection.5.3.15}
+\contentsline {subsubsection}{\numberline {5.3.16}Fun\IeC {\c c}\IeC {\~a}o salvarArquivoControles}{53}{subsubsection.5.3.16}
+\contentsline {subsubsection}{\numberline {5.3.17}Fun\IeC {\c c}\IeC {\~a}o salvarArquivoDistribuicaoHumanos}{56}{subsubsection.5.3.17}
+\contentsline {section}{\numberline {6}TRATAMENTOS AOS DADOS}{59}{section.6}
+\contentsline {section}{\numberline {7}RESULTADOS DA EXECU\IeC {\c C}\IeC {\~A}O DE EXPERIMENTOS COMPUTACIONAIS}{62}{section.7}
+\contentsline {subsection}{\numberline {7.1}Teste 0001}{62}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{64}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Espalhamento Espacial dos Casos de Influenza ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{66}{subsubsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.3}Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{67}{subsubsection.7.1.3}

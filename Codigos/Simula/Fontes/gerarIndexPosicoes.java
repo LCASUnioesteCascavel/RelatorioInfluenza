@@ -5,7 +5,7 @@ private void gerarIndexPosicoes() {
   for (String quadra : indicesQuadras.keySet()) {
     indexPosicoes.add(desl);
     for (String lote : indicesLotes.get(quadra).keySet()) {
-      desl += pontos.get(quadra).get(lote).size() * 5;
+      desl += pontos.get(quadra).get(lote).size();
       indexPosicoes.add(desl);
     }
   }
