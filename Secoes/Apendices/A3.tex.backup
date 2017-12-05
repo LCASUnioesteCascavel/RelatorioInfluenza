@@ -1,0 +1,53 @@
+\section{Apêndice III - Código-Fonte dos Scripts Auxiliares Python}
+
+\subsection{Scripts à Geração de Gráficos} 
+
+\subsubsection{Arquivo graficos.py}
+
+Este \textit{script} é utilizado à geração de gráficos de quantidades ao longo do tempo de simulação para as populações de agentes mosquitos e humanos. Os gráficos gerados são salvos em arquivos \textit{.png}, fornecendo as opções de saídas da população total ou por quadras. Este \textit{script} utiliza as classes definidas nos arquivos \textit{graficos\_h.py}, \textit{graficos\_md.py} e \textit{graficos\_mw.py}. As classes utilizam a biblioteca \textit{Python Matplotlib} para a confecção dos gráficos.
+
+\lstinputlisting[title=graficos.py, captionpos=b, language=Python]{Codigos/Apendices/A3/graficos.py}
+
+\newpage
+
+\subsubsection{Arquivo graficos\_h.py}
+
+Este \textit{script} define a classe responsável pela geração dos gráficos das populações dos agentes humanos ao longo do tempo de simulação. São gerados os gráficos por saúdes, faixas etárias, sexos, sorotipos, saúdes e faixas etárias, saúdes e sorotipos, saúdes e sexos, faixas etárias e sorotipos, faixas etárias e sexos e sorotipos e sexos.
+
+\lstinputlisting[title=grafico\_h.py, captionpos=b, language=Python]{Codigos/Apendices/A3/grafico_h.py}
+
+\newpage
+
+\subsubsection{Arquivo graficos\_md.py}
+
+Este \textit{script} define a classe responsável pela geração dos gráficos das populações dos agentes mosquitos ao longo do tempo de simulação, considerando suas saúdes relativas à Dengue. São gerados os gráficos por fases, sexos, saúdes, sorotipos, saúdes e sorotipos, saúdes e fases e sexos e fases.
+
+\lstinputlisting[title=grafico\_md.py, captionpos=b, language=Python]{Codigos/Apendices/A3/grafico_md.py}
+
+\newpage
+
+\subsubsection{Arquivo graficos\_mw.py}
+
+Este \textit{script} define a classe responsável pela geração dos gráficos das populações dos agentes mosquitos ao longo do tempo de simulação, considerando suas saúdes relativas à Wolbachia. São gerados os gráficos por sexos, fases, saúdes, sexos e saúdes, sexos e fases e saúdes e fases.
+
+\lstinputlisting[title=grafico\_mw.py, captionpos=b, language=Python]{Codigos/Apendices/A3/grafico_mw.py}
+
+\newpage
+
+\subsection{Outros Scripts} 
+
+\subsubsection{Arquivo resumo\_saidas.py}
+
+Este \textit{script} é utilizado para reduzir a quantidade de ciclos representados nas saídas espaciais. São fornecidos ao \textit{script} o arquivo de saída espacial e a quantidade de passos desejados. A quantidade de passos define a frequência da representação espacial. Como exemplo, considerando uma simulação com $100$ ciclos, se a quantidade de passos fornecida ao \textit{script} é $10$, são mantidas no arquivo de saída as representações espaciais dos ciclos $0$, $10$, $20$, $30$, $40$, $50$, $60$, $70$, $80$, $90$ e $100$. Este \textit{script} é útil à redução da quantidade de ciclos representada nas saídas espaciais, sendo utilizada na confecção de imagens e animações. 
+
+\lstinputlisting[title=resumo\_saidas.py, captionpos=b, language=Python]{Codigos/Apendices/A3/resumo_saidas.py}
+
+\newpage
+
+\subsubsection{Arquivo bitstring.py}
+
+Este \textit{script} é utilizado no cálculo das quantidades de \textit{bits} anteriores e máscaras positivas e negativas à cada campo, que são empregadas à modelagem \textit{bitstring} dos agentes mosquitos e humanos, que é apresentada na Seção \ref{sec:modelagemBitstring}. São fornecidos como entrada ao \textit{script} os tamanhos e  e as quantidades de palavras e \textit{bits} por palavra. O \textit{script} exibe no terminal as máscaras positivas e negativas em decimal correspondentes às entradas fornecidas. 
+
+\lstinputlisting[title=bitstring.py, captionpos=b, language=Python]{Codigos/Apendices/A3/bitstring.py}
+
+\newpage

@@ -1,0 +1,406 @@
+\section{APÊNDICE I - CÓDIGO-FONTE DO SISTEMA DE SIMULAÇÃO}
+
+\subsection{Classes de Controle das Simulações}
+
+\subsubsection{Arquivo Ambiente.h}
+
+\lstinputlisting[title=Ambiente.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Ambiente.h}
+
+\newpage
+
+\subsubsection{Arquivo Ambiente.cu}
+
+\lstinputlisting[title=Ambiente.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Ambiente.cu}
+
+\newpage
+
+\subsubsection{Arquivo MonteCarlo.h}
+
+\lstinputlisting[title=MonteCarlo.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/MonteCarlo.h}
+
+\newpage
+
+\subsubsection{Arquivo MonteCarlo.cu}
+
+\lstinputlisting[title=MonteCarlo.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/MonteCarlo.cu}
+
+\newpage
+
+\subsubsection{Arquivo Parametros.h}
+
+\lstinputlisting[title=Parametros.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Parametros.h}
+
+\newpage
+
+\subsubsection{Arquivo Parametros.cu}
+
+\lstinputlisting[title=Parametros.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Parametros.cu}
+
+\newpage
+
+\subsubsection{Arquivo Saidas.h}
+
+\lstinputlisting[title=Saidas.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Saidas.h}
+
+\newpage
+
+\subsubsection{Arquivo Saidas.cu}
+
+\lstinputlisting[title=Saidas.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Saidas.cu}
+
+\newpage
+
+\subsubsection{Arquivo Seeds.h}
+
+\lstinputlisting[title=Seeds.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Seeds.h}
+
+\newpage
+
+\subsubsection{Arquivo Seeds.cu}
+
+\lstinputlisting[title=Seeds.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Seeds.cu}
+
+\newpage
+
+\subsubsection{Arquivo Simulacao.h}
+
+\lstinputlisting[title=Simulacao.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Simulacao.h}
+
+\newpage
+
+\subsubsection{Arquivo Simulacao.cu}
+
+\lstinputlisting[title=Simulacao.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Simulacao.cu}
+
+\newpage
+
+\subsubsection{Arquivo Main.cu}
+
+\lstinputlisting[title=Main.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Main.cu}
+
+
+\newpage
+
+\subsection{Classes Auxiliares}
+
+\subsubsection{Arquivo RandPerc.h}
+
+\lstinputlisting[title=RandPerc.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Uteis/RandPerc.h}
+
+\newpage
+
+\subsubsection{Arquivo RandPerc.cu}
+
+\lstinputlisting[title=RandPerc.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Uteis/RandPerc.cu}
+
+\newpage
+
+\subsubsection{Arquivo Timer.h}
+
+\lstinputlisting[title=Timer.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Uteis/Timer.h}
+
+\newpage
+
+\subsubsection{Arquivo Timer.cu}
+
+\lstinputlisting[title=Timer.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Uteis/Timer.cu}
+
+
+\newpage
+
+\subsection{Classes dos Operadores dos Agentes Humanos}
+
+\subsubsection{Arquivo Movimentacao.h}
+
+\lstinputlisting[title=Humanos/Movimentacao.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Humanos/Movimentacao.h}
+
+\newpage
+
+\subsubsection{Arquivo Movimentacao.cu}
+
+\lstinputlisting[title=Humanos/Movimentacao.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Humanos/Movimentacao.cu}
+
+\newpage
+
+\subsubsection{Arquivo Contato.h}
+
+\lstinputlisting[title=Humanos/Contato.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Humanos/Contato.h}
+
+\newpage
+
+\subsubsection{Arquivo Contato.cu}
+
+\lstinputlisting[title=Humanos/Contato.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Humanos/Contato.cu}
+
+\newpage
+
+\subsubsection{Arquivo Transicao.h}
+
+\lstinputlisting[title=Humanos/Transicao.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Humanos/Transicao.h}
+
+\newpage
+
+\subsubsection{Arquivo Transicao.cu}
+
+\lstinputlisting[title=Humanos/Transicao.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Humanos/Transicao.cu}
+
+\newpage
+
+\subsubsection{Arquivo Controle.h}
+
+\lstinputlisting[title=Humanos/Controle.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Humanos/Controle.h}
+
+\newpage
+
+\subsubsection{Arquivo Controle.cu}
+
+\lstinputlisting[title=Humanos/Controle.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Humanos/Controle.cu}
+
+\newpage
+
+\subsubsection{Arquivo Insercao.h}
+
+\lstinputlisting[title=Humanos/Insercao.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Humanos/Insercao.h}
+
+\newpage
+
+\subsubsection{Arquivo Insercao.cu}
+
+\lstinputlisting[title=Humanos/Insercao.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Humanos/Insercao.cu}
+
+\newpage
+
+\subsubsection{Arquivo Saidas.h}
+
+\lstinputlisting[title=Humanos/Saidas.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Humanos/Saidas.h}
+
+\newpage
+
+\subsubsection{Arquivo Saidas.cu}
+
+\lstinputlisting[title=Humanos/Saidas.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Humanos/Saidas.cu}
+
+\newpage
+
+\subsubsection{Arquivo Humanos.h}
+
+\lstinputlisting[title=Humanos/Humanos.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Humanos/Humanos.h}
+
+\newpage
+
+\subsubsection{Arquivo Humanos.cu}
+
+\lstinputlisting[title=Humanos/Humanos.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Humanos/Humanos.cu}
+
+
+\newpage
+
+\subsection{Classes dos Operadores dos Agentes Mosquitos}
+
+\subsubsection{Arquivo Movimentacao.h}
+
+\lstinputlisting[title=Mosquitos/Movimentacao.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Movimentacao.h}
+
+\newpage
+
+\subsubsection{Arquivo Movimentacao.cu}
+
+\lstinputlisting[title=Mosquitos/Movimentacao.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Movimentacao.cu}
+
+\newpage
+
+\subsubsection{Arquivo Contato.h}
+
+\lstinputlisting[title=Mosquitos/Contato.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Contato.h}
+
+\newpage
+
+\subsubsection{Arquivo Contato.cu}
+
+\lstinputlisting[title=Mosquitos/Contato.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Contato.cu}
+
+\newpage
+
+\subsubsection{Arquivo Transicao.h}
+
+\lstinputlisting[title=Mosquitos/Transicao.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Transicao.h}
+
+\newpage
+
+\subsubsection{Arquivo Transicao.cu}
+
+\lstinputlisting[title=Mosquitos/Transicao.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Transicao.cu}
+
+\newpage
+
+\subsubsection{Arquivo Controle.h}
+
+\lstinputlisting[title=Mosquitos/Controle.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Controle.h}
+
+\newpage
+
+\subsubsection{Arquivo Controle.cu}
+
+\lstinputlisting[title=Mosquitos/Controle.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Controle.cu}
+
+\newpage
+
+\subsubsection{Arquivo Geracao.h}
+
+\lstinputlisting[title=Mosquitos/Geracao.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Geracao.h}
+
+\newpage
+
+\subsubsection{Arquivo Geracao.cu}
+
+\lstinputlisting[title=Mosquitos/Geracao.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Geracao.cu}
+
+\newpage
+
+\subsubsection{Arquivo Saidas.h}
+
+\lstinputlisting[title=Mosquitos/Saidas.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Saidas.h}
+
+\newpage
+
+\subsubsection{Arquivo Saidas.cu}
+
+\lstinputlisting[title=Mosquitos/Saidas.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Saidas.cu}
+
+\newpage 
+
+\subsubsection{Arquivo Insercao.h}
+
+\lstinputlisting[title=Mosquitos/Insercao.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Insercao.h}
+
+\newpage
+
+\subsubsection{Arquivo Insercao.cu}
+
+\lstinputlisting[title=Mosquitos/Insercao.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Insercao.cu}
+
+\newpage
+
+\subsubsection{Arquivo Mosquitos.h}
+
+\lstinputlisting[title=Mosquitos/Mosquitos.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Mosquitos.h}
+
+\newpage
+
+\subsubsection{Arquivo Mosquitos.cu}
+
+\lstinputlisting[title=Mosquitos/Mosquitos.cu, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Mosquitos/Mosquitos.cu}
+
+
+\newpage
+
+\subsection{Arquivos de Definição de Macros}
+
+\subsubsection{Arquivo 0\_SIM.h}
+
+\lstinputlisting[title=Macros/0\_SIM.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/0_SIM.h}
+
+\newpage
+
+\subsubsection{Arquivo 0\_INI\_H.h}
+
+\lstinputlisting[title=Macros/0\_INI\_H.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/0_INI_H.h}
+
+\newpage
+
+\subsubsection{Arquivo 0\_INI\_M.h}
+
+\lstinputlisting[title=Macros/0\_INI\_M.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/0_INI_M.h}
+
+\newpage
+
+\subsubsection{Arquivo 1\_MOV\_H.h}
+
+\lstinputlisting[title=Macros/1\_MOV\_H.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/1_MOV_H.h}
+
+\newpage
+
+\subsubsection{Arquivo 1\_MOV\_M.h}
+
+\lstinputlisting[title=Macros/1\_MOV\_M.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/1_MOV_M.h}
+
+\newpage
+
+\subsubsection{Arquivo 2\_CON\_H.h}
+
+\lstinputlisting[title=Macros/2\_CON\_H.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/2_CON_H.h}
+
+\newpage
+
+\subsubsection{Arquivo 2\_CON\_M.h}
+
+\lstinputlisting[title=Macros/2\_CON\_M.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/2_CON_M.h}
+
+\newpage
+
+\subsubsection{Arquivo 3\_TRA\_H.h}
+
+\lstinputlisting[title=Macros/3\_TRA\_H.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/3_TRA_H.h}
+
+\newpage
+
+\subsubsection{Arquivo 3\_TRA\_M.h}
+
+\lstinputlisting[title=Macros/3\_TRA\_M.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/3_TRA_M.h}
+
+\newpage
+
+\subsubsection{Arquivo 4\_CON\_H.h}
+
+\lstinputlisting[title=Macros/4\_CON\_H.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/4_CON_H.h}
+
+\newpage
+
+\subsubsection{Arquivo 4\_CON\_M.h}
+
+\lstinputlisting[title=Macros/4\_CON\_M.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/4_CON_M.h}
+
+\newpage
+
+\subsubsection{Arquivo 5\_INS\_H.h}
+
+\lstinputlisting[title=Macros/5\_INS\_H.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/5_INS_H.h}
+
+\newpage
+
+\subsubsection{Arquivo 5\_GER\_M.h}
+
+\lstinputlisting[title=Macros/5\_GER\_M.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/5_GER_M.h}
+
+\newpage
+
+\subsubsection{Arquivo Macros.h}
+
+\lstinputlisting[title=Macros/MacrosGerais.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/MacrosGerais.h}
+
+\newpage
+
+\subsubsection{Arquivo MacrosHumanos.h}
+
+\lstinputlisting[title=Macros/MacrosHumanos.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/MacrosHumanos.h}
+
+\newpage
+
+\subsubsection{Arquivo MacrosMosquitos.h}
+
+\lstinputlisting[title=Macros/MacrosMosquitos.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/MacrosMosquitos.h}
+
+\newpage
+
+\subsubsection{Arquivo MacrosParametros.h}
+
+\lstinputlisting[title=Macros/MacrosParametros.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/MacrosParametros.h}
+
+\newpage
+
+\subsubsection{Arquivo MacrosSO.h}
+
+\lstinputlisting[title=Macros/MacrosSO.h, captionpos=b, language=C++]{Codigos/Apendices/A1/Fontes/Macros/MacrosSO.h}
+
+
+\newpage

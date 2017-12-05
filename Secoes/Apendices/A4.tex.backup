@@ -1,0 +1,131 @@
+\section{APÊNDICE IV - ARQUIVOS DE CONFIGURAÇÃO DA SIMULAÇÃO}
+
+\subsection{Parâmetros Gerais}
+
+\subsubsection{Arquivo 0-SIM.csv} 
+
+Este arquivo define os parâmetros principais de controle das simulações, como a quantidade de ciclos. 
+
+\begin{center}
+\pgfplotstabletypeset[
+col sep = semicolon,
+every head row/.style={before row=\toprule,after row=\midrule},
+every last row/.style={after row=\bottomrule},
+display columns/0/.style={string type}, 
+display columns/3/.style={string type, column type=l}
+]{Codigos/Apendices/A4/Entradas/MonteCarlo_0/Simulacao/0-SIM.csv}
+\end{center}
+
+\newpage
+
+\subsection{Parâmetros Ambientais}
+
+\subsubsection{Arquivo Ambiente/0-AMB.csv}
+
+O arquivo \textit{Ambiente/0-AMB.csv} não é apresentado integralmente por conter linhas demasiadamente longas. Deste modo, são apresentados trechos do arquivo limitando-se o comprimento das linhas. Todas as linhas do arquivo são ilustradas. 
+
+\verbatiminput{Codigos/Apendices/A4/Entradas/MonteCarlo_0/Ambiente/0-AMB.csv}
+
+\newpage
+
+\subsubsection{Arquivo Ambiente/1-CON.csv}
+
+Este arquivo define as regiões de aplicação das campanhas de vacinação e percentuais de quarentena e sazonalidade. As regiões são escolhidas manualmente com auxílio do \textit{software} QGIS. Os comprimentos das linhas dos percentuais de sazonalidade e quarentena foram limitadas devido seus comprimentos.
+
+\verbatiminput{Codigos/Apendices/A4/Entradas/MonteCarlo_0/Ambiente/1-CON.csv}
+
+\newpage
+
+\subsubsection{Arquivo Ambiente/DistribuicaoHumanos.csv}
+
+Este arquivo define as populações de agentes humanos que são inseridas no ambiente durante a execução de simulações. Cada linha do arquivo representa uma determinada população que será inserida durante a execução da simulação. O arquivo não é apresentado integralmente devido à grande quantidade de linhas. Desta forma, são apresentadas as dez primeiras linhas.  
+
+\verbatiminput{Codigos/Apendices/A4/Entradas/MonteCarlo_0/Ambiente/DistribuicaoHumanos.csv}
+
+\newpage
+
+\subsection{Parâmetros aos Humanos}
+
+\subsubsection{Arquivo Humanos/0-INI.csv}
+
+Neste arquivo são definidos os parâmetros utilizados na distribuição inicial da população de agentes humanos. 
+
+\begin{center}
+\pgfplotstabletypeset[
+col sep = semicolon,
+every head row/.style={before row=\toprule,after row=\midrule},
+every last row/.style={after row=\bottomrule},
+display columns/0/.style={string type}, 
+display columns/3/.style={string type, column type=l}
+]{Codigos/Apendices/A4/Entradas/MonteCarlo_0/Humanos/0-INI.csv}
+\end{center}
+
+\begin{center}
+\pgfplotstabletypeset[
+col sep = semicolon,
+every head row/.style={before row=\toprule,after row=\midrule},
+every last row/.style={after row=\bottomrule},
+display columns/0/.style={string type}, 
+display columns/3/.style={string type, column type=l}
+]{Codigos/Apendices/A4/Entradas/MonteCarlo_0/Humanos/0-INI2.csv}
+\end{center}
+
+\begin{center}
+\pgfplotstabletypeset[
+col sep = semicolon,
+every head row/.style={before row=\toprule,after row=\midrule},
+every last row/.style={after row=\bottomrule},
+display columns/0/.style={string type}, 
+display columns/3/.style={string type, column type=l}
+]{Codigos/Apendices/A4/Entradas/MonteCarlo_0/Humanos/0-INI3.csv}
+\end{center}
+
+\newpage
+
+\subsubsection{Arquivo Humanos/1-MOV.csv}
+
+Neste arquivo são definidas as taxas de mobilidade de cada faixa etária, empregadas na movimentação dos agentes humanos. 
+
+\begin{center}
+\pgfplotstabletypeset[
+col sep = semicolon,
+every head row/.style={before row=\toprule,after row=\midrule},
+every last row/.style={after row=\bottomrule},
+display columns/0/.style={string type}, 
+display columns/3/.style={string type, column type=l}
+]{Codigos/Apendices/A4/Entradas/MonteCarlo_0/Humanos/1-MOV.csv}
+\end{center}
+
+\newpage
+
+\subsubsection{Arquivo Humanos/2-CON.csv}
+
+Neste arquivo são definidas as taxas de repasto e de infecção por Influenza que são utilizadas na rotina de contato entre agentes mosquitos e humanos. 
+
+\begin{center}
+\pgfplotstabletypeset[
+col sep = semicolon,
+every head row/.style={before row=\toprule,after row=\midrule},
+every last row/.style={after row=\bottomrule},
+display columns/0/.style={string type}, 
+display columns/3/.style={string type, column type=l}
+]{Codigos/Apendices/A4/Entradas/MonteCarlo_0/Humanos/2-CON.csv}
+\end{center}
+
+\newpage
+
+\subsubsection{Arquivo Humanos/3-TRA.csv}
+
+Neste arquivo são definidos parâmetros relativos à transição dos agentes humanos entre os compartimentos modelados à doença, como as probabilidades de evolução ao estágio hemorrágico e de morte e taxa de eficácia da vacina. 
+
+\begin{center}
+\pgfplotstabletypeset[
+col sep = semicolon,
+every head row/.style={before row=\toprule,after row=\midrule},
+every last row/.style={after row=\bottomrule},
+display columns/0/.style={string type}, 
+display columns/3/.style={string type, column type=l}
+]{Codigos/Apendices/A4/Entradas/MonteCarlo_0/Humanos/3-TRA.csv}
+\end{center}
+
+\newpage

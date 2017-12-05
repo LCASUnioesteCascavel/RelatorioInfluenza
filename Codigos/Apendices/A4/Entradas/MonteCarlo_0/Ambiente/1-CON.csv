@@ -1,0 +1,15 @@
+fEVac. Faixas etarias que receberao vacinacao
+4
+0;1;2;4
+
+cicVac. Ciclos em que as vacinacoes serao executadas
+1
+150
+
+Sazonalidade
+214
+1.0000000000;1.0000000000;1.0000000000;1.0000000000;1.0000000000;1.0000000000;...
+
+Percentuais de quarentena
+214
+0.9758933452;0.3012756653;0.6908982954;0.5568940791;0.6467167566;0.6092836827;...

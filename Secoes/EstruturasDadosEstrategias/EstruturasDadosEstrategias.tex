@@ -148,14 +148,6 @@ Nesta operação são realizadas a passagem dos agentes infectantes ao estado de
   \label{fig:quarentena}
 \end{figure} 
 
-\newpage
-
-\subsection{Macros à Implementação das Operações \textit{bitstring}}
-
-Abaixo são ilustradas as macros utilizadas à implementação das operações \textit{bitstring} de captura e atualização de atributos nos agentes, que são definidas em \ref{eq:operadoresGet} e \ref{eq:operadoresSet}. As variáveis com nome iniciando em "TH"\ armazenam os tamanhos em \textit{bits} dos campos dos agentes. As variáveis iniciando com "AH"\ armazenam a quantidade de \textit{bits} anteriores à determinado campo do agente. As variáveis iniciando com "MAH"\ e "NMH"\ armazenam as máscaras positivas e negativas para os campos dos agentes, respectivamente. São apresentadas ainda as funções de captura, \textit{get}, e atualização, \textit{set}, dos atributos dos agentes. 
-
-\lstinputlisting[title=Macros para captura e configuração de atributos do agente, captionpos=b, language=C++]{Codigos/EstruturasDadosEstrategias/Macros.cu}
-
 A Seção \ref{sec:SIMULA} apresenta o \textit{software} utilizado como apoio às operações de manipulação de dados georreferenciados, que são empregados à geração de arquivos de entrada e visualizações às simulações.
 
 \newpage
