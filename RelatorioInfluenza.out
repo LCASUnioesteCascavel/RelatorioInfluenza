@@ -46,8 +46,13 @@
 \BOOKMARK [3][-]{subsubsection.5.3.16}{Fun\347\343o salvarArquivoControles}{subsection.5.3}% 46
 \BOOKMARK [3][-]{subsubsection.5.3.17}{Fun\347\343o salvarArquivoDistribuicaoHumanos}{subsection.5.3}% 47
 \BOOKMARK [1][-]{section.6}{TRATAMENTOS AOS DADOS}{}% 48
-\BOOKMARK [1][-]{section.7}{RESULTADOS DA EXECU\307\303O DE EXPERIMENTOS COMPUTACIONAIS}{}% 49
-\BOOKMARK [2][-]{subsection.7.1}{Teste 0002}{section.7}% 50
-\BOOKMARK [3][-]{subsubsection.7.1.1}{Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\347\343o}{subsection.7.1}% 51
-\BOOKMARK [3][-]{subsubsection.7.1.2}{Espalhamento Espacial dos Agentes Humanos ao Longo do Tempo de Simula\347\343o}{subsection.7.1}% 52
-\BOOKMARK [3][-]{subsubsection.7.1.3}{Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\347\343o}{subsection.7.1}% 53
+\BOOKMARK [1][-]{section.7}{OBSERVA\307\325ES}{}% 49
+\BOOKMARK [2][-]{subsection.7.1}{Distribui\347\343o Inicial por Quadras ou Pontos}{section.7}% 50
+\BOOKMARK [2][-]{subsection.7.2}{Discuss\365es sobre Monte Carlo Espacial}{section.7}% 51
+\BOOKMARK [2][-]{subsection.7.3}{Discuss\365es sobre Implementa\347\365es Paralelas em CPU e GPU}{section.7}% 52
+\BOOKMARK [2][-]{subsection.7.4}{Outras Discuss\365es Pertinentes}{section.7}% 53
+\BOOKMARK [1][-]{section.8}{RESULTADOS DA EXECU\307\303O DE EXPERIMENTOS COMPUTACIONAIS}{}% 54
+\BOOKMARK [2][-]{subsection.8.1}{Teste 0002}{section.8}% 55
+\BOOKMARK [3][-]{subsubsection.8.1.1}{Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\347\343o}{subsection.8.1}% 56
+\BOOKMARK [3][-]{subsubsection.8.1.2}{Espalhamento Espacial dos Agentes Humanos ao Longo do Tempo de Simula\347\343o}{subsection.8.1}% 57
+\BOOKMARK [3][-]{subsubsection.8.1.3}{Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\347\343o}{subsection.8.1}% 58

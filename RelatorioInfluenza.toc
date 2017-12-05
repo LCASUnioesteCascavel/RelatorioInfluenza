@@ -47,8 +47,13 @@
 \contentsline {subsubsection}{\numberline {5.3.16}Fun\IeC {\c c}\IeC {\~a}o salvarArquivoControles}{53}{subsubsection.5.3.16}
 \contentsline {subsubsection}{\numberline {5.3.17}Fun\IeC {\c c}\IeC {\~a}o salvarArquivoDistribuicaoHumanos}{56}{subsubsection.5.3.17}
 \contentsline {section}{\numberline {6}TRATAMENTOS AOS DADOS}{59}{section.6}
-\contentsline {section}{\numberline {7}RESULTADOS DA EXECU\IeC {\c C}\IeC {\~A}O DE EXPERIMENTOS COMPUTACIONAIS}{62}{section.7}
-\contentsline {subsection}{\numberline {7.1}Teste 0002}{62}{subsection.7.1}
-\contentsline {subsubsection}{\numberline {7.1.1}Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{65}{subsubsection.7.1.1}
-\contentsline {subsubsection}{\numberline {7.1.2}Espalhamento Espacial dos Agentes Humanos ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{67}{subsubsection.7.1.2}
-\contentsline {subsubsection}{\numberline {7.1.3}Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{68}{subsubsection.7.1.3}
+\contentsline {section}{\numberline {7}OBSERVA\IeC {\c C}\IeC {\~O}ES}{62}{section.7}
+\contentsline {subsection}{\numberline {7.1}Distribui\IeC {\c c}\IeC {\~a}o Inicial por Quadras ou Pontos}{62}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Discuss\IeC {\~o}es sobre Monte Carlo Espacial}{62}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Discuss\IeC {\~o}es sobre Implementa\IeC {\c c}\IeC {\~o}es Paralelas em CPU e GPU}{63}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Outras Discuss\IeC {\~o}es Pertinentes}{64}{subsection.7.4}
+\contentsline {section}{\numberline {8}RESULTADOS DA EXECU\IeC {\c C}\IeC {\~A}O DE EXPERIMENTOS COMPUTACIONAIS}{65}{section.8}
+\contentsline {subsection}{\numberline {8.1}Teste 0002}{65}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{68}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Espalhamento Espacial dos Agentes Humanos ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{70}{subsubsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.3}Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{71}{subsubsection.8.1.3}

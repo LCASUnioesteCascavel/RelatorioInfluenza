@@ -1,0 +1,94 @@
+\section{OBSERVAÇÕES}
+\label{sec:observacoes}
+
+\subsection{Distribuição Inicial por Quadras ou Pontos}
+
+Nas rotinas de distribuição inicial ou inserção durante a execução, duas abordagens podem ser implementadas à escolha das posições iniciais dos agentes: por quadras ou por pontos. Na abordagem por quadras, escolhe-se primeiramente, de forma aleatória, uma quadra do ambiente. Em seguida são escolhidos aleatoriamente um lote pertencente à esta quadra e por fim uma posição pertencente à este lote. Na abordagem por pontos escolhe-se diretamente uma posição qualquer pertencente ao ambiente. 
+
+Considerando as quantidades ilustradas na Tabela \ref{tab:quant_quadras_pontos}, a Tabela \ref{tab:perc_quadras_pontos} apresenta as probabilidades de escolha de um particular tipo de ponto ou quadra. É possível concluir que, para o ambiente de Boa Vista da Aparecida, empregando a abordagem por quadras, a probabilidade de um agente ocupar uma posição urbana é maior. Já com a abordagem por pontos, a probabilidade é maior para pontos rurais. Para o ambiente de Cascavel, com a abordagem por quadras, a probabilidade da escolha de pontos de quadras urbanas é maior. Já para a abordagem por pontos, a probabilidade de escolha de pontos de rua é maior. 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c}
+				& \textbf{Cascavel}		& \textbf{Boa Vista da Aparecida} 	\\ \hline
+ \textbf{Quadras Urbanas}	& $31$				& $152$	  				\\
+ \textbf{Quadras Rurais} 	& $0$				& $10$	  				\\
+ \textbf{Quadras de Rua}	& $1$				& $1$	  				\\ \hline
+ \textbf{Pontos Urbanos}	& $66.300$			& $39.767$	  			\\ 
+ \textbf{Pontos Rurais}		& $0$				& $85.217$  				\\
+ \textbf{Pontos de Rua}		& $103.269$			& $12.759$  				\\
+ \end{tabular}
+\caption{Tabela indicando as quantidades de cada tipo de quadra e pontos nos ambientes de Cascavel e Boa Vista da Aparecida. }
+\label{tab:quant_quadras_pontos}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c}
+				& \textbf{Cascavel}		& \textbf{Boa Vista da Aparecida} 	\\ \hline
+ \textbf{Quadras Urbanas}	& $0,9688$			& $0,9325$	  			\\
+ \textbf{Quadras Rurais} 	& $0$				& $0,0614$	  			\\
+ \textbf{Quadras de Rua}	& $0,0312$			& $0,0061$	  			\\ \hline
+ \textbf{Pontos Urbanos}	& $0,391$			& $0,2887$	  			\\ 
+ \textbf{Pontos Rurais}		& $0$				& $0,6187$  				\\
+ \textbf{Pontos de Rua}		& $0,609$			& $0,0926$  				\\
+ \end{tabular}
+\caption{Tabela indicando as probabilidades de escolha de cada tipo de quadra e pontos nos ambientes de Cascavel e Boa Vista da Aparecida. }
+\label{tab:perc_quadras_pontos}
+\end{table}
+
+A escolha de uma particular abordagem influencia fortemente a rotina de distribuição de agentes pois pode levar à concentração de agentes em determinadas regiões, como urbanas, de ruas ou rurais. Esta concentração pode aumentar ou diminuir a quantidade de contatos realizados entre agentes e consequentemente afeta a dinâmica de transmissão da doença espaço-temporalmente. 
+
+Considerando que os agentes distribuídos utilizando a abordagem por quadras têm probabilidade maior de concentrar-se em posições pertencentes à áreas urbanas do ambiente, optou-se por utilizar esta abordagem como padrão nas implementações realizadas, pois considera-se que a concentração de agentes em posições urbanas é mais relevante e interessante aos propósitos atuais de modelagem. 
+
+\subsection{Discussões sobre Monte Carlo Espacial}
+
+Com o objetivo de mimetizar as saídas tipo Monte Carlo obtidas a partir das quantidades de agentes ao longo do tempo de simulação desenvolveu-se um \textit{script} ao processamento de arquivos de saídas espaciais, provenientes da execução de simulações individuais, à confecção de saídas espaciais acumuladas tipo Monte Carlo. 
+
+Como não é possível realizar uma média espacial dos resultados das simulações individuais, empregou-se um regra particular para decidir pela representação de uma posição do ambiente na saída tipo Monte Carlo. Uma posição é representada na saída final de acordo com a moda apresentada pelas simulações individuais. Se na maioria das simulações individuais uma posição apresentou um agente infectado, esta posição é representada na saída tipo Monte Carlo contendo um agente infectado. Caso contrário, a posição não é representada na saída. 
+
+Podem ocorrer casos de indeterminação na escolha da representação de uma posição do ambiente. Se a quantidade de simulações individuais é par, o conjunto formado pelas representações de uma determinada posição pode ser bimodal, ou seja, em metade das simulações individuais uma mesma posição apresentou agente infectados e na outra metade não. Nestes casos, a posição é representada na saída com uma cor distinta daquela utilizada à representação dos agentes infectados, para que seja possível identificar as posições indeterminadas. 
+
+O Código \ref{cod:espacial_media} apresenta o \textit{script} responsável pela geração das saídas espaciais acumuladas tipo Monte Carlo. 
+ 
+\lstinputlisting[title=espacial\_media.py, captionpos=b, label=cod:espacial_media, language=Python]{Codigos/Observacoes/espacial_media.py}
+
+\subsection{Discussões sobre Implementações Paralelas em CPU e GPU} 
+
+À implementação do sistema de simulação utiliza-se a linguagem de programação C++ e a biblioteca \textit{CUDA} \textit{Thrust}, que é baseada na biblioteca padrão da linguagem e disponibiliza estruturas de dados e algoritmos de alto nível à implementação de aplicações paralelas. Desta forma, a biblioteca é de grande auxílio à programação de sistemas paralelos, pois aumenta a produtividade do programador dispensando-o de preocupar-se com detalhes de baixo nível como alocações, cópias de memória e definição da quantidade de \textit{threads} utilizadas na execução. 
+
+Durante o processo de implementação optou-se por manter os diversos algoritmos necessários à simulação organizados em operadores distintos. Esta organização facilitou o processo de desenvolvimento utilizando a biblioteca \textit{Thrust}, que oferece interfaces adequadas à abordagem em operadores por meio de predicados, e contribuiu à estruturação geral do código-fonte, mantendo algoritmos relacionados encapsulados em operadores próprios. 
+
+Em sequência são apresentados os principais \textit{headers} disponibilizados pela biblioteca que são utilizados na implementação do sistema. 
+
+\begin{itemize}
+ \item \textbf{device\_vector.h:} Neste arquivo é definida a classe \textit{device\_vector}, que é a principal estrutura de dados utilizada na simulação. É responsável pelo armazenamento de conjuntos de elementos e é baseada na estrutura \textit{std::vector} definida na biblioteca padrão da linguagem. 
+ \item \textbf{random.h:} Neste arquivo são definidas classes empregadas na geração de números aleatórios. São utilizadas as classes \textit{default\_random\_engine} e \textit{uniform\_real\_distribution} à geração de números aleatórios reais empregando uma distribuição uniforme. 
+ \item \textbf{count.h:} Neste arquivo são definidas as funções \textit{count} e \textit{count\_if}, que são utilizadas para obter a quantidade de elementos de um conjunto que atendem à um determinado predicado. 
+ \item \textbf{iterator.h:} Neste arquivo são definidas estruturas auxiliares à iteração sobre conjuntos utilizando índices, como iteradores constantes, contadores e outros, que emulam os identificadores das \textit{threads}. São utilizados os iteradores \textit{counting\_iterator} e \textit{constant\_iterator}. 
+ \item \textbf{reduce.h:} Neste arquivo é definida a função \textit{reduce\_by\_key}, que é empregada durante a atualização dos índices dos agentes. 
+ \item \textbf{replace.h:} Neste arquivo é definida a função \textit{replace}, que é utilizada para substituir elementos em um conjunto por outros. 
+ \item \textbf{scan.h:} Neste arquivo é definida a função \textit{inclusive\_scan}, que é utilizada na atualização dos índices dos agentes. 
+ \item \textbf{set\_operations.h:} Neste arquivo é definida a função \textit{set\_difference}, que calcula o conjunto diferença entre dois outros conjuntos. 
+ \item \textbf{sort.h:} Neste arquivo é definida a função \textit{sort}, que é utilizada para ordenação de conjuntos de elementos de acordo com um critério. 
+ \item \textbf{transform.h e transform\_reduce.h:} Nestes arquivos são definidas as funções \textit{transform} e \textit{transform\_reduce}, que são utilizadas para modificar um conjunto de elementos por meio de outra função. 
+ \item \textbf{copy.h:} Neste arquivo é definida a função \textit{copy}, que é empregada à cópia de dados entre conjuntos de elementos. Esta função também pode ser utilizada à transferência de dados entre CPU e GPU. 
+ \item \textbf{for\_each.h:} Neste arquivo é definida a função \textit{for\_each\_n}, que é amplamente utilizada para a execução paralela dos operadores sobre a população de agentes ou sobre o ambiente. 
+ \item \textbf{tuple.h:} Neste arquivo é definida a estrutura \textit{tuple}, que é utilizada como estrutura de dados auxiliar em alguns trechos do código-fonte. 
+ \item \textbf{functional.h:} Neste arquivo são definidos diversos predicados que podem ser utilizados em conjunto com os algoritmos definidos pela biblioteca. Efetivamente, somente a função \textit{plus} é utilizada na atual implementação. 
+ \item \textbf{partition.h:} Neste arquivo é definida a função \textit{partition}, que é utilizada para particionar um conjunto de elementos de acordo com um predicado. 
+\end{itemize}
+
+Além dos algoritmos e estruturas apresentados a função \textit{raw\_pointer\_cast} é utilizada à obtenção de \textit{raw pointers} de estruturas de alto nível como \textit{device\_vectors}. Esta função retorna um ponteiro direto aos dados de uma estrutura de alto nível e é especialmente útil à passagem de parâmetros aos métodos dos operadores implementados na simulação. É fundamental ao estilo de implementação adotado pois a classe \textit{device\_vector} não pode ser utilizada em trechos de códigos internos à \textit{kernels CUDA}, como é o caso dos operadores. Assim, um ponteiro direto aos dados é passado à função e é acessado de maneira similar aquela realizada para \textit{arrays} na linguagem C. 
+
+A biblioteca viabiliza ainda a execução do código tanto em GPU quanto em CPU, por meio de diferentes \textit{backends} que podem ser selecionados com \textit{flags} específicas informadas ao compilador, dispensando a necessidade de implementação de versões distintas para execução em GPU e CPU. Um tutorial sobre a escolha do \textit{backend} na biblioteca \textit{Thrust} pode ser encontrado em \url{https://github.com/thrust/thrust/wiki/Device-Backends}. Atualmente são utilizados os \textit{backends} \textit{CUDA} e \textit{OpenMP} para execução em GPU e CPU, respectivamente, e são definidos dois \textit{Makefiles} distintos, que informam ao compilador as \textit{flags} correspondentes visando a execução em GPU ou CPU. 
+
+\subsection{Outras Discussões Pertinentes}
+
+Os parâmetros utilizados na execução de testes são baseados naqueles apresentados nos artigos... {\color{red} REFERENCIAR ARTIGOS. }
+
+A aplicação de um atraso (\textit{delay}) no vetor de percentuais de sazonalidade somente desempenha o papel de mover a curva acumulada dos agentes infectantes pelo eixo $x$. 
+
+A distribuição de infectantes durante a simulação tem justificativas no artigo (Miksch et. al, 2011). {\color{red} REFERENCIAR ARTIGO. }
+
+\newpage
