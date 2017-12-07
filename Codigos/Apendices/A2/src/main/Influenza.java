@@ -319,6 +319,7 @@ public class Influenza {
 
 		double max = casosAcumulados.values().stream().max(Integer::compareTo)
 				.get();
+    max = (max == 0 ? 1 : max);
 
 		Map<Integer, Double> percentuais = new HashMap<>();
 		for (Entry<Integer, Integer> i : casosAcumulados.entrySet()) {
