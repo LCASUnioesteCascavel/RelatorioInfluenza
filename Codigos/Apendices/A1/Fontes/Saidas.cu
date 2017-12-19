@@ -216,3 +216,10 @@ void Saidas::calcIndPopQ(int *indPopQ, int nCols) {
   }
   indPopQ[ambiente->nQuadras] = size;
 }
+
+void Saidas::limparEspaciais() {
+  fill_n(espacialH, sizeEspacialH, 0);
+  fill_n(espacialNovoH, sizeEspacialNovoH, 0);
+  fill_n(espacialHDev->begin(), sizeEspacialH, 0);
+  fill_n(espacialNovoHDev->begin(), sizeEspacialNovoH, 0);
+}

@@ -54,10 +54,10 @@ void Simulacao::iniciar() {
 
     insercaoHumanos();
     movimentacaoHumanos();
-    vacinacao();
+    //vacinacao();
     contatoEntreHumanos();
     transicaoEstadosHumanos();
-    quarentena();
+    //quarentena();
 
     computarSaidas();
   }

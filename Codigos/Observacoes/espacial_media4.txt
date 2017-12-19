@@ -1,0 +1,89 @@
+\Inicio{
+    media = matriz de inteiros vazia com dimensão [quantidade de posições, ciclos de simulação] \\
+	  \Para{cada simulação individual} {
+        dados = matriz de inteiros vazia com dimensão [quantidade de posições, ciclos de simulação]\\
+        lê o conteúdo do arquivo de saída espacial desta simulação para a variável dados \\
+        substitui na matriz dados todos os valores terminados com o número 4 por 1 \\
+        \Comentario{Os valores terminados em 4 indicam a presença de agente infectado em uma posição} \\
+    }
+    
+    media = media + dados \\
+    
+    \Para{cada ciclo $cic$ da simulação} {
+        posicoes = lista de tuplas vazia \\
+        \Comentario{Uma tupla pode armazenar coleções de elementos. Especificamente neste algoritmo utiliza-se uma tupla com dois elementos} \\
+        
+        soma = inteiro com valor 0 \\
+        \Para{cada posição $pos$ do ambiente} {
+            adiciona na lista posicoes uma nova tupla formada por $pos$ e media[$pos$][$cic$] \\
+            \Comentario{O primeiro elemento da tupla é $pos$ e o segundo é media[$pos$][$cic$]} \\
+            soma = soma + media[$pos$][$cic$] \\
+        }
+        n = inteiro com valor 0 \\
+        n = soma / quantidade de simulações individuais \\
+        \Comentario{Realizada a média por posição} \\
+        
+        ordena a lista posicoes em ordem decrescente pelo segundo valor da tupla \\
+        \Comentario{A ordenação viabiliza a escolha das posições mais frequentemente ocupadas por infectados} \\
+        
+        \Se{n $>$ tamanho(posicoes)} {
+            n = tamanho(posicoes) \\
+        } 
+        
+        remove todos os elementos da lista posicoes, exceto os n primeiros \\
+        
+        \Para{cada posicao $pos$ do ambiente} {
+            media[$pos$][$cic$] = 0 \\
+        }
+        
+        \Para{$i$ de 0 até n} {
+            ind = inteiro com valor 0 \\
+            ind = primeiro valor da tupla em posicoes[$i$] \\
+            media[ind][$cic$] = 1 \\
+        }
+    }
+    
+    realiza, para cada posição do ambiente, uma soma parcial na matriz media \\
+    \Comentario{A soma parcial é executada à geração da saída acumulada por ciclo} \\
+    
+    sim = inteiro com valor 1 \\
+    
+    \Para{cada ciclo $cic$ da simulação} {
+        posicoes = lista de tuplas vazia \\
+        
+        soma = inteiro com valor 0 \\
+        \Para{cada posição $pos$ do ambiente} {
+            adiciona na lista posições uma nova tupla formada por $pos$ e media[$pos$][$cic$] \\
+            soma = soma + media[$pos$][$cic$] \\
+        }
+        n = inteiro com valor 0 \\
+        n = soma / sim \\
+        sim = sim + 1 \\
+        
+        ordena a lista posicoes em ordem decrescente pelo segundo valor da tupla \\
+        
+        \Se{n $>$ tamanho(posicoes)} {
+            n = tamanho(posicoes) \\
+        }
+        
+        remove todos os elementos da lista posicoes, exceto os n primeiros \\
+        
+        \Para{cada posição $pos$ do ambiente} {
+            media[$pos$][$cic$] = 0 \\
+        }
+        
+        \Para{$i$ de 0 até n} {
+            ind = inteiro com valor 0 \\
+            ind = primeiro valor da tupla em posicoes[$i$] \\
+            media[ind][$cic$] = 1 \\
+        }
+    }
+    
+    realiza, para cada posição do ambiente, uma soma parcial na matriz media \\
+    
+    substitui na matriz media todos os valores maiores que 0 por 3034 \\
+    \Comentario{O número 3034 corresponde a identificação da imagem utilizada à representação das posições durante a visualização} \\
+    
+    escreve o conteudo da matriz media em um arquivo de saída \\
+}
+ 

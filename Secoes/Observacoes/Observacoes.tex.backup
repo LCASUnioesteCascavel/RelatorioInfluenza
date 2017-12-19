@@ -1,11 +1,81 @@
 \section{OBSERVAÇÕES}
 \label{sec:observacoes}
 
+\subsection{Tratamento aos Dados}
+
+Nesta sub-seção são apresentados resumidamente os tratamentos e pré-processamentos realizados sobre os dados da distribuição espaço-temporal dos casos de Influenza no ano de 2009 na cidade de Cascavel/PR, à obtenção de arquivos de entrada utilizados em simulações computacionais. Especificamente, os casos de Influenza são utilizados à obtenção dos arquivos de sazonalidade e distribuição de agentes infectados durante a simulação. As informações obtidas do arquivo de sazonalidade são utilizadas durante a operação de contato entre agentes suscetíveis e infectantes ao controle da taxa de infecção, de acordo com os casos reais observados. O arquivo de distribuição é utilizado à inserção de agentes infectados no ambiente durante a execução de simulações, sendo esses agentes responsáveis pelo início do processo infeccioso da doença. As posições nas quais estes agentes são inseridos correspondem às posições de casos reais de Influenza que foram georreferenciados. 
+
+Aos dados dos $5.089$ casos de Influenza foram realizadas diversas atividades de pré-processamento. Inicialmente foram removidos aproximadamente $155$ casos não georreferenciados ou localizados em regiões não-urbanas da cidade de Cascavel/PR, como zonas rurais e distritos. Em sequência foram mantidos somente os casos com datas de ocorrência entre 17 de Junho e 31 de Dezembro de 2009, pois considerou-se estes casos mais significativos aos propósitos de simulação. Após estas operações restaram $4.658$ casos. Estes casos foram então agrupados por dia de ocorrência dos primeiros sintomas e são empregados à distribuição de agentes infectados durante a execução de simulações e ao cálculos das frações de sazonalidade. A Figura \ref{fig:casos} ilustra a distribuição espacial dos casos de Influenza durante o ano de 2009 e a Figura \ref{fig:casos_acumulados} ilustra o gráfico acumulado dos casos.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Figuras/Observacoes/Casos.png}
+  \caption{Distribuição temporal dos casos de Influenza}
+  \label{fig:casos}
+\end{figure} 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Figuras/Observacoes/CasosAcumulados.png}
+  \caption{Quantidade acumulada dos casos de Influenza}
+  \label{fig:casos_acumulados}
+\end{figure} 
+
+O percentual de infecção dos agentes suscetíveis em contato com infectados é calculado utilizando-se três distintos parâmetros: os percentuais de infecção adotados às faixas etárias, a fração de sazonalidade do ciclo em que ocorre o contato e uma constante de sazonalidade. Todos esses percentuais são definidos em arquivos de configuração da simulação que são gerados ou manualmente ou por meio do \textit{software} SIMULA. Os percentuais de infecção por faixa etária e a constante de sazonalidade foram definidos de forma empírica por meio de execução de testes. As frações de sazonalidade por ciclo foram definidos com base na distribuição temporal acumulada dos casos de Influenza durante o ano de 2009. 
+
+Assim como realizado por outros autores como (Dalgiç et al, 2017) e (Arduin et al, 2017) foi empregado um fator de escala, a constante de sazonalidade, com média de $0.83$ para calibrar o modelo, visto que alguns parâmetros utilizados tem origem em modelos compartimentais e não em modelos multiagentes, de modo que eles não são totalmente satisfatórios para serem utilizados diretamente no modelo apresentado.
+
+A Figura \ref{fig:curva_teorica} ilustra o ajuste realizado aos casos de Influenza utilizando a função \textit{curve\_fit} do pacote \textit{optimize} da biblioteca \textit{Python} \textit{Scipy} e empregando uma função tipo logística acumulada, em que os pontos em verde representam a quantidade normalizada de casos acumulados e em vermelho é ilustrada a curva da equação ajustada. A função utiliza o método dos quadrados mínimos não linear.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{Figuras/Observacoes/Teorico.png}
+  \caption{Ajuste aos casos de Influenza utilizando uma função logística acumulada}
+  \label{fig:curva_teorica}
+\end{figure} 
+
+O efeito de saturação que ocorre na doença modelada, decorrente de efeitos ambientais, de transmissão e contato, entre outros, foi mimetizado por meio do complemento da função logística acumulada. Utilizou-se a função $F(t)=1-L(t)$, em que $L(t)$ é a função logística que foi previamente ajustada aos dados, apresentada na Figura \ref{fig:curva_teorica}, para ponderar a força de infecção ao longo do tempo $t$ da simulação. Na Figura \ref{fig:percentuais_sazonalidade} é apresentada a curva resultante dos cálculos dos complementos, que são utilizados como frações de sazonalidade durante a simulação à obtenção dos percentuais de infecção de agentes suscetíveis em contato com infectados. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Figuras/Observacoes/Sazonalidade.png}
+  \caption{Distribuição temporal das frações de sazonalidade}
+  \label{fig:percentuais_sazonalidade}
+\end{figure} 
+
+O arquivo de distribuição de agentes infectados ao longo da simulação é gerado pela função \textit{salvarArquivoDistribuicaoHumanos}, que é ilustrada no Código \ref{cod:salvarArquivoDistribuicaoHumanos}, Algoritmo \ref{alg:salvarArquivoDistribuicaoHumanos} e Figura \ref{fig:salvarArquivoDistribuicaoHumanos}. A função emprega percentuais de casos utilizados e frações de machos e fêmeas para cada faixa etária, de acordo com informações provenientes do banco de dados. Foram utilizadas como base as faixas etárias definidas pelo IBGE, que classificam os indivíduos de acordo com sua idade, como apresentado na Tabela \ref{tab:faixasEtariasIBGE}.  
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c}
+ \textbf{Idade} 	& \textbf{Faixa Etária}	\\ \hline
+ Menor que 15 anos 	& Criança		\\
+ Entre 15 e 24 anos 	& Jovem			\\
+ Entre 25 e 59 anos 	& Adulto		\\
+ Maior que 59 anos 	& Idosos		\\
+\end{tabular}
+\caption{Tabela das faixas etárias definidas pelo IBGE.}
+\label{tab:faixasEtariasIBGE}
+\end{table}
+
+Um aspecto importante é o fato de que a dinâmica do espalhamento não dependa de apenas um conjunto de indivíduos infectados distribuídos inicialmente, como em modelos compartimentais. Considerou-se que a distribuição de infectados não é espaço-temporalmente local, mas sim realizada ao longo da simulação em posições escolhidas aleatoriamente. Essa estratégia baseou-se na suposição de que os casos da doença surgem de forma não concentrada ao longo do espaço, assim como contemplar os casos assintomáticos ou as subnotificações da doença que, no entanto, são fontes relevantes de infectados à propagação da doença. Na modelagem realizada escolheu-se inserir 3\% dos casos ao longo da simulação à quantidade de infectantes observados por dia, realizando um mapeamento entre os dias de ocorrência dos casos e os ciclos de simulação.
+
+Para as crianças, $51\%$ são masculinos e $49\%$ são femininos. Para os jovens, $50\%$ são masculinos e $50\%$ são femininos. Para os adultos, $48\%$ são masculinos e $52\%$ são femininos. Por fim, para os idosos, $45\%$ são masculinos e $55\%$ são femininos. Na escolha dos casos que serão utilizados inicialmente o conjunto de todos os casos é agrupado por dia de ocorrência. Em seguida, para cada dia são mantidos $3\%$ dos casos. Os casos são então agrupados por faixa etária e os percentuais apresentados anteriormente são utilizados à atribuição aleatória dos sexos. O passo final do algoritmo consiste em atribuir uma posição para a inserção do agente no ambiente, já que os pontos originais dos casos georreferenciados podem não estar presentes no conjunto de pontos interpolados no ambiente. Neste caso, o ponto do ambiente que é mais próximo aquele do caso original é escolhido, considerando-se a distância euclidiana entre eles. 
+
+A Figura \ref{fig:funcoes_logistica} ilustra as curvas obtidas por meio de ajustes realizados aos dados. As quantidades de casos de infecção reais por dia foram normalizados no intervalo $[0.0, 1.0]$ e são ilustrados na cor verde. À esses dados foi ajustada uma equação tipo Logística Acumulada, que é ilustrada na cor vermelha. Na cor marrom é ilustrada a equação ajustada aos resultados obtidos por meio de simulação computacional e os pontos em azul apresentam as quantidades de casos de infecção simulados normalizados no intervalo $[0.0, 1.0]$. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Figuras/Observacoes/Logistica.png}
+  \caption{Curvas das equações tipo Logística Acumulada ajustadas aos dados reais e simulados. }
+  \label{fig:funcoes_logistica}
+\end{figure} 
+
 \subsection{Distribuição Inicial por Quadras ou Pontos}
 
 Nas rotinas de distribuição inicial ou inserção durante a execução, duas abordagens podem ser implementadas à escolha das posições iniciais dos agentes: por quadras ou por pontos. Na abordagem por quadras, escolhe-se primeiramente, de forma aleatória, uma quadra do ambiente. Em seguida são escolhidos aleatoriamente um lote pertencente à esta quadra e por fim uma posição pertencente à este lote. Na abordagem por pontos escolhe-se diretamente uma posição qualquer pertencente ao ambiente. 
 
-Considerando as quantidades ilustradas na Tabela \ref{tab:quant_quadras_pontos}, a Tabela \ref{tab:perc_quadras_pontos} apresenta as probabilidades de escolha de um particular tipo de ponto ou quadra. É possível concluir que, para o ambiente de Boa Vista da Aparecida, empregando a abordagem por quadras, a probabilidade de um agente ocupar uma posição urbana é maior. Já com a abordagem por pontos, a probabilidade é maior para pontos rurais. Para o ambiente de Cascavel, com a abordagem por quadras, a probabilidade da escolha de quadras urbanas é maior. Na abordagem por pontos, a probabilidade da escolha de pontos de rua é maior. 
+Considerando as quantidades ilustradas na Tabela \ref{tab:quant_quadras_pontos}, a Tabela \ref{tab:perc_quadras_pontos} apresenta as probabilidades de escolha de um particular tipo de ponto ou quadra. É possível concluir que, para o ambiente de Boa Vista da Aparecida, empregando a abordagem por quadras, a probabilidade de um agente ocupar uma posição urbana é maior. Já com a abordagem por pontos, a probabilidade é maior para pontos rurais. Para o ambiente de Cascavel, com a abordagem por quadras, a probabilidade da escolha de pontos de quadras urbanas é maior. Já para a abordagem por pontos, a probabilidade de escolha de pontos de rua é maior. 
 
 \begin{table}[H]
 \centering
@@ -43,15 +113,20 @@ Considerando que os agentes distribuídos utilizando a abordagem por quadras tê
 
 \subsection{Discussões sobre Monte Carlo Espacial}
 
-Com o objetivo de mimetizar as saídas tipo Monte Carlo obtidas a partir das quantidades de agentes ao longo do tempo de simulação desenvolveu-se um \textit{script} ao processamento de arquivos de saídas espaciais, provenientes da execução de simulações individuais, à confecção de saídas espaciais acumuladas tipo Monte Carlo. 
+Com o objetivo de mimetizar as saídas tipo Monte Carlo obtidas a partir das quantidades de agentes ao longo do tempo de simulação desenvolveu-se um programa ao processamento de arquivos de saídas espaciais, provenientes da execução de simulações individuais, à confecção de saídas espaciais acumuladas tipo Monte Carlo. A estratégia de Monte Carlo à solução espaço-temporal foi realizada considerando-se os novos casos de infectantes, por ciclo e por simulação individual. Denomina-se simulação individual aquelas simulações que são utilizadas à composição de uma simulação Monte Carlo. 
 
-Como não é possível realizar uma média espacial dos resultados das simulações individuais, empregou-se um regra particular para decidir pela representação de uma posição do ambiente na saída tipo Monte Carlo. Uma posição é representada na saída final de acordo com a moda apresentada pelas simulações individuais. Se na maior parte das simulações individuais uma posição apresentou um agente infectado, esta posição é representada na saída tipo Monte Carlo contendo um agente infectado. Caso contrário, a posição não é representada na saída. 
+Após a execução de todas as simulações individuais toma-se a divisão inteira da quantidade total de posições com agentes no estado infectante, pela quantidade de simulações, que são ordenadas em ordem decrescente. Em sequência toma-se os acumulados, por ciclo, para todas as simulações. Do vetor resultante dessa operação, toma-se os $n$ primeiros elementos da quantidade obtida na divisão inteira realizada anteriormente. Após a cada ciclo realiza-se uma operação entre os os vetores das médias dos elementos que são gerados à cada ciclo, que por meio de uma soma parcial à cada passo de tempo, gera um vetor de casos acumulados por posição. Do vetor de soma parcial é realizada divisão de inteiros buscando avaliar a quantidade de elementos que deve constar no vetor de saída não acumulada. Neste vetor é utilizado o mesmo critério anteriormente discutido à escolha das posições, que são utilizadas à obtenção do arquivo de saída final, na forma de casos acumulados no espaço e no tempo.
 
-Podem ocorrer casos de indeterminação na escolha da representação de uma posição do ambiente. Se a quantidade de simulações individuais é par, o conjunto formado pelas representações de uma determinada posição pode ser bimodal, ou seja, em metade das simulações individuais uma mesma posição apresentou agente infectados e na outra metade não. Nestes casos, a posição é representada na saída com uma cor distinta daquela utilizada à representação dos agentes infectados, para que seja possível identificar as posições indeterminadas. 
+O Código \ref{cod:espacial_media} e Algoritmo \ref{alg:espacial_media} apresentam o código-fonte e pseudo-código do programa responsável pela geração das saídas espaciais acumuladas tipo Monte Carlo. 
 
-O Código \ref{cod:espacial_media} apresenta o \textit{script} responsável pela geração das saídas espaciais acumuladas tipo Monte Carlo. 
- 
-\lstinputlisting[title=espacial\_media.py, captionpos=b, label=cod:espacial_media, language=Python]{Codigos/Observacoes/espacial_media.py}
+\lstinputlisting[title=espacial\_media4.cpp, captionpos=b, label=cod:espacial_media, language=C++]{Codigos/Observacoes/espacial_media4.cpp}
+
+\begin{algorithm}[H]
+  \SetAlgoLined   
+  \input{Codigos/EstruturasDadosEstrategias/Algoritmos/Movimentacao.txt}
+  \caption{\textsc{Movimentação dos agentes}}
+  \label{alg:movimentacao}
+\end{algorithm}
 
 \subsection{Discussões sobre Implementações Paralelas em CPU e GPU} 
 
@@ -65,7 +140,7 @@ Em sequência são apresentados os principais \textit{headers} disponibilizados 
  \item \textbf{device\_vector.h:} Neste arquivo é definida a classe \textit{device\_vector}, que é a principal estrutura de dados utilizada na simulação. É responsável pelo armazenamento de conjuntos de elementos e é baseada na estrutura \textit{std::vector} definida na biblioteca padrão da linguagem. 
  \item \textbf{random.h:} Neste arquivo são definidas classes empregadas na geração de números aleatórios. São utilizadas as classes \textit{default\_random\_engine} e \textit{uniform\_real\_distribution} à geração de números aleatórios reais empregando uma distribuição uniforme. 
  \item \textbf{count.h:} Neste arquivo são definidas as funções \textit{count} e \textit{count\_if}, que são utilizadas para obter a quantidade de elementos de um conjunto que atendem à um determinado predicado. 
- \item \textbf{iterator.h:} Neste arquivo são definidas estruturas auxiliares à iteração sobre conjuntos, como iteradores constantes, contadores e outros. São utilizados os iteradores \textit{counting\_iterator} e \textit{constant\_iterator}. 
+ \item \textbf{iterator.h:} Neste arquivo são definidas estruturas auxiliares à iteração sobre conjuntos utilizando índices, como iteradores constantes, contadores e outros, que emulam os identificadores das \textit{threads}. São utilizados os iteradores \textit{counting\_iterator} e \textit{constant\_iterator}. 
  \item \textbf{reduce.h:} Neste arquivo é definida a função \textit{reduce\_by\_key}, que é empregada durante a atualização dos índices dos agentes. 
  \item \textbf{replace.h:} Neste arquivo é definida a função \textit{replace}, que é utilizada para substituir elementos em um conjunto por outros. 
  \item \textbf{scan.h:} Neste arquivo é definida a função \textit{inclusive\_scan}, que é utilizada na atualização dos índices dos agentes. 
@@ -75,17 +150,17 @@ Em sequência são apresentados os principais \textit{headers} disponibilizados 
  \item \textbf{copy.h:} Neste arquivo é definida a função \textit{copy}, que é empregada à cópia de dados entre conjuntos de elementos. Esta função também pode ser utilizada à transferência de dados entre CPU e GPU. 
  \item \textbf{for\_each.h:} Neste arquivo é definida a função \textit{for\_each\_n}, que é amplamente utilizada para a execução paralela dos operadores sobre a população de agentes ou sobre o ambiente. 
  \item \textbf{tuple.h:} Neste arquivo é definida a estrutura \textit{tuple}, que é utilizada como estrutura de dados auxiliar em alguns trechos do código-fonte. 
- \item \textbf{functional.h:} Neste arquivo são definidos diversos predicados que podem ser utilizados em conjunto com os algoritmos definidos pela biblioteca. Efetivamente, na atual implementação, somente a função \textit{plus} é utilizada. 
+ \item \textbf{functional.h:} Neste arquivo são definidos diversos predicados que podem ser utilizados em conjunto com os algoritmos definidos pela biblioteca. Efetivamente, somente a função \textit{plus} é utilizada na atual implementação. 
  \item \textbf{partition.h:} Neste arquivo é definida a função \textit{partition}, que é utilizada para particionar um conjunto de elementos de acordo com um predicado. 
 \end{itemize}
 
-Além os algoritmos e estruturas apresentados a função \textit{raw\_pointer\_cast} é utilizada à obtenção de \textit{raw pointers} de estruturas de alto nível como \textit{device\_vectors}. Esta função retorna um ponteiro direto aos dados de uma estrutura de alto nível e é especialmente útil à passagem de parâmetros aos métodos pertencentes aos operadores implementados na simulação. É fundamental ao estilo de implementação adotado pois a classe \textit{device\_vector} não pode ser utilizada em trechos de códigos internos à \textit{kernels CUDA}, como é o caso dos operadores. Assim, um ponteiro direto aos dados é passado à função e é acessado de maneira similar aquela realizada para \textit{arrays} na linguagem C. 
+Além dos algoritmos e estruturas apresentados a função \textit{raw\_pointer\_cast} é utilizada à obtenção de \textit{raw pointers} de estruturas de alto nível como \textit{device\_vectors}. Esta função retorna um ponteiro direto aos dados de uma estrutura de alto nível e é especialmente útil à passagem de parâmetros aos métodos dos operadores implementados na simulação. É fundamental ao estilo de implementação adotado pois a classe \textit{device\_vector} não pode ser utilizada em trechos de códigos internos à \textit{kernels CUDA}, como é o caso dos operadores. Assim, um ponteiro direto aos dados é passado à função e é acessado de maneira similar aquela realizada para \textit{arrays} na linguagem C. 
 
-A biblioteca viabiliza ainda a execução do código tanto em GPU quanto em CPU, por meio de diferentes \textit{backends} que podem ser selecionados com \textit{flags} específicas informadas ao compilador, dispensando a necessidade de implementação de versões distintas para execução em GPU e CPU. Um tutorial sobre a escolha do \textit{backend} pode ser encontrado em \url{https://github.com/thrust/thrust/wiki/Device-Backends}. Atualmente são utilizados os \textit{backends} \textit{CUDA} e \textit{OpenMP} para execução em GPU e CPU, respectivamente, e são definidos dois \textit{Makefiles} distintos, que informam ao compilador as \textit{flags} correspondentes visando a execução em GPU ou CPU. 
+A biblioteca viabiliza ainda a execução do código tanto em GPU quanto em CPU, por meio de diferentes \textit{backends} que podem ser selecionados com \textit{flags} específicas informadas ao compilador, dispensando a necessidade de implementação de versões distintas para execução em GPU e CPU. Um tutorial sobre a escolha do \textit{backend} na biblioteca \textit{Thrust} pode ser encontrado em \url{https://github.com/thrust/thrust/wiki/Device-Backends}. Atualmente são utilizados os \textit{backends} \textit{CUDA} e \textit{OpenMP} para execução em GPU e CPU, respectivamente, e são definidos dois \textit{Makefiles} distintos, que informam ao compilador as \textit{flags} correspondentes visando a execução em GPU ou CPU. 
 
-\subsection{Discussões sobre os Parâmetros}
+\subsection{Outras Discussões Pertinentes}
 
-Os parâmetros utilizados na execução de testes são baseados naqueles apresentados nos artigos {\color{red} REFERENCIAR ARTIGOS. }
+Os parâmetros utilizados na execução de testes são baseados naqueles apresentados nos artigos... {\color{red} REFERENCIAR ARTIGOS. }
 
 A aplicação de um atraso (\textit{delay}) no vetor de percentuais de sazonalidade somente desempenha o papel de mover a curva acumulada dos agentes infectantes pelo eixo $x$. 
 

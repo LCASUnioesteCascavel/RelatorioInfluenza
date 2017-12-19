@@ -20,22 +20,6 @@ Este \textit{script} define a classe responsável pela geração dos gráficos d
 
 \subsection{Outros Scripts} 
 
-\subsubsection{Arquivo espacial\_acumulado.py}
-
-Este \textit{script} é utilizado para a geração de saídas espaciais acumuladas, que apresentam espacialmente os casos de Dengue acumulados durante o tempo de execução da simulação.
-
-\lstinputlisting[title=espacial\_acumulado.py, captionpos=b, language=Python]{Codigos/Apendices/A3/espacial_acumulado.py}
-
-\newpage
-
-\subsubsection{Arquivo resumo\_saidas.py}
-
-Este \textit{script} é utilizado para reduzir a quantidade de ciclos representados nas saídas espaciais. São fornecidos ao \textit{script} o arquivo de saída espacial e a quantidade de passos desejados. A quantidade de passos define a frequência da representação espacial. Como exemplo, considerando uma simulação com $100$ ciclos, se a quantidade de passos fornecida ao \textit{script} é $10$, são mantidas no arquivo de saída as representações espaciais dos ciclos $0$, $10$, $20$, $30$, $40$, $50$, $60$, $70$, $80$, $90$ e $100$. Este \textit{script} é útil à redução da quantidade de ciclos representada nas saídas espaciais, sendo utilizada na confecção de imagens e animações. 
-
-\lstinputlisting[title=resumo\_saidas.py, captionpos=b, language=Python]{Codigos/Apendices/A3/resumo_saidas.py}
-
-\newpage
-
 \subsubsection{Arquivo bitstring.py}
 
 Este \textit{script} é utilizado no cálculo das quantidades de \textit{bits} anteriores, máscaras positivas e negativas à cada campo, que são empregadas à modelagem \textit{bitstring} dos agentes humanos, que é apresentada na Seção \ref{sec:modelagemBitstring}. São fornecidos como entrada ao \textit{script} os tamanhos dos campos e as quantidades de palavras e \textit{bits} por palavra. O \textit{script} exibe no terminal as quantidades de \textit{bits} anteriores e as máscaras positivas e negativas em decimal correspondentes às entradas fornecidas. 

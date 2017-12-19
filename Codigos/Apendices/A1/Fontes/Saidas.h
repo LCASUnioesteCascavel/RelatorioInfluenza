@@ -7,6 +7,7 @@
 
 #include <thrust/copy.h>
 #include <thrust/device_vector.h>
+#include <thrust/fill.h>
 
 class Ambiente;
 class Parametros;
@@ -21,6 +22,7 @@ template <class T>
 using DVector = thrust::device_vector<T>;
 
 using thrust::copy;
+using thrust::fill_n;
 using thrust::raw_pointer_cast;
 
 class Saidas {
@@ -48,6 +50,7 @@ class Saidas {
   void salvarEspaciais(string saidaSim);
   void toCPU();
   int getMemoriaGPU();
+  void limparEspaciais();
 
   private:
 

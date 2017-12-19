@@ -20,7 +20,7 @@ MonteCarlo::MonteCarlo(string entradaMC, string saidaMC) {
 
   iniciar();
 
-  auto t2 = high_resolution_clock::now();
+  auto t2 = high_resolution_clock::now(); 
   exibirData();
 
   cout << duration_cast<duration<double>>(t2 - t1).count() << "s" << endl;
@@ -39,6 +39,8 @@ void MonteCarlo::iniciar() {
     saidaSim += SEP;
 
     Simulacao(idSim, saidaSim, entradaMC, saidas, parametros, ambiente);
+
+    saidas->limparEspaciais();
   }
   saidas->salvarPopulacoes();
 }
