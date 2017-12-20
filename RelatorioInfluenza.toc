@@ -49,84 +49,84 @@
 \contentsline {subsection}{\numberline {6.1}Tratamento aos Dados}{60}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Distribui\IeC {\c c}\IeC {\~a}o Inicial por Quadras ou Pontos}{62}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Discuss\IeC {\~o}es sobre Monte Carlo Espacial}{63}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Discuss\IeC {\~o}es sobre Implementa\IeC {\c c}\IeC {\~o}es Paralelas em CPU e GPU}{68}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Outras Discuss\IeC {\~o}es Pertinentes}{69}{subsection.6.5}
-\contentsline {section}{\numberline {7}RESULTADOS DA EXECU\IeC {\c C}\IeC {\~A}O DE EXPERIMENTOS COMPUTACIONAIS}{70}{section.7}
-\contentsline {subsection}{\numberline {7.1}Teste Artigo IEEE}{70}{subsection.7.1}
-\contentsline {subsubsection}{\numberline {7.1.1}Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{73}{subsubsection.7.1.1}
-\contentsline {subsubsection}{\numberline {7.1.2}Espalhamento Espacial dos Agentes Humanos ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{75}{subsubsection.7.1.2}
-\contentsline {subsubsection}{\numberline {7.1.3}Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{76}{subsubsection.7.1.3}
-\contentsline {section}{\numberline {8}AP\IeC {\^E}NDICE I - C\IeC {\'O}DIGO-FONTE DO SISTEMA DE SIMULA\IeC {\c C}\IeC {\~A}O}{78}{section.8}
-\contentsline {subsection}{\numberline {8.1}Classes de Controle das Simula\IeC {\c c}\IeC {\~o}es}{78}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Arquivo Ambiente.h}{78}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Arquivo Ambiente.cu}{80}{subsubsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.3}Arquivo MonteCarlo.h}{84}{subsubsection.8.1.3}
-\contentsline {subsubsection}{\numberline {8.1.4}Arquivo MonteCarlo.cu}{85}{subsubsection.8.1.4}
-\contentsline {subsubsection}{\numberline {8.1.5}Arquivo Parametros.h}{86}{subsubsection.8.1.5}
-\contentsline {subsubsection}{\numberline {8.1.6}Arquivo Parametros.cu}{87}{subsubsection.8.1.6}
-\contentsline {subsubsection}{\numberline {8.1.7}Arquivo Saidas.h}{88}{subsubsection.8.1.7}
-\contentsline {subsubsection}{\numberline {8.1.8}Arquivo Saidas.cu}{89}{subsubsection.8.1.8}
-\contentsline {subsubsection}{\numberline {8.1.9}Arquivo Seeds.h}{92}{subsubsection.8.1.9}
-\contentsline {subsubsection}{\numberline {8.1.10}Arquivo Seeds.cu}{93}{subsubsection.8.1.10}
-\contentsline {subsubsection}{\numberline {8.1.11}Arquivo Simulacao.h}{94}{subsubsection.8.1.11}
-\contentsline {subsubsection}{\numberline {8.1.12}Arquivo Simulacao.cu}{95}{subsubsection.8.1.12}
-\contentsline {subsubsection}{\numberline {8.1.13}Arquivo Main.cu}{98}{subsubsection.8.1.13}
-\contentsline {subsection}{\numberline {8.2}Classes Auxiliares}{99}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}Arquivo RandPerc.h}{99}{subsubsection.8.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2}Arquivo RandPerc.cu}{100}{subsubsection.8.2.2}
-\contentsline {subsubsection}{\numberline {8.2.3}Arquivo Timer.h}{101}{subsubsection.8.2.3}
-\contentsline {subsubsection}{\numberline {8.2.4}Arquivo Timer.cu}{102}{subsubsection.8.2.4}
-\contentsline {subsection}{\numberline {8.3}Classes dos Operadores dos Agentes Humanos}{103}{subsection.8.3}
-\contentsline {subsubsection}{\numberline {8.3.1}Arquivo Movimentacao.h}{103}{subsubsection.8.3.1}
-\contentsline {subsubsection}{\numberline {8.3.2}Arquivo Movimentacao.cu}{104}{subsubsection.8.3.2}
-\contentsline {subsubsection}{\numberline {8.3.3}Arquivo Contato.h}{106}{subsubsection.8.3.3}
-\contentsline {subsubsection}{\numberline {8.3.4}Arquivo Contato.cu}{107}{subsubsection.8.3.4}
-\contentsline {subsubsection}{\numberline {8.3.5}Arquivo Transicao.h}{108}{subsubsection.8.3.5}
-\contentsline {subsubsection}{\numberline {8.3.6}Arquivo Transicao.cu}{109}{subsubsection.8.3.6}
-\contentsline {subsubsection}{\numberline {8.3.7}Arquivo Insercao.h}{112}{subsubsection.8.3.7}
-\contentsline {subsubsection}{\numberline {8.3.8}Arquivo Insercao.cu}{113}{subsubsection.8.3.8}
-\contentsline {subsubsection}{\numberline {8.3.9}Arquivo Saidas.h}{114}{subsubsection.8.3.9}
-\contentsline {subsubsection}{\numberline {8.3.10}Arquivo Saidas.cu}{115}{subsubsection.8.3.10}
-\contentsline {subsubsection}{\numberline {8.3.11}Arquivo Humanos.h}{118}{subsubsection.8.3.11}
-\contentsline {subsubsection}{\numberline {8.3.12}Arquivo Humanos.cu}{120}{subsubsection.8.3.12}
-\contentsline {subsection}{\numberline {8.4}Arquivos de Defini\IeC {\c c}\IeC {\~a}o de Macros}{123}{subsection.8.4}
-\contentsline {subsubsection}{\numberline {8.4.1}Arquivo 0\_SIM.h}{123}{subsubsection.8.4.1}
-\contentsline {subsubsection}{\numberline {8.4.2}Arquivo 0\_INI\_H.h}{124}{subsubsection.8.4.2}
-\contentsline {subsubsection}{\numberline {8.4.3}Arquivo 1\_MOV\_H.h}{125}{subsubsection.8.4.3}
-\contentsline {subsubsection}{\numberline {8.4.4}Arquivo 2\_CON\_H.h}{126}{subsubsection.8.4.4}
-\contentsline {subsubsection}{\numberline {8.4.5}Arquivo 3\_TRA\_H.h}{127}{subsubsection.8.4.5}
-\contentsline {subsubsection}{\numberline {8.4.6}Arquivo MacrosGerais.h}{128}{subsubsection.8.4.6}
-\contentsline {subsubsection}{\numberline {8.4.7}Arquivo MacrosHumanos.h}{129}{subsubsection.8.4.7}
-\contentsline {subsubsection}{\numberline {8.4.8}Arquivo MacrosParametros.h}{131}{subsubsection.8.4.8}
-\contentsline {subsubsection}{\numberline {8.4.9}Arquivo MacrosSO.h}{132}{subsubsection.8.4.9}
-\contentsline {section}{\numberline {9}AP\IeC {\^E}NDICE II - C\IeC {\'O}DIGO-FONTE DO M\IeC {\'O}DULO GERADOR DE ARQUIVOS DE CONFIGURA\IeC {\c C}\IeC {\~A}O AMBIENTAL}{133}{section.9}
-\contentsline {subsection}{\numberline {9.1}Arquivo ConsultasBanco.java}{133}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Arquivo GeradorArquivosAmbientaisAcoplado.java}{140}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Arquivo Influenza.java}{141}{subsection.9.3}
-\contentsline {subsection}{\numberline {9.4}Arquivo Local.java}{146}{subsection.9.4}
-\contentsline {subsection}{\numberline {9.5}Arquivo Ponto.java}{147}{subsection.9.5}
-\contentsline {subsection}{\numberline {9.6}Arquivo CasoInfeccao.java}{149}{subsection.9.6}
-\contentsline {subsection}{\numberline {9.7}Arquivo Rota.java}{150}{subsection.9.7}
-\contentsline {subsection}{\numberline {9.8}Arquivo TipoTrajeto.java}{151}{subsection.9.8}
-\contentsline {subsection}{\numberline {9.9}Arquivo Trajeto.java}{152}{subsection.9.9}
-\contentsline {subsection}{\numberline {9.10}Arquivo Vizinhanca.java}{153}{subsection.9.10}
-\contentsline {section}{\numberline {10}AP\IeC {\^E}NDICE III - C\IeC {\'O}DIGO-FONTE DOS SCRIPTS AUXILIARES PYTHON}{154}{section.10}
-\contentsline {subsection}{\numberline {10.1}Scripts \IeC {\`a} Gera\IeC {\c c}\IeC {\~a}o de Gr\IeC {\'a}ficos}{154}{subsection.10.1}
-\contentsline {subsubsection}{\numberline {10.1.1}Arquivo graficos.py}{154}{subsubsection.10.1.1}
-\contentsline {subsubsection}{\numberline {10.1.2}Arquivo graficos\_h.py}{155}{subsubsection.10.1.2}
-\contentsline {subsection}{\numberline {10.2}Outros Scripts}{160}{subsection.10.2}
-\contentsline {subsubsection}{\numberline {10.2.1}Arquivo bitstring.py}{160}{subsubsection.10.2.1}
-\contentsline {section}{\numberline {11}AP\IeC {\^E}NDICE IV - ARQUIVOS DE CONFIGURA\IeC {\c C}\IeC {\~A}O DA SIMULA\IeC {\c C}\IeC {\~A}O}{161}{section.11}
-\contentsline {subsection}{\numberline {11.1}Par\IeC {\^a}metros Gerais}{161}{subsection.11.1}
-\contentsline {subsubsection}{\numberline {11.1.1}Arquivo 0-SIM.csv}{161}{subsubsection.11.1.1}
-\contentsline {subsection}{\numberline {11.2}Par\IeC {\^a}metros Ambientais}{162}{subsection.11.2}
-\contentsline {subsubsection}{\numberline {11.2.1}Arquivo Ambiente/0-AMB.csv}{162}{subsubsection.11.2.1}
-\contentsline {subsubsection}{\numberline {11.2.2}Arquivo Ambiente/1-CON.csv}{163}{subsubsection.11.2.2}
-\contentsline {subsubsection}{\numberline {11.2.3}Arquivo Ambiente/DistribuicaoHumanos.csv}{164}{subsubsection.11.2.3}
-\contentsline {subsection}{\numberline {11.3}Par\IeC {\^a}metros aos Humanos}{165}{subsection.11.3}
-\contentsline {subsubsection}{\numberline {11.3.1}Arquivo Humanos/0-INI.csv}{165}{subsubsection.11.3.1}
-\contentsline {subsubsection}{\numberline {11.3.2}Arquivo Humanos/1-MOV.csv}{166}{subsubsection.11.3.2}
-\contentsline {subsubsection}{\numberline {11.3.3}Arquivo Humanos/2-CON.csv}{167}{subsubsection.11.3.3}
-\contentsline {subsubsection}{\numberline {11.3.4}Arquivo Humanos/3-TRA.csv}{168}{subsubsection.11.3.4}
-\contentsline {section}{\numberline {12}AP\IeC {\^E}NDICE V - LEGENDAS \IeC {\`A} REPRESENTA\IeC {\c C}\IeC {\~A}O ESPACIAL DOS AGENTES}{169}{section.12}
-\contentsline {section}{\numberline {13}AP\IeC {\^E}NDICE VI - MACROS \IeC {\`A} IMPLEMENTA\IeC {\c C}\IeC {\~A}O DAS OPERA\IeC {\c C}\IeC {\~O}ES \textit {BITSTRING}}{170}{section.13}
+\contentsline {subsection}{\numberline {6.4}Discuss\IeC {\~o}es sobre Implementa\IeC {\c c}\IeC {\~o}es Paralelas em CPU e GPU}{69}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Outras Discuss\IeC {\~o}es Pertinentes}{71}{subsection.6.5}
+\contentsline {section}{\numberline {7}RESULTADOS DA EXECU\IeC {\c C}\IeC {\~A}O DE EXPERIMENTOS COMPUTACIONAIS}{72}{section.7}
+\contentsline {subsection}{\numberline {7.1}Teste Artigo IEEE}{72}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Quantidades de Agentes Infectados Acumulados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{75}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Espalhamento Espacial dos Agentes Humanos ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{77}{subsubsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.3}Espalhamento Espacial Acumulado dos Agentes Infectados ao Longo do Tempo de Simula\IeC {\c c}\IeC {\~a}o}{78}{subsubsection.7.1.3}
+\contentsline {section}{\numberline {8}AP\IeC {\^E}NDICE I - C\IeC {\'O}DIGO-FONTE DO SISTEMA DE SIMULA\IeC {\c C}\IeC {\~A}O}{80}{section.8}
+\contentsline {subsection}{\numberline {8.1}Classes de Controle das Simula\IeC {\c c}\IeC {\~o}es}{80}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Arquivo Ambiente.h}{80}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Arquivo Ambiente.cu}{82}{subsubsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.3}Arquivo MonteCarlo.h}{86}{subsubsection.8.1.3}
+\contentsline {subsubsection}{\numberline {8.1.4}Arquivo MonteCarlo.cu}{87}{subsubsection.8.1.4}
+\contentsline {subsubsection}{\numberline {8.1.5}Arquivo Parametros.h}{88}{subsubsection.8.1.5}
+\contentsline {subsubsection}{\numberline {8.1.6}Arquivo Parametros.cu}{89}{subsubsection.8.1.6}
+\contentsline {subsubsection}{\numberline {8.1.7}Arquivo Saidas.h}{90}{subsubsection.8.1.7}
+\contentsline {subsubsection}{\numberline {8.1.8}Arquivo Saidas.cu}{91}{subsubsection.8.1.8}
+\contentsline {subsubsection}{\numberline {8.1.9}Arquivo Seeds.h}{94}{subsubsection.8.1.9}
+\contentsline {subsubsection}{\numberline {8.1.10}Arquivo Seeds.cu}{95}{subsubsection.8.1.10}
+\contentsline {subsubsection}{\numberline {8.1.11}Arquivo Simulacao.h}{96}{subsubsection.8.1.11}
+\contentsline {subsubsection}{\numberline {8.1.12}Arquivo Simulacao.cu}{97}{subsubsection.8.1.12}
+\contentsline {subsubsection}{\numberline {8.1.13}Arquivo Main.cu}{100}{subsubsection.8.1.13}
+\contentsline {subsection}{\numberline {8.2}Classes Auxiliares}{101}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}Arquivo RandPerc.h}{101}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Arquivo RandPerc.cu}{102}{subsubsection.8.2.2}
+\contentsline {subsubsection}{\numberline {8.2.3}Arquivo Timer.h}{103}{subsubsection.8.2.3}
+\contentsline {subsubsection}{\numberline {8.2.4}Arquivo Timer.cu}{104}{subsubsection.8.2.4}
+\contentsline {subsection}{\numberline {8.3}Classes dos Operadores dos Agentes Humanos}{105}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.3.1}Arquivo Movimentacao.h}{105}{subsubsection.8.3.1}
+\contentsline {subsubsection}{\numberline {8.3.2}Arquivo Movimentacao.cu}{106}{subsubsection.8.3.2}
+\contentsline {subsubsection}{\numberline {8.3.3}Arquivo Contato.h}{108}{subsubsection.8.3.3}
+\contentsline {subsubsection}{\numberline {8.3.4}Arquivo Contato.cu}{109}{subsubsection.8.3.4}
+\contentsline {subsubsection}{\numberline {8.3.5}Arquivo Transicao.h}{110}{subsubsection.8.3.5}
+\contentsline {subsubsection}{\numberline {8.3.6}Arquivo Transicao.cu}{111}{subsubsection.8.3.6}
+\contentsline {subsubsection}{\numberline {8.3.7}Arquivo Insercao.h}{114}{subsubsection.8.3.7}
+\contentsline {subsubsection}{\numberline {8.3.8}Arquivo Insercao.cu}{115}{subsubsection.8.3.8}
+\contentsline {subsubsection}{\numberline {8.3.9}Arquivo Saidas.h}{116}{subsubsection.8.3.9}
+\contentsline {subsubsection}{\numberline {8.3.10}Arquivo Saidas.cu}{117}{subsubsection.8.3.10}
+\contentsline {subsubsection}{\numberline {8.3.11}Arquivo Humanos.h}{120}{subsubsection.8.3.11}
+\contentsline {subsubsection}{\numberline {8.3.12}Arquivo Humanos.cu}{122}{subsubsection.8.3.12}
+\contentsline {subsection}{\numberline {8.4}Arquivos de Defini\IeC {\c c}\IeC {\~a}o de Macros}{125}{subsection.8.4}
+\contentsline {subsubsection}{\numberline {8.4.1}Arquivo 0\_SIM.h}{125}{subsubsection.8.4.1}
+\contentsline {subsubsection}{\numberline {8.4.2}Arquivo 0\_INI\_H.h}{126}{subsubsection.8.4.2}
+\contentsline {subsubsection}{\numberline {8.4.3}Arquivo 1\_MOV\_H.h}{127}{subsubsection.8.4.3}
+\contentsline {subsubsection}{\numberline {8.4.4}Arquivo 2\_CON\_H.h}{128}{subsubsection.8.4.4}
+\contentsline {subsubsection}{\numberline {8.4.5}Arquivo 3\_TRA\_H.h}{129}{subsubsection.8.4.5}
+\contentsline {subsubsection}{\numberline {8.4.6}Arquivo MacrosGerais.h}{130}{subsubsection.8.4.6}
+\contentsline {subsubsection}{\numberline {8.4.7}Arquivo MacrosHumanos.h}{131}{subsubsection.8.4.7}
+\contentsline {subsubsection}{\numberline {8.4.8}Arquivo MacrosParametros.h}{133}{subsubsection.8.4.8}
+\contentsline {subsubsection}{\numberline {8.4.9}Arquivo MacrosSO.h}{134}{subsubsection.8.4.9}
+\contentsline {section}{\numberline {9}AP\IeC {\^E}NDICE II - C\IeC {\'O}DIGO-FONTE DO M\IeC {\'O}DULO GERADOR DE ARQUIVOS DE CONFIGURA\IeC {\c C}\IeC {\~A}O AMBIENTAL}{135}{section.9}
+\contentsline {subsection}{\numberline {9.1}Arquivo ConsultasBanco.java}{135}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Arquivo GeradorArquivosAmbientaisAcoplado.java}{142}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Arquivo Influenza.java}{143}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}Arquivo Local.java}{148}{subsection.9.4}
+\contentsline {subsection}{\numberline {9.5}Arquivo Ponto.java}{149}{subsection.9.5}
+\contentsline {subsection}{\numberline {9.6}Arquivo CasoInfeccao.java}{151}{subsection.9.6}
+\contentsline {subsection}{\numberline {9.7}Arquivo Rota.java}{152}{subsection.9.7}
+\contentsline {subsection}{\numberline {9.8}Arquivo TipoTrajeto.java}{153}{subsection.9.8}
+\contentsline {subsection}{\numberline {9.9}Arquivo Trajeto.java}{154}{subsection.9.9}
+\contentsline {subsection}{\numberline {9.10}Arquivo Vizinhanca.java}{155}{subsection.9.10}
+\contentsline {section}{\numberline {10}AP\IeC {\^E}NDICE III - C\IeC {\'O}DIGO-FONTE DOS SCRIPTS AUXILIARES PYTHON}{156}{section.10}
+\contentsline {subsection}{\numberline {10.1}Scripts \IeC {\`a} Gera\IeC {\c c}\IeC {\~a}o de Gr\IeC {\'a}ficos}{156}{subsection.10.1}
+\contentsline {subsubsection}{\numberline {10.1.1}Arquivo graficos.py}{156}{subsubsection.10.1.1}
+\contentsline {subsubsection}{\numberline {10.1.2}Arquivo graficos\_h.py}{157}{subsubsection.10.1.2}
+\contentsline {subsection}{\numberline {10.2}Outros Scripts}{162}{subsection.10.2}
+\contentsline {subsubsection}{\numberline {10.2.1}Arquivo bitstring.py}{162}{subsubsection.10.2.1}
+\contentsline {section}{\numberline {11}AP\IeC {\^E}NDICE IV - ARQUIVOS DE CONFIGURA\IeC {\c C}\IeC {\~A}O DA SIMULA\IeC {\c C}\IeC {\~A}O}{163}{section.11}
+\contentsline {subsection}{\numberline {11.1}Par\IeC {\^a}metros Gerais}{163}{subsection.11.1}
+\contentsline {subsubsection}{\numberline {11.1.1}Arquivo 0-SIM.csv}{163}{subsubsection.11.1.1}
+\contentsline {subsection}{\numberline {11.2}Par\IeC {\^a}metros Ambientais}{164}{subsection.11.2}
+\contentsline {subsubsection}{\numberline {11.2.1}Arquivo Ambiente/0-AMB.csv}{164}{subsubsection.11.2.1}
+\contentsline {subsubsection}{\numberline {11.2.2}Arquivo Ambiente/1-CON.csv}{165}{subsubsection.11.2.2}
+\contentsline {subsubsection}{\numberline {11.2.3}Arquivo Ambiente/DistribuicaoHumanos.csv}{166}{subsubsection.11.2.3}
+\contentsline {subsection}{\numberline {11.3}Par\IeC {\^a}metros aos Humanos}{167}{subsection.11.3}
+\contentsline {subsubsection}{\numberline {11.3.1}Arquivo Humanos/0-INI.csv}{167}{subsubsection.11.3.1}
+\contentsline {subsubsection}{\numberline {11.3.2}Arquivo Humanos/1-MOV.csv}{168}{subsubsection.11.3.2}
+\contentsline {subsubsection}{\numberline {11.3.3}Arquivo Humanos/2-CON.csv}{169}{subsubsection.11.3.3}
+\contentsline {subsubsection}{\numberline {11.3.4}Arquivo Humanos/3-TRA.csv}{170}{subsubsection.11.3.4}
+\contentsline {section}{\numberline {12}AP\IeC {\^E}NDICE V - LEGENDAS \IeC {\`A} REPRESENTA\IeC {\c C}\IeC {\~A}O ESPACIAL DOS AGENTES}{171}{section.12}
+\contentsline {section}{\numberline {13}AP\IeC {\^E}NDICE VI - MACROS \IeC {\`A} IMPLEMENTA\IeC {\c C}\IeC {\~A}O DAS OPERA\IeC {\c C}\IeC {\~O}ES \textit {BITSTRING}}{172}{section.13}

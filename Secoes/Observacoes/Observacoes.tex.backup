@@ -115,18 +115,43 @@ Considerando que os agentes distribuídos utilizando a abordagem por quadras tê
 
 Com o objetivo de mimetizar as saídas tipo Monte Carlo obtidas a partir das quantidades de agentes ao longo do tempo de simulação desenvolveu-se um programa ao processamento de arquivos de saídas espaciais, provenientes da execução de simulações individuais, à confecção de saídas espaciais acumuladas tipo Monte Carlo. A estratégia de Monte Carlo à solução espaço-temporal foi realizada considerando-se os novos casos de infectantes, por ciclo e por simulação individual. Denomina-se simulação individual aquelas simulações que são utilizadas à composição de uma simulação Monte Carlo. 
 
-Após a execução de todas as simulações individuais toma-se a divisão inteira da quantidade total de posições com agentes no estado infectante, pela quantidade de simulações, que são ordenadas em ordem decrescente. Em sequência toma-se os acumulados, por ciclo, para todas as simulações. Do vetor resultante dessa operação, toma-se os $n$ primeiros elementos da quantidade obtida na divisão inteira realizada anteriormente. Após a cada ciclo realiza-se uma operação entre os os vetores das médias dos elementos que são gerados à cada ciclo, que por meio de uma soma parcial à cada passo de tempo, gera um vetor de casos acumulados por posição. Do vetor de soma parcial é realizada divisão de inteiros buscando avaliar a quantidade de elementos que deve constar no vetor de saída não acumulada. Neste vetor é utilizado o mesmo critério anteriormente discutido à escolha das posições, que são utilizadas à obtenção do arquivo de saída final, na forma de casos acumulados no espaço e no tempo.
-
-O Código \ref{cod:espacial_media} e Algoritmo \ref{alg:espacial_media} apresentam o código-fonte e pseudo-código do programa responsável pela geração das saídas espaciais acumuladas tipo Monte Carlo. 
+Após a execução de todas as simulações individuais toma-se a divisão inteira da quantidade total de posições com agentes no estado infectante, pela quantidade de simulações, que são ordenadas em ordem decrescente. Em sequência toma-se os acumulados, por ciclo, para todas as simulações. Do vetor resultante dessa operação, toma-se os $n$ primeiros elementos da quantidade obtida na divisão inteira realizada anteriormente. Após a cada ciclo realiza-se uma operação entre os vetores das médias dos elementos que são gerados à cada ciclo, que por meio de uma soma parcial à cada passo de tempo, gera um vetor de casos acumulados por posição. Do vetor de soma parcial é realizada divisão de inteiros buscando avaliar a quantidade de elementos que deve constar no vetor de saída não acumulada. Neste vetor é utilizado o mesmo critério anteriormente discutido à escolha das posições, que são utilizadas à obtenção do arquivo de saída final, na forma de casos acumulados no espaço e no tempo. O Código \ref{cod:espacial_media} e Algoritmo \ref{alg:espacial_media} apresentam o código-fonte e pseudo-código do programa responsável pela geração das saídas espaciais acumuladas tipo Monte Carlo. 
 
 \lstinputlisting[title=espacial\_media4.cpp, captionpos=b, label=cod:espacial_media, language=C++]{Codigos/Observacoes/espacial_media4.cpp}
 
 \begin{algorithm}[H]
   \SetAlgoLined   
-  \input{Codigos/EstruturasDadosEstrategias/Algoritmos/Movimentacao.txt}
-  \caption{\textsc{Movimentação dos agentes}}
-  \label{alg:movimentacao}
+  \input{Codigos/Observacoes/espacial_media4.txt}
+  \caption{\textsc{Algoritmo Monte Carlo Espacial}}
+  \label{alg:espacial_media}
 \end{algorithm}
+
+Para demonstrar o algoritmo de geração de saídas espaciais tipo Monte Carlo é apresentado abaixo um exemplo de sua aplicação em um conjunto de saídas fictício. A Figura \ref{fig:monte_carlo_espacial_1} ilustra as saídas fictícias utilizadas, em que considerou-se um ambiente hipotético com 16 posições, uma simulação Monte Carlo composta por 3 simulações individuais, cada uma com duração de 6 ciclos. Nas linhas intituladas \textit{"Simulação"} são apresentados horizontalmente os resultados espaciais das simulações para os 6 ciclos de tempo considerados. Os ciclos de tempo intitulam as colunas como \textit{"Tempo"} e apresentam verticalmente os resultados para determinados ciclos nas 3 simulações. As posições marcadas com \textit{"X"} representam posições com a presença de pelo menos um agente infectado, assim como posições sem marcação indicam que determinada posição não apresentou agente infectado naquele ciclo de tempo. Cada posição da matriz apresenta um identificador numérico que pode ser observado em seu canto superior esquerdo, que será utilizado para referenciar cada posição. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Figuras/Observacoes/MonteCarloEspacial/folha1.png}
+  \caption{Saídas espaciais fictícias. }
+  \label{fig:monte_carlo_espacial_1}
+\end{figure} 
+
+Na Figura \ref{fig:monte_carlo_espacial_2} são apresentados dois conjuntos de resultados espaciais. O conjunto nomeado \textit{"Soma das Simulações"} apresenta as somas por ciclo das matrizes apresentadas na Figura \ref{fig:monte_carlo_espacial_1}. A soma entre as matrizes é realizada elemento a elemento. Para exemplificar, no \textit{"Tempo 1"}, a posição 1 da matriz de saída possui o valor 3 pois resultou da soma entre as posições 1, do \textit{"Tempo 1"}, das 3 simulações individuais. Da mesma forma, a posição 2 do mesmo tempo possui o valor 2 resultante da soma das posições 9 das simulações 2 e 3. O conjunto nomeado \textit{"Média das Simulações"} apresenta uma média espacial obtida do conjunto \textit{"Soma das Simulações"}. Inicialmente, é realizada uma soma dos valores presentes na tabela, resultando em um único número por matriz. Este número é então dividido pela quantidade de simulações. Desprezando-se o resto da divisão, o resultado determina a quantidade de posições que serão mantidas. Escolhe-se as posições que tenham maior quantidade na matriz de soma. A escolha é aleatória nos casos em que as posições apresentam valor 1. Para exemplificar, no \textit{"Tempo 1"}, a soma dos valores apresentados na matriz é 9. Divide-se este valor por 3, que é a quantidade de simulações, resultado em 3, que é a quantidade de posições que serão mantidas. Escolhe-se então as posições 1 e 9, pois têm os maiores valores da matriz. Por último escolhe-se também a posição 10, mas poderiam ser escolhidas em seu lugar as posições 8, 11 e 16. Da mesma forma, no \textit{"Tempo 2"}, a soma dos valores apresentados na matriz é 12. Divide-se este valor por 3 resultado em 4. Escolhe-se então as posições 1, 10 e 11, pois têm os maiores valores da matriz. Por último escolhe-se também a posição 3, mas poderiam ser escolhidas em seu lugar as posições 5, 6, 7 e 16.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Figuras/Observacoes/MonteCarloEspacial/folha2.png}
+  \caption{Matrizes de soma e média das simulações. }
+  \label{fig:monte_carlo_espacial_2}
+\end{figure} 
+
+Na Figura \ref{fig:monte_carlo_espacial_3} são apresentados três conjuntos de resultados espaciais. O conjunto nomeado \textit{"Acumulado das Médias das Simulações"} apresenta a soma parcial, ciclo a ciclo, do conjunto \textit{"Média das Simulações"} apresentado na Figura \ref{fig:monte_carlo_espacial_2}. Para exemplificar a operação de soma parcial, a matriz resultante apresentada no \textit{"Tempo 4"} do conjunto \textit{"Acumulado das Médias das Simulações"} é resultado da soma entre as matrizes \textit{"Tempo 1"}, \textit{"Tempo 2"}, \textit{"Tempo 3"} e \textit{"Tempo 4"} do conjunto \textit{"Média das Simulações"}. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Figuras/Observacoes/MonteCarloEspacial/folha3.png}
+  \caption{Matrizes de acumulado das médias das simulações, da média do acumulado e do acumulado final. }
+  \label{fig:monte_carlo_espacial_3}
+\end{figure} 
 
 \subsection{Discussões sobre Implementações Paralelas em CPU e GPU} 
 
