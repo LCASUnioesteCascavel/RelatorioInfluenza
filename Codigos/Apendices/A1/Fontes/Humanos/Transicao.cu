@@ -27,6 +27,8 @@ void TransicaoEstadosHumanos::operator()(int id) {
   if (sd == MORTO) return;
 
   switch (sd) {
+    // Se o periodo de exposicao do agente terminou, 
+    // ele e passado ao estado infectante. 
     case EXPOSTO: {
       if (c >= PERIODO_EXPOSTO_HUMANO(fe)) {
         SET_SD_H(idHumano, INFECTANTE);
@@ -35,6 +37,8 @@ void TransicaoEstadosHumanos::operator()(int id) {
         SET_C_H(idHumano, c + 1);
       }
     } break;
+    // Se o periodo de infectancia do agente terminou, 
+    // ele e passado ao estado recuperado. 
     case INFECTANTE: {
       if (c >= PERIODO_INFECTADO_HUMANO(fe)) {
         SET_SD_H(idHumano, RECUPERADO);
@@ -43,6 +47,8 @@ void TransicaoEstadosHumanos::operator()(int id) {
         SET_C_H(idHumano, c + 1);
       }
     } break;
+    // Se o periodo de quarentena do agente terminou, 
+    // ele e passado ao estado recuperado. 
     case QUARENTENA: {
       if (c >= PERIODO_QUARENTENA_HUMANO(fe)) {
         SET_SD_H(idHumano, RECUPERADO);
@@ -51,6 +57,8 @@ void TransicaoEstadosHumanos::operator()(int id) {
         SET_C_H(idHumano, c + 1);
       }
     } break;
+    // Se o periodo de imunizacao do agente terminou, 
+    // ele e passado ao estado suscetivel. 
     case IMUNIZADO: {
       if (c >= PERIODO_IMUNIZADO_HUMANO(fe)) {
         SET_SD_H(idHumano, SUSCETIVEL);
@@ -59,6 +67,8 @@ void TransicaoEstadosHumanos::operator()(int id) {
         SET_C_H(idHumano, c + 1);
       }
     } break;
+    // Se o periodo de recuperacao do agente terminou, 
+    // ele e passado ao estado suscetivel. 
     case RECUPERADO: {
       if (c >= PERIODO_RECUPERADO_HUMANO(fe)) {
         SET_SD_H(idHumano, SUSCETIVEL);
@@ -94,11 +104,13 @@ void Vacinacao::operator()(int id) {
   dre seed = seeds[id];
   urd<double> dist(0.0, 1.0);
 
+  // A vacinacao e aplicada em todas as quadras do ambiente. 
   int qVac = id;
 
   int fe_h, sd_h;
   int n[N_IDADES] = {0, 0, 0, 0};
 
+  // Contagem, por faixas etarias, dos agentes presentes nesta quadra. 
   for (int idHumano = indHumanos[qVac]; 
        idHumano < indHumanos[qVac + 1]; ++idHumano) {
     fe_h = GET_FE_H(idHumano); sd_h = GET_SD_H(idHumano);
@@ -108,6 +120,7 @@ void Vacinacao::operator()(int id) {
     }
   }
 
+  // Calcula as quantidades por faixas etarias de agentes que serao vacinados. 
   double percentualVacinacao = 1.0 / perVac[0];
   for (int fe = 0; fe < N_IDADES; ++fe) {
     if (faixaEtariaTeraVacinacao(fe)) {
@@ -117,6 +130,7 @@ void Vacinacao::operator()(int id) {
     }
   }
 
+  // Realiza a vacinacao para a quantidade de agentes calculada. 
   for (int idHumano = indHumanos[qVac]; 
        idHumano < indHumanos[qVac + 1]; ++idHumano) {
     fe_h = GET_FE_H(idHumano);
@@ -125,6 +139,7 @@ void Vacinacao::operator()(int id) {
     if (sd_h == SUSCETIVEL and n[fe_h] > 0) {
       n[fe_h]--;
 
+      // O agente pode ser passado probabilisticamente para o estado imunizado. 
       if (randPerc <= TAXA_EFICACIA_VACINA) {
         SET_SD_H(idHumano, IMUNIZADO);
       }
@@ -134,6 +149,7 @@ void Vacinacao::operator()(int id) {
 
 __host__ __device__
 bool Vacinacao::periodoVacinacao() {
+  // Verifica se ha um periodo de vacinacao ativo. 
   if (perVac[1] < perVac[0]) {
     for (int i = 0; i < sizeCicVac; ++i) {
       if (ciclo >= cicVac[i] and ciclo < (cicVac[i] + perVac[0])) {
@@ -146,6 +162,7 @@ bool Vacinacao::periodoVacinacao() {
 
 __host__ __device__
 bool Vacinacao::faixaEtariaTeraVacinacao(int fe) {
+  // Verifica se a faixa etaria passada como argumento recebera vacinacao. 
   for (int i = 0; i < sizeFEVac; ++i) {
     if (fEVac[i] == fe) {
       return true;
@@ -174,6 +191,7 @@ void PosVacinacao::operator()(int id) {
       }
     }
   }
+  // Se houve vacinacao a campanha avanca para o priximo dia. 
   if (houveVacinacao) perVac[1]++;
   else perVac[1] = 0;
 }
@@ -194,6 +212,9 @@ void Quarentena::operator()(int id) {
 
   int sd_h = GET_SD_H(id);
 
+  // Os agentes infectantes podem ser passados probabilisticamente ao estado 
+  // de quarentena. As probabilidades de passagem ao estado de quarentena sao 
+  // definidas pela variavel "quaren" e sao distintas para cada ciclo. 
   if (sd_h == INFECTANTE and randPerc <= quaren[ciclo]) {
     SET_SD_H(id, QUARENTENA);
   }

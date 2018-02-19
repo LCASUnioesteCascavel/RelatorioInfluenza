@@ -3,6 +3,25 @@
 #include "Fontes/Parametros.h"
 #include "Fontes/Macros/MacrosGerais.h"
 
+/*
+  Construtor da classe Saidas. 
+
+  A variavel "ambiente" armazena o ambiente de simulacao. A variavel "parametros"
+  armazena os parametros de simulacao e a variavel "saidaMC" armazena o caminho 
+  para a pasta de saida dos arquivos resultantes da simulacao tipo Monte Carlo. 
+
+  As variaveis com nome terminado em "H" sao saidas relacionadas aos humanos. 
+  As variaveis com "Q" no nome correspondem as saidas por quadras. As variaveis 
+  com "T" no nome correspondem as saidas para todo o ambiente. As variaveis com 
+  "Novo" no nome correspondem as saidas nao acumulativas ciclo a ciclo. 
+  As demais saidas sao acumulativas por padrao. As variaveis com "pop" no nome 
+  correspondem as saidas populacionais para agentes humanos, que contam a 
+  quantidade de agentes em cada subpopulacao. As variaveis com "espacial" no 
+  nome correspondem as saidas espaciais, que armazenam o espalhamento dos 
+  agentes humanos no ambiente de simulacao. 
+
+  O metodo "toGPU" copia os dados das saidas para a GPU. 
+*/
 Saidas::Saidas(Ambiente *ambiente, Parametros *parametros, string saidaMC) {
   this->ambiente = ambiente;
   this->parametros = parametros;
@@ -33,15 +52,27 @@ Saidas::Saidas(Ambiente *ambiente, Parametros *parametros, string saidaMC) {
   toGPU();
 }
 
+/*
+  Destrutor da classe Saidas. 
+
+  Sao desalocadas as saidas armazenadas na memiria principal e na GPU. 
+*/
 Saidas::~Saidas() {
   delete[](popTH);delete[](indPopQH); delete[](popQH);
   delete[](espacialH); delete[](espacialNovoH);
   delete[](popNovoTH); delete[](popNovoQH);
+
   delete(popTHDev); delete(indPopQHDev); delete(popQHDev);
   delete(espacialHDev); delete(espacialNovoHDev);
   delete(popNovoTHDev); delete(popNovoQHDev);
 }
 
+/*
+  Metodo responsavel por salvar as saidas populacionais da simulacao nos 
+  respectivos arquivos.  
+  O metodo "salvarPopQ" salva as saidas populacionais por quadra e o 
+  metodo "salvarPopT" salva as saidas populacionais para todo o ambiente. 
+*/
 void Saidas::salvarPopulacoes() {
   salvarPopQ(indPopQH, popQH, N_COLS_H, "Quantidades_Humanos_Quadra-");
   salvarPopT(popTH, N_COLS_H, "Quantidades_Humanos_Total");
@@ -49,11 +80,21 @@ void Saidas::salvarPopulacoes() {
   salvarPopQ(indPopQH, popNovoQH, N_COLS_H, "Quantidades_Humanos_Novo_Quadra-");
 }
 
+/*
+  Metodo responsavel por salvar as saidas espaciais da simulacao nos 
+  respectivos arquivos. Sao salvas as saidas acumuladas em nao acumuladas 
+  para os humanos. 
+*/
 void Saidas::salvarEspaciais(string saidaSim) {
   salvarSaidaEspacial(espacialH, saidaSim, "Espacial_Humanos");
   salvarSaidaEspacial(espacialNovoH, saidaSim, "Espacial_Novo_Humanos");
 }
 
+/*
+  Metodo responsavel por copiar os dados das saidas para a CPU, apis o 
+  processamento em GPU. Esta cipia de dados da GPU para CPU viabiliza a 
+  escrita dos arquivos de saida. 
+*/
 void Saidas::toCPU() {
   copy_n(popTHDev->begin(), sizePopTH, popTH);
   copy_n(popQHDev->begin(), sizePopQH, popQH);
@@ -63,6 +104,9 @@ void Saidas::toCPU() {
   copy_n(popNovoQHDev->begin(), sizePopNovoQH, popNovoQH);
 }
 
+/*
+  Metodo responsavel por copiar os dados das variaveis de saida para a GPU. 
+*/
 void Saidas::toGPU() {
   popTHDev = new DVector<int>(popTH, popTH + sizePopTH);
   indPopQHDev = new DVector<int>(indPopQH, indPopQH + sizeIndPopQH);
@@ -82,6 +126,9 @@ void Saidas::toGPU() {
   PpopNovoQHDev = raw_pointer_cast(popNovoQHDev->data());
 }
 
+/*
+  Metodo responsavel pela obtencao do consumo de memiria da classe Saidas. 
+*/
 int Saidas::getMemoriaGPU() {
   int totMem = 0;
   totMem += (sizePopTH * sizeof(int));
@@ -94,6 +141,12 @@ int Saidas::getMemoriaGPU() {
   return totMem;
 }
 
+/*
+  Metodo responsavel por salvar uma saida espacial em um arquivo. 
+  As duas primeiras colunas sao as coordenadas x, y da posicao. As outras 
+  colunas contem as informacoes sobre a posicao para cada ciclo de simulacao. 
+  Cada linha armazena o estado de uma posicao ao longo do tempo de simulacao. 
+*/
 void Saidas::salvarSaidaEspacial(int *espacial, string saidaSim, 
                                  string nomeArquivo) {
   string saida = saidaSim;
@@ -120,34 +173,11 @@ void Saidas::salvarSaidaEspacial(int *espacial, string saidaSim,
   arquivo.close();
 }
 
-void Saidas::salvarSaidaEspacial(int *espacialH, int *espacialMD, 
-                                 string saidaSim, string nomeArquivo) {
-  string saida = saidaSim;
-  saida += nomeArquivo;
-  saida += string(".csv");
-
-  int d;
-  ofstream arquivo(saida);
-  if (not arquivo.is_open()) {
-    cerr << "Arquivo: ";
-    cerr << saida;
-    cerr << " nao foi aberto!" << endl;
-    exit(1);
-  }
-
-  for (int i = 0; i < ambiente->sizePos; ++i) {
-    arquivo << ambiente->pos[i].x << ";";
-    arquivo << ambiente->pos[i].y << ";";
-    for (int j = 0; j < parametros->nCiclos; ++j) {
-      d = VEC(i, j, parametros->nCiclos);
-      arquivo << ((espacialH[d] % 10) * 10000 + espacialMD[d]);
-      arquivo << ";";
-    }
-    arquivo << endl;
-  }
-  arquivo.close();
-}
-
+/*
+  Metodo responsavel por salvar uma saida populacional para todo o ambiente 
+  em um arquivo. Neste metodo e realizada a media para obtencao de uma simulacao 
+  tipo Monte Carlo. 
+*/
 void Saidas::salvarPopT(int *popT, int nCols, string prefNomeArquivo) {
   string saida = saidaMC;
   saida += prefNomeArquivo;
@@ -174,6 +204,11 @@ void Saidas::salvarPopT(int *popT, int nCols, string prefNomeArquivo) {
   arquivo.close();
 }
 
+/*
+  Metodo responsavel por salvar uma saida populacional por quadras em um 
+  arquivo. Neste metodo e realizada a media para obtencao de saidas para uma 
+  simulacao tipo Monte Carlo. 
+*/
 void Saidas::salvarPopQ(int *indPopQ, int *popQ, int nCols, 
                         string prefNomeArquivo) {
   string saida;
@@ -207,6 +242,13 @@ void Saidas::salvarPopQ(int *indPopQ, int *popQ, int nCols,
   }
 }
 
+/*
+  Metodo responsavel por calcular os indices utilizados a geracao de 
+  saidas populacionais por quadras. Por exemplo, em "indPopQ[10]" esta 
+  armazenado o indice para a primeira posicao correspondente as saidas 
+  populacionais para a quadra "10". Este indice e utilizado para indexar 
+  todas as saidas populacionais por quadra. 
+*/
 void Saidas::calcIndPopQ(int *indPopQ, int nCols) {
   int i = 0, size = 0;
   for (int k = 0; k < ambiente->nQuadras; ++k) {
@@ -217,6 +259,12 @@ void Saidas::calcIndPopQ(int *indPopQ, int nCols) {
   indPopQ[ambiente->nQuadras] = size;
 }
 
+/*
+  Metodo responsavel por limpar as estruturas de dados que armazenam as 
+  saidas espaciais, viabilizando sua reutilizacao entre as execucoes das 
+  simulacoes individuais pertencentes a uma simulacao tipo Monte Carlo. 
+  Efetivamente, todas as posicoes das estruturas de dados sao zerados. 
+*/
 void Saidas::limparEspaciais() {
   fill_n(espacialH, sizeEspacialH, 0);
   fill_n(espacialNovoH, sizeEspacialNovoH, 0);

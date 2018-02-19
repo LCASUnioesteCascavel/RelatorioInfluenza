@@ -1,18 +1,21 @@
 package estruturas;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Stream;
 
 public class Trajeto {
 
-	public static final int CRIANCA = 0;
-	public static final int JOVEM = 1;
-	public static final int ADULTO = 2;
-	public static final int IDOSO = 3;
+	public static final int BEBE = 0;
+	public static final int CRIANCA = 1;
+	public static final int ADOLESCENTE = 2;
+	public static final int JOVEM = 3;
+	public static final int ADULTO = 4;
+	public static final int IDOSO = 5;
 
 	private int tipoTrajeto;
-	private ArrayList<Rota> trajeto;
-	private ArrayList<Integer> periodos;
+	private List<Rota> trajeto;
+	private List<Integer> periodos;
 
 	public Trajeto(int tipoTrajeto) {
 		this.tipoTrajeto = tipoTrajeto;
@@ -28,19 +31,19 @@ public class Trajeto {
 		this.tipoTrajeto = tipoTrajeto;
 	}
 
-	public ArrayList<Rota> getTrajeto() {
+	public List<Rota> getTrajeto() {
 		return trajeto;
 	}
 
-	public void setTrajeto(ArrayList<Rota> trajeto) {
+	public void setTrajeto(List<Rota> trajeto) {
 		this.trajeto = trajeto;
 	}
 
-	public ArrayList<Integer> getPeriodos() {
+	public List<Integer> getPeriodos() {
 		return periodos;
 	}
 
-	public void setPeriodos(ArrayList<Integer> periodos) {
+	public void setPeriodos(List<Integer> periodos) {
 		this.periodos = periodos;
 	}
 
@@ -60,8 +63,16 @@ public class Trajeto {
 		return periodos.stream();
 	}
 
+	public boolean isTipoBebe() {
+		return tipoTrajeto == BEBE;
+	}
+
 	public boolean isTipoCrianca() {
 		return tipoTrajeto == CRIANCA;
+	}
+
+	public boolean isTipoAdolescente() {
+		return tipoTrajeto == ADOLESCENTE;
 	}
 
 	public boolean isTipoJovem() {

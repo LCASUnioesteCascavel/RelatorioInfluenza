@@ -28,6 +28,8 @@ void MovimentacaoHumanos::operator()(int id) {
   int sd_h = GET_SD_H(id), fe_h = GET_FE_H(id);
   int p;
 
+  // Humanos infectantes podem realizar uma movimentacao para uma posicao 
+  // aleatiria do ambiente, mimetizando Redes de Mundo Pequeno. 
   if (sd_h == INFECTANTE and randPerc <= PERC_MIGRACAO) {
     p = randPerc * sizePos;
     SET_X_H(id, pos[p].x);
@@ -36,10 +38,14 @@ void MovimentacaoHumanos::operator()(int id) {
     SET_Q_H(id, pos[p].quadra);
   }
 
+  // A movimentacao do agente e condicionada a taxa de mobilidade para sua 
+  // faixa etaria. 
   if (sd_h != MORTO and randPerc <= TAXA_MOBILIDADE(fe_h)) {
-    if (sd_h == QUARENTENA) {
+    if (sd_h == QUARENTENA) { 
+      // Humanos em quarentena realizam movimentacao local. 
       movimentacaoLocal(id, seed, dist);
     } else {
+      // Demais agentes realizam movimentacao aleatiria. 
       movimentacaoAleatoria(id, seed, dist);
     }
   }

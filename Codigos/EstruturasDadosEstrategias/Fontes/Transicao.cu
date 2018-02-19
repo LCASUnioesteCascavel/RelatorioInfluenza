@@ -10,6 +10,8 @@ void TransicaoEstadosHumanos::operator()(int id) {
   if (sd == MORTO) return;
 
   switch (sd) {
+    // Se o periodo de exposicao do agente terminou, 
+    // ele e passado ao estado infectante. 
     case EXPOSTO: {
       if (c >= PERIODO_EXPOSTO_HUMANO(fe)) {
         SET_SD_H(idHumano, INFECTANTE);
@@ -18,6 +20,8 @@ void TransicaoEstadosHumanos::operator()(int id) {
         SET_C_H(idHumano, c + 1);
       }
     } break;
+    // Se o periodo de infectancia do agente terminou, 
+    // ele e passado ao estado recuperado. 
     case INFECTANTE: {
       if (c >= PERIODO_INFECTADO_HUMANO(fe)) {
         SET_SD_H(idHumano, RECUPERADO);
@@ -26,6 +30,8 @@ void TransicaoEstadosHumanos::operator()(int id) {
         SET_C_H(idHumano, c + 1);
       }
     } break;
+    // Se o periodo de quarentena do agente terminou, 
+    // ele e passado ao estado recuperado. 
     case QUARENTENA: {
       if (c >= PERIODO_QUARENTENA_HUMANO(fe)) {
         SET_SD_H(idHumano, RECUPERADO);
@@ -34,6 +40,8 @@ void TransicaoEstadosHumanos::operator()(int id) {
         SET_C_H(idHumano, c + 1);
       }
     } break;
+    // Se o periodo de imunizacao do agente terminou, 
+    // ele e passado ao estado suscetivel. 
     case IMUNIZADO: {
       if (c >= PERIODO_IMUNIZADO_HUMANO(fe)) {
         SET_SD_H(idHumano, SUSCETIVEL);
@@ -42,6 +50,8 @@ void TransicaoEstadosHumanos::operator()(int id) {
         SET_C_H(idHumano, c + 1);
       }
     } break;
+    // Se o periodo de recuperacao do agente terminou, 
+    // ele e passado ao estado suscetivel. 
     case RECUPERADO: {
       if (c >= PERIODO_RECUPERADO_HUMANO(fe)) {
         SET_SD_H(idHumano, SUSCETIVEL);
@@ -52,4 +62,3 @@ void TransicaoEstadosHumanos::operator()(int id) {
     } break;
   }
 }
-

@@ -33,6 +33,7 @@ public class TipoTrajeto {
 			this.periodo = periodo;
 		}
 
+		Override
 		public String toString() {
 			return "LocalPeriodo [local=" + local + ", periodo=" + periodo + "]";
 		}
@@ -50,7 +51,7 @@ public class TipoTrajeto {
 
 		Iterator<String> itLocais = locais.iterator();
 		Iterator<String> itPeriodos = periodos.iterator();
-		while (itLocais.hasNext() && itPeriodos.hasNext()) {
+		while (itLocais.hasNext() \&\& itPeriodos.hasNext()) {
 			locaisPeriodos.add(new LocalPeriodo(itLocais.next(), itPeriodos.next()));
 		}
 	}
@@ -67,6 +68,7 @@ public class TipoTrajeto {
 		return locaisPeriodos;
 	}
 
+	Override
 	public String toString() {
 		return "TipoTrajeto [faixaEtaria=" + faixaEtaria + ", locaisPeriodos="
 				+ locaisPeriodos + "]";

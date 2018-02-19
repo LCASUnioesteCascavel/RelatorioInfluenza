@@ -13,8 +13,8 @@ BEGIN
 		union 
 		select a.lote l1, a.quadra q1, b.lote l2, b.quadra q2 
 		from %s_poligonos a, %s_poligonos b 
-		where a.quadra = ''0000'' and b.quadra != ''0000'' 
-    and st_dwithin(a.geom, b.geom, 2) 
+		where a.quadra = ''0000'' and b.quadra != ''0000'' and 
+    st_dwithin(a.geom, b.geom, 2) 
 		union 
 		select a.lote l1, a.quadra q1, b.lote l2, b.quadra q2 
 		from %s_poligonos a, %s_poligonos b 

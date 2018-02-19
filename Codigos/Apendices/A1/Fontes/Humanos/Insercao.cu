@@ -17,6 +17,8 @@ __host__ __device__
 int PreInsercaoHumanos::operator()(int id) {
   int nHumanos = 0;
 
+  // Sao utilizadas as informacoes presentes no arquivo 
+  // "Entradas/MonteCarlo_{1}/Ambiente/DistribuicaoHumanos.csv". 
   for (int i = 0; i < sizeDistHumanos; i++) {
     if (distHumanos[i].cic == ciclo) {
       nHumanos += 1;
@@ -41,6 +43,8 @@ void InsercaoHumanos::operator()(int id) {
   int i = 0;
   int q, l, x, y, s, fe, sd;
   
+  // Sao utilizadas as informacoes presentes no arquivo 
+  // "Entradas/MonteCarlo_{1}/Ambiente/DistribuicaoHumanos.csv". 
   for (int j = 0; j < sizeDistHumanos; j++) {
     if (distHumanos[j].cic == ciclo) {
       q = distHumanos[j].q; l = distHumanos[j].l; 
@@ -48,6 +52,7 @@ void InsercaoHumanos::operator()(int id) {
       s = distHumanos[j].s; fe = distHumanos[j].fe; 
       sd = distHumanos[j].sd; // st = distHumanos[j].st; 
 
+      // Inicializacao do novo agente. 
       inicializarHumano(i, sd, x, y, l, q, s, fe);
       i += 1;
     }

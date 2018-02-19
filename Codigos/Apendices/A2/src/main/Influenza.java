@@ -1,20 +1,15 @@
 package main;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Random;
-import java.util.SortedMap;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
@@ -31,24 +26,24 @@ public class Influenza {
 	public String nomeArquivoControles;
 	public String nomeArquivoDistribuicaoHumanos;
 
-	private HashMap<String, String> params;
+	private Map<String, String> params;
 	private ConsultasBanco con;
-	private Map<String, HashMap<String, ArrayList<Ponto>>> pontos;
+	private Map<String, Map<String, List<Ponto>>> pontos;
 	private Map<String, Map<String, List<Vizinhanca>>> vizinhancas;
 	private Map<String, Integer> indicesQuadras;
-	private ArrayList<Integer> indexQuadras, indexVizinhancas, vetorVizinhancas,
+	private List<Integer> indexQuadras, indexVizinhancas, vetorVizinhancas,
 			indexPosicoes, vetorPosicoes;
-	private Map<String, SortedMap<String, Integer>> indicesLotes;
+	private Map<String, Map<String, Integer>> indicesLotes;
 	private List<CasoInfeccao> distribuicaoHumanos;
 	private List<String> fEVac, cicVac;
 
-	public Influenza(HashMap<String, String> params) {
+	public Influenza(Map<String, String> params) {
 		this.params = params;
 
-		this.pastaSaida = "Saidas" + File.separator + params.get("Ambiente") + "_"
+		this.pastaSaida = "./Saidas" + File.separator + params.get("Ambiente") + "_"
 				+ params.get("Doenca") + File.separator;
 		if (!new File(pastaSaida).exists()) {
-			new File(pastaSaida).mkdir();
+			new File(pastaSaida).mkdirs();
 		}
 
 		nomrArquivoAmbiental = pastaSaida + "0-AMB.csv";
@@ -96,7 +91,7 @@ public class Influenza {
 	}
 
 	private void gerarVizinhancas() {
-		ArrayList<Vizinhanca> ret = con.getVizinhancasMoorePontos();
+		List<Vizinhanca> ret = con.getVizinhancasMoorePontos();
 		ret.sort(null);
 
 		vizinhancas = new HashMap<>();
@@ -175,15 +170,15 @@ public class Influenza {
 			BufferedWriter esc = new BufferedWriter(
 					new FileWriter(nomrArquivoAmbiental));
 
-			esc.write("quantQuadras, quantLotes e indexQuadras\n");
-			esc.write(pontos.keySet().size() + "\n");
+			esc.write("quantQuadras, quantLotes e indexQuadras\\n");
+			esc.write(pontos.keySet().size() + "\\n");
 			esc.write(pontos.entrySet().stream().sorted(Entry.comparingByKey())
 					.map(i -> Integer.toString(i.getValue().size()))
-					.collect(Collectors.joining(";")) + "\n");
+					.collect(Collectors.joining(";")) + "\\n");
 			esc.write(indexQuadras.stream().map(i -> i.toString())
-					.collect(Collectors.joining(";")) + "\n\n");
+					.collect(Collectors.joining(";")) + "\\n\\n");
 
-			esc.write("indexVizinhancas e vetorVizinhancas\n");
+			esc.write("indexVizinhancas e vetorVizinhancas\\n");
 
 			for (int i = 0; i < indexVizinhancas.size(); ++i) {
 				esc.write(Integer.toString(indexVizinhancas.get(i)));
@@ -191,7 +186,7 @@ public class Influenza {
 					esc.write(";");
 				}
 			}
-			esc.write("\n");
+			esc.write("\\n");
 
 			for (int i = 0; i < vetorVizinhancas.size(); ++i) {
 				esc.write(Integer.toString(vetorVizinhancas.get(i)));
@@ -199,11 +194,11 @@ public class Influenza {
 					esc.write(";");
 				}
 			}
-			esc.write("\n\n");
+			esc.write("\\n\\n");
 
-			esc.write("indexPosicoes, vetorPosicoes, indexPosicoesRegioes\n");
+			esc.write("indexPosicoes, vetorPosicoes, indexPosicoesRegioes\\n");
 			esc.write(indexPosicoes.stream().map(i -> i.toString())
-					.collect(Collectors.joining(";")) + "\n");
+					.collect(Collectors.joining(";")) + "\\n");
 
 			for (int i = 0; i < vetorPosicoes.size(); ++i) {
 				esc.write(Integer.toString(vetorPosicoes.get(i)));
@@ -211,7 +206,7 @@ public class Influenza {
 					esc.write(";");
 				}
 			}
-			esc.write("\n");
+			esc.write("\\n");
 
 			esc.close();
 
@@ -221,11 +216,15 @@ public class Influenza {
 	}
 
 	private void salvarArquivoDistribuicaoHumanos() {
-		double percInsInfec = Double.parseDouble(params.get("PorcentagemCasos"));
+		double percInsInfec = Double
+				.parseDouble(params.get("PorcentagemCasosHumanos"));
 
 		Map<String, Double> percPop = new HashMap<>();
+		percPop.put("B", Double.parseDouble(params.get("FracaoBebesMasculinos")));
 		percPop.put("C",
 				Double.parseDouble(params.get("FracaoCriancasMasculinas")));
+		percPop.put("D",
+				Double.parseDouble(params.get("FracaoAdolescentesMasculinos")));
 		percPop.put("J", Double.parseDouble(params.get("FracaoJovensMasculinos")));
 		percPop.put("A", Double.parseDouble(params.get("FracaoAdultosMasculinos")));
 		percPop.put("I", Double.parseDouble(params.get("FracaoIdososMasculinos")));
@@ -277,8 +276,8 @@ public class Influenza {
 		try {
 			BufferedWriter esc = new BufferedWriter(
 					new FileWriter(nomeArquivoDistribuicaoHumanos));
-			esc.write(dados3.size() + "\n");
-			esc.write("Q;L;X;Y;Sexo;FaixaEtaria;SaudeDengue;SorotipoAtual;Ciclo\n");
+			esc.write(dados3.size() + "\\n");
+			esc.write("Q;L;X;Y;Sexo;FaixaEtaria;SaudeDengue;SorotipoAtual;Ciclo\\n");
 			for (CasoInfeccao caso : dados3) {
 				esc.write(caso.getQuadra() + ";");
 				esc.write(caso.getLote() + ";");
@@ -288,7 +287,7 @@ public class Influenza {
 				esc.write(caso.getFaixaEtaria() + ";");
 				esc.write("I;");
 				esc.write("2;");
-				esc.write(caso.getDia() + "\n");
+				esc.write(caso.getDia() + "\\n");
 			}
 			esc.close();
 		} catch (Exception ex) {
@@ -319,7 +318,7 @@ public class Influenza {
 
 		double max = casosAcumulados.values().stream().max(Integer::compareTo)
 				.get();
-    max = (max == 0 ? 1 : max);
+		max = (max == 0 ? 1 : max);
 
 		Map<Integer, Double> percentuais = new HashMap<>();
 		for (Entry<Integer, Integer> i : casosAcumulados.entrySet()) {
@@ -331,30 +330,30 @@ public class Influenza {
 			BufferedWriter esc = new BufferedWriter(
 					new FileWriter(nomeArquivoControles));
 
-			esc.write("fEVac. Faixas etarias que receberao vacinacao\n");
-			esc.write(fEVac.size() + "\n");
-			esc.write(fEVac.stream().collect(Collectors.joining(";")) + "\n\n");
+			esc.write("fEVac. Faixas etarias que receberao vacinacao\\n");
+			esc.write(fEVac.size() + "\\n");
+			esc.write(fEVac.stream().collect(Collectors.joining(";")) + "\\n\\n");
 
-			esc.write("cicVac. Ciclos em que as vacinacoes serao executadas\n");
-			esc.write(cicVac.size() + "\n");
-			esc.write(cicVac.stream().collect(Collectors.joining(";")) + "\n\n");
+			esc.write("cicVac. Ciclos em que as vacinacoes serao executadas\\n");
+			esc.write(cicVac.size() + "\\n");
+			esc.write(cicVac.stream().collect(Collectors.joining(";")) + "\\n\\n");
 
-			esc.write("Sazonalidade\n");
-			esc.write(percentuais.size() + "\n");
+			esc.write("Complemento\\n");
+			esc.write(percentuais.size() + "\\n");
 			esc.write(percentuais.entrySet().stream()
 					.map(i -> String.format("%.10f", i.getValue()).replace(",", "."))
-					.collect(Collectors.joining(";")) + "\n\n");
+					.collect(Collectors.joining(";")) + "\\n\\n");
 
-			ArrayList<Double> percentuaisQuarentena = new ArrayList<>();
+			List<Double> percentuaisQuarentena = new ArrayList<>();
 			for (int i = 0; i < Integer.parseInt(params.get("DuracaoAno")); ++i) {
 				percentuaisQuarentena.add(Math.random());
 			}
 
-			esc.write("Percentuais de quarentena\n");
-			esc.write(percentuaisQuarentena.size() + "\n");
+			esc.write("Percentuais de quarentena\\n");
+			esc.write(percentuaisQuarentena.size() + "\\n");
 			esc.write(percentuaisQuarentena.stream()
 					.map(i -> String.format("%.10f", i).replace(",", "."))
-					.collect(Collectors.joining(";")) + "\n");
+					.collect(Collectors.joining(";")) + "\\n");
 
 			esc.close();
 

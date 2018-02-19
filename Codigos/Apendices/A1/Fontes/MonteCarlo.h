@@ -21,6 +21,15 @@ using std::to_string;
 
 using namespace std::chrono;
 
+/*
+  Classe que armazena todos os dados relacionados a uma simulacao tipo 
+  Monte Carlo. Simulacoes tipo Monte Carlo sao obtidas a partir do calculo da 
+  media dos resultados obtidos por meio da execucao de simulacoes individuais. 
+  As saidas populacionais sao geradas para as simulacoes tipo Monte Carlo 
+  calculando-se a media, ciclo a ciclo, das quantidades de agentes pertencentes 
+  a cada subpopulacao de interesse. Nao sao geradas saidas espaciais tipo 
+  Monte Carlo. 
+*/
 class MonteCarlo {
 
   public:

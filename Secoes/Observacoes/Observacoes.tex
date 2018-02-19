@@ -49,10 +49,12 @@ O arquivo de distribuição de agentes infectados ao longo da simulação é ger
 \centering
 \begin{tabular}{c|c}
  \textbf{Idade} 	& \textbf{Faixa Etária}	\\ \hline
- Menor que 15 anos 	& Criança		\\
- Entre 15 e 24 anos 	& Jovem			\\
- Entre 25 e 59 anos 	& Adulto		\\
- Maior que 59 anos 	& Idosos		\\
+ Menor que 6 anos 	& Bebê			\\
+ Entre 6 e 14 anos 	& Criança		\\
+ Entre 15 e 17 anos 	& Adolescente		\\
+ Entre 18 e 29 anos 	& Jovem			\\
+ Entre 30 e 59 anos 	& Adulto		\\
+ Maior que 60 anos 	& Idoso			\\
 \end{tabular}
 \caption{Tabela das faixas etárias definidas pelo IBGE.}
 \label{tab:faixasEtariasIBGE}
@@ -60,7 +62,7 @@ O arquivo de distribuição de agentes infectados ao longo da simulação é ger
 
 Um aspecto importante é o fato de que a dinâmica do espalhamento não dependa de apenas um conjunto de indivíduos infectados distribuídos inicialmente, como em modelos compartimentais. Considerou-se que a distribuição de infectados não é espaço-temporalmente local, mas sim realizada ao longo da simulação em posições escolhidas aleatoriamente. Essa estratégia baseou-se na suposição de que os casos da doença surgem de forma não concentrada ao longo do espaço, assim como contemplar os casos assintomáticos ou as subnotificações da doença que, no entanto, são fontes relevantes de infectados à propagação da doença. Na modelagem realizada escolheu-se inserir 3\% dos casos ao longo da simulação à quantidade de infectantes observados por dia, realizando um mapeamento entre os dias de ocorrência dos casos e os ciclos de simulação.
 
-Para as crianças, $51\%$ são masculinos e $49\%$ são femininos. Para os jovens, $50\%$ são masculinos e $50\%$ são femininos. Para os adultos, $48\%$ são masculinos e $52\%$ são femininos. Por fim, para os idosos, $45\%$ são masculinos e $55\%$ são femininos. Na escolha dos casos que serão utilizados inicialmente o conjunto de todos os casos é agrupado por dia de ocorrência. Em seguida, para cada dia são mantidos $3\%$ dos casos. Os casos são então agrupados por faixa etária e os percentuais apresentados anteriormente são utilizados à atribuição aleatória dos sexos. O passo final do algoritmo consiste em atribuir uma posição para a inserção do agente no ambiente, já que os pontos originais dos casos georreferenciados podem não estar presentes no conjunto de pontos interpolados no ambiente. Neste caso, o ponto do ambiente que é mais próximo aquele do caso original é escolhido, considerando-se a distância euclidiana entre eles. 
+Para bebês, $50\%$ são masculinos e $50\%$ são femininos. Para as crianças, $51\%$ são masculinos e $49\%$ são femininos. Para adolescentes, $50\%$ são masculinos e $50\%$ são femininos. Para os jovens, $50\%$ são masculinos e $50\%$ são femininos. Para os adultos, $48\%$ são masculinos e $52\%$ são femininos. Por fim, para os idosos, $45\%$ são masculinos e $55\%$ são femininos. Na escolha dos casos que serão utilizados inicialmente o conjunto de todos os casos é agrupado por dia de ocorrência. Em seguida, para cada dia são mantidos $3\%$ dos casos. Os casos são então agrupados por faixa etária e os percentuais apresentados anteriormente são utilizados à atribuição aleatória dos sexos. O passo final do algoritmo consiste em atribuir uma posição para a inserção do agente no ambiente, já que os pontos originais dos casos georreferenciados podem não estar presentes no conjunto de pontos interpolados no ambiente. Neste caso, o ponto do ambiente que é mais próximo aquele do caso original é escolhido, considerando-se a distância euclidiana entre eles. 
 
 A Figura \ref{fig:funcoes_logistica} ilustra as curvas obtidas por meio de ajustes realizados aos dados. As quantidades de casos de infecção reais por dia foram normalizados no intervalo $[0.0, 1.0]$ e são ilustrados na cor verde. À esses dados foi ajustada uma equação tipo Logística Acumulada, que é ilustrada na cor vermelha. Na cor marrom é ilustrada a equação ajustada aos resultados obtidos por meio de simulação computacional e os pontos em azul apresentam as quantidades de casos de infecção simulados normalizados no intervalo $[0.0, 1.0]$. 
 

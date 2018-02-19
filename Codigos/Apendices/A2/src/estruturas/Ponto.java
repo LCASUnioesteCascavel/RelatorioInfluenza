@@ -2,23 +2,23 @@ package estruturas;
 
 import java.awt.Point;
 
-import main.GeradorArquivosAmbientaisAcoplado;
+import main.GeradorArquivosAmbientais;
 
 public class Ponto implements Cloneable, Comparable<Ponto> {
 
 	private double x, y;
-	private int id, refinamento;
+	private int id, ref;
 
 	public String quadra, lote;
 
 	public Ponto(int id, String quadra, String lote, double x, double y,
-			int refinamento) {
+			int ref) {
 		this.setId(id);
 		this.quadra = quadra;
 		this.lote = lote;
 		this.setX(x);
 		this.setY(y);
-		this.setRefinamento(refinamento);
+		this.setRef(ref);
 	}
 
 	public Ponto(int x, int y) {
@@ -31,23 +31,25 @@ public class Ponto implements Cloneable, Comparable<Ponto> {
 		this.y = Double.parseDouble(y);
 	}
 
+	Override
 	public boolean equals(Object obj) {
 		if (obj instanceof Ponto) {
 			Ponto ponto = (Ponto) obj;
-			if (getId() == ponto.getId() && quadra.equals(ponto.quadra)
-					&& lote.equals(ponto.lote) && getX() == ponto.getX()
-					&& getY() == ponto.getY()
-					&& getRefinamento() == ponto.getRefinamento()) {
+			if (getId() == ponto.getId() \&\& quadra.equals(ponto.quadra)
+					\&\& lote.equals(ponto.lote) \&\& getX() == ponto.getX()
+					\&\& getY() == ponto.getY() \&\& getRef() == ponto.getRef()) {
 				return true;
 			}
 		}
 		return false;
 	}
 
+	Override
 	protected Object clone() throws CloneNotSupportedException {
-		return new Ponto(getId(), quadra, lote, getX(), getY(), getRefinamento());
+		return new Ponto(getId(), quadra, lote, getX(), getY(), getRef());
 	}
 
+	Override
 	public int compareTo(Ponto o) {
 		if (quadra.compareTo(o.quadra) < 0) {
 			return -1;
@@ -64,21 +66,22 @@ public class Ponto implements Cloneable, Comparable<Ponto> {
 		return 0;
 	}
 
+	Override
 	public String toString() {
 		return "Ponto [x=" + getX() + ", y=" + getY() + ", id=" + getId()
-				+ ", refinamento=" + getRefinamento() + ", quadra=" + quadra + ", lote="
-				+ lote + "]";
+				+ ", refinamento=" + getRef() + ", quadra=" + quadra + ", lote=" + lote
+				+ "]";
 	}
 
 	public boolean pertenceAoLote(String quadra, String lote) {
-		if (this.quadra.equals(quadra) && this.lote.equals(lote)) {
+		if (this.quadra.equals(quadra) \&\& this.lote.equals(lote)) {
 			return true;
 		}
 		return false;
 	}
 
 	public boolean isRua() {
-		return quadra.equals(GeradorArquivosAmbientaisAcoplado.RUA);
+		return quadra.equals(GeradorArquivosAmbientais.RUA);
 	}
 
 	public double getX() {
@@ -105,12 +108,12 @@ public class Ponto implements Cloneable, Comparable<Ponto> {
 		this.id = id;
 	}
 
-	public int getRefinamento() {
-		return refinamento;
+	public int getRef() {
+		return ref;
 	}
 
-	public void setRefinamento(int refinamento) {
-		this.refinamento = refinamento;
+	public void setRef(int ref) {
+		this.ref = ref;
 	}
 
 	public double distancia(Ponto p) {

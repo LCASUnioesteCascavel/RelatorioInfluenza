@@ -113,24 +113,28 @@ class GraficosQuantidadesHumanos:
   def criar_grafico_faixa_etaria(self):
     x = [i[0] for i in self.dados]
 
-    cr = [sum(sum(i[j:j+6]) for j in range(1, 49, 24)) for i in self.dados]
-    jo = [sum(sum(i[j:j+6]) for j in range(7, 49, 24)) for i in self.dados]
-    ad = [sum(sum(i[j:j+6]) for j in range(13, 49, 24)) for i in self.dados]
-    id = [sum(sum(i[j:j+6]) for j in range(19, 49, 24)) for i in self.dados]
+    be = [sum(sum(i[j:j+6]) for j in range(1, 73, 36)) for i in self.dados]
+    cr = [sum(sum(i[j:j+6]) for j in range(7, 73, 36)) for i in self.dados]
+    do = [sum(sum(i[j:j+6]) for j in range(13, 73, 36)) for i in self.dados]
+    jo = [sum(sum(i[j:j+6]) for j in range(19, 73, 36)) for i in self.dados]
+    ad = [sum(sum(i[j:j+6]) for j in range(25, 73, 36)) for i in self.dados]
+    id = [sum(sum(i[j:j+6]) for j in range(31, 73, 36)) for i in self.dados]
     
     plt.title('Faixas Etarias Humanos')
-    self.plot(plt, x, cr, 'Criancas', 'green', '-', 'o')
+    self.plot(plt, x, be, 'Bebes', 'green', '-', 'o')
+    self.plot(plt, x, cr, 'Criancas', 'LightCoral', '-', '>')
+    self.plot(plt, x, do, 'Adolescentes', 'blue', '-', '<')
     self.plot(plt, x, jo, 'Jovens', 'brown', '-', '*')
     self.plot(plt, x, ad, 'Adultos', 'red', '-', 'x')
     self.plot(plt, x, id, 'Idosos', 'magenta', '-', 'v')
 
-    self.conf_uni_graf('_FaixaEtaria', 4)
+    self.conf_uni_graf('_FaixaEtaria', 6)
 
   def criar_grafico_sexo(self):
     x = [i[0] for i in self.dados]
 
-    m = [sum(i[1:25]) for i in self.dados]
-    f = [sum(i[25:]) for i in self.dados]
+    m = [sum(i[1:37]) for i in self.dados]
+    f = [sum(i[37:]) for i in self.dados]
 
     plt.title('Sexos Humanos')
     self.plot(plt, x, m, 'Masculinos', 'black', '-', '')
@@ -141,42 +145,74 @@ class GraficosQuantidadesHumanos:
   def criar_grafico_saude_faixa_etaria(self):
     x = [i[0] for i in self.dados]
 
-    cr_sus = [sum(i[1::24]) for i in self.dados]
-    cr_exp = [sum(i[2::24]) for i in self.dados]
-    cr_inf = [sum(i[3::24]) for i in self.dados]
-    cr_qua = [sum(i[4::24]) for i in self.dados]
-    cr_imu = [sum(i[5::24]) for i in self.dados]
-    cr_rec = [sum(i[6::24]) for i in self.dados]
+    be_sus = [sum(i[1::36]) for i in self.dados]
+    be_exp = [sum(i[2::36]) for i in self.dados]
+    be_inf = [sum(i[3::36]) for i in self.dados]
+    be_qua = [sum(i[4::36]) for i in self.dados]
+    be_imu = [sum(i[5::36]) for i in self.dados]
+    be_rec = [sum(i[6::36]) for i in self.dados]
 
-    jo_sus = [sum(i[7::24]) for i in self.dados]
-    jo_exp = [sum(i[8::24]) for i in self.dados]
-    jo_inf = [sum(i[9::24]) for i in self.dados]
-    jo_qua = [sum(i[10::24]) for i in self.dados]
-    jo_imu = [sum(i[11::24]) for i in self.dados]
-    jo_rec = [sum(i[12::24]) for i in self.dados]
+    cr_sus = [sum(i[7::36]) for i in self.dados]
+    cr_exp = [sum(i[8::36]) for i in self.dados]
+    cr_inf = [sum(i[9::36]) for i in self.dados]
+    cr_qua = [sum(i[10::36]) for i in self.dados]
+    cr_imu = [sum(i[11::36]) for i in self.dados]
+    cr_rec = [sum(i[12::36]) for i in self.dados]
 
-    ad_sus = [sum(i[13::24]) for i in self.dados]
-    ad_exp = [sum(i[14::24]) for i in self.dados]
-    ad_inf = [sum(i[15::24]) for i in self.dados]
-    ad_qua = [sum(i[16::24]) for i in self.dados]
-    ad_imu = [sum(i[17::24]) for i in self.dados]
-    ad_rec = [sum(i[18::24]) for i in self.dados]
+    do_sus = [sum(i[13::36]) for i in self.dados]
+    do_exp = [sum(i[14::36]) for i in self.dados]
+    do_inf = [sum(i[15::36]) for i in self.dados]
+    do_qua = [sum(i[16::36]) for i in self.dados]
+    do_imu = [sum(i[17::36]) for i in self.dados]
+    do_rec = [sum(i[18::36]) for i in self.dados]
+
+    jo_sus = [sum(i[19::36]) for i in self.dados]
+    jo_exp = [sum(i[20::36]) for i in self.dados]
+    jo_inf = [sum(i[21::36]) for i in self.dados]
+    jo_qua = [sum(i[22::36]) for i in self.dados]
+    jo_imu = [sum(i[23::36]) for i in self.dados]
+    jo_rec = [sum(i[24::36]) for i in self.dados]
+
+    ad_sus = [sum(i[25::36]) for i in self.dados]
+    ad_exp = [sum(i[26::36]) for i in self.dados]
+    ad_inf = [sum(i[27::36]) for i in self.dados]
+    ad_qua = [sum(i[28::36]) for i in self.dados]
+    ad_imu = [sum(i[29::36]) for i in self.dados]
+    ad_rec = [sum(i[30::36]) for i in self.dados]
     
-    id_sus = [sum(i[19::24]) for i in self.dados]
-    id_exp = [sum(i[20::24]) for i in self.dados]
-    id_inf = [sum(i[21::24]) for i in self.dados]
-    id_qua = [sum(i[22::24]) for i in self.dados]
-    id_imu = [sum(i[23::24]) for i in self.dados]
-    id_rec = [sum(i[24::24]) for i in self.dados]
+    id_sus = [sum(i[31::36]) for i in self.dados]
+    id_exp = [sum(i[32::36]) for i in self.dados]
+    id_inf = [sum(i[33::36]) for i in self.dados]
+    id_qua = [sum(i[34::36]) for i in self.dados]
+    id_imu = [sum(i[35::36]) for i in self.dados]
+    id_rec = [sum(i[36::36]) for i in self.dados]
+
+    plt.title('Saude Humanos Bebes')
+    self.plot(plt, x, be_sus, 'Bebes Suscetiveis', 'green', '-', 'o')
+    self.plot(plt, x, be_exp, 'Bebes Expostos', 'brown', '-', 'o')
+    self.plot(plt, x, be_inf, 'Bebes Infectados', 'red', '-', 'o')
+    self.plot(plt, x, be_qua, 'Bebes Quarentena', 'LightCoral', '-', 'o')
+    self.plot(plt, x, be_imu, 'Bebes Imunizados', 'magenta', '-', 'o')
+    self.plot(plt, x, be_rec, 'Bebes Recuperados', 'blue', '-', 'o')
+    self.conf_uni_graf('_Saude_x_FaixaEtaria_Bebes', 3)
 
     plt.title('Saude Humanos Criancas')
-    self.plot(plt, x, cr_sus, 'Criancas Suscetiveis', 'green', '-', 'o')
-    self.plot(plt, x, cr_exp, 'Criancas Expostos', 'brown', '-', 'o')
-    self.plot(plt, x, cr_inf, 'Criancas Infectados', 'red', '-', 'o')
-    self.plot(plt, x, cr_qua, 'Criancas Quarentena', 'LightCoral', '-', 'o')
-    self.plot(plt, x, cr_imu, 'Criancas Imunizados', 'magenta', '-', 'o')
-    self.plot(plt, x, cr_rec, 'Criancas Recuperados', 'blue', '-', 'o')
+    self.plot(plt, x, cr_sus, 'Criancas Suscetiveis', 'green', '-', '>')
+    self.plot(plt, x, cr_exp, 'Criancas Expostos', 'brown', '-', '>')
+    self.plot(plt, x, cr_inf, 'Criancas Infectados', 'red', '-', '>')
+    self.plot(plt, x, cr_qua, 'Criancas Quarentena', 'LightCoral', '-', '>')
+    self.plot(plt, x, cr_imu, 'Criancas Imunizados', 'magenta', '-', '>')
+    self.plot(plt, x, cr_rec, 'Criancas Recuperados', 'blue', '-', '>')
     self.conf_uni_graf('_Saude_x_FaixaEtaria_Criancas', 3)
+
+    plt.title('Saude Humanos Adolescentes')
+    self.plot(plt, x, do_sus, 'Adolescentes Suscetiveis', 'green', '-', '<')
+    self.plot(plt, x, do_exp, 'Adolescentes Expostos', 'brown', '-', '<')
+    self.plot(plt, x, do_inf, 'Adolescentes Infectados', 'red', '-', '<')
+    self.plot(plt, x, do_qua, 'Adolescentes Quarentena', 'LightCoral', '-', '<')
+    self.plot(plt, x, do_imu, 'Adolescentes Imunizados', 'magenta', '-', '<')
+    self.plot(plt, x, do_rec, 'Adolescentes Recuperados', 'blue', '-', '<')
+    self.conf_uni_graf('_Saude_x_FaixaEtaria_Adolescentes', 3)
 
     plt.title('Saude Humanos Jovens')
     self.plot(plt, x, jo_sus, 'Jovens Suscetiveis', 'green', '-', '*')
@@ -205,84 +241,106 @@ class GraficosQuantidadesHumanos:
     self.plot(plt, x, id_rec, 'Idosos Recuperados', 'blue', '-', 'v')
     self.conf_uni_graf('_Saude_x_FaixaEtaria_Idosos', 3)
 
-    fig, axes = plt.subplots(2, 2)
+    fig, axes = plt.subplots(2, 3)
 
-    axes[0, 0].set_title('Saude Humanos Criancas')
-    axes[0, 1].set_title('Saude Humanos Jovens')
-    axes[1, 0].set_title('Saude Humanos Adultos')
-    axes[1, 1].set_title('Saude Humanos Idosos')
+    axes[0, 0].set_title('Saude Humanos Bebes')
+    axes[0, 1].set_title('Saude Humanos Criancas')
+    axes[0, 2].set_title('Saude Humanos Adolescentes')
+    axes[1, 0].set_title('Saude Humanos Jovens')
+    axes[1, 1].set_title('Saude Humanos Adultos')
+    axes[1, 2].set_title('Saude Humanos Idosos')
     
-    x1, = self.plot(axes[0, 0], x, cr_sus, '', 'green', '-', 'o')
-    y1, = self.plot(axes[0, 1], x, jo_sus, '', 'green', '-', '*')
-    z1, = self.plot(axes[1, 0], x, ad_sus, '', 'green', '-', 'x')
-    w1, = self.plot(axes[1, 1], x, id_sus, '', 'green', '-', 'v')
+    x1, = self.plot(axes[0, 0], x, be_sus, '', 'green', '-', 'o')
+    y1, = self.plot(axes[0, 1], x, cr_sus, '', 'green', '-', '>')
+    z1, = self.plot(axes[0, 2], x, do_sus, '', 'green', '-', '<')
+    w1, = self.plot(axes[1, 0], x, jo_sus, '', 'green', '-', '*')
+    r1, = self.plot(axes[1, 1], x, ad_sus, '', 'green', '-', 'x')
+    t1, = self.plot(axes[1, 2], x, id_sus, '', 'green', '-', 'v')
     
-    x2, = self.plot(axes[0, 0], x, cr_exp, '', 'brown', '-', 'o')
-    y2, = self.plot(axes[0, 1], x, jo_exp, '', 'brown', '-', '*')
-    z2, = self.plot(axes[1, 0], x, ad_exp, '', 'brown', '-', 'x')
-    w2, = self.plot(axes[1, 1], x, id_exp, '', 'brown', '-', 'v')
+    x2, = self.plot(axes[0, 0], x, be_exp, '', 'brown', '-', 'o')
+    y2, = self.plot(axes[0, 1], x, cr_exp, '', 'brown', '-', '>')
+    z2, = self.plot(axes[0, 2], x, do_exp, '', 'brown', '-', '<')
+    w2, = self.plot(axes[1, 0], x, jo_exp, '', 'brown', '-', '*')
+    r2, = self.plot(axes[1, 1], x, ad_exp, '', 'brown', '-', 'x')
+    t2, = self.plot(axes[1, 2], x, id_exp, '', 'brown', '-', 'v')
     
-    x3, = self.plot(axes[0, 0], x, cr_inf, '', 'red', '-', 'o')
-    y3, = self.plot(axes[0, 1], x, jo_inf, '', 'red', '-', '*')
-    z3, = self.plot(axes[1, 0], x, ad_inf, '', 'red', '-', 'x')
-    w3, = self.plot(axes[1, 1], x, id_inf, '', 'red', '-', 'v')
+    x3, = self.plot(axes[0, 0], x, be_inf, '', 'red', '-', 'o')
+    y3, = self.plot(axes[0, 1], x, cr_inf, '', 'red', '-', '>')
+    z3, = self.plot(axes[0, 2], x, do_inf, '', 'red', '-', '<')
+    w3, = self.plot(axes[1, 0], x, jo_inf, '', 'red', '-', '*')
+    r3, = self.plot(axes[1, 1], x, ad_inf, '', 'red', '-', 'x')
+    t3, = self.plot(axes[1, 2], x, id_inf, '', 'red', '-', 'v')
     
-    x4, = self.plot(axes[0, 0], x, cr_qua, '', 'LightCoral', '-', 'o')
-    y4, = self.plot(axes[0, 1], x, jo_qua, '', 'LightCoral', '-', '*')
-    z4, = self.plot(axes[1, 0], x, ad_qua, '', 'LightCoral', '-', 'x')
-    w4, = self.plot(axes[1, 1], x, id_qua, '', 'LightCoral', '-', 'v')
+    x4, = self.plot(axes[0, 0], x, be_qua, '', 'LightCoral', '-', 'o')
+    y4, = self.plot(axes[0, 1], x, cr_qua, '', 'LightCoral', '-', '>')
+    z4, = self.plot(axes[0, 2], x, do_qua, '', 'LightCoral', '-', '<')
+    w4, = self.plot(axes[1, 0], x, jo_qua, '', 'LightCoral', '-', '*')
+    r4, = self.plot(axes[1, 1], x, ad_qua, '', 'LightCoral', '-', 'x')
+    t4, = self.plot(axes[1, 2], x, id_qua, '', 'LightCoral', '-', 'v')
     
-    x5, = self.plot(axes[0, 0], x, cr_imu, '', 'magenta', '-', 'o')
-    y5, = self.plot(axes[0, 1], x, jo_imu, '', 'magenta', '-', '*')
-    z5, = self.plot(axes[1, 0], x, ad_imu, '', 'magenta', '-', 'x')
-    w5, = self.plot(axes[1, 1], x, id_imu, '', 'magenta', '-', 'v')
+    x5, = self.plot(axes[0, 0], x, be_imu, '', 'magenta', '-', 'o')
+    y5, = self.plot(axes[0, 1], x, cr_imu, '', 'magenta', '-', '>')
+    z5, = self.plot(axes[0, 2], x, do_imu, '', 'magenta', '-', '<')
+    w5, = self.plot(axes[1, 0], x, jo_imu, '', 'magenta', '-', '*')
+    r5, = self.plot(axes[1, 1], x, ad_imu, '', 'magenta', '-', 'x')
+    t5, = self.plot(axes[1, 2], x, id_imu, '', 'magenta', '-', 'v')
     
-    x6, = self.plot(axes[0, 0], x, cr_rec, '', 'blue', '-', 'o')
-    y6, = self.plot(axes[0, 1], x, jo_rec, '', 'blue', '-', '*')
-    z6, = self.plot(axes[1, 0], x, ad_rec, '', 'blue', '-', 'x')
-    w6, = self.plot(axes[1, 1], x, id_rec, '', 'blue', '-', 'v')
+    x6, = self.plot(axes[0, 0], x, be_rec, '', 'blue', '-', 'o')
+    y6, = self.plot(axes[0, 1], x, cr_rec, '', 'blue', '-', '>')
+    z6, = self.plot(axes[0, 2], x, do_rec, '', 'blue', '-', '<')
+    w6, = self.plot(axes[1, 0], x, jo_rec, '', 'blue', '-', '*')
+    r6, = self.plot(axes[1, 1], x, ad_rec, '', 'blue', '-', 'x')
+    t6, = self.plot(axes[1, 2], x, id_rec, '', 'blue', '-', 'v')
     
     axes[0, 0].axis('tight')
     axes[0, 1].axis('tight')
+    axes[0, 2].axis('tight')
     axes[1, 0].axis('tight')
     axes[1, 1].axis('tight')
+    axes[1, 2].axis('tight')
    
-    handles = (x1, y1, z1, w1, 
-               x2, y2, z2, w2, 
-               x3, y3, z3, w3,
-               x4, y4, z4, w4, 
-               x5, y5, z5, w5, 
-               x6, y6, z6, w6)
-    labels = ('Criancas Suscetiveis', 'Jovens Suscetiveis', 
+    handles = (x1, y1, z1, w1, r1, t1, 
+               x2, y2, z2, w2, r2, t2, 
+               x3, y3, z3, w3, r3, t3, 
+               x4, y4, z4, w4, r4, t4, 
+               x5, y5, z5, w5, r5, t5, 
+               x6, y6, z6, w6, r6, t6)
+    labels = ('Bebes Suscetiveis', 'Criancas Suscetiveis',
+              'Adolescentes Suscetiveis', 'Jovens Suscetiveis',  
               'Adultos Suscetiveis', 'Idosos Suscetiveis', 
-              'Criancas Expostos', 'Jovens Expostos', 
-               'Adultos Expostos', 'Idosos Expostos', 
-              'Criancas Infectados', 'Jovens Infectados', 
+              'Bebes Expostos', 'Criancas Expostos', 
+              'Adolescentes Expostos', 'Jovens Expostos', 
+              'Adultos Expostos', 'Idosos Expostos', 
+              'Bebes Infectados', 'Criancas Infectados', 
+              'Adolescentes Infectados', 'Jovens Infectados', 
               'Adultos Infectados',  'Idosos Infectados', 
-              'Criancas Quarentena', 'Jovens Quarentena', 
+              'Bebes Quarentena', 'Criancas Quarentena', 
+              'Adolescentes Quarentena', 'Jovens Quarentena', 
               'Adultos Quarentena', 'Idosos Quarentena', 
-              'Criancas Imunizados', 'Jovens Imunizados', 
+              'Bebes Imunizados', 'Criancas Imunizados', 
+              'Adolescentes Imunizados', 'Jovens Imunizados', 
               'Adultos Imunizados', 'Idosos Imunizados', 
-              'Criancas Recuperados', 'Jovens Recuperados', 
+              'Bebes Recuperados', 'Criancas Recuperados', 
+              'Adolescentes Recuperados', 'Jovens Recuperados', 
               'Adultos Recuperados', 'Idosos Recuperados')
     self.conf_multi_graf(fig, handles, labels, '_Saude_x_FaixaEtaria', 6, 0.25)
   
   def criar_grafico_saude_sexo(self):
     x = [i[0] for i in self.dados]
 
-    m_sus = [sum(i[1:25:6]) for i in self.dados]
-    m_exp = [sum(i[2:25:6]) for i in self.dados]
-    m_inf = [sum(i[3:25:6]) for i in self.dados]
-    m_qua = [sum(i[4:25:6]) for i in self.dados]
-    m_imu = [sum(i[5:25:6]) for i in self.dados]
-    m_rec = [sum(i[6:25:6]) for i in self.dados]
+    m_sus = [sum(i[1:37:6]) for i in self.dados]
+    m_exp = [sum(i[2:37:6]) for i in self.dados]
+    m_inf = [sum(i[3:37:6]) for i in self.dados]
+    m_qua = [sum(i[4:37:6]) for i in self.dados]
+    m_imu = [sum(i[5:37:6]) for i in self.dados]
+    m_rec = [sum(i[6:37:6]) for i in self.dados]
 
-    f_sus = [sum(i[25::6]) for i in self.dados]
-    f_exp = [sum(i[26::6]) for i in self.dados]
-    f_inf = [sum(i[27::6]) for i in self.dados]
-    f_qua = [sum(i[28::6]) for i in self.dados]
-    f_imu = [sum(i[29::6]) for i in self.dados]
-    f_rec = [sum(i[30::6]) for i in self.dados]
+    f_sus = [sum(i[37::6]) for i in self.dados]
+    f_exp = [sum(i[38::6]) for i in self.dados]
+    f_inf = [sum(i[39::6]) for i in self.dados]
+    f_qua = [sum(i[40::6]) for i in self.dados]
+    f_imu = [sum(i[41::6]) for i in self.dados]
+    f_rec = [sum(i[42::6]) for i in self.dados]
 
     plt.title('Sexos e Saude Humanos')
     self.plot(plt, x, m_sus, 'Masculinos Saudaveis', 'green', '-', '')
@@ -308,19 +366,29 @@ class GraficosQuantidadesHumanos:
   def criar_grafico_faixa_etaria_sexo(self):
     x = [i[0] for i in self.dados]
 
-    cr_m = [sum(i[1:7]) for i in self.dados]
-    jo_m = [sum(i[7:13]) for i in self.dados]
-    ad_m = [sum(i[13:19]) for i in self.dados]
-    id_m = [sum(i[19:25]) for i in self.dados]
+    be_m = [sum(i[1:7]) for i in self.dados]
+    cr_m = [sum(i[7:13]) for i in self.dados]
+    do_m = [sum(i[13:19]) for i in self.dados]
+    jo_m = [sum(i[19:25]) for i in self.dados]
+    ad_m = [sum(i[25:31]) for i in self.dados]
+    id_m = [sum(i[31:37]) for i in self.dados]
 
-    cr_f = [sum(i[25:31]) for i in self.dados]
-    jo_f = [sum(i[31:37]) for i in self.dados]
-    ad_f = [sum(i[37:43]) for i in self.dados]
-    id_f = [sum(i[43:49]) for i in self.dados]
+    be_f = [sum(i[37:43]) for i in self.dados]
+    cr_f = [sum(i[43:49]) for i in self.dados]
+    do_f = [sum(i[49:55]) for i in self.dados]
+    jo_f = [sum(i[55:61]) for i in self.dados]
+    ad_f = [sum(i[61:67]) for i in self.dados]
+    id_f = [sum(i[67:73]) for i in self.dados]
 
     plt.title('Sexos e Faixas Etarias Humanos')
-    self.plot(plt, x, cr_m, 'Masculinos Criancas', 'blue', '-', 'o')
-    self.plot(plt, x, cr_f, 'Femininos Criancas', 'blue', '--', 'o')
+    self.plot(plt, x, be_m, 'Masculinos Bebes', 'blue', '-', 'o')
+    self.plot(plt, x, be_f, 'Femininos Bebes', 'blue', '--', 'o')
+
+    self.plot(plt, x, cr_m, 'Masculinos Criancas', 'LightCoral', '-', '>')
+    self.plot(plt, x, cr_f, 'Femininos Criancas', 'LightCoral', '--', '>')
+
+    self.plot(plt, x, do_m, 'Masculinos Adolescentes', 'red', '-', '<')
+    self.plot(plt, x, do_f, 'Femininos Adolescentes', 'red', '--', '<')
 
     self.plot(plt, x, jo_m, 'Masculinos Jovens', 'brown', '-', '*')
     self.plot(plt, x, jo_f, 'Femininos Jovens', 'brown', '--', '*')
@@ -331,7 +399,7 @@ class GraficosQuantidadesHumanos:
     self.plot(plt, x, id_m, 'Masculinos Idosos', 'green', '-', 'v')
     self.plot(plt, x, id_f, 'Femininos Idosos', 'green', '--', 'v')
 
-    self.conf_uni_graf('_FaixaEtaria_x_Sexo', 4)
+    self.conf_uni_graf('_FaixaEtaria_x_Sexo', 6)
   
   def criar_graficos(self):
     proc = []

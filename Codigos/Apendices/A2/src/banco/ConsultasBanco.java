@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,11 +15,15 @@ import java.util.stream.Collectors;
 import javax.swing.JOptionPane;
 
 import estruturas.CasoInfeccao;
+import estruturas.Controle;
+import estruturas.ControlePonto;
 import estruturas.Local;
 import estruturas.Ponto;
+import estruturas.Raio;
 import estruturas.TipoTrajeto;
+import estruturas.Vacinado;
 import estruturas.Vizinhanca;
-import main.GeradorArquivosAmbientaisAcoplado;
+import main.GeradorArquivosAmbientais;
 
 public class ConsultasBanco {
 
@@ -27,31 +32,36 @@ public class ConsultasBanco {
 	private static final String BOA_VISTA = "BoaVista";
 	private static final String CASCAVEL = "Cascavel";
 
-	private static final String HOST = "localhost";
+	private static final String HOST = "lcad-server";
 	private static final String PORTA = "5432";
 	private static final String BASE_BANCO = "BaseGeo";
 	private static final String USUARIO_BANCO = "postgres";
 	private static final String SENHA_BANCO = "postgres";
 
-	static final String TABELA_CONFIG = "config";
-	static final String TABELA_PONTOS = "pontos";
-	static final String TABELA_PONTOS_ESQUINAS = "pontosesquinas";
-	static final String TABELA_VIZINHANCAS_MOORE_PONTOS = "vizinhancasmoorepontos";
-	static final String TABELA_POLIGONOS = "poligonos";
-	static final String TABELA_ARESTAS = "arestas";
-	static final String TABELA_CENTROIDES_ESQUINAS = "centroidesesquinas";
-	static final String TABELA_CENTROIDES_LOTES = "centroideslotes";
-	static final String TABELA_DISTRIBUICAO_MOSQUITOS = "distribuicaomosquitos";
-	static final String TABELA_DISTRIBUICAO_HUMANOS = "distribuicaohumanos";
-	static final String TABELA_QUADRAS_VACINACAO = "quadrasvacinacao";
-	static final String TABELA_FAIXAS_ETARIAS_VACINACAO = "faixasetariasvacinacao";
-	static final String TABELA_CICLOS_VACINACAO = "ciclosvacinacao";
-	static final String TABELA_QUADRAS_RAIO = "quadrasraio";
-	static final String TABELA_QUADRAS_BLOQUEIO = "quadrasbloqueio";
-	static final String TABELA_QUADRAS_BLOQUEIO_BIOLOGICO = "quadrascontrolebiologico";
-	static final String TABELA_QUADRAS_CONTROLE_AMBIENTAL = "quadrascontroleambiental";
-	static final String TABELA_LOTES_PONTOS_ESTRATEGICOS = "lotespontosestrategicos";
-	static final String TABELA_TIPOS_TRAJETOS = "tipos_trajetos";
+	private static final String TABELA_CONFIG = "config";
+	private static final String TABELA_PONTOS = "pontos";
+	private static final String TABELA_PONTOS_ESQUINAS = "pontosesquinas";
+	private static final String TABELA_VIZINHANCAS_MOORE_PONTOS = "vizinhancasmoorepontos";
+	private static final String TABELA_POLIGONOS = "poligonos";
+	private static final String TABELA_ARESTAS = "arestas";
+	private static final String TABELA_CENTROIDES_ESQUINAS = "centroidesesquinas";
+	private static final String TABELA_CENTROIDES_LOTES = "centroideslotes";
+	private static final String TABELA_DISTRIBUICAO_MOSQUITOS = "distribuicaomosquitos";
+	private static final String TABELA_DISTRIBUICAO_HUMANOS = "distribuicaohumanos";
+	private static final String TABELA_QUADRAS_VACINACAO = "quadrasvacinacao";
+	private static final String TABELA_FAIXAS_ETARIAS_VACINACAO = "faixasetariasvacinacao";
+	private static final String TABELA_CICLOS_VACINACAO = "ciclosvacinacao";
+	private static final String TABELA_CONTROLES = "controles";
+	private static final 
+	String TABELA_QUADRAS_BLOQUEIO_BIOLOGICO = "quadrascontrolebiologico";
+	private static final 
+	String TABELA_QUADRAS_CONTROLE_AMBIENTAL = "quadrascontroleambiental";
+	private static final String TABELA_LOTES_PONTOS_ESTRATEGICOS = "lotespontosestrategicos";
+	private static final String TABELA_TIPOS_TRAJETOS = "tipos_trajetos";
+	private static final String TABELA_CONTROLES_PONTOS = "controles_pontos";
+	private static final String TABELA_PONTOS_RAIOS = "raios";
+	private static final String TABELA_VACINADOS = "vacinados";
+	private static final String TABELA_CLIMATICOS = "climaticos";
 
 	private String ambiente, ambienteDoenca;
 
@@ -85,8 +95,8 @@ public class ConsultasBanco {
 		return c;
 	}
 
-	public static HashMap<String, String> getConfig() {
-		HashMap<String, String> retorno = new HashMap<>();
+	public static Map<String, String> getConfig() {
+		Map<String, String> retorno = new HashMap<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -106,8 +116,8 @@ public class ConsultasBanco {
 		return retorno;
 	}
 
-	public HashMap<String, HashMap<String, ArrayList<Ponto>>> getPontos() {
-		HashMap<String, HashMap<String, ArrayList<Ponto>>> retorno = new HashMap<>();
+	public Map<String, Map<String, List<Ponto>>> getPontos() {
+		Map<String, Map<String, List<Ponto>>> retorno = new HashMap<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -136,8 +146,8 @@ public class ConsultasBanco {
 		return retorno;
 	}
 
-	public HashMap<String, ArrayList<Ponto>> getPontosEsquinas() {
-		HashMap<String, ArrayList<Ponto>> retorno = new HashMap<>();
+	public Map<String, List<Ponto>> getPontosEsquinas() {
+		Map<String, List<Ponto>> retorno = new HashMap<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -165,8 +175,8 @@ public class ConsultasBanco {
 		return retorno;
 	}
 
-	public ArrayList<Vizinhanca> getVizinhancasMoorePontos() {
-		ArrayList<Vizinhanca> retorno = new ArrayList<>();
+	public List<Vizinhanca> getVizinhancasMoorePontos() {
+		List<Vizinhanca> retorno = new ArrayList<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -201,8 +211,8 @@ public class ConsultasBanco {
 		return retorno;
 	}
 
-	public ArrayList<Local> getPoligonos() {
-		ArrayList<Local> retorno = new ArrayList<>();
+	public List<Local> getPoligonos() {
+		List<Local> retorno = new ArrayList<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -223,9 +233,8 @@ public class ConsultasBanco {
 		return retorno;
 	}
 
-	public HashMap<String, HashMap<String, ArrayList<ArrayList<String>>>> getArestas() {
-		HashMap<String, HashMap<String, ArrayList<ArrayList<String>>>> retorno 
-		= new HashMap<>();
+	public Map<String, Map<String, List<List<String>>>> getArestas() {
+		Map<String, Map<String, List<List<String>>>> retorno = new HashMap<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -233,7 +242,7 @@ public class ConsultasBanco {
 					.prepareStatement("SELECT * FROM " + ambiente + TABELA_ARESTAS);
 			ResultSet rs = stmt.executeQuery();
 			while (rs.next()) {
-				ArrayList<String> temp = new ArrayList<>();
+				List<String> temp = new ArrayList<>();
 				temp.add(rs.getString("l1"));
 				temp.add(rs.getString("q1"));
 				temp.add(rs.getString("l2"));
@@ -252,8 +261,8 @@ public class ConsultasBanco {
 		return retorno;
 	}
 
-	public HashMap<String, ArrayList<Ponto>> getCentroidesEsquinas() {
-		HashMap<String, ArrayList<Ponto>> retorno = new HashMap<>();
+	public Map<String, List<Ponto>> getCentroidesEsquinas() {
+		Map<String, List<Ponto>> retorno = new HashMap<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -268,7 +277,7 @@ public class ConsultasBanco {
 				int ref = rs.getInt("ref");
 				retorno.putIfAbsent(l1, new ArrayList<Ponto>());
 				retorno.get(l1).add(
-						new Ponto(0, GeradorArquivosAmbientaisAcoplado.RUA, l2, x, y, ref));
+						new Ponto(0, GeradorArquivosAmbientais.RUA, l2, x, y, ref));
 			}
 			rs.close();
 			stmt.close();
@@ -280,8 +289,8 @@ public class ConsultasBanco {
 		return retorno;
 	}
 
-	public HashMap<String, HashMap<String, Ponto>> getCentroidesLotes() {
-		HashMap<String, HashMap<String, Ponto>> retorno = new HashMap<>();
+	public Map<String, Map<String, Ponto>> getCentroidesLotes() {
+		Map<String, Map<String, Ponto>> retorno = new HashMap<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -307,8 +316,8 @@ public class ConsultasBanco {
 		return retorno;
 	}
 
-	public ArrayList<List<String>> getDistribuicaoMosquitos() {
-		ArrayList<List<String>> retorno = new ArrayList<>();
+	public List<List<String>> getDistribuicaoMosquitos() {
+		List<List<String>> retorno = new ArrayList<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -321,15 +330,15 @@ public class ConsultasBanco {
 						.toString(rs.getInt("quantidade_total"));
 				String sexo = rs.getString("sexo");
 				String fase = rs.getString("fase");
-				String percentualMinimoInfectados = Double
-						.toString(rs.getDouble("percentual_minimo_infectados"));
-				String percentualMaximoInfectados = Double
-						.toString(rs.getDouble("percentual_maximo_infectados"));
+				String probabilidadeMinimoInfectados = Double
+						.toString(rs.getDouble("probabilidade_minimo_infectados"));
+				String probabilidadeMaximoInfectados = Double
+						.toString(rs.getDouble("probabilidade_maximo_infectados"));
 				String sorotipo = Integer.toString(rs.getInt("sorotipo"));
 				String ciclo = Integer.toString(rs.getInt("ciclo"));
 				retorno.add(Arrays.asList(quadra, quantidadeTotal, sexo, fase,
-						percentualMinimoInfectados, percentualMaximoInfectados, sorotipo,
-						ciclo));
+						probabilidadeMinimoInfectados, probabilidadeMaximoInfectados,
+						sorotipo, ciclo));
 			}
 			rs.close();
 			stmt.close();
@@ -341,8 +350,8 @@ public class ConsultasBanco {
 		return retorno;
 	}
 
-	public ArrayList<CasoInfeccao> getDistribuicaoHumanos() {
-		ArrayList<CasoInfeccao> retorno = new ArrayList<>();
+	public List<CasoInfeccao> getDistribuicaoHumanos() {
+		List<CasoInfeccao> retorno = new ArrayList<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -367,7 +376,7 @@ public class ConsultasBanco {
 	}
 
 	public List<String> getQuadrasVacinacao() {
-		ArrayList<String> retorno = new ArrayList<>();
+		List<String> retorno = new ArrayList<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -388,7 +397,7 @@ public class ConsultasBanco {
 	}
 
 	public List<String> getFaixasEtariasVacinacao() {
-		ArrayList<String> retorno = new ArrayList<>();
+		List<String> retorno = new ArrayList<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -397,17 +406,23 @@ public class ConsultasBanco {
 			ResultSet rs = stmt.executeQuery();
 			while (rs.next()) {
 				String fe = rs.getString("faixa_etaria");
-				if (fe.equals("Crianca")) {
+				if (fe.equals("Bebe")) {
 					fe = new String("0");
 				}
-				if (fe.equals("Jovem")) {
+				if (fe.equals("Crianca")) {
 					fe = new String("1");
 				}
-				if (fe.equals("Adulto")) {
+				if (fe.equals("Adolescente")) {
 					fe = new String("2");
 				}
-				if (fe.equals("Idoso")) {
+				if (fe.equals("Jovem")) {
+					fe = new String("3");
+				}
+				if (fe.equals("Adulto")) {
 					fe = new String("4");
+				}
+				if (fe.equals("Idoso")) {
+					fe = new String("5");
 				}
 				retorno.add(fe);
 			}
@@ -422,7 +437,7 @@ public class ConsultasBanco {
 	}
 
 	public List<String> getCiclosVacinacao() {
-		ArrayList<String> retorno = new ArrayList<>();
+		List<String> retorno = new ArrayList<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -442,16 +457,26 @@ public class ConsultasBanco {
 		return retorno;
 	}
 
-	public List<String> getQuadrasRaio() {
-		ArrayList<String> retorno = new ArrayList<>();
+	public List<Controle> getControles() {
+		List<Controle> retorno = new ArrayList<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
 			stmt = connection.prepareStatement(
-					"SELECT * FROM " + ambienteDoenca + TABELA_QUADRAS_RAIO);
+					"SELECT * FROM " + ambienteDoenca + TABELA_CONTROLES);
 			ResultSet rs = stmt.executeQuery();
 			while (rs.next()) {
-				retorno.add(rs.getString("quadra"));
+				String quadra = rs.getString("quadra");
+				int cicloInicio = rs.getInt("ciclo_inicio");
+				int cicloTermino = rs.getInt("ciclo_termino");
+				String tipoControle = rs.getString("tipo_controle");
+				double taxaMinMecanico = rs.getDouble("taxa_min_mecanico");
+				double taxaMaxMecanico = rs.getDouble("taxa_max_mecanico");
+				double taxaMinQuimico = rs.getDouble("taxa_min_quimico");
+				double taxaMaxQuimico = rs.getDouble("taxa_max_quimico");
+				retorno.add(new Controle(quadra, (cicloInicio + cicloTermino) / 2,
+						tipoControle, taxaMinMecanico, taxaMaxMecanico, taxaMinQuimico,
+						taxaMaxQuimico));
 			}
 			rs.close();
 			stmt.close();
@@ -460,32 +485,12 @@ public class ConsultasBanco {
 			JOptionPane.showMessageDialog(null,
 					getClass().getName() + ": " + e.getMessage());
 		}
-		return retorno;
-	}
-
-	public List<String> getQuadrasBloqueio() {
-		ArrayList<String> retorno = new ArrayList<>();
-		PreparedStatement stmt = null;
-		Connection connection = connect();
-		try {
-			stmt = connection.prepareStatement(
-					"SELECT * FROM " + ambienteDoenca + TABELA_QUADRAS_BLOQUEIO);
-			ResultSet rs = stmt.executeQuery();
-			while (rs.next()) {
-				retorno.add(rs.getString("quadra"));
-			}
-			rs.close();
-			stmt.close();
-			connection.close();
-		} catch (Exception e) {
-			JOptionPane.showMessageDialog(null,
-					getClass().getName() + ": " + e.getMessage());
-		}
+		retorno.sort(Comparator.comparing(Controle::getCiclo));
 		return retorno;
 	}
 
 	public List<String> getQuadrasControleBiologico() {
-		ArrayList<String> retorno = new ArrayList<>();
+		List<String> retorno = new ArrayList<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -506,7 +511,7 @@ public class ConsultasBanco {
 	}
 
 	public List<String> getQuadrasControleAmbiental() {
-		ArrayList<String> retorno = new ArrayList<>();
+		List<String> retorno = new ArrayList<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -527,7 +532,7 @@ public class ConsultasBanco {
 	}
 
 	public List<List<String>> getLotesPontosEstrategicos() {
-		ArrayList<List<String>> retorno = new ArrayList<>();
+		List<List<String>> retorno = new ArrayList<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -549,7 +554,7 @@ public class ConsultasBanco {
 	}
 
 	public Map<String, List<TipoTrajeto>> getTiposTrajetos() {
-		ArrayList<TipoTrajeto> retorno = new ArrayList<>();
+		List<TipoTrajeto> retorno = new ArrayList<>();
 		PreparedStatement stmt = null;
 		Connection connection = connect();
 		try {
@@ -575,4 +580,125 @@ public class ConsultasBanco {
 				.collect(Collectors.groupingBy(TipoTrajeto::getFaixaEtaria));
 	}
 
+	public Map<Integer, List<ControlePonto>> getControlesPontos() {
+		Map<Integer, List<ControlePonto>> retorno = new HashMap<>();
+		PreparedStatement stmt = null;
+		Connection connection = connect();
+		try {
+			stmt = connection.prepareStatement(
+					"SELECT * FROM " + ambienteDoenca + TABELA_CONTROLES_PONTOS);
+			ResultSet rs = stmt.executeQuery();
+			while (rs.next()) {
+				int idControle = rs.getInt("id_controle");
+				String quadra = rs.getString("quadra");
+				String lote = rs.getString("lote");
+				double x = rs.getDouble("x");
+				double y = rs.getDouble("y");
+
+				retorno.putIfAbsent(idControle, new ArrayList<>());
+				retorno.get(idControle)
+						.add(new ControlePonto(idControle, quadra, lote, x, y));
+			}
+			rs.close();
+			stmt.close();
+			connection.close();
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null,
+					getClass().getName() + ": " + e.getMessage());
+		}
+		return retorno;
+	}
+
+	public Map<Integer, List<Raio>> getPontosRaios() {
+		Map<Integer, List<Raio>> retorno = new HashMap<>();
+		PreparedStatement stmt = null;
+		Connection connection = connect();
+		try {
+			stmt = connection.prepareStatement(
+					"SELECT * FROM " + ambienteDoenca + TABELA_PONTOS_RAIOS);
+			ResultSet rs = stmt.executeQuery();
+			while (rs.next()) {
+				int idControle = rs.getInt("id_controle");
+				String quadra = rs.getString("quadra");
+				String lote = rs.getString("lote");
+				double x = rs.getDouble("x");
+				double y = rs.getDouble("y");
+
+				retorno.putIfAbsent(idControle, new ArrayList<>());
+				retorno.get(idControle).add(new Raio(idControle, quadra, lote, x, y));
+			}
+			rs.close();
+			stmt.close();
+			connection.close();
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null,
+					getClass().getName() + ": " + e.getMessage());
+		}
+		return retorno;
+	}
+
+	public List<Vacinado> getVacinados() {
+		List<Vacinado> retorno = new ArrayList<>();
+		PreparedStatement stmt = null;
+		Connection connection = connect();
+		try {
+			stmt = connection.prepareStatement(
+					"SELECT * FROM " + ambienteDoenca + TABELA_VACINADOS);
+			ResultSet rs = stmt.executeQuery();
+			while (rs.next()) {
+				int ciclo = rs.getInt("ciclo");
+				String quadra = rs.getString("quadra");
+				String lote = rs.getString("lote");
+				int x = rs.getInt("x");
+				int y = rs.getInt("y");
+				String sexo = rs.getString("sexo");
+				String faixaEtaria = rs.getString("faixa_etaria");
+				int doses = rs.getInt("doses");
+
+				retorno.add(
+						new Vacinado(ciclo, quadra, lote, x, y, sexo, faixaEtaria, doses));
+			}
+			rs.close();
+			stmt.close();
+			connection.close();
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null,
+					getClass().getName() + ": " + e.getMessage());
+		}
+		return retorno;
+	}
+
+	public Map<String, List<Double>> getClimaticos() {
+		Map<String, List<Double>> retorno = new HashMap<>();
+		retorno.put("txMinNaoAlados", new ArrayList<>());
+		retorno.put("txMaxNaoAlados", new ArrayList<>());
+		retorno.put("txMinAlados", new ArrayList<>());
+		retorno.put("txMaxAlados", new ArrayList<>());
+
+		PreparedStatement stmt = null;
+		Connection connection = connect();
+		try {
+			stmt = connection.prepareStatement(
+					"SELECT * FROM " + ambienteDoenca + TABELA_CLIMATICOS);
+			ResultSet rs = stmt.executeQuery();
+			while (rs.next()) {
+				double txMinNaoAlados = rs.getDouble("tx_min_nao_alados");
+				double txMaxNaoAlados = rs.getDouble("tx_max_nao_alados");
+				double txMinAlados = rs.getDouble("tx_min_alados");
+				double txMaxAlados = rs.getDouble("tx_max_alados");
+
+				retorno.get("txMinNaoAlados").add(txMinNaoAlados);
+				retorno.get("txMaxNaoAlados").add(txMaxNaoAlados);
+				retorno.get("txMinAlados").add(txMinAlados);
+				retorno.get("txMaxAlados").add(txMaxAlados);
+			}
+			rs.close();
+			stmt.close();
+			connection.close();
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null,
+					getClass().getName() + ": " + e.getMessage());
+		}
+		return retorno;
+	}
 }

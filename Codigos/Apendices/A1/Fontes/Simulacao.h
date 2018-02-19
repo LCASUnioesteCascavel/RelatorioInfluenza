@@ -24,16 +24,20 @@ using thrust::partition;
 using thrust::plus;
 using thrust::raw_pointer_cast;
 
+/*
+  Classe responsavel por armazenar todos os dados associados a execucao de uma 
+  simulacao individual. 
+*/
 class Simulacao {
 
-  int idSim, ciclo; string saidaSim, entradaMC; Seeds *seeds;
+  int idSim, ciclo; string saidaSim; Seeds *seeds;
   Parametros *parametros; Ambiente *ambiente; Saidas *saidas;
   Humanos *humanos; 
   
   public:
 
-  Simulacao(int idSim, string saidaSim, string entradaMC, Saidas *saidas, 
-            Parametros *parametros, Ambiente *ambiente);
+  Simulacao(int idSim, string saidaSim, Saidas *saidas, Parametros *parametros, 
+            Ambiente *ambiente);
   ~Simulacao();
 
   private:

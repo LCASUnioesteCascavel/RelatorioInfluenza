@@ -1,11 +1,11 @@
 package estruturas;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Rota {
 
 	private Local localInicial, localFinal;
-	private ArrayList<Local> ruas;
+	private List<Local> ruas;
 
 	public Rota(Local localInicio, Local localFinal) {
 		this.setLocalInicial(localInicio);
@@ -28,11 +28,11 @@ public class Rota {
 		this.localFinal = localFinal;
 	}
 
-	public ArrayList<Local> getRuas() {
+	public List<Local> getRuas() {
 		return ruas;
 	}
 
-	public void setRuas(ArrayList<Local> ruas) {
+	public void setRuas(List<Local> ruas) {
 		this.ruas = ruas;
 	}
 

@@ -21,6 +21,9 @@ using DVector = thrust::device_vector<T>;
 
 using thrust::raw_pointer_cast;
 
+/*
+  Classe que armazena todos os parametros da simulacao. 
+*/
 class Parametros {
 
   public:

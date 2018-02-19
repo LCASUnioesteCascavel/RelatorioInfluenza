@@ -72,6 +72,7 @@ public class CasoInfeccao {
 		return new Ponto(x, y);
 	}
 
+	Override
 	public String toString() {
 		return "CasoInfeccao [dia=" + dia + ", x=" + x + ", y=" + y
 				+ ", faixaEtaria=" + faixaEtaria + "]";

@@ -1,12 +1,9 @@
 package main;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -14,20 +11,23 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Random;
-import java.util.SortedMap;
+import java.util.Set;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import banco.ConsultasBanco;
 import estruturas.CasoInfeccao;
+import estruturas.Controle;
+import estruturas.ControlePonto;
 import estruturas.Local;
 import estruturas.Ponto;
+import estruturas.Raio;
 import estruturas.Rota;
 import estruturas.TipoTrajeto;
 import estruturas.TipoTrajeto.LocalPeriodo;
 import estruturas.Trajeto;
+import estruturas.Vacinado;
 import estruturas.Vizinhanca;
 
 public class Dengue {
@@ -37,56 +37,63 @@ public class Dengue {
 	public String nomeArquivoAmbiental;
 	public String nomeArquivoMovimentacao;
 	public String nomeArquivoControles;
+	public String nomeArquivoClimaticos;
 	public String nomeArquivoDistribuicaoMosquitos;
 	public String nomeArquivoDistribuicaoHumanos;
-	public String nomeArquivoSazonalidade;
 
-	private HashMap<String, String> params;
+	private Map<String, String> params;
 	private ConsultasBanco con;
-	private Map<String, HashMap<String, ArrayList<Ponto>>> pontos;
+	private Map<String, Map<String, List<Ponto>>> pontos;
 	private Map<String, Map<String, List<Vizinhanca>>> vizinhancas;
-	private Map<String, ArrayList<Ponto>> pontosEsquinas;
+	private Map<String, List<Ponto>> pontosEsquinas;
 	private Map<String, Integer> indicesQuadras;
-	private Map<String, SortedMap<String, Integer>> indicesLotes;
+	private Map<String, Map<String, Integer>> indicesLotes;
 	private Map<String, Map<String, List<Vizinhanca>>> fronteiras;
-	private ArrayList<Integer> indexQuadras, indexVizinhancas, vetorVizinhancas,
+	private List<Integer> indexQuadras, indexVizinhancas, vetorVizinhancas,
 			indexPosicoes, vetorPosicoes, indexFronteiras, vetorFronteiras,
 			indexEsquinas, vetorEsquinas, indexCentrosEsquinas, vetorCentrosEsquinas;
 	private Map<String, List<Local>> locais;
 	private List<Trajeto> trajetos;
-	private Map<String, HashMap<String, ArrayList<ArrayList<String>>>> arestas;
-	private Map<String, ArrayList<Ponto>> centroidesEsquinas;
-	private Map<String, HashMap<String, Ponto>> centroidesLotes;
+	private Map<String, Map<String, List<List<String>>>> arestas;
+	private Map<String, List<Ponto>> centroidesEsquinas;
+	private Map<String, Map<String, Ponto>> centroidesLotes;
 	private List<Integer> indexRotas, vetorRotas;
 	private List<Integer> indexTrajetos;
 	private List<Integer> indexPeriodos, vetorPeriodos;
-	int nRotas, nTrajetos, trajetosCriancas, trajetosJovens, trajetosAdultos,
-			trajetosIdosos;;
+	int nRotas, nTrajetos, trajetosBebes, trajetosCriancas, trajetosAdolescentes,
+			trajetosJovens, trajetosAdultos, trajetosIdosos;
 	private List<Integer> indexTrajetosFaixaEtaria;
 	private List<Integer> indexPosicoesRegioes;
 	private List<Local> poligonos;
 	private List<Local> vertices;
 	private List<List<String>> distribuicaoMosquitos;
 	private List<CasoInfeccao> distribuicaoHumanos;
-	private List<String> vac, fEVac, cicVac, raio, bloq, conBio, conAmb;
+	private List<String> vac, fEVac, cicVac, conBio, conAmb;
+	private List<Controle> controles;
 	private List<List<String>> ponEst;
 	private Map<String, List<TipoTrajeto>> tiposTrajetos;
+	private Map<Integer, List<ControlePonto>> controlesPontos;
+	private Map<Integer, List<Raio>> pontosRaios;
+	private List<Integer> indexRaios, vetorRaios;
+	private List<Integer> indexControlesPontos, vetorControlesPontos;
+	private List<Vacinado> vacs;
+	private Map<String, List<Double>> clim;
 
-	public Dengue(HashMap<String, String> params) {
+	public Dengue(Map<String, String> params) {
 		this.params = params;
 
-		this.pastaSaida = "Saidas" + File.separator + params.get("Ambiente") + "_"
+		this.pastaSaida = "./Saidas" + File.separator + params.get("Ambiente") + "_"
 				+ params.get("Doenca") + File.separator;
 		if (!new File(pastaSaida).exists()) {
-			new File(pastaSaida).mkdir();
+			new File(pastaSaida).mkdirs();
 		}
 
 		nomeArquivoAmbiental = pastaSaida + "0-AMB.csv";
 		nomeArquivoMovimentacao = pastaSaida + "1-MOV.csv";
 		nomeArquivoControles = pastaSaida + "2-CON.csv";
+		nomeArquivoClimaticos = pastaSaida + "3-CLI.csv";
 		nomeArquivoDistribuicaoMosquitos = pastaSaida + "DistribuicaoMosquitos.csv";
 		nomeArquivoDistribuicaoHumanos = pastaSaida + "DistribuicaoHumanos.csv";
-		nomeArquivoSazonalidade = pastaSaida + "Sazonalidade.csv";
 
 		con = new ConsultasBanco(params.get("Ambiente"), params.get("Doenca"));
 		pontos = con.getPontos();
@@ -94,7 +101,7 @@ public class Dengue {
 		poligonos = con.getPoligonos();
 		vertices = poligonos.stream()
 				.filter(
-						i -> i.getQuadra().equals(GeradorArquivosAmbientaisAcoplado.RUA))
+						i -> i.getQuadra().equals(GeradorArquivosAmbientais.RUA))
 				.map(i -> new Local(i.getLote(), i.getQuadra()))
 				.collect(Collectors.toList());
 		pontosEsquinas = con.getPontosEsquinas();
@@ -106,12 +113,15 @@ public class Dengue {
 		vac = con.getQuadrasVacinacao();
 		fEVac = con.getFaixasEtariasVacinacao();
 		cicVac = con.getCiclosVacinacao();
-		raio = con.getQuadrasRaio();
-		bloq = con.getQuadrasBloqueio();
+		controles = con.getControles();
 		conBio = con.getQuadrasControleBiologico();
 		conAmb = con.getQuadrasControleAmbiental();
 		ponEst = con.getLotesPontosEstrategicos();
 		tiposTrajetos = con.getTiposTrajetos();
+		controlesPontos = con.getControlesPontos();
+		pontosRaios = con.getPontosRaios();
+		vacs = con.getVacinados();
+		clim = con.getClimaticos();
 		gerarIndexQuadras();
 	}
 
@@ -147,7 +157,7 @@ public class Dengue {
 	}
 
 	private void gerarVizinhancas() {
-		ArrayList<Vizinhanca> ret = con.getVizinhancasMoorePontos();
+		List<Vizinhanca> ret = con.getVizinhancasMoorePontos();
 		ret.sort(null);
 
 		vizinhancas = new HashMap<>();
@@ -192,13 +202,13 @@ public class Dengue {
 	private int getRegiao(char c) {
 		int regiao = -1;
 		String c1 = Character.toString(c);
-		if (c1.equals(GeradorArquivosAmbientaisAcoplado.REGIAO_RUA)) {
+		if (c1.equals(GeradorArquivosAmbientais.REGIAO_RUA)) {
 			regiao = 0;
 		}
-		if (c1.equals(GeradorArquivosAmbientaisAcoplado.REGIAO_RURAL)) {
+		if (c1.equals(GeradorArquivosAmbientais.REGIAO_RURAL)) {
 			regiao = 1;
 		}
-		if (c1.equals(GeradorArquivosAmbientaisAcoplado.REGIAO_QUADRA)) {
+		if (c1.equals(GeradorArquivosAmbientais.REGIAO_QUADRA)) {
 			regiao = 2;
 		}
 		return regiao;
@@ -260,9 +270,8 @@ public class Dengue {
 	}
 
 	private void gerarFronteiras() {
-		ArrayList<Vizinhanca> ret = (ArrayList<Vizinhanca>) vizinhancas.entrySet()
-				.stream()
-				.filter(i -> !i.getKey().equals(GeradorArquivosAmbientaisAcoplado.RUA))
+		List<Vizinhanca> ret = vizinhancas.entrySet().stream()
+				.filter(i -> !i.getKey().equals(GeradorArquivosAmbientais.RUA))
 				.flatMap(i -> i.getValue().entrySet().stream())
 				.flatMap(i -> i.getValue().stream()).filter(i -> i.getSecond().isRua())
 				.collect(Collectors.toList());
@@ -283,8 +292,8 @@ public class Dengue {
 		for (String quadra : indicesQuadras.keySet()) {
 			indexFronteiras.add(desl);
 			for (String lote : indicesLotes.get(quadra).keySet()) {
-				if (!quadra.equals(GeradorArquivosAmbientaisAcoplado.RUA) && !quadra
-						.startsWith(GeradorArquivosAmbientaisAcoplado.REGIAO_RURAL)) {
+				if (!quadra.equals(GeradorArquivosAmbientais.RUA) \&\& !quadra
+						.startsWith(GeradorArquivosAmbientais.REGIAO_RURAL)) {
 					desl += fronteiras.get(quadra).get(lote).size();
 				}
 				indexFronteiras.add(desl);
@@ -296,8 +305,8 @@ public class Dengue {
 		vetorFronteiras = new ArrayList<>();
 		for (String quadra : indicesQuadras.keySet()) {
 			for (String lote : indicesLotes.get(quadra).keySet()) {
-				if (!quadra.equals(GeradorArquivosAmbientaisAcoplado.RUA) && !quadra
-						.startsWith(GeradorArquivosAmbientaisAcoplado.REGIAO_RURAL)) {
+				if (!quadra.equals(GeradorArquivosAmbientais.RUA) \&\& !quadra
+						.startsWith(GeradorArquivosAmbientais.REGIAO_RURAL)) {
 					for (Vizinhanca i : fronteiras.get(quadra).get(lote)) {
 						vetorFronteiras.add((int) i.getSecond().getX());
 						vetorFronteiras.add((int) i.getSecond().getY());
@@ -322,7 +331,7 @@ public class Dengue {
 	}
 
 	private void gerarVetorEsquinas() {
-		vetorEsquinas = (ArrayList<Integer>) pontosEsquinas.entrySet().stream()
+		vetorEsquinas = pontosEsquinas.entrySet().stream()
 				.sorted(Entry.comparingByKey()).flatMap(i -> i.getValue().stream())
 				.flatMap(i -> Stream.of((int) i.getX(), (int) i.getY(),
 						(int) indicesLotes.get(i.quadra).get(i.lote)))
@@ -334,7 +343,7 @@ public class Dengue {
 		int desl = 0;
 
 		indexCentrosEsquinas.add(desl);
-		for (String i : indicesLotes.get(GeradorArquivosAmbientaisAcoplado.RUA)
+		for (String i : indicesLotes.get(GeradorArquivosAmbientais.RUA)
 				.keySet()) {
 			if (centroidesEsquinas.containsKey(i)) {
 				desl += centroidesEsquinas.get(i).size();
@@ -344,9 +353,8 @@ public class Dengue {
 	}
 
 	private void gerarVetorCentrosEsquinas() {
-		vetorCentrosEsquinas = (ArrayList<Integer>) centroidesEsquinas.entrySet()
-				.stream().sorted(Entry.comparingByKey())
-				.flatMap(i -> i.getValue().stream())
+		vetorCentrosEsquinas = centroidesEsquinas.entrySet().stream()
+				.sorted(Entry.comparingByKey()).flatMap(i -> i.getValue().stream())
 				.flatMap(i -> Stream.of((int) i.getX(), (int) i.getY(),
 						(int) indicesLotes.get(i.quadra).get(i.lote)))
 				.collect(Collectors.toList());
@@ -355,26 +363,26 @@ public class Dengue {
 	private void distribuirLocais() {
 		List<Local> lotes = poligonos.stream()
 				.filter(i -> i.getQuadra()
-						.startsWith(GeradorArquivosAmbientaisAcoplado.REGIAO_QUADRA))
+						.startsWith(GeradorArquivosAmbientais.REGIAO_QUADRA))
 				.collect(Collectors.toList());
 
 		Collections.shuffle(lotes);
-		ArrayList<Local> locaisCasa = new ArrayList<>(
+		List<Local> locaisCasa = new ArrayList<>(
 				lotes.subList(0, Integer.parseInt(params.get("LotesCasa"))));
 		lotes.removeAll(locaisCasa);
 
 		Collections.shuffle(lotes);
-		ArrayList<Local> locaisTrabalho = new ArrayList<>(
+		List<Local> locaisTrabalho = new ArrayList<>(
 				lotes.subList(0, Integer.parseInt(params.get("LotesTrabalho"))));
 		lotes.removeAll(locaisTrabalho);
 
 		Collections.shuffle(lotes);
-		ArrayList<Local> locaisLazer = new ArrayList<>(
+		List<Local> locaisLazer = new ArrayList<>(
 				lotes.subList(0, Integer.parseInt(params.get("LotesLazer"))));
 		lotes.removeAll(locaisLazer);
 
 		Collections.shuffle(lotes);
-		ArrayList<Local> locaisEstudo = new ArrayList<>(
+		List<Local> locaisEstudo = new ArrayList<>(
 				lotes.subList(0, Integer.parseInt(params.get("LotesEstudo"))));
 		lotes.removeAll(locaisEstudo);
 
@@ -432,31 +440,35 @@ public class Dengue {
 		TipoTrajeto tipoTrajeto;
 
 		for (Local casa : locais.get("Casa")) {
-			// TRAJETO PARA CRIANCA
+			index = (int) (Math.random() * tiposTrajetos.get("Bebe").size());
+			tipoTrajeto = tiposTrajetos.get("Bebe").get(index);
+			trajetos.add(gerarTrajeto(Trajeto.BEBE, tipoTrajeto, casa));
+
 			index = (int) (Math.random() * tiposTrajetos.get("Crianca").size());
 			tipoTrajeto = tiposTrajetos.get("Crianca").get(index);
 			trajetos.add(gerarTrajeto(Trajeto.CRIANCA, tipoTrajeto, casa));
 
-			// TRAJETO PARA JOVEM
+			index = (int) (Math.random() * tiposTrajetos.get("Adolescente").size());
+			tipoTrajeto = tiposTrajetos.get("Adolescente").get(index);
+			trajetos.add(gerarTrajeto(Trajeto.ADOLESCENTE, tipoTrajeto, casa));
+
 			index = (int) (Math.random() * tiposTrajetos.get("Jovem").size());
 			tipoTrajeto = tiposTrajetos.get("Jovem").get(index);
 			trajetos.add(gerarTrajeto(Trajeto.JOVEM, tipoTrajeto, casa));
 
-			// TRAJETO PARA ADULTO
 			index = (int) (Math.random() * tiposTrajetos.get("Adulto").size());
 			tipoTrajeto = tiposTrajetos.get("Adulto").get(index);
 			trajetos.add(gerarTrajeto(Trajeto.ADULTO, tipoTrajeto, casa));
 
-			// TRAJETO PARA IDOSO
 			index = (int) (Math.random() * tiposTrajetos.get("Idoso").size());
 			tipoTrajeto = tiposTrajetos.get("Idoso").get(index);
 			trajetos.add(gerarTrajeto(Trajeto.IDOSO, tipoTrajeto, casa));
 		}
 	}
 
-	private ArrayList<Local> aEstrelaConstruirCaminho(
-			HashMap<Local, Local> verticesAnteriores, Local verticeAtual) {
-		ArrayList<Local> caminho = new ArrayList<>();
+	private List<Local> aEstrelaConstruirCaminho(
+			Map<Local, Local> verticesAnteriores, Local verticeAtual) {
+		List<Local> caminho = new ArrayList<>();
 		caminho.add(verticeAtual);
 		while (verticesAnteriores.keySet().contains(verticeAtual)) {
 			verticeAtual = verticesAnteriores.get(verticeAtual);
@@ -471,29 +483,29 @@ public class Dengue {
 		Local verticeOrigem = rota.getLocalInicial();
 		Local verticeDestino = rota.getLocalFinal();
 
-		HashSet<Local> verticesJaVisitados = new HashSet<>();
+		Set<Local> verticesJaVisitados = new HashSet<>();
 
-		HashSet<Local> verticesNaoVisitados = new HashSet<>();
+		Set<Local> verticesNaoVisitados = new HashSet<>();
 
-		ArrayList<String> primeiraRuaAux = arestas.get(verticeOrigem.getQuadra())
+		List<String> primeiraRuaAux = arestas.get(verticeOrigem.getQuadra())
 				.get(verticeOrigem.getLote()).stream()
-				.filter(i -> i.get(3).equals(GeradorArquivosAmbientaisAcoplado.RUA))
+				.filter(i -> i.get(3).equals(GeradorArquivosAmbientais.RUA))
 				.findFirst().get();
 		Local primeiraRua = new Local(primeiraRuaAux.get(3), primeiraRuaAux.get(2));
 		verticesNaoVisitados.add(primeiraRua);
 
-		HashMap<Local, Local> verticesAnteriores = new HashMap<>();
+		Map<Local, Local> verticesAnteriores = new HashMap<>();
 		for (Local vertice : vertices) {
 			verticesAnteriores.put(vertice, null);
 		}
 
-		HashMap<Local, Double> distanciaOrigemAoAtual = new HashMap<>();
+		Map<Local, Double> distanciaOrigemAoAtual = new HashMap<>();
 		for (Local vertice : vertices) {
 			distanciaOrigemAoAtual.put(vertice, Double.MAX_VALUE);
 		}
 		distanciaOrigemAoAtual.put(primeiraRua, 0.0);
 
-		HashMap<Local, Double> distanciaAtualAoDestino = new HashMap<>();
+		Map<Local, Double> distanciaAtualAoDestino = new HashMap<>();
 		for (Local vertice : vertices) {
 			distanciaAtualAoDestino.put(vertice, Double.MAX_VALUE);
 		}
@@ -514,7 +526,7 @@ public class Dengue {
 
 			if (arestas.get(atual.getQuadra()).get(atual.getLote()).stream()
 					.filter(i -> i.get(2).equals(verticeDestino.getLote())
-							&& i.get(3).equals(verticeDestino.getQuadra()))
+							\&\& i.get(3).equals(verticeDestino.getQuadra()))
 					.count() > 0) {
 				rota.setRuas(aEstrelaConstruirCaminho(verticesAnteriores, atual));
 				return;
@@ -569,8 +581,10 @@ public class Dengue {
 	}
 
 	private void gerarVetorIndexRotas() {
-		HashMap<Integer, ArrayList<ArrayList<Integer>>> rotas = new HashMap<>();
+		Map<Integer, List<List<Integer>>> rotas = new HashMap<>();
+		rotas.put(Trajeto.BEBE, new ArrayList<>());
 		rotas.put(Trajeto.CRIANCA, new ArrayList<>());
+		rotas.put(Trajeto.ADOLESCENTE, new ArrayList<>());
 		rotas.put(Trajeto.JOVEM, new ArrayList<>());
 		rotas.put(Trajeto.ADULTO, new ArrayList<>());
 		rotas.put(Trajeto.IDOSO, new ArrayList<>());
@@ -590,14 +604,14 @@ public class Dengue {
 				int loteDestino = indicesLotes.get(localDestino.getQuadra())
 						.get(localDestino.getLote());
 
-				ArrayList<Integer> rota2 = new ArrayList<>();
+				List<Integer> rota2 = new ArrayList<>();
 
 				rota2.add(loteOrigem);
 				rota2.add(quadraOrigem);
 				rota2.add(loteDestino);
 				rota2.add(quadraDestino);
 				for (Local rua : rota.getRuas()) {
-					rota2.add(indicesLotes.get(GeradorArquivosAmbientaisAcoplado.RUA)
+					rota2.add(indicesLotes.get(GeradorArquivosAmbientais.RUA)
 							.get(rua.getLote()));
 				}
 
@@ -608,28 +622,42 @@ public class Dengue {
 		indexRotas = new ArrayList<>();
 		int desl = 0;
 		indexRotas.add(desl);
-		for (ArrayList<Integer> i : rotas.get(Trajeto.CRIANCA)) {
+		for (List<Integer> i : rotas.get(Trajeto.BEBE)) {
 			desl += i.size();
 			indexRotas.add(desl);
 		}
-		for (ArrayList<Integer> i : rotas.get(Trajeto.JOVEM)) {
+		for (List<Integer> i : rotas.get(Trajeto.CRIANCA)) {
 			desl += i.size();
 			indexRotas.add(desl);
 		}
-		for (ArrayList<Integer> i : rotas.get(Trajeto.ADULTO)) {
+		for (List<Integer> i : rotas.get(Trajeto.ADOLESCENTE)) {
 			desl += i.size();
 			indexRotas.add(desl);
 		}
-		for (ArrayList<Integer> i : rotas.get(Trajeto.IDOSO)) {
+		for (List<Integer> i : rotas.get(Trajeto.JOVEM)) {
+			desl += i.size();
+			indexRotas.add(desl);
+		}
+		for (List<Integer> i : rotas.get(Trajeto.ADULTO)) {
+			desl += i.size();
+			indexRotas.add(desl);
+		}
+		for (List<Integer> i : rotas.get(Trajeto.IDOSO)) {
 			desl += i.size();
 			indexRotas.add(desl);
 		}
 
-		nRotas = rotas.get(Trajeto.CRIANCA).size() + rotas.get(Trajeto.JOVEM).size()
-				+ rotas.get(Trajeto.ADULTO).size() + rotas.get(Trajeto.IDOSO).size();
+		nRotas = rotas.get(Trajeto.BEBE).size() + rotas.get(Trajeto.CRIANCA).size()
+				+ rotas.get(Trajeto.ADOLESCENTE).size()
+				+ rotas.get(Trajeto.JOVEM).size() + rotas.get(Trajeto.ADULTO).size()
+				+ rotas.get(Trajeto.IDOSO).size();
 
 		vetorRotas = new ArrayList<>();
+		vetorRotas.addAll(rotas.get(Trajeto.BEBE).stream().flatMap(i -> i.stream())
+				.collect(Collectors.toList()));
 		vetorRotas.addAll(rotas.get(Trajeto.CRIANCA).stream()
+				.flatMap(i -> i.stream()).collect(Collectors.toList()));
+		vetorRotas.addAll(rotas.get(Trajeto.ADOLESCENTE).stream()
 				.flatMap(i -> i.stream()).collect(Collectors.toList()));
 		vetorRotas.addAll(rotas.get(Trajeto.JOVEM).stream().flatMap(i -> i.stream())
 				.collect(Collectors.toList()));
@@ -648,8 +676,11 @@ public class Dengue {
 			indexTrajetos.add(desl);
 		}
 
+		trajetosBebes = (int) trajetos.stream().filter(i -> i.isTipoBebe()).count();
 		trajetosCriancas = (int) trajetos.stream().filter(i -> i.isTipoCrianca())
 				.count();
+		trajetosAdolescentes = (int) trajetos.stream()
+				.filter(i -> i.isTipoAdolescente()).count();
 		trajetosJovens = (int) trajetos.stream().filter(i -> i.isTipoJovem())
 				.count();
 		trajetosAdultos = (int) trajetos.stream().filter(i -> i.isTipoAdulto())
@@ -657,8 +688,8 @@ public class Dengue {
 		trajetosIdosos = (int) trajetos.stream().filter(i -> i.isTipoIdoso())
 				.count();
 
-		nTrajetos = trajetosCriancas + trajetosJovens + trajetosAdultos
-				+ trajetosIdosos;
+		nTrajetos = trajetosBebes + trajetosCriancas + trajetosAdolescentes
+				+ trajetosJovens + trajetosAdultos + trajetosIdosos;
 	}
 
 	private void gerarVetorIndexPeriodos() {
@@ -686,7 +717,11 @@ public class Dengue {
 		indexTrajetosFaixaEtaria = new ArrayList<>();
 		int desl = 0;
 		indexTrajetosFaixaEtaria.add(desl);
+		desl += trajetosBebes;
+		indexTrajetosFaixaEtaria.add(desl);
 		desl += trajetosCriancas;
+		indexTrajetosFaixaEtaria.add(desl);
+		desl += trajetosAdolescentes;
 		indexTrajetosFaixaEtaria.add(desl);
 		desl += trajetosJovens;
 		indexTrajetosFaixaEtaria.add(desl);
@@ -696,20 +731,70 @@ public class Dengue {
 		indexTrajetosFaixaEtaria.add(desl);
 	}
 
+	private void gerarIndexControlesPontos() {
+		int desl = 0;
+		indexControlesPontos = new ArrayList<>();
+
+		indexControlesPontos.add(desl);
+		for (Integer idControle : controlesPontos.keySet()) {
+			desl += controlesPontos.get(idControle).size();
+			indexControlesPontos.add(desl);
+		}
+	}
+
+	private void gerarVetorControlesPontos() {
+		vetorControlesPontos = new ArrayList<>();
+
+		for (Integer idControle : controlesPontos.keySet()) {
+			for (ControlePonto ponto : controlesPontos.get(idControle)) {
+				vetorControlesPontos.add((int) ponto.getX());
+				vetorControlesPontos.add((int) ponto.getY());
+				vetorControlesPontos
+						.add(indicesLotes.get(ponto.getQuadra()).get(ponto.getLote()));
+				vetorControlesPontos.add(indicesQuadras.get(ponto.getQuadra()));
+			}
+		}
+	}
+
+	private void gerarIndexRaios() {
+		indexRaios = new ArrayList<>();
+		int desl = 0;
+
+		indexRaios.add(desl);
+		for (Integer idControle : controlesPontos.keySet()) {
+			if (pontosRaios.containsKey(idControle)) {
+				desl += pontosRaios.get(idControle).size();
+			}
+			indexRaios.add(desl);
+		}
+	}
+
+	private void gerarVetorRaios() {
+		vetorRaios = new ArrayList<>();
+		for (Integer idControle : pontosRaios.keySet()) {
+			pontosRaios.get(idControle).stream().forEach(k -> {
+				vetorRaios.add((int) k.getX());
+				vetorRaios.add((int) k.getY());
+				vetorRaios.add(indicesLotes.get(k.getQuadra()).get(k.getLote()));
+				vetorRaios.add(indicesQuadras.get(k.getQuadra()));
+			});
+		}
+	}
+
 	private void salvarArquivoVetores() {
 		try {
 			BufferedWriter esc = new BufferedWriter(
 					new FileWriter(nomeArquivoAmbiental));
 
-			esc.write("quantQuadras, quantLotes e indexQuadras\n");
-			esc.write(pontos.keySet().size() + "\n");
+			esc.write("quantQuadras, quantLotes e indexQuadras\\n");
+			esc.write(pontos.keySet().size() + "\\n");
 			esc.write(pontos.entrySet().stream().sorted(Entry.comparingByKey())
 					.map(i -> Integer.toString(i.getValue().size()))
-					.collect(Collectors.joining(";")) + "\n");
+					.collect(Collectors.joining(";")) + "\\n");
 			esc.write(indexQuadras.stream().map(i -> i.toString())
-					.collect(Collectors.joining(";")) + "\n\n");
+					.collect(Collectors.joining(";")) + "\\n\\n");
 
-			esc.write("indexVizinhancas e vetorVizinhancas\n");
+			esc.write("indexVizinhancas e vetorVizinhancas\\n");
 
 			for (int i = 0; i < indexVizinhancas.size(); ++i) {
 				esc.write(Integer.toString(indexVizinhancas.get(i)));
@@ -717,7 +802,7 @@ public class Dengue {
 					esc.write(";");
 				}
 			}
-			esc.write("\n");
+			esc.write("\\n");
 
 			for (int i = 0; i < vetorVizinhancas.size(); ++i) {
 				esc.write(Integer.toString(vetorVizinhancas.get(i)));
@@ -725,11 +810,11 @@ public class Dengue {
 					esc.write(";");
 				}
 			}
-			esc.write("\n\n");
+			esc.write("\\n\\n");
 
-			esc.write("indexPosicoes, vetorPosicoes, indexPosicoesRegioes\n");
+			esc.write("indexPosicoes, vetorPosicoes, indexPosicoesRegioes\\n");
 			esc.write(indexPosicoes.stream().map(i -> i.toString())
-					.collect(Collectors.joining(";")) + "\n");
+					.collect(Collectors.joining(";")) + "\\n");
 
 			for (int i = 0; i < vetorPosicoes.size(); ++i) {
 				esc.write(Integer.toString(vetorPosicoes.get(i)));
@@ -737,35 +822,35 @@ public class Dengue {
 					esc.write(";");
 				}
 			}
-			esc.write("\n");
+			esc.write("\\n");
 
 			esc.write(indexPosicoesRegioes.stream().map(i -> i.toString())
-					.collect(Collectors.joining(";")) + "\n\n");
+					.collect(Collectors.joining(";")) + "\\n\\n");
 
-			esc.write("indexFronteiras e vetorFronteiras\n");
+			esc.write("indexFronteiras e vetorFronteiras\\n");
 			esc.write(indexFronteiras.stream().map(i -> i.toString())
-					.collect(Collectors.joining(";")) + "\n");
+					.collect(Collectors.joining(";")) + "\\n");
 			esc.write(vetorFronteiras.stream().map(i -> i.toString())
-					.collect(Collectors.joining(";")) + "\n\n");
+					.collect(Collectors.joining(";")) + "\\n\\n");
 
-			esc.write("indexEsquinas e vetorEsquinas\n");
+			esc.write("indexEsquinas e vetorEsquinas\\n");
 			esc.write(indexEsquinas.stream().map(i -> i.toString())
-					.collect(Collectors.joining(";")) + "\n");
+					.collect(Collectors.joining(";")) + "\\n");
 			esc.write(vetorEsquinas.stream().map(i -> i.toString())
-					.collect(Collectors.joining(";")) + "\n\n");
+					.collect(Collectors.joining(";")) + "\\n\\n");
 
-			esc.write("indexCentrosEsquinas e vetorCentrosEsquinas\n");
+			esc.write("indexCentrosEsquinas e vetorCentrosEsquinas\\n");
 			esc.write(indexCentrosEsquinas.stream().map(i -> i.toString())
-					.collect(Collectors.joining(";")) + "\n");
+					.collect(Collectors.joining(";")) + "\\n");
 			esc.write(vetorCentrosEsquinas.stream().map(i -> i.toString())
-					.collect(Collectors.joining(";")) + "\n");
+					.collect(Collectors.joining(";")) + "\\n");
 
 			esc.close();
 
 			esc = new BufferedWriter(new FileWriter(nomeArquivoMovimentacao));
 
-			esc.write("quantRotas, indexRotas e vetorRotas\n");
-			esc.write(nRotas + "\n");
+			esc.write("quantRotas, indexRotas e vetorRotas\\n");
+			esc.write(nRotas + "\\n");
 
 			for (int i = 0; i < indexRotas.size(); ++i) {
 				esc.write(Integer.toString(indexRotas.get(i)));
@@ -773,7 +858,7 @@ public class Dengue {
 					esc.write(";");
 				}
 			}
-			esc.write("\n");
+			esc.write("\\n");
 
 			for (int i = 0; i < vetorRotas.size(); ++i) {
 				esc.write(Integer.toString(vetorRotas.get(i)));
@@ -781,22 +866,22 @@ public class Dengue {
 					esc.write(";");
 				}
 			}
-			esc.write("\n\n");
+			esc.write("\\n\\n");
 
-			esc.write("quantTrajetos e indexTrajetos\n");
-			esc.write(nTrajetos + "\n");
+			esc.write("quantTrajetos e indexTrajetos\\n");
+			esc.write(nTrajetos + "\\n");
 			esc.write(indexTrajetos.stream().map(i -> i.toString())
-					.collect(Collectors.joining(";")) + "\n\n");
+					.collect(Collectors.joining(";")) + "\\n\\n");
 
-			esc.write("indexPeriodos e vetorPeriodos\n");
-      
+			esc.write("indexPeriodos e vetorPeriodos\\n");
+
 			for (int i = 0; i < indexPeriodos.size(); ++i) {
 				esc.write(Integer.toString(indexPeriodos.get(i)));
 				if (i < indexPeriodos.size() - 1) {
 					esc.write(";");
 				}
 			}
-			esc.write("\n");
+			esc.write("\\n");
 
 			for (int i = 0; i < vetorPeriodos.size(); ++i) {
 				esc.write(Integer.toString(vetorPeriodos.get(i)));
@@ -804,11 +889,11 @@ public class Dengue {
 					esc.write(";");
 				}
 			}
-			esc.write("\n\n");
+			esc.write("\\n\\n");
 
-			esc.write("indexTrajetosFaixaEtaria\n");
+			esc.write("indexTrajetosFaixaEtaria\\n");
 			esc.write(indexTrajetosFaixaEtaria.stream().map(i -> i.toString())
-					.collect(Collectors.joining(";")) + "\n");
+					.collect(Collectors.joining(";")) + "\\n");
 
 			esc.close();
 
@@ -818,19 +903,106 @@ public class Dengue {
 	}
 
 	private void salvarArquivoDistribuicaoMosquitos() {
+		double percInsInfec = Double
+				.parseDouble(params.get("PorcentagemCasosFemeas"));
+
+		Map<Integer, List<CasoInfeccao>> dados = distribuicaoHumanos.stream()
+				.collect(Collectors.groupingBy(CasoInfeccao::getDia));
+
+		List<Entry<Integer, List<CasoInfeccao>>> q1 = dados.entrySet().stream()
+				.filter(i -> i.getKey() >= 0 \&\& i.getKey() <= 91)
+				.collect(Collectors.toList());
+		List<Entry<Integer, List<CasoInfeccao>>> q2 = dados.entrySet().stream()
+				.filter(i -> i.getKey() >= 92 \&\& i.getKey() <= 182)
+				.collect(Collectors.toList());
+		List<Entry<Integer, List<CasoInfeccao>>> q3 = dados.entrySet().stream()
+				.filter(i -> i.getKey() >= 183 \&\& i.getKey() <= 273)
+				.collect(Collectors.toList());
+		List<Entry<Integer, List<CasoInfeccao>>> q4 = dados.entrySet().stream()
+				.filter(i -> i.getKey() >= 274 \&\& i.getKey() <= 365)
+				.collect(Collectors.toList());
+
+		int nq1 = q1.stream()
+				.collect(Collectors.summingInt(i -> i.getValue().size()));
+		int nq2 = q2.stream()
+				.collect(Collectors.summingInt(i -> i.getValue().size()));
+		int nq3 = q3.stream()
+				.collect(Collectors.summingInt(i -> i.getValue().size()));
+		int nq4 = q4.stream()
+				.collect(Collectors.summingInt(i -> i.getValue().size()));
+
+		nq1 = (int) Math.round(nq1 * percInsInfec);
+		nq2 = (int) Math.round(nq2 * percInsInfec);
+		nq3 = (int) Math.round(nq3 * percInsInfec);
+		nq4 = (int) Math.round(nq4 * percInsInfec);
+
+		List<Integer> lq1 = new ArrayList<>();
+		List<Integer> lq2 = new ArrayList<>();
+		List<Integer> lq3 = new ArrayList<>();
+		List<Integer> lq4 = new ArrayList<>();
+
+		for (Entry<Integer, List<CasoInfeccao>> i : q1) {
+			for (int j = 0; j < i.getValue().size(); ++j) {
+				lq1.add(i.getKey());
+			}
+		}
+		for (Entry<Integer, List<CasoInfeccao>> i : q2) {
+			for (int j = 0; j < i.getValue().size(); ++j) {
+				lq2.add(i.getKey());
+			}
+		}
+		for (Entry<Integer, List<CasoInfeccao>> i : q3) {
+			for (int j = 0; j < i.getValue().size(); ++j) {
+				lq3.add(i.getKey());
+			}
+		}
+		for (Entry<Integer, List<CasoInfeccao>> i : q4) {
+			for (int j = 0; j < i.getValue().size(); ++j) {
+				lq4.add(i.getKey());
+			}
+		}
+
+		List<Integer> dados2 = new ArrayList<>();
+		Collections.shuffle(lq1);
+		dados2.addAll(lq1.subList(0, nq1));
+		Collections.shuffle(lq2);
+		dados2.addAll(lq2.subList(0, nq2));
+		Collections.shuffle(lq3);
+		dados2.addAll(lq3.subList(0, nq3));
+		Collections.shuffle(lq4);
+		dados2.addAll(lq4.subList(0, nq4));
+
+		dados2.sort(null);
+
+		List<Ponto> pontos2 = pontos.entrySet().stream().map(i -> i.getValue())
+				.flatMap(i -> i.entrySet().stream()).flatMap(i -> i.getValue().stream())
+				.collect(Collectors.toList());
+
 		try {
 			BufferedWriter esc = new BufferedWriter(
 					new FileWriter(nomeArquivoDistribuicaoMosquitos));
 
-			esc.write(distribuicaoMosquitos.size() + "\n");
+			esc.write((distribuicaoMosquitos.size() + dados2.size()) + "\\n");
 			esc.write("Quadra;QuantidadeTotal;Sexo;Fase;PercentualMinimoInfectados;");
-			esc.write("PercentualMaximoInfectados;Sorotipo;Ciclo\n");
+			esc.write("PercentualMaximoInfectados;Sorotipo;Ciclo\\n");
 			for (List<String> i : distribuicaoMosquitos) {
 				esc.write(indicesQuadras.get(i.get(0)) + ";");
 				esc.write(i.stream().skip(1).map(j -> j.toString())
-						.collect(Collectors.joining(";")) + "\n");
+						.collect(Collectors.joining(";")) + "\\n");
 			}
 
+			for (int ciclo : dados2) {
+				Ponto ponto = pontos2.get((int) (Math.random() * pontos2.size()));
+
+				esc.write(indicesQuadras.get(ponto.quadra) + ";");
+				esc.write("1;");
+				esc.write("F;");
+				esc.write("A;");
+				esc.write("1.0;");
+				esc.write("1.0;");
+				esc.write("2;");
+				esc.write(ciclo + "\\n");
+			}
 			esc.close();
 
 		} catch (Exception ex) {
@@ -839,11 +1011,15 @@ public class Dengue {
 	}
 
 	private void salvarArquivoDistribuicaoHumanos() {
-		double percInsInfec = Double.parseDouble(params.get("PorcentagemCasos"));
+		double percInsInfec = Double
+				.parseDouble(params.get("PorcentagemCasosHumanos"));
 
 		Map<String, Double> percPop = new HashMap<>();
+		percPop.put("B", Double.parseDouble(params.get("FracaoBebesMasculinos")));
 		percPop.put("C",
 				Double.parseDouble(params.get("FracaoCriancasMasculinas")));
+		percPop.put("D",
+				Double.parseDouble(params.get("FracaoAdolescentesMasculinos")));
 		percPop.put("J", Double.parseDouble(params.get("FracaoJovensMasculinos")));
 		percPop.put("A", Double.parseDouble(params.get("FracaoAdultosMasculinos")));
 		percPop.put("I", Double.parseDouble(params.get("FracaoIdososMasculinos")));
@@ -851,19 +1027,65 @@ public class Dengue {
 		Map<Integer, List<CasoInfeccao>> dados = distribuicaoHumanos.stream()
 				.collect(Collectors.groupingBy(CasoInfeccao::getDia));
 
-		for (Entry<Integer, List<CasoInfeccao>> entry : dados.entrySet()) {
-			List<CasoInfeccao> value = entry.getValue();
+		List<Entry<Integer, List<CasoInfeccao>>> q1 = dados.entrySet().stream()
+				.filter(i -> i.getKey() >= 0 \&\& i.getKey() <= 91)
+				.collect(Collectors.toList());
+		List<Entry<Integer, List<CasoInfeccao>>> q2 = dados.entrySet().stream()
+				.filter(i -> i.getKey() >= 92 \&\& i.getKey() <= 182)
+				.collect(Collectors.toList());
+		List<Entry<Integer, List<CasoInfeccao>>> q3 = dados.entrySet().stream()
+				.filter(i -> i.getKey() >= 183 \&\& i.getKey() <= 273)
+				.collect(Collectors.toList());
+		List<Entry<Integer, List<CasoInfeccao>>> q4 = dados.entrySet().stream()
+				.filter(i -> i.getKey() >= 274 \&\& i.getKey() <= 365)
+				.collect(Collectors.toList());
 
-			Collections.shuffle(value);
-			int ind = (int) Math.floor(value.size() * (1.0 - percInsInfec));
-			value.subList(0, ind).clear();
+		int nq1 = q1.stream()
+				.collect(Collectors.summingInt(i -> i.getValue().size()));
+		int nq2 = q2.stream()
+				.collect(Collectors.summingInt(i -> i.getValue().size()));
+		int nq3 = q3.stream()
+				.collect(Collectors.summingInt(i -> i.getValue().size()));
+		int nq4 = q4.stream()
+				.collect(Collectors.summingInt(i -> i.getValue().size()));
+
+		nq1 = (int) Math.round(nq1 * percInsInfec);
+		nq2 = (int) Math.round(nq2 * percInsInfec);
+		nq3 = (int) Math.round(nq3 * percInsInfec);
+		nq4 = (int) Math.round(nq4 * percInsInfec);
+
+		List<CasoInfeccao> lq1 = new ArrayList<>();
+		List<CasoInfeccao> lq2 = new ArrayList<>();
+		List<CasoInfeccao> lq3 = new ArrayList<>();
+		List<CasoInfeccao> lq4 = new ArrayList<>();
+
+		for (Entry<Integer, List<CasoInfeccao>> i : q1) {
+			lq1.addAll(i.getValue());
+		}
+		for (Entry<Integer, List<CasoInfeccao>> i : q2) {
+			lq2.addAll(i.getValue());
+		}
+		for (Entry<Integer, List<CasoInfeccao>> i : q3) {
+			lq3.addAll(i.getValue());
+		}
+		for (Entry<Integer, List<CasoInfeccao>> i : q4) {
+			lq4.addAll(i.getValue());
 		}
 
-		Map<String, List<CasoInfeccao>> dados2 = dados.entrySet().stream()
-				.flatMap(i -> i.getValue().stream())
+		List<CasoInfeccao> dados2 = new ArrayList<>();
+		Collections.shuffle(lq1);
+		dados2.addAll(lq1.subList(0, nq1));
+		Collections.shuffle(lq2);
+		dados2.addAll(lq2.subList(0, nq2));
+		Collections.shuffle(lq3);
+		dados2.addAll(lq3.subList(0, nq3));
+		Collections.shuffle(lq4);
+		dados2.addAll(lq4.subList(0, nq4));
+
+		Map<String, List<CasoInfeccao>> dados3 = dados2.stream()
 				.collect(Collectors.groupingBy(CasoInfeccao::getFaixaEtaria));
 
-		for (Entry<String, List<CasoInfeccao>> entry : dados2.entrySet()) {
+		for (Entry<String, List<CasoInfeccao>> entry : dados3.entrySet()) {
 			String key = entry.getKey();
 			List<CasoInfeccao> value = entry.getValue();
 
@@ -873,14 +1095,14 @@ public class Dengue {
 			value.subList(0, nM).stream().forEach(i -> i.setSexo("M"));
 		}
 
-		List<CasoInfeccao> dados3 = dados2.entrySet().stream()
+		List<CasoInfeccao> dados4 = dados3.entrySet().stream()
 				.flatMap(i -> i.getValue().stream()).collect(Collectors.toList());
-		dados3.sort(Comparator.comparing(CasoInfeccao::getDia));
+		dados4.sort(Comparator.comparing(CasoInfeccao::getDia));
 
 		List<Ponto> pontos2 = pontos.entrySet().stream().map(i -> i.getValue())
 				.flatMap(i -> i.entrySet().stream()).flatMap(i -> i.getValue().stream())
 				.collect(Collectors.toList());
-		for (CasoInfeccao caso : dados3) {
+		for (CasoInfeccao caso : dados4) {
 			Ponto ponto = pontos2.parallelStream()
 					.collect(Collectors
 							.minBy((i, j) -> Double.compare(i.distancia(caso.getPonto()),
@@ -895,9 +1117,9 @@ public class Dengue {
 		try {
 			BufferedWriter esc = new BufferedWriter(
 					new FileWriter(nomeArquivoDistribuicaoHumanos));
-			esc.write(dados3.size() + "\n");
-			esc.write("Q;L;X;Y;Sexo;FaixaEtaria;SaudeDengue;SorotipoAtual;Ciclo\n");
-			for (CasoInfeccao caso : dados3) {
+			esc.write(dados4.size() + "\\n");
+			esc.write("Q;L;X;Y;Sexo;FaixaEtaria;SaudeDengue;SorotipoAtual;Ciclo\\n");
+			for (CasoInfeccao caso : dados4) {
 				esc.write(caso.getQuadra() + ";");
 				esc.write(caso.getLote() + ";");
 				esc.write(caso.getX() + ";");
@@ -906,7 +1128,7 @@ public class Dengue {
 				esc.write(caso.getFaixaEtaria() + ";");
 				esc.write("I;");
 				esc.write("2;");
-				esc.write(caso.getDia() + "\n");
+				esc.write(caso.getDia() + "\\n");
 			}
 			esc.close();
 		} catch (Exception ex) {
@@ -937,7 +1159,7 @@ public class Dengue {
 
 		double max = casosAcumulados.values().stream().max(Integer::compareTo)
 				.get();
-    max = (max == 0 ? 1 : max);
+		max = (max == 0 ? 1 : max);
 
 		Map<Integer, Double> percentuais = new HashMap<>();
 		for (Entry<Integer, Integer> i : casosAcumulados.entrySet()) {
@@ -949,54 +1171,119 @@ public class Dengue {
 			BufferedWriter esc = new BufferedWriter(
 					new FileWriter(nomeArquivoControles));
 
-			esc.write("quadVac. Quadras em que serao aplicadas a vacinacao\n");
-			esc.write(vac.size() + "\n");
+			esc.write("quadVac. Quadras em que serao aplicadas a vacinacao\\n");
+			esc.write(vac.size() + "\\n");
 			esc.write(vac.stream().map(i -> Integer.toString(indicesQuadras.get(i)))
-					.collect(Collectors.joining(";")) + "\n\n");
+					.collect(Collectors.joining(";")) + "\\n\\n");
 
-			esc.write("fEVac. Faixas etarias que receberao vacinacao\n");
-			esc.write(fEVac.size() + "\n");
-			esc.write(fEVac.stream().collect(Collectors.joining(";")) + "\n\n");
+			esc.write("fEVac. Faixas etarias que receberao vacinacao\\n");
+			esc.write(fEVac.size() + "\\n");
+			esc.write(fEVac.stream().collect(Collectors.joining(";")) + "\\n\\n");
 
-			esc.write("cicVac. Ciclos em que as vacinacoes serao executadas\n");
-			esc.write(cicVac.size() + "\n");
-			esc.write(cicVac.stream().collect(Collectors.joining(";")) + "\n\n");
+			esc.write("cicVac. Ciclos em que as vacinacoes serao executadas\\n");
+			esc.write(cicVac.size() + "\\n");
+			esc.write(cicVac.stream().collect(Collectors.joining(";")) + "\\n\\n");
 
-			esc.write("raio. Quadras com raio\n");
-			esc.write(raio.size() + "\n");
-			esc.write(raio.stream().map(i -> Integer.toString(indicesQuadras.get(i)))
-					.collect(Collectors.joining(";")) + "\n\n");
-
-			esc.write("bloq. Quadras com bloqueio\n");
-			esc.write(bloq.size() + "\n");
-			esc.write(bloq.stream().map(i -> Integer.toString(indicesQuadras.get(i)))
-					.collect(Collectors.joining(";")) + "\n\n");
-
-			esc.write("conBio. Quadras com controle biologico\n");
-			esc.write(conBio.size() + "\n");
+			esc.write("conBio. Quadras com controle biologico\\n");
+			esc.write(conBio.size() + "\\n");
 			esc.write(
 					conBio.stream().map(i -> Integer.toString(indicesQuadras.get(i)))
-							.collect(Collectors.joining(";")) + "\n\n");
+							.collect(Collectors.joining(";")) + "\\n\\n");
 
-			esc.write("conAmb. Quadras com controle ambiental\n");
-			esc.write(conAmb.size() + "\n");
+			esc.write("conAmb. Quadras com controle ambiental\\n");
+			esc.write(conAmb.size() + "\\n");
 			esc.write(
 					conAmb.stream().map(i -> Integer.toString(indicesQuadras.get(i)))
-							.collect(Collectors.joining(";")) + "\n\n");
+							.collect(Collectors.joining(";")) + "\\n\\n");
 
-			esc.write("pontEst. Lotes que sao pontos estrategicos\n");
-			esc.write((ponEst.size() * 2) + "\n");
+			esc.write("pontEst. Lotes que sao pontos estrategicos\\n");
+			esc.write((ponEst.size() * 2) + "\\n");
 			esc.write(ponEst.stream()
 					.flatMap(
 							i -> Stream.of(Integer.toString(indicesQuadras.get(i.get(0))),
 									Integer.toString(indicesLotes.get(i.get(0)).get(i.get(1)))))
-					.collect(Collectors.joining(";")) + "\n\n");
+					.collect(Collectors.joining(";")) + "\\n\\n");
 
-			esc.write("Sazonalidade\n");
-			esc.write(percentuais.size() + "\n");
+			esc.write("Complemento\\n");
+			esc.write(percentuais.size() + "\\n");
 			esc.write(percentuais.entrySet().stream()
 					.map(i -> String.format("%.10f", i.getValue()).replace(",", "."))
-					.collect(Collectors.joining(";")) + "\n");
+					.collect(Collectors.joining(";")) + "\\n\\n");
+
+			esc.write("Casos\\n");
+			esc.write((casosPorDia.size() + 1) + "\\n");
+			esc.write("1;");
+			esc.write(casosPorDia.entrySet().stream()
+					.map(i -> Integer.toString(i.getValue().size()))
+					.collect(Collectors.joining(";")) + "\\n\\n");
+
+			esc.write("contr. Informacoes sobre controles\\n");
+			esc.write(controles.size() + "\\n");
+			for (Controle c : controles) {
+				esc.write(indicesQuadras.get(c.getQuadra()) + ";");
+				esc.write(c.getCiclo() + ";");
+				esc.write(c.getTipoControle().charAt(0) + ";");
+				esc.write(c.getTaxaMinMecanico() + ";");
+				esc.write(c.getTaxaMaxMecanico() + ";");
+				esc.write(c.getTaxaMinQuimico() + ";");
+				esc.write(c.getTaxaMaxQuimico() + "\\n");
+			}
+			esc.write("\\n");
+
+			esc.write(
+					"indContrPontos e contrPontos. Pontos com controles para mosquitos\\n");
+			esc.write(indexControlesPontos.size() + "\\n");
+			esc.write(indexControlesPontos.stream().map(i -> Integer.toString(i))
+					.collect(Collectors.joining(";")) + "\\n");
+			esc.write(vetorControlesPontos.stream().map(i -> Integer.toString(i))
+					.collect(Collectors.joining(";")) + "\\n\\n");
+
+			esc.write("indRaios e raios. Pontos de raio\\n");
+			esc.write(indexRaios.size() + "\\n");
+			esc.write(indexRaios.stream().map(i -> Integer.toString(i))
+					.collect(Collectors.joining(";")) + "\\n");
+			esc.write(vetorRaios.stream().map(i -> Integer.toString(i))
+					.collect(Collectors.joining(";")) + "\\n\\n");
+
+			esc.write("vacs. Humanos vacinados. \\n");
+			esc.write(vacs.size() + "\\n");
+			for (Vacinado v : vacs) {
+				esc.write(v.getCiclo() + ";");
+				esc.write(indicesQuadras.get(v.getQuadra()) + ";");
+				esc.write(indicesLotes.get(v.getQuadra()).get(v.getLote()) + ";");
+				esc.write(v.getX() + ";");
+				esc.write(v.getY() + ";");
+				esc.write(v.getSexo() + ";");
+				esc.write(v.getFaixaEtaria() + ";");
+				esc.write(v.getDoses() + "\\n");
+			}
+
+			esc.close();
+
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+
+	private void salvarArquivoClimaticos() {
+		try {
+			BufferedWriter esc = new BufferedWriter(
+					new FileWriter(nomeArquivoClimaticos));
+
+			esc.write("cli\\n");
+			int size = clim.get("txMinNaoAlados").size();
+			esc.write(size + "\\n");
+
+			for (int i = 0; i < size; ++i) {
+				esc.write(Double.toString(clim.get("txMinNaoAlados").get(i)));
+				esc.write(";");
+				esc.write(Double.toString(clim.get("txMaxNaoAlados").get(i)));
+				esc.write(";");
+				esc.write(Double.toString(clim.get("txMinAlados").get(i)));
+				esc.write(";");
+				esc.write(Double.toString(clim.get("txMaxAlados").get(i)));
+				esc.write("\\n");
+			}
 
 			esc.close();
 
@@ -1043,7 +1330,12 @@ public class Dengue {
 		salvarArquivoVetores();
 		salvarArquivoDistribuicaoMosquitos();
 		salvarArquivoDistribuicaoHumanos();
+		gerarIndexControlesPontos();
+		gerarVetorControlesPontos();
+		gerarIndexRaios();
+		gerarVetorRaios();
 		salvarArquivoControles();
+		salvarArquivoClimaticos();
 
 		System.out.println("Tempo de execucao: "
 				+ ((System.currentTimeMillis() - tempoExecucao) / 1000.0));

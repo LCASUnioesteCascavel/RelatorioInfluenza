@@ -15,6 +15,10 @@ class Humano;
 class Posicao;
 class Vizinhanca;
 
+/*
+  Classe responsavel pela movimentacao dos agentes humanos no ambiente de 
+  simulacao. 
+*/
 struct MovimentacaoHumanos {
 
   Humano *humanos; double *parametros; int sizePos;

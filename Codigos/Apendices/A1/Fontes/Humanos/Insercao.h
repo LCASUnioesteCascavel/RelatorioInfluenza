@@ -7,6 +7,10 @@ class Humanos;
 class Humano;
 class Caso;
 
+/*
+  Classe responsavel pela contagem dos agentes humanos que serao inseridos 
+  no ambiente durante a simulacao. 
+*/
 struct PreInsercaoHumanos {
 
   double *parametros; int ciclo;
@@ -18,6 +22,10 @@ struct PreInsercaoHumanos {
 
 };
 
+/*
+  Classe responsavel pela insercao de agentes humanos no ambiente durante a 
+  simulacao. 
+*/
 struct InsercaoHumanos {
 
   double *parametros; Humano *humanos;

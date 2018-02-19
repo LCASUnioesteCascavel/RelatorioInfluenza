@@ -12,6 +12,7 @@ void ContatoHumanos::operator()(int id) {
 
   int nSus = 0, nInf = 0;
 
+  // Conta quantos humanos suscetiveis e infectantes ha nesta posicao. 
   for (int idHumano = indHumanos[q]; 
         idHumano < indHumanos[q + 1]; ++idHumano) {
     l_h = GET_L_H(idHumano); x_h = GET_X_H(idHumano); 
@@ -25,6 +26,8 @@ void ContatoHumanos::operator()(int id) {
     }
   }
 
+  // Se ha humanos suscetiveis e infectantes nesta posicao, pode ocorrer, 
+  // probabilisticamente, a infeccao dos agentes suscetiveis. 
   if (nSus > 0 and nInf > 0) {
     for (int idHumano = indHumanos[q]; 
           idHumano < indHumanos[q + 1]; ++idHumano) {
@@ -36,7 +39,8 @@ void ContatoHumanos::operator()(int id) {
 
       taxaInfeccao = TAXA_INFECCAO_HUMANO_SUSCETIVEL(fe_h);
 
-      if (randPerc <= (taxaInfeccao * sazo[ciclo] * K_SAZO)) {
+      // Se o agente e infectado ele e passado ao estado exposto. 
+      if (randPerc <= (taxaInfeccao * comp[ciclo] * K_COMP)) {
         SET_SD_H(idHumano, EXPOSTO);
       }
     }

@@ -33,6 +33,9 @@ using thrust::transform_reduce;
 class Ambiente;
 class Parametros;
 
+/*
+  Classe responsavel pelo armazenamento das tiras bitstring dos agentes humanos. 
+*/
 struct Humano {
 
   uint16_t t1;
@@ -43,6 +46,9 @@ struct Humano {
 
 };
 
+/*
+  Classe responsavel pelo operador que verifica se um agente humano esta morto. 
+*/
 struct EstaMortoHumano {
 
   __host__ __device__
@@ -50,6 +56,10 @@ struct EstaMortoHumano {
 
 };
 
+/*
+  Classe responsavel pelo operador que define o criterio de ordem na 
+  ordenacao por quadras do vetor de agentes humanos. 
+*/
 struct LessQuadraHumano {
 
   __host__ __device__
@@ -57,6 +67,10 @@ struct LessQuadraHumano {
 
 };
 
+/*
+  Classe responsavel pelo operador que converte um agente humano em um id de 
+  quadra. 
+*/
 struct ToQuadraHumano {
 
   __host__ __device__
@@ -64,6 +78,10 @@ struct ToQuadraHumano {
 
 };
 
+/*
+  Classe responsavel pela inicializacao e armazenamento dos agentes humanos e 
+  seus indices por quadras. 
+*/
 class Humanos {
 
   public:

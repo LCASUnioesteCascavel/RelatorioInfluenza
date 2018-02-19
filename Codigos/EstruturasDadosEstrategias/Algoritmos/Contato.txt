@@ -4,18 +4,7 @@
 							\Comentario{Os agentes infectados fazem contato com os suscetíveis} \\
 						  \Para{cada agente suscetível nesta posição} {
 						      \Comentario{As taxas de infecção são diferentes para cada faixa etária} \\
-						      \Se{faixa etária do agente é criança} {
-						            taxa de infecção $=$ taxa de infecção para crianças \\
-						      }
-									\Se{faixa etária do agente é jovem} {
-						            taxa de infecção $=$ taxa de infecção para jovens \\
-						      }
-									\Se{faixa etária do agente é adulto} {
-						            taxa de infecção $=$ taxa de infecção para adultos \\
-						      }
-									\Se{faixa etária do agente é idoso} {
-						            taxa de infecção $=$ taxa de infecção para idosos \\
-						      }
+						      taxa de infecção $=$ taxa de infecção definida pela faixa etária \\
 						      \Comentario{A transmissão depende das taxas de infecção e sazonalidade} \\
 						      \Se{percentual aleatório $\leq$ taxa de infecção $\cdot$ taxa da sazonalidade $\cdot$ constante de sazonalidade} {
 						            \Comentario{Ocorre a infecção do agente} \\

@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1502.3258mm"
-   height="1134.0223mm"
-   viewBox="0 0 5323.2018 4018.1891"
+   width="1242.6813mm"
+   height="745.31696mm"
+   viewBox="0 0 4403.2015 2640.8867"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -20,53 +20,56 @@
      id="defs4">
     <marker
        inkscape:isstock="true"
-       style="overflow:visible;"
+       style="overflow:visible"
        id="marker4636"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Lend">
       <path
-         transform="scale(0.8) rotate(180) translate(12.5,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path4638" />
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path4638"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Lstart"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Lstart"
        style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path4328"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.8) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Lend"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true"
        inkscape:collect="always">
       <path
          id="path4331"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="180.8173 : 269.6023 : 1"
-       inkscape:vp_y="0 : 999.99984 : 0"
+       inkscape:vp_x="180.81731 : 269.6023 : 1"
+       inkscape:vp_y="0 : 999.99983 : 0"
        inkscape:vp_z="1029.9679 : 308.99826 : 1"
-       inkscape:persp3d-origin="657.92043 : 133.60457 : 1"
+       inkscape:persp3d-origin="657.92046 : 133.60457 : 1"
        id="perspective4172" />
   </defs>
   <sodipodi:namedview
@@ -76,9 +79,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497474"
-     inkscape:cx="1580.8713"
-     inkscape:cy="927.8584"
+     inkscape:zoom="0.12374369"
+     inkscape:cx="2411.1752"
+     inkscape:cy="1688.367"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -95,8 +98,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid4449"
-       originx="-1548.4723"
-       originy="2118.8376" />
+       originx="-1548.4724"
+       originy="2118.8375" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -114,10 +117,10 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-1099.5264,293.04628)">
+     transform="translate(-1099.5264,-1084.2563)">
     <rect
        ry="199.43871"
-       y="461.2608"
+       y="1121.2607"
        x="2616.531"
        height="398.87741"
        width="629.1922"
@@ -126,178 +129,36 @@
     <text
        sodipodi:linespacing="125%"
        id="text4189"
-       y="676.37335"
+       y="1336.3734"
        x="2931.1394"
        style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         y="676.37335"
+         y="1336.3734"
          x="2931.1394"
          sodipodi:role="line"
          id="tspan4206">(1)</tspan></text>
-    <rect
-       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4224"
-       width="629.1922"
-       height="398.87741"
-       x="3482.8372"
-       y="-256.04184"
-       ry="199.43871" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="3799.4536"
-       y="-117.15266"
-       id="text4226"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="3807.4126"
-         y="-117.15266"
-         id="tspan4361">Se faixa etária </tspan><tspan
-         sodipodi:role="line"
-         x="3807.4126"
-         y="-54.652657"
-         id="tspan4595">do agente é </tspan><tspan
-         sodipodi:role="line"
-         x="3807.4126"
-         y="7.8473434"
-         id="tspan4597">criança </tspan></text>
-    <rect
-       ry="199.43871"
-       y="202.56743"
-       x="3482.8367"
-       height="398.87741"
-       width="629.1922"
-       id="rect4236"
-       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <rect
-       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4248"
-       width="629.1922"
-       height="398.87741"
-       x="3482.8367"
-       y="701.58282"
-       ry="199.43871" />
-    <rect
-       ry="199.43871"
-       y="1226.8622"
-       x="3482.8367"
-       height="398.87741"
-       width="629.1922"
-       id="rect4272"
-       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <rect
-       ry="199.43871"
-       y="-256.04184"
-       x="4274.8369"
-       height="398.87741"
-       width="629.1922"
-       id="rect4340"
-       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text4342"
-       y="-123.81763"
-       x="4596.5044"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="-123.81763"
-         x="4604.4634"
-         sodipodi:role="line"
-         id="tspan4389">taxa = taxa de </tspan><tspan
-         y="-61.317627"
-         x="4604.4634"
-         sodipodi:role="line"
-         id="tspan4603">mobilidade para </tspan><tspan
-         y="1.182373"
-         x="4604.4634"
-         sodipodi:role="line"
-         id="tspan4607">crianças </tspan></text>
-    <rect
-       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4348"
-       width="629.1922"
-       height="398.87741"
-       x="4274.8369"
-       y="202.56743"
-       ry="199.43871" />
-    <rect
-       ry="199.43871"
-       y="701.58282"
-       x="4274.8369"
-       height="398.87741"
-       width="629.1922"
-       id="rect4358"
-       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <rect
-       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4368"
-       width="629.1922"
-       height="398.87741"
-       x="4274.8369"
-       y="1226.8622"
-       ry="199.43871" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.00944197px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 4111.0543,-63.69478 163.0357,0"
-       id="path4790"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.00472391px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 4113.0543,406.55776 161.5152,0"
-       id="path4798"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.00942576px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 4111.0543,906.68406 163.0305,0"
-       id="path4806"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 4111.0543,1426.3052 165,0"
-       id="path4814"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.9744218px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 3153.3157,827.56139 330.2466,586.52401"
-       id="path4830"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.06398487px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 3228.0403,744.8181 254.3618,149.5403"
-       id="path4832"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.93640959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 3219.6103,562.04958 3485.3554,432.70371"
-       id="path4834"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.00412524px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 3139.0569,482.30353 344.288,-557.597509"
-       id="path4836"
-       inkscape:connector-curvature="0" />
     <rect
        style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4317"
        width="629.1922"
        height="398.87741"
        x="1876.531"
-       y="461.2608"
+       y="1121.2607"
        ry="199.43871" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="2190.0042"
-       y="674.49347"
+       y="1334.4935"
        id="text4319"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          x="2190.0042"
-         y="674.49347"
+         y="1334.4935"
          id="tspan4341">Para cada agente</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.9613049px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 2504.8043,656.30527 110.8929,0"
+       d="m 2504.8043,1316.3053 110.8929,0"
        id="path4330"
        inkscape:connector-curvature="0" />
     <flowRoot
@@ -316,162 +177,28 @@
        id="rect4567"
        width="629.1922"
        height="398.87741"
-       x="5016.5312"
-       y="461.2608"
+       x="4096.5312"
+       y="1121.2607"
        ry="199.43871" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="5331.8203"
-       y="623.87878"
+       x="4411.8203"
+       y="1283.8788"
        id="text4569"
        sodipodi:linespacing="125%"><tspan
          id="tspan4571"
          sodipodi:role="line"
-         x="5339.7793"
-         y="623.87878">Se percentual </tspan><tspan
+         x="4419.7793"
+         y="1283.8788">Se percentual </tspan><tspan
          sodipodi:role="line"
-         x="5339.7793"
-         y="686.37878"
+         x="4419.7793"
+         y="1346.3788"
          id="tspan4573">aleatório &lt;= taxa </tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.00700998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 4903.0573,-73.694004 5063.9441,531.39383"
-       id="path4575"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 4905.0543,402.30527 120,200"
-       id="path4577"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.01831484px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 4904.0512,885.3101 5025.8048,721.78518"
-       id="path4579"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.01972079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 4903.0644,1404.3024 5066.6156,793.95095"
-       id="path4581"
-       inkscape:connector-curvature="0" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text4609"
-       y="342.84735"
-       x="3799.4536"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         id="tspan4611"
-         y="342.84735"
-         x="3807.4126"
-         sodipodi:role="line">Se faixa etária </tspan><tspan
-         id="tspan4613"
-         y="405.34735"
-         x="3807.4126"
-         sodipodi:role="line">do agente é </tspan><tspan
-         id="tspan4615"
-         y="467.84735"
-         x="3807.4126"
-         sodipodi:role="line">jovem </tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="4596.5044"
-       y="336.18237"
-       id="text4617"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan4619"
-         sodipodi:role="line"
-         x="4604.4634"
-         y="336.18237">taxa = taxa de </tspan><tspan
-         id="tspan4621"
-         sodipodi:role="line"
-         x="4604.4634"
-         y="398.68237">mobilidade para </tspan><tspan
-         id="tspan4623"
-         sodipodi:role="line"
-         x="4604.4634"
-         y="461.18237">jovens </tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="3799.4536"
-       y="842.84735"
-       id="text4625"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="3807.4126"
-         y="842.84735"
-         id="tspan4627">Se faixa etária </tspan><tspan
-         sodipodi:role="line"
-         x="3807.4126"
-         y="905.34735"
-         id="tspan4629">do agente é </tspan><tspan
-         sodipodi:role="line"
-         x="3807.4126"
-         y="967.84735"
-         id="tspan4631">adulto </tspan></text>
-    <text
-       sodipodi:linespacing="125%"
-       id="text4633"
-       y="836.18237"
-       x="4596.5044"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="836.18237"
-         x="4604.4634"
-         sodipodi:role="line"
-         id="tspan4635">taxa = taxa de </tspan><tspan
-         y="898.68237"
-         x="4604.4634"
-         sodipodi:role="line"
-         id="tspan4637">mobilidade para </tspan><tspan
-         y="961.18237"
-         x="4604.4634"
-         sodipodi:role="line"
-         id="tspan4639">adultos </tspan></text>
-    <text
-       sodipodi:linespacing="125%"
-       id="text4641"
-       y="1362.8474"
-       x="3799.4536"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         id="tspan4643"
-         y="1362.8474"
-         x="3807.4126"
-         sodipodi:role="line">Se faixa etária </tspan><tspan
-         id="tspan4645"
-         y="1425.3474"
-         x="3807.4126"
-         sodipodi:role="line">do agente é </tspan><tspan
-         id="tspan4647"
-         y="1487.8474"
-         x="3807.4126"
-         sodipodi:role="line">idoso </tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="4596.5044"
-       y="1356.1824"
-       id="text4649"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan4651"
-         sodipodi:role="line"
-         x="4604.4634"
-         y="1356.1824">taxa = taxa de </tspan><tspan
-         id="tspan4653"
-         sodipodi:role="line"
-         x="4604.4634"
-         y="1418.6824">mobilidade para </tspan><tspan
-         id="tspan4655"
-         sodipodi:role="line"
-         x="4604.4634"
-         y="1481.1824">idosos </tspan></text>
     <rect
        ry="199.43871"
-       y="461.2608"
-       x="5756.5312"
+       y="1121.2607"
+       x="4836.5312"
        height="398.87741"
        width="629.1922"
        id="rect4253"
@@ -479,22 +206,22 @@
     <text
        sodipodi:linespacing="125%"
        id="text4255"
-       y="676.37335"
-       x="6071.1396"
+       y="1336.3734"
+       x="5151.1396"
        style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         y="676.37335"
-         x="6071.1396"
+         y="1336.3734"
+         x="5151.1396"
          sodipodi:role="line"
          id="tspan4269">(2)</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.9613049px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 5644.8043,656.30527 110.8929,0"
+       d="m 4724.8043,1316.3053 110.8929,0"
        id="path4263"
        inkscape:connector-curvature="0" />
     <rect
        ry="199.43871"
-       y="461.2608"
+       y="1121.2607"
        x="1136.531"
        height="398.87741"
        width="629.1922"
@@ -503,22 +230,22 @@
     <text
        sodipodi:linespacing="125%"
        id="text4277"
-       y="633.57416"
+       y="1293.5742"
        x="1452.8308"
        style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         y="633.57416"
+         y="1293.5742"
          x="1460.7898"
          sodipodi:role="line"
          id="tspan4279">Movimentação </tspan><tspan
          id="tspan4281"
-         y="696.07416"
+         y="1356.0742"
          x="1460.7898"
          sodipodi:role="line">Agentes </tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path4283"
-       d="m 1764.8043,656.30527 110.8929,0"
+       d="m 1764.8043,1316.3053 110.8929,0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.9613049px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <rect
        style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -783,7 +510,7 @@
        inkscape:connector-curvature="0"
        id="path4316"
        d="m 1764.8043,3076.3053 110.8929,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.961;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.96100003;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.0011605px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
        d="m 2471.0483,2966.2975 223.5354,-276.2116"
@@ -816,5 +543,42 @@
          id="tspan4814"
          x="2543.0542"
          y="3362.3054">N</tspan></text>
+    <rect
+       ry="199.43871"
+       y="1121.2607"
+       x="3356.5312"
+       height="398.87741"
+       width="629.1922"
+       id="rect4301"
+       style="fill:none;fill-opacity:0.19607843;stroke:#1b1918;stroke-width:3.14298439;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4303"
+       y="1283.8788"
+       x="3671.8203"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4307"
+         y="1283.8788"
+         x="3679.7793"
+         sodipodi:role="line">taxa = taxa de </tspan><tspan
+         y="1346.3788"
+         x="3679.7793"
+         sodipodi:role="line"
+         id="tspan4317">mobilidade definida </tspan><tspan
+         y="1408.8788"
+         x="3671.8203"
+         sodipodi:role="line"
+         id="tspan4322">pela faixa etária</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4309"
+       d="m 3984.8043,1316.3053 110.8929,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.9613049px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.9613049px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 3244.8043,1316.3053 110.8929,0"
+       id="path4311"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

@@ -25,6 +25,7 @@ public class Local {
 		this.setLote(lote);
 	}
 
+	Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
@@ -34,14 +35,16 @@ public class Local {
 		return result;
 	}
 
+	Override
 	public boolean equals(Object obj) {
 		Local l2 = (Local) obj;
-		return l2.getQuadra().equals(getQuadra()) && l2.getLote().equals(getLote());
+		return l2.getQuadra().equals(getQuadra()) \&\& l2.getLote().equals(getLote());
 	}
 
+	Override
 	public String toString() {
-		return "\nLocal [quadra=" + getQuadra() + ", lote=" + getLote()
-				+ ", periodo=" + getPeriodo() + "]\n";
+		return "\\nLocal [quadra=" + getQuadra() + ", lote=" + getLote()
+				+ ", periodo=" + getPeriodo() + "]\\n";
 	}
 
 	public String getQuadra() {

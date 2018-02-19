@@ -3,7 +3,9 @@
   percInsInfec = parametros["PorcentagemCasos"] \\
   
   percPop = novo\_vetor\_associativo() \\
+	adiciona("B", parametros["FracaoBebesMasculinos"], percPop) \\
   adiciona("C", parametros["FracaoCriancasMasculinas"], percPop) \\
+	adiciona("D", parametros["FracaoAdolescentesMasculinos"], percPop) \\
   adiciona("J", parametros["FracaoJovensMasculinos"], percPop) \\
   adiciona("A", parametros["FracaoAdultosMasculinos"], percPop) \\
   adiciona("I", parametros["FracaoIdososMasculinos"], percPop) \\

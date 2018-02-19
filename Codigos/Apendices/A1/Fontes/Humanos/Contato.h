@@ -14,10 +14,14 @@ class Humanos;
 class Humano;
 class Posicao;
 
+/*
+  Classe responsavel pelo contato entre agentes humanos, em que ocorrem as 
+  infeccoes de humanos suscetiveis. 
+*/
 struct ContatoHumanos {
 
   Humano *humanos; double *parametros;
-  int ciclo, *indHumanos; double *sazo; Posicao *pos;
+  int ciclo, *indHumanos; double *comp; Posicao *pos;
   dre *seeds;
 
   ContatoHumanos(Humanos *humanos, Ambiente *ambiente, 

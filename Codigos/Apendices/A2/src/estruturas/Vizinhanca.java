@@ -9,10 +9,12 @@ public class Vizinhanca implements Comparable<Vizinhanca> {
 		this.setSecond(second);
 	}
 
+	Override
 	public String toString() {
 		return "Pair [first=" + getFirst() + ", second=" + getSecond() + "]";
 	}
 
+	Override
 	public int compareTo(Vizinhanca o) {
 		if (getFirst().compareTo(o.getFirst()) == -1) {
 			return -1;

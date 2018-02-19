@@ -13,6 +13,9 @@ class Seeds;
 class Humanos;
 class Humano;
 
+/*
+  Classe responsavel pela transicao de estados dos agentes humanos. 
+*/
 struct TransicaoEstadosHumanos {
 
   Humano *humanos; double *parametros; dre *seeds;
@@ -24,6 +27,12 @@ struct TransicaoEstadosHumanos {
 
 };
 
+/*
+  Classe responsavel pela vacinacao dos agentes humanos. As variaveis "fEVac", 
+  "perVac" e "cicVac" armazenam as faixas etarias que serao vacinadas, os 
+  percentuais de vacinacao e os ciclos em que ocorrerao as campanhas, 
+  respectivamente. 
+*/
 struct Vacinacao {
 
   Humano *humanos; double *parametros;
@@ -46,6 +55,10 @@ struct Vacinacao {
 
 };
 
+/*
+  Classe responsavel pela atualizacao de variaveis utilizadas durante a rotina 
+  de vacinacao. 
+*/
 struct PosVacinacao {
   
   int ciclo;
@@ -57,6 +70,10 @@ struct PosVacinacao {
 
 };
 
+/*
+  Classe responsavel pela transicao de agentes humanos infectantes ao estado 
+  de quarentena. 
+*/
 struct Quarentena {
 
   Humano *humanos; int *indHumanos;

@@ -28,16 +28,23 @@ using thrust::make_counting_iterator;
 using thrust::make_tuple;
 using thrust::make_zip_iterator;
 using thrust::raw_pointer_cast;
-using thrust::tuple;
 using thrust::zip_iterator;
 
+/*
+  Classe responsavel pela inicializacao das estruturas de dados que armazenam 
+  os seeds utilizados a geracao de numeros aleatorios em GPU. 
+*/
 struct InitSeeds {
 
   __host__ __device__ 
-  void operator()(tuple<int, dre &> t);
+  void operator()(thrust::tuple<int, dre &> t);
   
 };
 
+/*
+  Classe que armazena todas as seeds utilizadas para a geracao de numeros 
+  aleatorios em GPU durante a execucao de simulacoes. 
+*/
 class Seeds {
 
   public:
