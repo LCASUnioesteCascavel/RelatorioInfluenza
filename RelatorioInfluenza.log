@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.1)  22 FEB 2018 10:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.1)  22 FEB 2018 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3870,8 +3870,8 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package epstopdf Info: Source file: <Figuras/A5/AgentesHumanos.eps>
-(epstopdf)                    date: 2018-02-22 10:02:45
-(epstopdf)                    size: 537272 bytes
+(epstopdf)                    date: 2018-02-22 15:08:23
+(epstopdf)                    size: 752395 bytes
 (epstopdf)             Output file: <Figuras/A5/AgentesHumanos-eps-converted-to
 .pdf>
 (epstopdf)                    date: 2018-02-22 10:03:38
@@ -3879,7 +3879,13 @@ Package epstopdf Info: Source file: <Figuras/A5/AgentesHumanos.eps>
 (epstopdf)             Command: <repstopdf --outfile=Figuras/A5/AgentesHumanos-
 eps-converted-to.pdf Figuras/A5/AgentesHumanos.eps>
 (epstopdf)             \includegraphics on input line 7.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=Figuras/A5/AgentesHumanos-eps-converted-to.pdf Fi
+guras/A5/AgentesHumanos.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <Figuras/A5/AgentesHumanos-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2018-02-22 15:11:07
+(epstopdf)                    size: 335970 bytes.
 
 <Figuras/A5/AgentesHumanos-eps-converted-to.pdf, id=9460, 2180.145pt x 1360.081
 25pt>
@@ -3965,9 +3971,9 @@ f/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk1
 0.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/font
 s/type1/public/lm/lmtt8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
-Output written on RelatorioInfluenza.pdf (184 pages, 10351439 bytes).
+Output written on RelatorioInfluenza.pdf (184 pages, 10524902 bytes).
 PDF statistics:
- 11283 PDF objects out of 12825 (max. 8388607)
+ 11298 PDF objects out of 12825 (max. 8388607)
  10856 compressed objects within 109 object streams
  7957 named destinations out of 8907 (max. 500000)
  1346 words of extra memory for PDF output out of 10000 (max. 10000000)
