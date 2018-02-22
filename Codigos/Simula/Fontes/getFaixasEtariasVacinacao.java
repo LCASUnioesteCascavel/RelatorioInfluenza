@@ -1,5 +1,5 @@
 public List<String> getFaixasEtariasVacinacao() {
-  ArrayList<String> retorno = new ArrayList<>();
+  List<String> retorno = new ArrayList<>();
   PreparedStatement stmt = null;
   Connection connection = connect();
   try {
@@ -8,17 +8,23 @@ public List<String> getFaixasEtariasVacinacao() {
     ResultSet rs = stmt.executeQuery();
     while (rs.next()) {
       String fe = rs.getString("faixa_etaria");
-      if (fe.equals("Crianca")) {
+      if (fe.equals("Bebe")) {
         fe = new String("0");
       }
-      if (fe.equals("Jovem")) {
+      if (fe.equals("Crianca")) {
         fe = new String("1");
       }
-      if (fe.equals("Adulto")) {
+      if (fe.equals("Adolescente")) {
         fe = new String("2");
       }
-      if (fe.equals("Idoso")) {
+      if (fe.equals("Jovem")) {
+        fe = new String("3");
+      }
+      if (fe.equals("Adulto")) {
         fe = new String("4");
+      }
+      if (fe.equals("Idoso")) {
+        fe = new String("5");
       }
       retorno.add(fe);
     }
@@ -30,4 +36,4 @@ public List<String> getFaixasEtariasVacinacao() {
         getClass().getName() + ": " + e.getMessage());
   }
   return retorno;
-} 
+}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.1)  19 FEB 2018 10:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.1)  22 FEB 2018 10:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2287,7 +2287,7 @@ s>
 (epstopdf)             \includegraphics on input line 358.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/getCiclosVacinacao-eps-converted-to.pdf, id=1943, 886.31
+<Figuras/Simula/Fluxos/getCiclosVacinacao-eps-converted-to.pdf, id=1949, 886.31
 125pt x 144.54pt>
 File: Figuras/Simula/Fluxos/getCiclosVacinacao-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -2320,7 +2320,7 @@ manos.eps>
 (epstopdf)             \includegraphics on input line 380.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/getDistribuicaoHumanos-eps-converted-to.pdf, id=1983, 88
+<Figuras/Simula/Fluxos/getDistribuicaoHumanos-eps-converted-to.pdf, id=1989, 88
 6.31125pt x 157.58875pt>
 File: Figuras/Simula/Fluxos/getDistribuicaoHumanos-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -2354,7 +2354,7 @@ MoorePontos.eps>
 (epstopdf)             \includegraphics on input line 402.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/getVizinhancasMoorePontos-eps-converted-to.pdf, id=2027,
+<Figuras/Simula/Fluxos/getVizinhancasMoorePontos-eps-converted-to.pdf, id=2033,
  886.31125pt x 144.54pt>
 File: Figuras/Simula/Fluxos/getVizinhancasMoorePontos-eps-converted-to.pdf Grap
 hic file (type pdf)
@@ -2388,7 +2388,7 @@ cas.eps>
 (epstopdf)             \includegraphics on input line 424.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/gerarIndexVizinhancas-eps-converted-to.pdf, id=2080, 223
+<Figuras/Simula/Fluxos/gerarIndexVizinhancas-eps-converted-to.pdf, id=2086, 223
 6.355pt x 144.54pt>
 File: Figuras/Simula/Fluxos/gerarIndexVizinhancas-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -2421,7 +2421,7 @@ cas.eps>
 (epstopdf)             \includegraphics on input line 446.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/gerarVetorVizinhancas-eps-converted-to.pdf, id=2118, 128
+<Figuras/Simula/Fluxos/gerarVetorVizinhancas-eps-converted-to.pdf, id=2124, 128
 6.8075pt x 594.22pt>
 File: Figuras/Simula/Fluxos/gerarVetorVizinhancas-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -2454,7 +2454,7 @@ s>
 (epstopdf)             \includegraphics on input line 468.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/gerarVetorPosicoes-eps-converted-to.pdf, id=2163, 1279.7
+<Figuras/Simula/Fluxos/gerarVetorPosicoes-eps-converted-to.pdf, id=2169, 1279.7
 8125pt x 369.38pt>
 File: Figuras/Simula/Fluxos/gerarVetorPosicoes-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -2487,7 +2487,7 @@ s>
 (epstopdf)             \includegraphics on input line 490.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/gerarIndexPosicoes-eps-converted-to.pdf, id=2214, 1269.7
+<Figuras/Simula/Fluxos/gerarIndexPosicoes-eps-converted-to.pdf, id=2220, 1269.7
 4374pt x 369.38pt>
 File: Figuras/Simula/Fluxos/gerarIndexPosicoes-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -2525,7 +2525,7 @@ s.eps>
 (epstopdf)             \includegraphics on input line 514.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/salvarArquivoVetores-eps-converted-to.pdf, id=2307, 1611
+<Figuras/Simula/Fluxos/salvarArquivoVetores-eps-converted-to.pdf, id=2313, 1611
 .01875pt x 353.32pt>
 File: Figuras/Simula/Fluxos/salvarArquivoVetores-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -2558,7 +2558,7 @@ roles.eps>
 (epstopdf)             \includegraphics on input line 536.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/Simula/Fluxos/salvarArquivoControles-eps-converted-to.pdf, id=2358, 18
+<Figuras/Simula/Fluxos/salvarArquivoControles-eps-converted-to.pdf, id=2364, 18
 98.09125pt x 770.88pt>
 File: Figuras/Simula/Fluxos/salvarArquivoControles-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -2607,7 +2607,7 @@ rquivoDistribuicaoHumanos.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Figuras/Simula/Fluxos/salvarArquivoDistribuicaoHumanos-eps-converted-to.pdf, i
-d=2591, 2237.35875pt x 1381.16pt>
+d=2598, 2237.35875pt x 1381.16pt>
 File: Figuras/Simula/Fluxos/salvarArquivoDistribuicaoHumanos-eps-converted-to.p
 df Graphic file (type pdf)
 
@@ -2635,14 +2635,14 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 4.
 
-<Figuras/Observacoes/Casos.png, id=2671, 1212.78094pt x 431.36156pt>
+<Figuras/Observacoes/Casos.png, id=2677, 1212.78094pt x 431.36156pt>
 File: Figuras/Observacoes/Casos.png Graphic file (type png)
 
 <use Figuras/Observacoes/Casos.png>
 Package pdftex.def Info: Figuras/Observacoes/Casos.png used on input line 12.
 (pdftex.def)             Requested size: 483.69687pt x 172.04132pt.
 
-<Figuras/Observacoes/CasosAcumulados.png, id=2672, 1213.53375pt x 431.36156pt>
+<Figuras/Observacoes/CasosAcumulados.png, id=2678, 1213.53375pt x 431.36156pt>
 File: Figuras/Observacoes/CasosAcumulados.png Graphic file (type png)
 
 <use Figuras/Observacoes/CasosAcumulados.png>
@@ -2658,7 +2658,7 @@ Package babel Info: Redefining portuges shorthand "|
 
  <./Figuras/Observacoes/Casos.png (PNG copy)> <./Figuras/Observacoes/CasosAcumu
 lados.png (PNG copy)>]
-<Figuras/Observacoes/Teorico.png, id=2680, 1103.5629pt x 623.6901pt>
+<Figuras/Observacoes/Teorico.png, id=2686, 1103.5629pt x 623.6901pt>
 File: Figuras/Observacoes/Teorico.png Graphic file (type png)
 
 <use Figuras/Observacoes/Teorico.png>
@@ -2666,7 +2666,7 @@ Package pdftex.def Info: Figuras/Observacoes/Teorico.png used on input line 32.
 
 (pdftex.def)             Requested size: 435.32422pt x 246.02655pt.
 
-<Figuras/Observacoes/Sazonalidade.png, id=2683, 921.4425pt x 322.95656pt>
+<Figuras/Observacoes/Sazonalidade.png, id=2689, 921.4425pt x 322.95656pt>
 File: Figuras/Observacoes/Sazonalidade.png Graphic file (type png)
 
 <use Figuras/Observacoes/Sazonalidade.png>
@@ -2679,7 +2679,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 62.
  [60 <./Figuras/Observacoes/Teorico.png> <./Figuras/Observacoes/Sazonalidade.pn
 g (PNG copy)>]
-<Figuras/Observacoes/Logistica.png, id=2697, 1387.584pt x 703.1871pt>
+<Figuras/Observacoes/Logistica.png, id=2704, 1387.584pt x 703.1871pt>
 File: Figuras/Observacoes/Logistica.png Graphic file (type png)
 
 <use Figuras/Observacoes/Logistica.png>
@@ -2722,7 +2722,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 132.
  [66]
-<Figuras/Observacoes/MonteCarloEspacial/folha1.png, id=2996, 2639.461pt x 1254.
+<Figuras/Observacoes/MonteCarloEspacial/folha1.png, id=3002, 2639.461pt x 1254.
 286pt>
 File: Figuras/Observacoes/MonteCarloEspacial/folha1.png Graphic file (type png)
 
@@ -2731,7 +2731,7 @@ Package pdftex.def Info: Figuras/Observacoes/MonteCarloEspacial/folha1.png used
  on input line 135.
 (pdftex.def)             Requested size: 483.69687pt x 229.8383pt.
 
-<Figuras/Observacoes/MonteCarloEspacial/folha2.png, id=2999, 2630.628pt x 933.8
+<Figuras/Observacoes/MonteCarloEspacial/folha2.png, id=3005, 2630.628pt x 933.8
 89pt>
 File: Figuras/Observacoes/MonteCarloEspacial/folha2.png Graphic file (type png)
 
@@ -2744,7 +2744,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 150.
  [67 <./Figuras/Observacoes/MonteCarloEspacial/folha1.png>]
-<Figuras/Observacoes/MonteCarloEspacial/folha3.png, id=3011, 2707.716pt x 1335.
+<Figuras/Observacoes/MonteCarloEspacial/folha3.png, id=3017, 2707.716pt x 1335.
 389pt>
 File: Figuras/Observacoes/MonteCarloEspacial/folha3.png Graphic file (type png)
 
@@ -2812,7 +2812,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 527.
 
 <Figuras/Resultados/0003/Saidas/MonteCarlo_0/Quantidades_Humanos_Novo_Total.png
-, id=3046, 489.44858pt x 387.3672pt>
+, id=3052, 489.44858pt x 387.3672pt>
 File: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Quantidades_Humanos_Novo_Tota
 l.png Graphic file (type png)
 
@@ -2822,7 +2822,7 @@ Package pdftex.def Info: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Quantidade
 s_Humanos_Novo_Total.png used on input line 533.
 (pdftex.def)             Requested size: 483.69687pt x 382.82089pt.
 
-<Figuras/Resultados/Observado/Casos_Observados_Acumulados.png, id=3048, 875.520
+<Figuras/Resultados/Observado/Casos_Observados_Acumulados.png, id=3054, 875.520
 94pt x 557.08125pt>
 File: Figuras/Resultados/Observado/Casos_Observados_Acumulados.png Graphic file
  (type png)
@@ -2848,7 +2848,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 549.
 
 <Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00000.png, id
-=3061, 1087.06125pt x 902.37125pt>
+=3067, 1087.06125pt x 902.37125pt>
 File: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00000.pn
 g Graphic file (type png)
 
@@ -2859,7 +2859,7 @@ Package pdftex.def Info: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_
 (pdftex.def)             Requested size: 241.84843pt x 200.75287pt.
 
 <Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00040.png, id
-=3062, 1087.06125pt x 902.37125pt>
+=3068, 1087.06125pt x 902.37125pt>
 File: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00040.pn
 g Graphic file (type png)
 
@@ -2870,7 +2870,7 @@ Package pdftex.def Info: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_
 (pdftex.def)             Requested size: 241.84843pt x 200.75287pt.
 
 <Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00080.png, id
-=3063, 1087.06125pt x 902.37125pt>
+=3069, 1087.06125pt x 902.37125pt>
 File: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00080.pn
 g Graphic file (type png)
 
@@ -2881,7 +2881,7 @@ Package pdftex.def Info: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_
 (pdftex.def)             Requested size: 241.84843pt x 200.75287pt.
 
 <Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00120.png, id
-=3064, 1087.06125pt x 902.37125pt>
+=3070, 1087.06125pt x 902.37125pt>
 File: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00120.pn
 g Graphic file (type png)
 
@@ -2892,7 +2892,7 @@ Package pdftex.def Info: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_
 (pdftex.def)             Requested size: 241.84843pt x 200.75287pt.
 
 <Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00160.png, id
-=3065, 1087.06125pt x 902.37125pt>
+=3071, 1087.06125pt x 902.37125pt>
 File: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00160.pn
 g Graphic file (type png)
 
@@ -2903,7 +2903,7 @@ Package pdftex.def Info: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_
 (pdftex.def)             Requested size: 241.84843pt x 200.75287pt.
 
 <Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00200.png, id
-=3066, 1087.06125pt x 902.37125pt>
+=3072, 1087.06125pt x 902.37125pt>
 File: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00200.pn
 g Graphic file (type png)
 
@@ -2916,7 +2916,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 596.
 
 <Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Acumulado/00000.png, i
-d=3068, 1116.17pt x 902.37125pt>
+d=3074, 1116.17pt x 902.37125pt>
 File: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Acumulado/00000.p
 ng Graphic file (type png)
 
@@ -2927,7 +2927,7 @@ Package pdftex.def Info: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_
 (pdftex.def)             Requested size: 241.84843pt x 195.52063pt.
 
 <Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Acumulado/00040.png, i
-d=3069, 1116.17pt x 902.37125pt>
+d=3075, 1116.17pt x 902.37125pt>
 File: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Acumulado/00040.p
 ng Graphic file (type png)
 
@@ -2938,7 +2938,7 @@ Package pdftex.def Info: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_
 (pdftex.def)             Requested size: 241.84843pt x 195.52063pt.
 
 <Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Acumulado/00080.png, i
-d=3070, 1116.17pt x 902.37125pt>
+d=3076, 1116.17pt x 902.37125pt>
 File: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Acumulado/00080.p
 ng Graphic file (type png)
 
@@ -2949,7 +2949,7 @@ Package pdftex.def Info: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_
 (pdftex.def)             Requested size: 241.84843pt x 195.52063pt.
 
 <Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Acumulado/00120.png, i
-d=3071, 1116.17pt x 902.37125pt>
+d=3077, 1116.17pt x 902.37125pt>
 File: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Acumulado/00120.p
 ng Graphic file (type png)
 
@@ -2960,7 +2960,7 @@ Package pdftex.def Info: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_
 (pdftex.def)             Requested size: 241.84843pt x 195.52063pt.
 
 <Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Acumulado/00160.png, i
-d=3072, 1116.17pt x 902.37125pt>
+d=3078, 1116.17pt x 902.37125pt>
 File: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Acumulado/00160.p
 ng Graphic file (type png)
 
@@ -2971,7 +2971,7 @@ Package pdftex.def Info: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_
 (pdftex.def)             Requested size: 241.84843pt x 195.52063pt.
 
 <Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Acumulado/00200.png, i
-d=3073, 1116.17pt x 902.37125pt>
+d=3079, 1116.17pt x 902.37125pt>
 File: Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Acumulado/00200.p
 ng Graphic file (type png)
 
@@ -2991,7 +2991,7 @@ png> <./Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00120.
 png> <./Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00160.
 png> <./Figuras/Resultados/0003/Saidas/MonteCarlo_0/Simulacao_0/Espacial/00200.
 png>]
-<Figuras/Resultados/Observado/01-07-2009.png, id=3086, 985.6825pt x 719.68875pt
+<Figuras/Resultados/Observado/01-07-2009.png, id=3092, 985.6825pt x 719.68875pt
 >
 File: Figuras/Resultados/Observado/01-07-2009.png Graphic file (type png)
  <use Figuras/Resultados/Observado/01-07-2009.png>
@@ -2999,7 +2999,7 @@ Package pdftex.def Info: Figuras/Resultados/Observado/01-07-2009.png used on in
 put line 649.
 (pdftex.def)             Requested size: 217.66211pt x 158.92502pt.
 
-<Figuras/Resultados/Observado/01-08-2009.png, id=3087, 985.6825pt x 719.68875pt
+<Figuras/Resultados/Observado/01-08-2009.png, id=3093, 985.6825pt x 719.68875pt
 >
 File: Figuras/Resultados/Observado/01-08-2009.png Graphic file (type png)
  <use Figuras/Resultados/Observado/01-08-2009.png>
@@ -3007,7 +3007,7 @@ Package pdftex.def Info: Figuras/Resultados/Observado/01-08-2009.png used on in
 put line 655.
 (pdftex.def)             Requested size: 217.66211pt x 158.92502pt.
 
-<Figuras/Resultados/Observado/01-09-2009.png, id=3088, 985.6825pt x 719.68875pt
+<Figuras/Resultados/Observado/01-09-2009.png, id=3094, 985.6825pt x 719.68875pt
 >
 File: Figuras/Resultados/Observado/01-09-2009.png Graphic file (type png)
  <use Figuras/Resultados/Observado/01-09-2009.png>
@@ -3015,7 +3015,7 @@ Package pdftex.def Info: Figuras/Resultados/Observado/01-09-2009.png used on in
 put line 661.
 (pdftex.def)             Requested size: 217.66211pt x 158.92502pt.
 
-<Figuras/Resultados/Observado/01-10-2009.png, id=3089, 985.6825pt x 727.71875pt
+<Figuras/Resultados/Observado/01-10-2009.png, id=3095, 985.6825pt x 727.71875pt
 >
 File: Figuras/Resultados/Observado/01-10-2009.png Graphic file (type png)
  <use Figuras/Resultados/Observado/01-10-2009.png>
@@ -3023,7 +3023,7 @@ Package pdftex.def Info: Figuras/Resultados/Observado/01-10-2009.png used on in
 put line 668.
 (pdftex.def)             Requested size: 217.66211pt x 160.69823pt.
 
-<Figuras/Resultados/Observado/01-11-2009.png, id=3090, 985.6825pt x 727.71875pt
+<Figuras/Resultados/Observado/01-11-2009.png, id=3096, 985.6825pt x 727.71875pt
 >
 File: Figuras/Resultados/Observado/01-11-2009.png Graphic file (type png)
  <use Figuras/Resultados/Observado/01-11-2009.png>
@@ -3031,7 +3031,7 @@ Package pdftex.def Info: Figuras/Resultados/Observado/01-11-2009.png used on in
 put line 674.
 (pdftex.def)             Requested size: 217.66211pt x 160.69823pt.
 
-<Figuras/Resultados/Observado/01-12-2009.png, id=3091, 985.6825pt x 727.71875pt
+<Figuras/Resultados/Observado/01-12-2009.png, id=3097, 985.6825pt x 727.71875pt
 >
 File: Figuras/Resultados/Observado/01-12-2009.png Graphic file (type png)
  <use Figuras/Resultados/Observado/01-12-2009.png>
@@ -3870,24 +3870,24 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package epstopdf Info: Source file: <Figuras/A5/AgentesHumanos.eps>
-(epstopdf)                    date: 2017-07-28 15:01:35
-(epstopdf)                    size: 337086 bytes
+(epstopdf)                    date: 2018-02-22 10:02:45
+(epstopdf)                    size: 537272 bytes
 (epstopdf)             Output file: <Figuras/A5/AgentesHumanos-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2017-07-28 15:01:43
-(epstopdf)                    size: 104772 bytes
+(epstopdf)                    date: 2018-02-22 10:03:38
+(epstopdf)                    size: 162498 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figuras/A5/AgentesHumanos-
 eps-converted-to.pdf Figuras/A5/AgentesHumanos.eps>
 (epstopdf)             \includegraphics on input line 7.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/A5/AgentesHumanos-eps-converted-to.pdf, id=9454, 2180.145pt x 910.4012
-5pt>
+<Figuras/A5/AgentesHumanos-eps-converted-to.pdf, id=9460, 2180.145pt x 1360.081
+25pt>
 File: Figuras/A5/AgentesHumanos-eps-converted-to.pdf Graphic file (type pdf)
  <use Figuras/A5/AgentesHumanos-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/A5/AgentesHumanos-eps-converted-to.pdf used on
  input line 7.
-(pdftex.def)             Requested size: 386.95897pt x 161.58693pt.
+(pdftex.def)             Requested size: 386.95897pt x 241.40054pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining portuges shorthand "|
@@ -3936,8 +3936,8 @@ Package rerunfilecheck Info: File `RelatorioInfluenza.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28.
  ) 
 Here is how much of TeX's memory you used:
- 44545 strings out of 493029
- 934528 string characters out of 6136235
+ 44551 strings out of 493029
+ 934618 string characters out of 6136235
  1565262 words of memory out of 5000000
  38999 multiletter control sequences out of 15000+600000
  97606 words of font info for 67 fonts, out of 8000000 for 9000
@@ -3965,10 +3965,10 @@ f/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk1
 0.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/font
 s/type1/public/lm/lmtt8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
-Output written on RelatorioInfluenza.pdf (184 pages, 10288793 bytes).
+Output written on RelatorioInfluenza.pdf (184 pages, 10351439 bytes).
 PDF statistics:
- 11275 PDF objects out of 12825 (max. 8388607)
- 10848 compressed objects within 109 object streams
- 7951 named destinations out of 8907 (max. 500000)
+ 11283 PDF objects out of 12825 (max. 8388607)
+ 10856 compressed objects within 109 object streams
+ 7957 named destinations out of 8907 (max. 500000)
  1346 words of extra memory for PDF output out of 10000 (max. 10000000)
 

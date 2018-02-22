@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="785.95117mm"
-   height="339.47556mm"
-   viewBox="0 0 2784.8663 1202.8662"
+   width="785.95111mm"
+   height="497.51996mm"
+   viewBox="0 0 2784.8661 1762.8661"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="LegendaAgentesHumanos.svg"
+   sodipodi:docname="AgentesHumanos.svg"
    inkscape:export-filename="/home/lcad/Documentos/Imagens/Legenda.png"
    inkscape:export-xdpi="79.979942"
    inkscape:export-ydpi="79.979942">
@@ -29,8 +29,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35355339"
-     inkscape:cx="1266.7402"
-     inkscape:cy="491.13165"
+     inkscape:cx="1231.3847"
+     inkscape:cy="833.34259"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -60,7 +60,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Camada 2"
-     transform="translate(-50.56714,307.07098)">
+     transform="translate(-50.56726,307.07099)">
     <rect
        y="-266.9693"
        x="90.668701"
@@ -201,68 +201,82 @@
        width="544.66278"
        id="rect4405"
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:9.33722496;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       y="853.0307"
+       x="90.668701"
+       height="282.66275"
+       width="544.66278"
+       id="rect4319"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:9.33722496;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:9.33722496;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4321"
+       width="544.66278"
+       height="282.66275"
+       x="630.6687"
+       y="853.0307" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:9.33722496;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4323"
+       width="544.66278"
+       height="282.66275"
+       x="1170.6687"
+       y="853.0307" />
+    <rect
+       y="853.0307"
+       x="1710.6689"
+       height="282.66275"
+       width="544.66278"
+       id="rect4325"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:9.33722496;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:9.33722496;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4327"
+       width="544.66278"
+       height="282.66275"
+       x="2250.6689"
+       y="853.0307" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:9.33722496;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4416"
+       width="544.66278"
+       height="282.66275"
+       x="90.668701"
+       y="1133.0308" />
+    <rect
+       y="1133.0308"
+       x="630.6687"
+       height="282.66275"
+       width="544.66278"
+       id="rect4418"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:9.33722496;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       y="1133.0308"
+       x="1170.6687"
+       height="282.66275"
+       width="544.66278"
+       id="rect4420"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:9.33722496;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:9.33722496;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4422"
+       width="544.66278"
+       height="282.66275"
+       x="1710.6689"
+       y="1133.0308" />
+    <rect
+       y="1133.0308"
+       x="2250.6689"
+       height="282.66275"
+       width="544.66278"
+       id="rect4424"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:9.33722496;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
   <g
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-50.56714,307.07098)">
-    <g
-       style="display:inline"
-       transform="matrix(0.8,0,0,0.8,104.2715,-39.859979)"
-       id="layer1-3"
-       inkscape:label="Camada 1">
-      <rect
-         ry="0"
-         y="841.74542"
-         x="1.5152287"
-         height="209.10158"
-         width="209.60666"
-         id="rect4210"
-         style="fill:#00b4ff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
-    <g
-       style="display:inline"
-       transform="matrix(0.8,0,0,0.8,1744.2715,-39.859979)"
-       id="layer1-1"
-       inkscape:label="Camada 1">
-      <rect
-         ry="0"
-         y="841.74542"
-         x="1.5152287"
-         height="209.10158"
-         width="209.60666"
-         id="rect4210-2"
-         style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
-    <g
-       style="display:inline"
-       transform="matrix(0.8,0,0,0.8,664.2715,-39.859979)"
-       id="layer1-6"
-       inkscape:label="Camada 1">
-      <rect
-         ry="0"
-         y="841.74542"
-         x="1.5152287"
-         height="209.10158"
-         width="209.60666"
-         id="rect4210-0"
-         style="fill:#d45500;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
-    <g
-       style="display:inline"
-       transform="matrix(0.8,0,0,0.8,1210.2715,-39.859979)"
-       id="layer1-8"
-       inkscape:label="Camada 1">
-      <rect
-         ry="0"
-         y="841.74542"
-         x="1.5152287"
-         height="209.10158"
-         width="209.60666"
-         id="rect4210-7"
-         style="fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
+     transform="translate(-50.56726,307.07099)">
     <g
        style="display:inline"
        transform="matrix(0.8,0,0,0.8,104.2715,-320.36507)"
@@ -709,7 +723,7 @@
          style="font-size:35.16887665px"
          id="flowPara4655">3041</flowPara><flowPara
          style="font-size:35.16887665px"
-         id="flowPara4657">Criança</flowPara><flowPara
+         id="flowPara4657">Adolescente</flowPara><flowPara
          style="font-size:35.16887665px"
          id="flowPara4659">Recuperado</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
@@ -725,7 +739,7 @@
          id="flowPara4667"
          style="font-size:35.16887665px">3042</flowPara><flowPara
          id="flowPara4669"
-         style="font-size:35.16887665px">Criança</flowPara><flowPara
+         style="font-size:35.16887665px">Adolescente</flowPara><flowPara
          id="flowPara4671"
          style="font-size:35.16887665px">Exposto</flowPara></flowRoot>    <flowRoot
        transform="matrix(1.2827056,0,0,1.2763832,949.5876,436.35899)"
@@ -741,7 +755,7 @@
          style="font-size:35.16887665px"
          id="flowPara4679">3043</flowPara><flowPara
          style="font-size:35.16887665px"
-         id="flowPara4681">Criança</flowPara><flowPara
+         id="flowPara4681">Adolescente</flowPara><flowPara
          style="font-size:35.16887665px"
          id="flowPara4683">Suscetível</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
@@ -757,25 +771,11 @@
          id="flowPara4691"
          style="font-size:35.16887665px">3044</flowPara><flowPara
          id="flowPara4693"
-         style="font-size:35.16887665px">Criança</flowPara><flowPara
+         style="font-size:35.16887665px">Adolescente</flowPara><flowPara
          id="flowPara4695"
          style="font-size:35.16887665px">Infectante/</flowPara><flowPara
          style="font-size:35.16887665px"
          id="flowPara4390">Hemorrágico</flowPara></flowRoot>    <g
-       inkscape:label="Camada 1"
-       id="g4286"
-       transform="matrix(0.8,0,0,0.8,2282.2715,-39.859979)"
-       style="display:inline;fill:#ff00ff">
-      <rect
-         style="fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect4288"
-         width="209.60666"
-         height="209.10158"
-         x="1.5152287"
-         y="841.74542"
-         ry="0" />
-    </g>
-    <g
        inkscape:label="Camada 1"
        id="g4290"
        transform="matrix(0.8,0,0,0.8,2282.2715,-320.36507)"
@@ -895,7 +895,376 @@
          style="font-size:35.16887665px"
          id="flowPara4344">3045</flowPara><flowPara
          style="font-size:35.16887665px"
-         id="flowPara4346">Criança</flowPara><flowPara
+         id="flowPara4346">Adolescente</flowPara><flowPara
          style="font-size:35.16887665px"
-         id="flowPara4348">Imunizado</flowPara></flowRoot>  </g>
+         id="flowPara4348">Imunizado</flowPara></flowRoot>    <g
+       inkscape:label="Camada 1"
+       id="g4329"
+       transform="matrix(0.8,0,0,0.8,104.2715,240.14004)"
+       style="display:inline">
+      <rect
+         style="fill:#00b4ff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4331"
+         width="209.60666"
+         height="209.10158"
+         x="1.5152287"
+         y="841.74542"
+         ry="0" />
+    </g>
+    <g
+       inkscape:label="Camada 1"
+       id="g4333"
+       transform="matrix(0.8,0,0,0.8,1744.2715,240.14004)"
+       style="display:inline">
+      <rect
+         style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4335"
+         width="209.60666"
+         height="209.10158"
+         x="1.5152287"
+         y="841.74542"
+         ry="0" />
+    </g>
+    <g
+       inkscape:label="Camada 1"
+       id="g4337"
+       transform="matrix(0.8,0,0,0.8,664.2715,240.14004)"
+       style="display:inline">
+      <rect
+         style="fill:#d45500;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4339"
+         width="209.60666"
+         height="209.10158"
+         x="1.5152287"
+         y="841.74542"
+         ry="0" />
+    </g>
+    <g
+       inkscape:label="Camada 1"
+       id="g4341"
+       transform="matrix(0.8,0,0,0.8,1210.2715,240.14004)"
+       style="display:inline">
+      <rect
+         style="fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4343"
+         width="209.60666"
+         height="209.10158"
+         x="1.5152287"
+         y="841.74542"
+         ry="0" />
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4345"
+       style="font-style:normal;font-weight:normal;font-size:35px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(1.2827056,0,0,1.2763832,-150.4125,716.35899)"><flowRegion
+         id="flowRegion4347"><rect
+           id="rect4349"
+           width="216.17264"
+           height="218.19295"
+           x="345.47217"
+           y="140.49007" /></flowRegion><flowPara
+         id="flowPara4351"
+         style="font-size:35.16887665px">3051</flowPara><flowPara
+         id="flowPara4353"
+         style="font-size:35.16887665px">Criança</flowPara><flowPara
+         id="flowPara4355"
+         style="font-size:35.16887665px">Recuperado</flowPara></flowRoot>    <flowRoot
+       transform="matrix(1.2827056,0,0,1.2763832,409.5876,716.35899)"
+       style="font-style:normal;font-weight:normal;font-size:35px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot4357"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4359"><rect
+           y="140.49007"
+           x="345.47217"
+           height="218.19295"
+           width="216.17264"
+           id="rect4361" /></flowRegion><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4363">3052</flowPara><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4365">Criança</flowPara><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4367">Exposto</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4369"
+       style="font-style:normal;font-weight:normal;font-size:35px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(1.2827056,0,0,1.2763832,949.5876,716.35899)"><flowRegion
+         id="flowRegion4371"><rect
+           id="rect4374"
+           width="216.17264"
+           height="218.19295"
+           x="345.47217"
+           y="140.49007" /></flowRegion><flowPara
+         id="flowPara4376"
+         style="font-size:35.16887665px">3053</flowPara><flowPara
+         id="flowPara4379"
+         style="font-size:35.16887665px">Criança</flowPara><flowPara
+         id="flowPara4381"
+         style="font-size:35.16887665px">Suscetível</flowPara></flowRoot>    <flowRoot
+       transform="matrix(1.2827056,0,0,1.2763832,1489.5876,716.35899)"
+       style="font-style:normal;font-weight:normal;font-size:35px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot4383"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4385"><rect
+           y="140.49007"
+           x="345.47217"
+           height="214.86899"
+           width="236.01804"
+           id="rect4388" /></flowRegion><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4391">3054</flowPara><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4393">Criança</flowPara><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4395">Infectante/</flowPara><flowPara
+         id="flowPara4397"
+         style="font-size:35.16887665px">Hemorrágico</flowPara></flowRoot>    <g
+       style="display:inline;fill:#ff00ff"
+       transform="matrix(0.8,0,0,0.8,2282.2715,240.14004)"
+       id="g4399"
+       inkscape:label="Camada 1">
+      <rect
+         ry="0"
+         y="841.74542"
+         x="1.5152287"
+         height="209.10158"
+         width="209.60666"
+         id="rect4402"
+         style="fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4404"
+       style="font-style:normal;font-weight:normal;font-size:35px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(1.2827056,0,0,1.2763832,2027.5876,716.35899)"><flowRegion
+         id="flowRegion4406"><rect
+           id="rect4408"
+           width="216.17264"
+           height="218.19295"
+           x="345.47217"
+           y="140.49007" /></flowRegion><flowPara
+         id="flowPara4410"
+         style="font-size:35.16887665px">3055</flowPara><flowPara
+         id="flowPara4412"
+         style="font-size:35.16887665px">Criança</flowPara><flowPara
+         id="flowPara4414"
+         style="font-size:35.16887665px">Imunizado</flowPara></flowRoot>    <g
+       style="display:inline"
+       transform="matrix(0.8,0,0,0.8,104.2715,520.14004)"
+       id="g4426"
+       inkscape:label="Camada 1">
+      <rect
+         ry="0"
+         y="841.74542"
+         x="1.5152287"
+         height="209.10158"
+         width="209.60666"
+         id="rect4428"
+         style="fill:#00b4ff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <g
+       style="display:inline"
+       transform="matrix(0.8,0,0,0.8,1744.2715,520.14004)"
+       id="g4430"
+       inkscape:label="Camada 1">
+      <rect
+         ry="0"
+         y="841.74542"
+         x="1.5152287"
+         height="209.10158"
+         width="209.60666"
+         id="rect4432"
+         style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <g
+       style="display:inline"
+       transform="matrix(0.8,0,0,0.8,664.2715,520.14004)"
+       id="g4434"
+       inkscape:label="Camada 1">
+      <rect
+         ry="0"
+         y="841.74542"
+         x="1.5152287"
+         height="209.10158"
+         width="209.60666"
+         id="rect4436"
+         style="fill:#d45500;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <g
+       style="display:inline"
+       transform="matrix(0.8,0,0,0.8,1210.2715,520.14004)"
+       id="g4438"
+       inkscape:label="Camada 1">
+      <rect
+         ry="0"
+         y="841.74542"
+         x="1.5152287"
+         height="209.10158"
+         width="209.60666"
+         id="rect4440"
+         style="fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <flowRoot
+       transform="matrix(1.2827056,0,0,1.2763832,-150.4125,996.359)"
+       style="font-style:normal;font-weight:normal;font-size:35px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot4442"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4444"><rect
+           y="140.49007"
+           x="345.47217"
+           height="218.19295"
+           width="216.17264"
+           id="rect4446" /></flowRegion><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4448">3061</flowPara><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4450">Bebê</flowPara><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4452">Recuperado</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4454"
+       style="font-style:normal;font-weight:normal;font-size:35px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(1.2827056,0,0,1.2763832,409.5876,996.359)"><flowRegion
+         id="flowRegion4456"><rect
+           id="rect4458"
+           width="216.17264"
+           height="218.19295"
+           x="345.47217"
+           y="140.49007" /></flowRegion><flowPara
+         id="flowPara4460"
+         style="font-size:35.16887665px">3062</flowPara><flowPara
+         id="flowPara4462"
+         style="font-size:35.16887665px">Bebê</flowPara><flowPara
+         id="flowPara4464"
+         style="font-size:35.16887665px">Exposto</flowPara></flowRoot>    <flowRoot
+       transform="matrix(1.2827056,0,0,1.2763832,949.5876,996.359)"
+       style="font-style:normal;font-weight:normal;font-size:35px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot4466"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4468"><rect
+           y="140.49007"
+           x="345.47217"
+           height="218.19295"
+           width="216.17264"
+           id="rect4470" /></flowRegion><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4472">3063</flowPara><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4474">Bebê</flowPara><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4476">Suscetível</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4478"
+       style="font-style:normal;font-weight:normal;font-size:35px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(1.2827056,0,0,1.2763832,1489.5876,996.359)"><flowRegion
+         id="flowRegion4480"><rect
+           id="rect4482"
+           width="236.01804"
+           height="214.86899"
+           x="345.47217"
+           y="140.49007" /></flowRegion><flowPara
+         id="flowPara4484"
+         style="font-size:35.16887665px">3064</flowPara><flowPara
+         id="flowPara4486"
+         style="font-size:35.16887665px">Bebê</flowPara><flowPara
+         id="flowPara4488"
+         style="font-size:35.16887665px">Infectante/</flowPara><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4490">Hemorrágico</flowPara></flowRoot>    <g
+       inkscape:label="Camada 1"
+       id="g4492"
+       transform="matrix(0.8,0,0,0.8,2282.2715,520.14004)"
+       style="display:inline;fill:#ff00ff">
+      <rect
+         style="fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4494"
+         width="209.60666"
+         height="209.10158"
+         x="1.5152287"
+         y="841.74542"
+         ry="0" />
+    </g>
+    <flowRoot
+       transform="matrix(1.2827056,0,0,1.2763832,2027.5876,996.359)"
+       style="font-style:normal;font-weight:normal;font-size:35px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot4496"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4498"><rect
+           y="140.49007"
+           x="345.47217"
+           height="218.19295"
+           width="216.17264"
+           id="rect4500" /></flowRegion><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4502">3065</flowPara><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4504">Bebê</flowPara><flowPara
+         style="font-size:35.16887665px"
+         id="flowPara4506">Imunizado</flowPara></flowRoot>    <g
+       inkscape:label="Camada 1"
+       id="g4508"
+       transform="matrix(0.8,0,0,0.8,104.2715,-40.365067)"
+       style="display:inline">
+      <ellipse
+         style="fill:#00b4ff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1"
+         id="ellipse4510"
+         cx="106.31856"
+         cy="946.2962"
+         rx="104.80332"
+         ry="105.05588" />
+    </g>
+    <g
+       inkscape:label="Camada 1"
+       id="g4512"
+       transform="matrix(0.8,0,0,0.8,1744.2715,-40.365067)"
+       style="display:inline">
+      <ellipse
+         style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1"
+         id="ellipse4514"
+         cx="106.31856"
+         cy="946.2962"
+         rx="104.80332"
+         ry="105.05588" />
+    </g>
+    <g
+       inkscape:label="Camada 1"
+       id="g4516"
+       transform="matrix(0.8,0,0,0.8,664.2715,-40.365067)"
+       style="display:inline">
+      <ellipse
+         style="fill:#d45500;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1"
+         id="ellipse4518"
+         cx="106.31856"
+         cy="946.2962"
+         rx="104.80332"
+         ry="105.05588" />
+    </g>
+    <g
+       inkscape:label="Camada 1"
+       id="g4520"
+       transform="matrix(0.8,0,0,0.8,1210.2715,-40.365067)"
+       style="display:inline">
+      <ellipse
+         style="fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1"
+         id="ellipse4522"
+         cx="106.31856"
+         cy="946.2962"
+         rx="104.80332"
+         ry="105.05588" />
+    </g>
+    <g
+       style="display:inline;fill:#ff00ff"
+       transform="matrix(0.8,0,0,0.8,2282.2715,-40.365067)"
+       id="g4524"
+       inkscape:label="Camada 1">
+      <ellipse
+         ry="105.05588"
+         rx="104.80332"
+         cy="946.2962"
+         cx="106.31856"
+         id="ellipse4526"
+         style="fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+  </g>
 </svg>
